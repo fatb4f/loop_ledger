@@ -79,6 +79,12 @@ def main() -> int:
         "bundle_id": manifest["bundle_id"],
         "iteration_id": manifest["iteration_id"],
         "scope_root": manifest["scope_root"],
+        "authority_model": {
+            "source_roots": "authoritative",
+            "controller_surfaces": "authoritative",
+            "reviewed_head": "legacy_informational",
+            "refs": "legacy_informational",
+        },
         "reviewed_head": manifest.get("reviewed_head", ""),
         "lineage": manifest.get("lineage", {}),
         "refs": manifest.get("refs", {}),

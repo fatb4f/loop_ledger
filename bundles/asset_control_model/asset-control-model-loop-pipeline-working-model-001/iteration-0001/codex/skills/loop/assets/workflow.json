@@ -41,7 +41,7 @@
     },
     {
       "id": "N2_decision",
-      "phase": "PLAN",
+      "phase": "DECISION",
       "action": "evaluate_decision_gate",
       "guards": {
         "approved": {
@@ -140,6 +140,7 @@
   "invariants": [
     "no_execution_before_decision_approved",
     "plan_emits_request_and_batch_outputs",
+    "decision_phase_is_explicit",
     "implement_emits_response_outputs",
     "verify_uses_live_validation",
     "terminate_requires_verified_contract_chain",

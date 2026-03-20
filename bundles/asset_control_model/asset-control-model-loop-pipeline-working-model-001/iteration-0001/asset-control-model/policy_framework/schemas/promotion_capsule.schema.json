@@ -36,6 +36,13 @@
       "type": "string",
       "minLength": 1
     },
+    "validation_ref_mode": {
+      "type": "string",
+      "enum": [
+        "bundle_relative",
+        "source_absolute"
+      ]
+    },
     "validation_refs": {
       "type": "array",
       "items": {

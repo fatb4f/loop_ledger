@@ -4,6 +4,12 @@
   "bundle_id": "asset-control-model-loop-pipeline-working-model-001",
   "iteration_id": "iteration-0001",
   "scope_root": "/home/_404/src",
+  "authority_model": {
+    "source_roots": "authoritative",
+    "controller_surfaces": "authoritative",
+    "reviewed_head": "legacy_informational",
+    "refs": "legacy_informational"
+  },
   "reviewed_head": "c68d364167af14c6128cdfea274070ad9aafb52f",
   "lineage": {},
   "refs": {
@@ -51,7 +57,9 @@
     ],
     "required_check_roles": [
       "review_manifest_validate_check",
-      "review_bundle_status_check"
+      "review_bundle_status_check",
+      "loop_state_schema_validate_check",
+      "promotion_capsule_schema_validate_check"
     ]
   }
 }

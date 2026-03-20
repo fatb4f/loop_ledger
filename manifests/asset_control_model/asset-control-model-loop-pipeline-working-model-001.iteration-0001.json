@@ -56,6 +56,26 @@
         "absolute_path": "/home/_404/src/loop_ledger/manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.review-bundle-status.check.json",
         "dest": "evidence/review-bundle-status.check.json",
         "role": "review_bundle_status_check"
+      },
+      {
+        "name": "loop state schema validate",
+        "source": "/home/_404/src/loop_ledger/manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.loop-state-schema-validate.check.json",
+        "repo_key": "loop_ledger",
+        "repo_relative_path": "manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.loop-state-schema-validate.check.json",
+        "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+        "absolute_path": "/home/_404/src/loop_ledger/manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.loop-state-schema-validate.check.json",
+        "dest": "evidence/loop-state-schema-validate.check.json",
+        "role": "loop_state_schema_validate_check"
+      },
+      {
+        "name": "promotion capsule schema validate",
+        "source": "/home/_404/src/loop_ledger/manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.promotion-capsule-schema-validate.check.json",
+        "repo_key": "loop_ledger",
+        "repo_relative_path": "manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.promotion-capsule-schema-validate.check.json",
+        "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+        "absolute_path": "/home/_404/src/loop_ledger/manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.promotion-capsule-schema-validate.check.json",
+        "dest": "evidence/promotion-capsule-schema-validate.check.json",
+        "role": "promotion_capsule_schema_validate_check"
       }
     ],
     "integrity_mode": "all_files"

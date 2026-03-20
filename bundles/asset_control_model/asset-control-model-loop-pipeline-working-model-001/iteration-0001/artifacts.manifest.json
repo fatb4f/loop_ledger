@@ -42,7 +42,9 @@
     ],
     "required_check_roles": [
       "review_manifest_validate_check",
-      "review_bundle_status_check"
+      "review_bundle_status_check",
+      "loop_state_schema_validate_check",
+      "promotion_capsule_schema_validate_check"
     ]
   },
   "files": [
@@ -123,7 +125,7 @@
       "repo_key": "asset_control_model",
       "repo_relative_path": "policy_framework/schemas/promotion_capsule.schema.json",
       "head": "c68d364167af14c6128cdfea274070ad9aafb52f",
-      "sha256": "52a871c8557f076f50eaf1bf904e373be6a12625a73fe691641a46e294532bd6",
+      "sha256": "65c8a1a2e828e38621650d75afce471bc4163fb79c107094724358251d7ebcdc",
       "absolute_path": "/home/_404/src/runtime/asset-control-model/policy_framework/schemas/promotion_capsule.schema.json"
     },
     {
@@ -193,7 +195,7 @@
       "repo_key": "dotfiles",
       "repo_relative_path": "chezmoi/dot_config/codex/skills/loop/assets/workflow.json",
       "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
-      "sha256": "f6de22551e3a6716aad32b223ffc45dad9480b0a521f426bdc42011ed7713c57",
+      "sha256": "1455df0f4186d63a9a9347c1ef1eaf7daf5f90e5a42ddd2d50a2199102427588",
       "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/assets/workflow.json"
     },
     {
@@ -353,7 +355,7 @@
       "repo_key": "loop_ledger",
       "repo_relative_path": "scripts/materialize_review_bundle.py",
       "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
-      "sha256": "fbd3c7a5c48d44c0e350b1cf258ea3f204edc0ca62dcdf5039cad4023cc7e05e",
+      "sha256": "5d5e588e4e32a3f7abd4b7d9d605e70a3c44e54ec57bccf3d7a79eb839b51874",
       "absolute_path": "/home/_404/src/loop_ledger/scripts/materialize_review_bundle.py"
     },
     {
@@ -383,7 +385,7 @@
       "repo_key": "loop_ledger",
       "repo_relative_path": "manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.promotion.capsule.json",
       "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
-      "sha256": "d2982337d0fe7a3c8ce2f324a3a9d591876dfd4b9b08d7d4a413e73703dbac01",
+      "sha256": "1fa4eecc14e76a73a30e7d12bef3657d8d640a7256fce3a9dce4a4879a000e85",
       "absolute_path": "/home/_404/src/loop_ledger/manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.promotion.capsule.json"
     },
     {
@@ -409,10 +411,32 @@
       "name": "review bundle input status"
     },
     {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/evidence/loop-state-schema-validate.check.json",
+      "source": "/home/_404/src/loop_ledger/manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.loop-state-schema-validate.check.json",
+      "role": "loop_state_schema_validate_check",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.loop-state-schema-validate.check.json",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "sha256": "dff11809ac919c0b9fa28867c8f602d188cb4bcb98ecc8dbf5cd5c3df872046e",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.loop-state-schema-validate.check.json",
+      "name": "loop state schema validate"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/evidence/promotion-capsule-schema-validate.check.json",
+      "source": "/home/_404/src/loop_ledger/manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.promotion-capsule-schema-validate.check.json",
+      "role": "promotion_capsule_schema_validate_check",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.promotion-capsule-schema-validate.check.json",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "sha256": "5cbb7748e405792bc8931b0b813bc5f2f751fe67b4a76f0e3a11cc2b949b515d",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.promotion-capsule-schema-validate.check.json",
+      "name": "promotion capsule schema validate"
+    },
+    {
       "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/ref_header.json",
       "source": "/home/_404/src/loop_ledger/manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.iteration-0001.json",
       "role": "ref_header",
-      "sha256": "374607a896e256c73bcc0054c17e34d209518b68e86688dccf3638be1458a2c7"
+      "sha256": "d23a9a3c318f3dc9ee87e77c672bdb522d9a8917bc08306c34945fc3c3b767a2"
     }
   ]
 }
