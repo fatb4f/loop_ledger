@@ -1,0 +1,435 @@
+{
+  "kind": "metadata_baseline_merged_surface.v1",
+  "generated_on": "2026-03-19",
+  "envelope_ref": "/home/_404/src/workbench/metadata_baseline/planning/surfaces/pre319_surface.json",
+  "pilot_ref": "/home/_404/src/workbench/metadata_baseline/planning/surfaces/post319_surface.json",
+  "delta_ref": "/home/_404/src/workbench/metadata_baseline/planning/surfaces/pre319_surface_codex_pilot_delta.json",
+  "mode": "layered",
+  "preserves_distinction": {
+    "envelope": "pre319 broad capability surface",
+    "pilot": "post319 Codex pilot cut"
+  },
+  "pilot_assets": [
+    {
+      "asset": "core",
+      "changed_in_window": true,
+      "commit_count": 47,
+      "file_count": 151,
+      "why_relevant": "Primary behavioral and structural hotspot. Changes here alter the main execution, tool-routing, plugin-policy, agent-lifecycle, memory, and package seam assumptions that any repo analysis must start from.",
+      "analysis_implications": [
+        "Treat core as the primary package ownership and blast-radius anchor.",
+        "Bias summaries toward agent lifecycle, tool result shape, plugin gating, and memory/realtime changes.",
+        "Expect many downstream surfaces to be explained by core changes rather than isolated crate-local behavior."
+      ],
+      "recent_signals": [
+        "fix: case where agent is already closed (#15163)",
+        "feat: add graph representation of agent network (#15056)",
+        "feat: support product-scoped plugins. (#15041)",
+        "Add thread/shellCommand to app server API surface (#14988)",
+        "[hooks] turn_id extension for Stop & UserPromptSubmit (#15118)"
+      ]
+    },
+    {
+      "asset": "app-server",
+      "changed_in_window": true,
+      "commit_count": 20,
+      "file_count": 28,
+      "why_relevant": "Directly shapes the request/response boundary for remote and app-server-backed analysis. Recent changes moved plugin/product scope, thread shell commands, realtime handling, and websocket behavior.",
+      "analysis_implications": [
+        "Treat app-server as a first-class operational surface, not a thin transport detail.",
+        "When analyzing remote or TUI-driven workflows, inspect app-server before assuming behavior is owned by the UI.",
+        "Use it as a bounded high-signal package for package-aware summaries."
+      ],
+      "recent_signals": [
+        "feat: support product-scoped plugins. (#15041)",
+        "Add thread/shellCommand to app server API surface (#14988)",
+        "Simple directory mentions (#14970)",
+        "Support featured plugins (#15042)",
+        "fix: harden plugin feature gating (#15104)"
+      ]
+    },
+    {
+      "asset": "tui_app_server",
+      "changed_in_window": true,
+      "commit_count": 16,
+      "file_count": 29,
+      "deleted_in_head_count": 1,
+      "why_relevant": "The app-server-backed TUI changed heavily enough to affect the practical operator viewpoint. Session history, composer behavior, onboarding/auth, MCP inventory, and realtime rendering all moved recently.",
+      "analysis_implications": [
+        "Do not treat the TUI as stable presentation-only glue.",
+        "When analyzing operator flows, inspect tui_app_server alongside app-server as a coupled surface.",
+        "Track deleted-in-head behavior because recent changes already included removals."
+      ],
+      "recent_signals": [
+        "feat: support product-scoped plugins. (#15041)",
+        "Add thread/shellCommand to app server API surface (#14988)",
+        "feat(tui): restore composer history in app-server tui (#14945)",
+        "Removed remaining core events from tui_app_server (#14942)",
+        "Add device-code onboarding and ChatGPT token refresh to app-server TUI (#14952)"
+      ]
+    },
+    {
+      "asset": "app-server-protocol",
+      "changed_in_window": true,
+      "commit_count": 12,
+      "file_count": 66,
+      "deleted_in_head_count": 12,
+      "why_relevant": "This is the highest-churn boundary-contract surface. Schema changes here alter what thread/session/plugin/hook/fuzzy-search/shell-command analysis even means.",
+      "analysis_implications": [
+        "Treat protocol/schema diffs as analysis-shaping inputs, not just generated noise.",
+        "Track deletions as strongly as additions because removed schema paths change the valid request/response surface.",
+        "Use this asset to drive contract-aware reporting and freshness decisions."
+      ],
+      "recent_signals": [
+        "feat: support product-scoped plugins. (#15041)",
+        "Add thread/shellCommand to app server API surface (#14988)",
+        "Simple directory mentions (#14970)",
+        "Support featured plugins (#15042)",
+        "Revert \"fix: harden plugin feature gating\" (#15102)"
+      ]
+    },
+    {
+      "asset": "Cargo.lock",
+      "changed_in_window": true,
+      "commit_count": 7,
+      "file_count": 1,
+      "why_relevant": "Cheap but important structural churn signal for dependency freshness and package graph invalidation.",
+      "analysis_implications": [
+        "Treat Cargo.lock movement as a freshness invalidator for cached structural artifacts.",
+        "Use it as a low-cost indicator that dependency-edge or package-version summaries may need regeneration."
+      ],
+      "recent_signals": [
+        "feat: add graph representation of agent network (#15056)",
+        "feat(core, tracing): create turn spans over websockets (#14632)",
+        "Remove stdio transport from exec server (#15119)",
+        "Add exec-server stub server and protocol docs (#15089)",
+        "Return image URL from view_image tool (#15072)"
+      ]
+    },
+    {
+      "asset": "state",
+      "changed_in_window": true,
+      "commit_count": 3,
+      "file_count": 17,
+      "why_relevant": "Persistence and migration changes affect thread graph interpretation, resumability, evidence, and temporal analysis.",
+      "analysis_implications": [
+        "Flag migrations and thread metadata changes explicitly in summaries.",
+        "Use state as the persistence-aware companion to core when reasoning about session and agent network behavior."
+      ],
+      "recent_signals": [
+        "feat: add graph representation of agent network (#15056)",
+        "Align SQLite feedback logs with feedback formatter (#13494)",
+        "Feat: CXA-1831 Persist latest model and reasoning effort in sqlite (#14859)"
+      ]
+    },
+    {
+      "asset": "exec-server",
+      "changed_in_window": true,
+      "commit_count": 2,
+      "file_count": 25,
+      "deleted_in_head_count": 3,
+      "why_relevant": "Newly emphasized execution surface. The window introduced the stub server/docs and then removed stdio transport, changing what transport assumptions are valid.",
+      "analysis_implications": [
+        "Do not assume stdio transport is still a viable baseline.",
+        "Treat exec-server as an evolving transport/execution boundary worth separate reporting.",
+        "Use it as a test asset for newly introduced surfaces and deletions-in-head."
+      ],
+      "recent_signals": [
+        "Remove stdio transport from exec server (#15119)",
+        "Add exec-server stub server and protocol docs (#15089)"
+      ]
+    },
+    {
+      "asset": "artifacts",
+      "changed_in_window": true,
+      "commit_count": 1,
+      "file_count": 10,
+      "why_relevant": "Directly relevant to artifact-first analysis because this surface changed packaging/runtime artifact behavior.",
+      "analysis_implications": [
+        "Treat artifact runtime/packaging changes as first-class inputs to metadata_baseline design.",
+        "Use artifacts as a concrete test case for output registration and artifact provenance handling."
+      ],
+      "recent_signals": [
+        "feat: adapt artifacts to new packaging and 2.5.6 (#14947)"
+      ]
+    },
+    {
+      "asset": "environment",
+      "changed_in_window": true,
+      "commit_count": 1,
+      "file_count": 4,
+      "why_relevant": "Filesystem abstraction changes affect path semantics and therefore ownership mapping and file-based joins.",
+      "analysis_implications": [
+        "Treat path and FS semantics as analysis inputs, not invisible implementation details.",
+        "Use environment as a guardrail asset when defining file-to-package ownership joins."
+      ],
+      "recent_signals": [
+        "Add FS abstraction and use in view_image (#14960)"
+      ]
+    }
+  ],
+  "capabilities": [
+    {
+      "id": "workspace_discovery_normalization",
+      "name": "Workspace discovery and normalization",
+      "status": "pilot_now",
+      "summary": "Resolve the authoritative workspace root and manifest with Cargo rather than filesystem heuristics.",
+      "notes": [
+        "Becomes strictly codex-rs-rooted instead of generic monorepo discovery-first."
+      ],
+      "sources": [
+        "/home/_404/src/repo_intel/repo_intel.v.0.1.3/docs/metadata_baseline/draft.proposal.md",
+        "/home/_404/src/repo_intel/metadata_baseline/rust_metadata_analyzer/core.manifest.toml"
+      ]
+    },
+    {
+      "id": "dual_metadata_capture",
+      "name": "Dual Cargo metadata capture",
+      "status": "envelope_only",
+      "summary": "Capture both members-only workspace metadata and resolved host-platform metadata, with feature-sensitive variants implied as optional extensions.",
+      "notes": [],
+      "sources": [
+        "/home/_404/src/repo_intel/repo_intel.v.0.1.3/docs/metadata_baseline/draft.proposal.md",
+        "/home/_404/src/repo_intel/metadata_baseline/rust_metadata_analyzer/core.manifest.toml"
+      ]
+    },
+    {
+      "id": "stable_analysis_layout",
+      "name": "Stable .analysis artifact layout",
+      "status": "pilot_now",
+      "summary": "Emit raw, reports, and index artifacts into a canonical .analysis layout with one shared handoff anchor.",
+      "notes": [
+        "Becomes a production requirement rather than a layout preference."
+      ],
+      "sources": [
+        "/home/_404/src/repo_intel/repo_intel.v.0.1.3/docs/metadata_baseline/project_structure.manifest.json",
+        "/home/_404/src/repo_intel/repo_intel.v.0.1.3/docs/metadata_baseline/draft.refactor.README.md",
+        "/home/_404/src/repo_intel/metadata_baseline/rust_metadata_analyzer/contracts/output.toml"
+      ]
+    },
+    {
+      "id": "package_inventory_extraction",
+      "name": "Package inventory extraction",
+      "status": "pilot_now",
+      "summary": "Derive a normalized package census from workspace metadata into a stable TSV report.",
+      "notes": [
+        "Moves from generic census to active pilot input."
+      ],
+      "sources": [
+        "/home/_404/src/repo_intel/repo_intel.v.0.1.3/docs/metadata_baseline/draft.proposal.md",
+        "/home/_404/src/repo_intel/metadata_baseline/rust_metadata_analyzer/core.manifest.toml"
+      ]
+    },
+    {
+      "id": "package_edge_extraction",
+      "name": "Normalized package-edge extraction",
+      "status": "pilot_now",
+      "summary": "Emit dependency edges with package-level dependency semantics including kind, optionality, default-features, requested features, and target expressions.",
+      "notes": [
+        "Becomes central to the pilot rather than just part of the baseline."
+      ],
+      "sources": [
+        "/home/_404/src/repo_intel/repo_intel.v.0.1.3/docs/metadata_baseline/draft.proposal.md",
+        "/home/_404/src/repo_intel/metadata_baseline/rust_metadata_analyzer/core.manifest.toml"
+      ]
+    },
+    {
+      "id": "target_inventory_extraction",
+      "name": "Target inventory extraction",
+      "status": "pilot_now",
+      "summary": "Emit a normalized target inventory suitable for mapping files or crate targets back to owning packages.",
+      "notes": [
+        "Becomes mandatory for ownership and path attribution."
+      ],
+      "sources": [
+        "/home/_404/src/repo_intel/repo_intel.v.0.1.3/docs/metadata_baseline/draft.proposal.md",
+        "/home/_404/src/repo_intel/metadata_baseline/rust_metadata_analyzer/core.manifest.toml"
+      ]
+    },
+    {
+      "id": "duplicate_version_detection",
+      "name": "Duplicate-version detection",
+      "status": "envelope_only",
+      "summary": "Capture duplicate dependency versions for explanation and package-level waste analysis.",
+      "notes": [],
+      "sources": [
+        "/home/_404/src/repo_intel/repo_intel.v.0.1.3/docs/metadata_baseline/draft.proposal.md",
+        "/home/_404/src/repo_intel/metadata_baseline/rust_metadata_analyzer/core.manifest.toml"
+      ]
+    },
+    {
+      "id": "reverse_deps_and_feature_causality",
+      "name": "Reverse dependencies and feature causality",
+      "status": "deferred_after_first_cut",
+      "summary": "Support explanatory reverse dependency and feature-causality views using cargo tree outputs for interactive analysis.",
+      "notes": [
+        "Defer from day-one production baseline to on-demand drilldowns."
+      ],
+      "sources": [
+        "/home/_404/src/repo_intel/repo_intel.v.0.1.3/docs/metadata_baseline/draft.proposal.md",
+        "/home/_404/src/repo_intel/repo_intel.v.0.1.3/docs/metadata_baseline/draft.rollout.manifest.toml"
+      ]
+    },
+    {
+      "id": "semantic_pass_capture",
+      "name": "Semantic-pass capture with cheap-first execution",
+      "status": "deferred_after_first_cut",
+      "summary": "Run cargo check variants and persist machine-readable diagnostics before any heavier build or timings pass.",
+      "notes": [
+        "Defer broad cargo check capture unless needed for one asset-focused report lane."
+      ],
+      "sources": [
+        "/home/_404/src/repo_intel/repo_intel.v.0.1.3/docs/metadata_baseline/draft.proposal.md",
+        "/home/_404/src/repo_intel/metadata_baseline/rust_metadata_analyzer/core.manifest.toml"
+      ]
+    },
+    {
+      "id": "build_cost_observation",
+      "name": "Build-cost and hotspot observation",
+      "status": "deferred_after_first_cut",
+      "summary": "Persist timing output as a build-cost lens over the structural metadata graph.",
+      "notes": [
+        "Push out of the first production cut."
+      ],
+      "sources": [
+        "/home/_404/src/repo_intel/repo_intel.v.0.1.3/docs/metadata_baseline/draft.proposal.md",
+        "/home/_404/src/repo_intel/metadata_baseline/rust_metadata_analyzer/core.manifest.toml"
+      ]
+    },
+    {
+      "id": "freshness_gating",
+      "name": "Freshness gating",
+      "status": "pilot_now",
+      "summary": "Treat metadata artifacts as denied when stale and invalidate them on key execution-identity changes.",
+      "notes": [
+        "Needs to incorporate Codex-specific invalidators earlier."
+      ],
+      "sources": [
+        "/home/_404/src/repo_intel/repo_intel.v.0.1.3/docs/metadata_baseline/project_structure.manifest.json",
+        "/home/_404/src/repo_intel/metadata_baseline/rust_metadata_analyzer/contracts/freshness.toml",
+        "/home/_404/src/repo_intel/metadata_baseline/rust_metadata_analyzer/core.manifest.toml"
+      ]
+    },
+    {
+      "id": "artifact_required_handoff",
+      "name": "Artifact-required downstream handoff",
+      "status": "pilot_now",
+      "summary": "Require downstream package-aware and blast-radius consumers to read the baseline index or explicitly deny analysis when it is missing or stale.",
+      "notes": [
+        "Becomes the immediate contract for codex-web operations."
+      ],
+      "sources": [
+        "/home/_404/src/repo_intel/repo_intel.v.0.1.3/docs/metadata_baseline/project_structure.manifest.json",
+        "/home/_404/src/repo_intel/repo_intel.v.0.1.3/docs/metadata_baseline/draft.refactor.README.md"
+      ]
+    },
+    {
+      "id": "package_ownership_overlay",
+      "name": "Package ownership overlay",
+      "status": "pilot_now",
+      "summary": "Provide package ownership derived from manifest and target path information, capped at file/package-root precision.",
+      "notes": [
+        "Becomes one of the earliest required outputs."
+      ],
+      "sources": [
+        "/home/_404/src/repo_intel/repo_intel.v.0.1.3/docs/metadata_baseline/project_structure.manifest.json",
+        "/home/_404/src/repo_intel/repo_intel.v.0.1.3/docs/metadata_baseline/draft.refactor.README.md"
+      ]
+    },
+    {
+      "id": "downstream_semantic_augmentation",
+      "name": "Downstream semantic augmentation",
+      "status": "envelope_only",
+      "summary": "Feed higher-level semantic skills with metadata artifacts and package overlays instead of forcing them to infer monorepo structure directly.",
+      "notes": [],
+      "sources": [
+        "/home/_404/src/repo_intel/repo_intel.v.0.1.3/docs/metadata_baseline/draft.refactor.README.md",
+        "/home/_404/src/repo_intel/repo_intel.v.0.1.3/docs/metadata_baseline/project_structure.manifest.json"
+      ]
+    },
+    {
+      "id": "sidecar_semantic_overlays",
+      "name": "Sidecar semantic and review overlays",
+      "status": "deferred_after_first_cut",
+      "summary": "Support additive sem and inspect artifacts that join back to package ownership without replacing Cargo metadata as structural truth.",
+      "notes": [
+        "Keep optional and out-of-band."
+      ],
+      "sources": [
+        "/home/_404/src/repo_intel/repo_intel.v.0.1.3/docs/metadata_baseline/tool_inclusions.manifest.json"
+      ]
+    },
+    {
+      "id": "queryable_analysis_layer",
+      "name": "Queryable analysis layer",
+      "status": "deferred_after_first_cut",
+      "summary": "Expose query-style operations over the generated artifacts rather than only emitting raw reports.",
+      "notes": [
+        "Defer as a second-order surface."
+      ],
+      "sources": [
+        "/home/_404/src/repo_intel/repo_intel.v.0.1.3/docs/metadata_baseline/draft.rollout.manifest.toml"
+      ]
+    }
+  ],
+  "pilot_new_signals": [
+    {
+      "id": "deletions_in_head_reporting",
+      "name": "Deleted-in-head reporting",
+      "summary": "The baseline now needs an explicit way to register touched paths that no longer exist at current head.",
+      "reason": "The pilot asset set includes app-server-protocol and exec-server, which already showed deletions-in-head in the recent Codex window."
+    },
+    {
+      "id": "asset_bucket_reporting",
+      "name": "Asset-bucket reporting",
+      "summary": "The baseline should summarize at the asset/package bucket level, not only per-file or per-graph-edge.",
+      "reason": "The pilot set is framed as concrete asset buckets like core, app-server, and tui_app_server."
+    },
+    {
+      "id": "cargo_lock_freshness_input",
+      "name": "Cargo.lock freshness input",
+      "summary": "Cargo.lock movement should be treated as a first-class freshness and pilot-window signal.",
+      "reason": "Cargo.lock is itself one of the selected pilot assets and is a cheap signal of dependency graph churn."
+    },
+    {
+      "id": "migration_aware_summaries",
+      "name": "Migration-aware summaries",
+      "summary": "State and protocol-adjacent assets need summary surfaces that can mention migrations or persistence shifts.",
+      "reason": "The selected pilot assets include state and app-server-protocol, both of which evolve control/data contracts over time."
+    },
+    {
+      "id": "artifact_first_codex_web_handoff",
+      "name": "Artifact-first codex-web handoff",
+      "summary": "The baseline should assume codex-web consumes normalized artifacts through just/scripts rather than direct deep integration with unstable TUI/app-server surfaces.",
+      "reason": "This matches the current decision to minimize refactor surface until upstream settles."
+    }
+  ],
+  "first_production_cut": {
+    "must_have_now": [
+      "workspace discovery and normalization",
+      "dual Cargo metadata capture",
+      "stable .analysis artifact layout",
+      "package inventory extraction",
+      "normalized package-edge extraction",
+      "target inventory extraction",
+      "freshness gating",
+      "artifact-required downstream handoff",
+      "package ownership overlay",
+      "deleted-in-head reporting",
+      "asset-bucket reporting",
+      "Cargo.lock freshness input"
+    ],
+    "should_have_soon": [
+      "workspace-summary.json",
+      "migration-aware summaries",
+      "artifact-first codex-web handoff"
+    ],
+    "defer_until_surfaces_settle": [
+      "reverse dependency and feature causality drilldowns",
+      "broad cargo check capture",
+      "timings/build-cost observation",
+      "sem/inspect sidecar integration",
+      "full query API layer"
+    ]
+  }
+}

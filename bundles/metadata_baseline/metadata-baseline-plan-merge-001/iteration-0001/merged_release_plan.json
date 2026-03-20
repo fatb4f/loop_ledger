@@ -1,0 +1,134 @@
+{
+  "kind": "metadata_baseline_release_plan.v1",
+  "generated_on": "2026-03-19",
+  "topological_order": [
+    "MD-01",
+    "MD-02",
+    "MD-03",
+    "MD-04",
+    "MD-05",
+    "MD-06",
+    "MD-07",
+    "MD-08",
+    "MD-09",
+    "D-01",
+    "D-02",
+    "D-03",
+    "D-04"
+  ],
+  "critical_path": [
+    "MD-01",
+    "MD-02",
+    "MD-03",
+    "MD-07",
+    "MD-09"
+  ],
+  "parallel_lanes": {
+    "structure": [
+      "MD-03",
+      "MD-04",
+      "MD-05"
+    ],
+    "reporting": [
+      "MD-06",
+      "MD-07",
+      "MD-08"
+    ],
+    "deferred": [
+      "D-01",
+      "D-02",
+      "D-03",
+      "D-04"
+    ]
+  },
+  "smallest_production_ready_cut": [
+    "MD-01",
+    "MD-02",
+    "MD-03",
+    "MD-04",
+    "MD-05",
+    "MD-06",
+    "MD-07",
+    "MD-08",
+    "MD-09"
+  ],
+  "release_cadence": [
+    {
+      "release": "R1",
+      "micro_deliverables": [
+        "MD-01",
+        "MD-02",
+        "MD-03"
+      ],
+      "theme": "Prove capture and inventory."
+    },
+    {
+      "release": "R2",
+      "micro_deliverables": [
+        "MD-04",
+        "MD-05"
+      ],
+      "theme": "Prove structure and ownership."
+    },
+    {
+      "release": "R3",
+      "micro_deliverables": [
+        "MD-06",
+        "MD-07"
+      ],
+      "theme": "Prove analysis-facing summaries over the moving Codex pilot assets."
+    },
+    {
+      "release": "R4",
+      "micro_deliverables": [
+        "MD-08",
+        "MD-09"
+      ],
+      "theme": "Prove reactive freshness and handoff gating."
+    }
+  ],
+  "gating_deliverables": [
+    "MD-01",
+    "MD-02",
+    "MD-03",
+    "MD-04",
+    "MD-05",
+    "MD-07",
+    "MD-08",
+    "MD-09"
+  ],
+  "soft_follow_on_edges": [
+    {
+      "from": "MD-09",
+      "to": "D-01",
+      "edge_kind": "soft",
+      "release_blocking": false,
+      "lane": "deferred",
+      "deferred_batch": true
+    },
+    {
+      "from": "MD-09",
+      "to": "D-02",
+      "edge_kind": "soft",
+      "release_blocking": false,
+      "lane": "deferred",
+      "deferred_batch": true
+    },
+    {
+      "from": "MD-09",
+      "to": "D-03",
+      "edge_kind": "soft",
+      "release_blocking": false,
+      "lane": "deferred",
+      "deferred_batch": true
+    },
+    {
+      "from": "MD-09",
+      "to": "D-04",
+      "edge_kind": "soft",
+      "release_blocking": false,
+      "lane": "deferred",
+      "deferred_batch": true
+    }
+  ]
+}

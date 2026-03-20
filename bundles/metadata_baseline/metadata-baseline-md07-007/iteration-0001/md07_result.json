@@ -1,0 +1,53 @@
+{
+  "kind": "md07_result.v1",
+  "loop_instance_id": "metadata-baseline-md07-007",
+  "iteration_id": "iteration-0001",
+  "discovered": {
+    "asset_count": 10,
+    "core_anchor_role": "primary",
+    "non_primary_assets": [
+      "plugins",
+      "app-server",
+      "tui_app_server",
+      "app-server-protocol",
+      "exec-server",
+      "codex-login",
+      "codex-features",
+      "state",
+      "Cargo.lock"
+    ],
+    "plugins_commit_count": 5,
+    "protocol_deleted_in_head_count": 12,
+    "codex_features_present": false
+  },
+  "comparison": {
+    "core_is_primary_anchor": true,
+    "plugins_is_distinct_asset": true,
+    "protocol_has_deletions": true,
+    "codex_features_missing": true
+  },
+  "checks": [
+    {
+      "name": "just test-md07-asset-summaries",
+      "exit_code": 0,
+      "evidence": "/home/_404/src/repo_intel/metadata_baseline/evidence/md07/just_test_md07.json"
+    },
+    {
+      "name": "just ci-md07",
+      "exit_code": 0,
+      "evidence": "/home/_404/src/repo_intel/metadata_baseline/evidence/md07/just_ci.json"
+    }
+  ],
+  "outputs": {
+    "core": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/core.json",
+    "plugins": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/plugins.json",
+    "app_server": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/app-server.json",
+    "tui_app_server": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/tui_app_server.json",
+    "app_server_protocol": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/app-server-protocol.json",
+    "exec_server": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/exec-server.json",
+    "codex_login": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/codex-login.json",
+    "codex_features": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/codex-features.json",
+    "state": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/state.json",
+    "Cargo.lock": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/Cargo.lock.json"
+  }
+}

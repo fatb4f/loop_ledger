@@ -1,0 +1,22 @@
+{
+  "kind": "metadata_baseline_plan_request.v1",
+  "loop_instance_id": "metadata-baseline-md03-004",
+  "iteration_id": "iteration-0001",
+  "micro_deliverable": "MD-03",
+  "title": "Refreshed pilot package census",
+  "objective": "Emit a stable package inventory and workspace summary from the accepted metadata pair, including promoted crate presence and absence in the current local Codex snapshot.",
+  "expected_outputs": [
+    ".analysis/reports/packages.tsv",
+    ".analysis/reports/workspace-summary.json"
+  ],
+  "success_conditions": [
+    "packages.tsv is emitted",
+    "workspace-summary.json is emitted",
+    "workspace package count equals workspace member count",
+    "promoted crate presence is recorded accurately",
+    "missing promoted crates are surfaced explicitly",
+    "just test-md03-package-census exits 0",
+    "just ci-md03 exits 0"
+  ],
+  "reviewed_head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6"
+}

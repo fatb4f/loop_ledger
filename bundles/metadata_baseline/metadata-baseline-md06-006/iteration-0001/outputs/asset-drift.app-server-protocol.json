@@ -1,0 +1,62 @@
+{
+  "kind": "md06_asset_drift_app_server_protocol.v1",
+  "asset": "app-server-protocol",
+  "snapshot": {
+    "repo_path": "/home/_404/src/repo_intel/codex",
+    "analysis_worktree": "/tmp/codex-origin-main-20260319-2",
+    "updated_remote_head": "32d2df5c1e97948cb5c55481f0b5fd3f8dfabf43",
+    "window": "last_48h",
+    "window_anchor_date": "2026-03-19",
+    "commit_count": 63,
+    "asset_count": 26,
+    "changed_file_count": 407,
+    "copied_file_count": 391,
+    "deleted_in_head_count": 16
+  },
+  "surface": {
+    "why_relevant": "This remains the highest-signal boundary-contract surface for stateful UI and remote execution behavior.",
+    "analysis_implications": [
+      "Treat protocol additions and removals as analysis-shaping inputs.",
+      "Track startup notifications and resumable-state payload changes explicitly."
+    ],
+    "recent_signals": [
+      "Startup status notification formalization.",
+      "Resumed image-generation history restoration."
+    ]
+  },
+  "delta": {
+    "commit_count": 12,
+    "file_count": 66,
+    "current_file_count": 54,
+    "deleted_in_head_count": 12,
+    "key_paths": [
+      "codex-rs/app-server-protocol/schema/json/ClientRequest.json",
+      "codex-rs/app-server-protocol/schema/json/FuzzyFileSearchResponse.json",
+      "codex-rs/app-server-protocol/schema/json/FuzzyFileSearchSessionUpdatedNotification.json",
+      "codex-rs/app-server-protocol/schema/json/ServerNotification.json",
+      "codex-rs/app-server-protocol/schema/json/codex_app_server_protocol.schemas.json",
+      "codex-rs/app-server-protocol/schema/json/codex_app_server_protocol.v2.schemas.json",
+      "codex-rs/app-server-protocol/schema/json/v2/HookCompletedNotification.json",
+      "codex-rs/app-server-protocol/schema/json/v2/HookStartedNotification.json",
+      "codex-rs/app-server-protocol/schema/json/v2/ItemCompletedNotification.json",
+      "codex-rs/app-server-protocol/schema/json/v2/ItemStartedNotification.json",
+      "codex-rs/app-server-protocol/schema/json/v2/PluginListResponse.json",
+      "codex-rs/app-server-protocol/schema/json/v2/RawResponseItemCompletedNotification.json"
+    ],
+    "commit_subjects": [
+      "feat: support product-scoped plugins. (#15041)",
+      "Add thread/shellCommand to app server API surface (#14988)",
+      "Simple directory mentions (#14970)",
+      "Support featured plugins (#15042)",
+      "Revert \"fix: harden plugin feature gating\" (#15102)",
+      "fix: harden plugin feature gating (#15020)",
+      "Add notify to code-mode (#14842)",
+      "feat: add memory citation to agent message (#14821)",
+      "[hooks] userpromptsubmit - hook before user's prompt is executed (#14626)",
+      "Gate realtime audio interruption logic to v2 (#14984)"
+    ]
+  },
+  "local_snapshot": {
+    "crate_present": true
+  }
+}

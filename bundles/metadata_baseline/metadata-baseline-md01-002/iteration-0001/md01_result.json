@@ -1,0 +1,44 @@
+{
+  "kind": "md01_result.v2",
+  "loop_instance_id": "metadata-baseline-md01-002",
+  "iteration_id": "iteration-0001",
+  "target_spec": "/home/_404/src/repo_intel/metadata_baseline/targets/codex.snapshot.json",
+  "discovered": {
+    "workspace_manifest_abs": "/home/_404/src/repo_intel/codex/codex-rs/Cargo.toml",
+    "workspace_manifest_rel": "codex-rs/Cargo.toml",
+    "workspace_root_abs": "/home/_404/src/repo_intel/codex/codex-rs",
+    "workspace_root_rel": "codex-rs"
+  },
+  "expected": {
+    "workspace_manifest_abs": "/home/_404/src/repo_intel/codex/codex-rs/Cargo.toml",
+    "workspace_manifest_rel": "codex-rs/Cargo.toml",
+    "workspace_root_abs": "/home/_404/src/repo_intel/codex/codex-rs",
+    "workspace_root_rel": "codex-rs"
+  },
+  "comparison": {
+    "workspace_manifest_match": true,
+    "workspace_root_match": true
+  },
+  "checks": [
+    {
+      "name": "cargo locate-project --workspace",
+      "exit_code": 0,
+      "evidence": "/home/_404/src/repo_intel/metadata_baseline/evidence/md01/cargo_locate_project.json"
+    },
+    {
+      "name": "just test-md01-workspace-probe",
+      "exit_code": 0,
+      "evidence": "/home/_404/src/repo_intel/metadata_baseline/evidence/md01/just_test_md01.json"
+    },
+    {
+      "name": "just ci",
+      "exit_code": 0,
+      "evidence": "/home/_404/src/repo_intel/metadata_baseline/evidence/md01/just_ci.json"
+    }
+  ],
+  "outputs": {
+    "workspace_manifest_txt": "/home/_404/src/repo_intel/codex/.analysis/raw/workspace_manifest.txt",
+    "workspace_root_txt": "/home/_404/src/repo_intel/codex/.analysis/raw/workspace_root.txt",
+    "workspace_probe_json": "/home/_404/src/repo_intel/codex/.analysis/raw/workspace_probe.json"
+  }
+}

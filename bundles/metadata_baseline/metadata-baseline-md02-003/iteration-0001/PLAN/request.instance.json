@@ -1,0 +1,22 @@
+{
+  "kind": "metadata_baseline_plan_request.v1",
+  "loop_instance_id": "metadata-baseline-md02-003",
+  "iteration_id": "iteration-0001",
+  "micro_deliverable": "MD-02",
+  "title": "Raw metadata pair",
+  "objective": "Capture the workspace-only and host-resolved Cargo metadata pair for the refreshed Codex pilot with machine-checkable evidence.",
+  "target_spec": "/home/_404/src/repo_intel/metadata_baseline/targets/codex.snapshot.json",
+  "expected_outputs": [
+    ".analysis/raw/metadata.workspace.json",
+    ".analysis/raw/metadata.host.json"
+  ],
+  "success_conditions": [
+    "cargo metadata --no-deps exits 0",
+    "cargo metadata exits 0",
+    "metadata.workspace.json contains workspace_members and packages",
+    "metadata.host.json contains resolve.nodes",
+    "just test-md02-metadata-pair exits 0",
+    "just ci-md02 exits 0"
+  ],
+  "reviewed_head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6"
+}

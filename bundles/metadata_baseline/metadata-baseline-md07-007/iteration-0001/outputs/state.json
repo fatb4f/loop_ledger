@@ -1,0 +1,46 @@
+{
+  "kind": "md07_asset_summary.v1",
+  "asset": "state",
+  "anchor_role": "secondary",
+  "surface": {
+    "why_relevant": "Resumability and persisted thread/session behavior continue to shape what artifact-first analysis should surface.",
+    "analysis_implications": [
+      "Mention stateful resume behavior when summarizing app-server/TUI changes.",
+      "Treat persistence-aware changes as part of the user-visible contract."
+    ],
+    "recent_signals": [
+      "Resumed thread history and persisted runtime state remain active themes."
+    ]
+  },
+  "delta": {
+    "commit_count": 3,
+    "file_count": 17,
+    "current_file_count": 17,
+    "deleted_in_head_count": 0,
+    "key_paths": [
+      "codex-rs/state/Cargo.toml",
+      "codex-rs/state/logs_migrations/0002_logs_feedback_log_body.sql",
+      "codex-rs/state/migrations/0020_threads_model_reasoning_effort.sql",
+      "codex-rs/state/migrations/0021_thread_spawn_edges.sql",
+      "codex-rs/state/src/bin/logs_client.rs",
+      "codex-rs/state/src/extract.rs",
+      "codex-rs/state/src/lib.rs",
+      "codex-rs/state/src/log_db.rs",
+      "codex-rs/state/src/model/graph.rs",
+      "codex-rs/state/src/model/log.rs",
+      "codex-rs/state/src/model/mod.rs",
+      "codex-rs/state/src/model/thread_metadata.rs"
+    ],
+    "commit_subjects": [
+      "feat: add graph representation of agent network (#15056)",
+      "Align SQLite feedback logs with feedback formatter (#13494)",
+      "Feat: CXA-1831 Persist latest model and reasoning effort in sqlite (#14859)"
+    ]
+  },
+  "ownership_implications": {
+    "crate_name": null,
+    "local_present": null,
+    "local_missing": null,
+    "promoted_edge_count": null
+  }
+}

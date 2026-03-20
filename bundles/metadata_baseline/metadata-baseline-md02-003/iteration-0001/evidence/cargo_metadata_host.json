@@ -1,0 +1,17 @@
+{
+  "kind": "command_check.v1",
+  "name": "cargo metadata",
+  "argv": [
+    "cargo",
+    "metadata",
+    "--format-version",
+    "1",
+    "--manifest-path",
+    "/home/_404/src/repo_intel/codex/codex-rs/Cargo.toml"
+  ],
+  "cwd": "/home/_404/src/repo_intel/codex",
+  "exit_code": 0,
+  "stdout_bytes": 5451103,
+  "stderr": "    Blocking waiting for file lock on package cache\n    Blocking waiting for file lock on package cache\n    Blocking waiting for file lock on package cache\n",
+  "output_path": "/home/_404/src/repo_intel/codex/.analysis/raw/metadata.host.json"
+}

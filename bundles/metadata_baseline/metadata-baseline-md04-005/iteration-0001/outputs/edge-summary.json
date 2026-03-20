@@ -1,0 +1,27 @@
+{
+  "kind": "md04_edge_summary.v1",
+  "workspace_root": "/home/_404/src/repo_intel/codex/codex-rs",
+  "cargo_lock_sha256": "bdbe6be71c349ce29d8d68af81e77bd7e5320432a37067835a1e08d40f5c79c7",
+  "workspace_package_count": 76,
+  "edge_row_count": 1175,
+  "promoted_edge_counts": {
+    "codex-core": 118,
+    "codex-app-server": 53,
+    "codex-tui-app-server": 88,
+    "codex-app-server-protocol": 22,
+    "codex-exec-server": 12,
+    "codex-login": 21,
+    "codex-features": 0
+  },
+  "promoted_present": [
+    "codex-core",
+    "codex-app-server",
+    "codex-tui-app-server",
+    "codex-app-server-protocol",
+    "codex-exec-server",
+    "codex-login"
+  ],
+  "promoted_missing": [
+    "codex-features"
+  ]
+}

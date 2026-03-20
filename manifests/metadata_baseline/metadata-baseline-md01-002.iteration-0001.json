@@ -1,0 +1,86 @@
+{
+  "kind": "review_bundle_manifest.v1",
+  "project": "metadata_baseline",
+  "bundle_id": "metadata-baseline-md01-002",
+  "iteration_id": "iteration-0001",
+  "scope_root": "/home/_404/src/repo_intel/metadata_baseline",
+  "reviewed_head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6",
+  "output_root": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md01-002/iteration-0001",
+  "lineage": {
+    "relationship": "derived_from",
+    "parent_bundle_id": "metadata-baseline-plan-merge-001",
+    "parent_manifest": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-plan-merge-001.iteration-0001.json"
+  },
+  "refs": {
+    "workbench_review_bundle": "/home/_404/src/workbench/metadata_baseline/review/bundles/metadata-baseline-md01-002",
+    "upstream_project": "/home/_404/src/repo_intel/metadata_baseline",
+    "target_spec": "/home/_404/src/repo_intel/metadata_baseline/targets/codex.snapshot.json"
+  },
+  "evidence_bundle": {
+    "required_outputs": [
+      {
+        "source": "/home/_404/src/repo_intel/codex/.analysis/raw/workspace_manifest.txt",
+        "dest": "outputs/workspace_manifest.txt",
+        "role": "workspace_manifest_output"
+      },
+      {
+        "source": "/home/_404/src/repo_intel/codex/.analysis/raw/workspace_root.txt",
+        "dest": "outputs/workspace_root.txt",
+        "role": "workspace_root_output"
+      },
+      {
+        "source": "/home/_404/src/repo_intel/codex/.analysis/raw/workspace_probe.json",
+        "dest": "outputs/workspace_probe.json",
+        "role": "workspace_probe_output"
+      }
+    ],
+    "required_checks": [
+      {
+        "name": "cargo locate-project --workspace",
+        "source": "/home/_404/src/repo_intel/metadata_baseline/evidence/md01/cargo_locate_project.json",
+        "dest": "evidence/cargo_locate_project.json",
+        "role": "cargo_locate_project_check"
+      },
+      {
+        "name": "just test-md01-workspace-probe",
+        "source": "/home/_404/src/repo_intel/metadata_baseline/evidence/md01/just_test_md01.json",
+        "dest": "evidence/just_test_md01.json",
+        "role": "just_test_md01_check"
+      },
+      {
+        "name": "just ci",
+        "source": "/home/_404/src/repo_intel/metadata_baseline/evidence/md01/just_ci.json",
+        "dest": "evidence/just_ci.json",
+        "role": "just_ci_check"
+      }
+    ],
+    "integrity_mode": "all_files"
+  },
+  "include": [
+    {
+      "source": "/home/_404/src/workbench/metadata_baseline/review/bundles/metadata-baseline-md01-002/PLAN/README.md",
+      "dest": "PLAN/README.md",
+      "role": "plan_readme"
+    },
+    {
+      "source": "/home/_404/src/workbench/metadata_baseline/review/bundles/metadata-baseline-md01-002/PLAN/request.instance.json",
+      "dest": "PLAN/request.instance.json",
+      "role": "plan_request_instance"
+    },
+    {
+      "source": "/home/_404/src/workbench/metadata_baseline/review/bundles/metadata-baseline-md01-002/IMPLEMENT/IMPLEMENT.md",
+      "dest": "IMPLEMENT/IMPLEMENT.md",
+      "role": "implement_readme"
+    },
+    {
+      "source": "/home/_404/src/workbench/metadata_baseline/review/bundles/metadata-baseline-md01-002/IMPLEMENT/response.instance.json",
+      "dest": "IMPLEMENT/response.instance.json",
+      "role": "implement_response_instance"
+    },
+    {
+      "source": "/home/_404/src/workbench/metadata_baseline/review/bundles/metadata-baseline-md01-002/md01_result.json",
+      "dest": "md01_result.json",
+      "role": "md01_result"
+    }
+  ]
+}

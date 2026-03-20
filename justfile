@@ -1,0 +1,131 @@
+set shell := ["bash", "-euo", "pipefail", "-c"]
+
+root := "/home/_404/src/loop_ledger"
+schema := root + "/schemas/review_bundle_manifest.v1.schema.json"
+plan_merge_manifest := root + "/manifests/metadata_baseline/metadata-baseline-plan-merge-001.iteration-0001.json"
+md01_manifest := root + "/manifests/metadata_baseline/metadata-baseline-md01-002.iteration-0001.json"
+md02_manifest := root + "/manifests/metadata_baseline/metadata-baseline-md02-003.iteration-0001.json"
+md03_manifest := root + "/manifests/metadata_baseline/metadata-baseline-md03-004.iteration-0001.json"
+md04_manifest := root + "/manifests/metadata_baseline/metadata-baseline-md04-005.iteration-0001.json"
+md06_manifest := root + "/manifests/metadata_baseline/metadata-baseline-md06-006.iteration-0001.json"
+md07_manifest := root + "/manifests/metadata_baseline/metadata-baseline-md07-007.iteration-0001.json"
+md09_manifest := root + "/manifests/metadata_baseline/metadata-baseline-md09-008.iteration-0001.json"
+
+validate manifest:
+	python3 {{root}}/scripts/validate_json.py {{schema}} {{manifest}}
+
+bundle manifest:
+	python3 {{root}}/scripts/materialize_review_bundle.py --manifest {{manifest}}
+
+status manifest:
+	python3 {{root}}/scripts/check_review_bundle_inputs.py {{manifest}}
+
+review-validate manifest:
+	just validate {{manifest}}
+
+review-status manifest:
+	just status {{manifest}}
+
+review-materialize manifest:
+	just bundle {{manifest}}
+
+review-bundle manifest:
+	just review-validate {{manifest}}
+	just review-status {{manifest}}
+	just review-materialize {{manifest}}
+
+metadata-baseline-plan-merge-001-validate:
+	just review-validate {{plan_merge_manifest}}
+
+metadata-baseline-plan-merge-001-status:
+	just review-status {{plan_merge_manifest}}
+
+metadata-baseline-plan-merge-001-bundle:
+	just review-bundle {{plan_merge_manifest}}
+
+metadata-baseline-md01-validate:
+	just review-validate {{md01_manifest}}
+
+metadata-baseline-md01-status:
+	just review-status {{md01_manifest}}
+
+metadata-baseline-md01-bundle:
+	just review-bundle {{md01_manifest}}
+
+metadata-baseline-md02-validate:
+	just review-validate {{md02_manifest}}
+
+metadata-baseline-md02-status:
+	just review-status {{md02_manifest}}
+
+metadata-baseline-md02-bundle:
+	just review-bundle {{md02_manifest}}
+
+metadata-baseline-md03-validate:
+	just review-validate {{md03_manifest}}
+
+metadata-baseline-md03-status:
+	just review-status {{md03_manifest}}
+
+metadata-baseline-md03-bundle:
+	just review-bundle {{md03_manifest}}
+
+metadata-baseline-md04-validate:
+	just review-validate {{md04_manifest}}
+
+metadata-baseline-md04-status:
+	just review-status {{md04_manifest}}
+
+metadata-baseline-md04-bundle:
+	just review-bundle {{md04_manifest}}
+
+metadata-baseline-md06-validate:
+	just review-validate {{md06_manifest}}
+
+metadata-baseline-md06-status:
+	just review-status {{md06_manifest}}
+
+metadata-baseline-md06-bundle:
+	just review-bundle {{md06_manifest}}
+
+metadata-baseline-md07-validate:
+	just review-validate {{md07_manifest}}
+
+metadata-baseline-md07-status:
+	just review-status {{md07_manifest}}
+
+metadata-baseline-md07-bundle:
+	just review-bundle {{md07_manifest}}
+
+metadata-baseline-md09-validate:
+	just review-validate {{md09_manifest}}
+
+metadata-baseline-md09-status:
+	just review-status {{md09_manifest}}
+
+metadata-baseline-md09-bundle:
+	just review-bundle {{md09_manifest}}
+
+metadata-baseline-plan-merge-001:
+	just metadata-baseline-plan-merge-001-bundle
+
+metadata-baseline-md01:
+	just metadata-baseline-md01-bundle
+
+metadata-baseline-md02:
+	just metadata-baseline-md02-bundle
+
+metadata-baseline-md03:
+	just metadata-baseline-md03-bundle
+
+metadata-baseline-md04:
+	just metadata-baseline-md04-bundle
+
+metadata-baseline-md06:
+	just metadata-baseline-md06-bundle
+
+metadata-baseline-md07:
+	just metadata-baseline-md07-bundle
+
+metadata-baseline-md09:
+	just metadata-baseline-md09-bundle

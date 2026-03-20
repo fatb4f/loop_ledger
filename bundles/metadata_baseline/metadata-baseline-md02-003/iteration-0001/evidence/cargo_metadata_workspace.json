@@ -1,0 +1,18 @@
+{
+  "kind": "command_check.v1",
+  "name": "cargo metadata --no-deps",
+  "argv": [
+    "cargo",
+    "metadata",
+    "--format-version",
+    "1",
+    "--no-deps",
+    "--manifest-path",
+    "/home/_404/src/repo_intel/codex/codex-rs/Cargo.toml"
+  ],
+  "cwd": "/home/_404/src/repo_intel/codex",
+  "exit_code": 0,
+  "stdout_bytes": 353764,
+  "stderr": "",
+  "output_path": "/home/_404/src/repo_intel/codex/.analysis/raw/metadata.workspace.json"
+}

@@ -1,0 +1,20 @@
+{
+  "kind": "metadata_baseline_plan_request.v1",
+  "loop_instance_id": "metadata-baseline-md09-008",
+  "iteration_id": "iteration-0001",
+  "micro_deliverable": "MD-09",
+  "title": "Freshness-aware handoff index",
+  "objective": "Emit a minimal production handoff index from the accepted metadata baseline outputs.",
+  "expected_outputs": [
+    ".analysis/index.json"
+  ],
+  "success_conditions": [
+    "index.json is emitted",
+    "index records source head, Cargo.lock, and promoted crate set",
+    "crate-set changes can mark the index stale",
+    "downstream package-aware analysis can deny on stale or missing index",
+    "just test-md09-handoff-index exits 0",
+    "just ci-md09 exits 0"
+  ],
+  "reviewed_head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6"
+}

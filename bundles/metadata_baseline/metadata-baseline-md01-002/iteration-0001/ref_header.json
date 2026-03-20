@@ -1,0 +1,31 @@
+{
+  "kind": "review_bundle_ref_header.v1",
+  "project": "metadata_baseline",
+  "bundle_id": "metadata-baseline-md01-002",
+  "iteration_id": "iteration-0001",
+  "scope_root": "/home/_404/src/repo_intel/metadata_baseline",
+  "reviewed_head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6",
+  "lineage": {
+    "relationship": "derived_from",
+    "parent_bundle_id": "metadata-baseline-plan-merge-001",
+    "parent_manifest": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-plan-merge-001.iteration-0001.json"
+  },
+  "refs": {
+    "workbench_review_bundle": "/home/_404/src/workbench/metadata_baseline/review/bundles/metadata-baseline-md01-002",
+    "upstream_project": "/home/_404/src/repo_intel/metadata_baseline",
+    "target_spec": "/home/_404/src/repo_intel/metadata_baseline/targets/codex.snapshot.json"
+  },
+  "evidence_bundle": {
+    "integrity_mode": "all_files",
+    "required_output_roles": [
+      "workspace_manifest_output",
+      "workspace_root_output",
+      "workspace_probe_output"
+    ],
+    "required_check_roles": [
+      "cargo_locate_project_check",
+      "just_test_md01_check",
+      "just_ci_check"
+    ]
+  }
+}

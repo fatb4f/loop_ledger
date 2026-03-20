@@ -1,0 +1,90 @@
+{
+  "kind": "review_bundle_artifacts_manifest.v1",
+  "project": "metadata_baseline",
+  "bundle_id": "metadata-baseline-md06-006",
+  "iteration_id": "iteration-0001",
+  "manifest_path": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-md06-006.iteration-0001.json",
+  "output_root": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md06-006/iteration-0001",
+  "lineage": {
+    "relationship": "derived_from",
+    "parent_bundle_id": "metadata-baseline-plan-merge-001",
+    "parent_manifest": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-plan-merge-001.iteration-0001.json"
+  },
+  "integrity_mode": "all_files",
+  "files": [
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md06-006/iteration-0001/PLAN/README.md",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md06-006/PLAN/README.md",
+      "role": "plan_readme",
+      "sha256": "7644e25a92a8874a83fae39c9d2e45746f996d92a988f445d01ca98ec6533809"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md06-006/iteration-0001/PLAN/request.instance.json",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md06-006/PLAN/request.instance.json",
+      "role": "plan_request_instance",
+      "sha256": "b2593cb0e794ed316721148f6f0b3d1568a6c2ad390dbe41d1e6dfc9cace3ee5"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md06-006/iteration-0001/IMPLEMENT/IMPLEMENT.md",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md06-006/IMPLEMENT/IMPLEMENT.md",
+      "role": "implement_readme",
+      "sha256": "eb8a720e33cd89465cf65791451c2d5c9564d88b9c57ed47b6ab9b6c11d4dc82"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md06-006/iteration-0001/IMPLEMENT/response.instance.json",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md06-006/IMPLEMENT/response.instance.json",
+      "role": "implement_response_instance",
+      "sha256": "1e57c268003fd1620855bad943a7c6eda5ee3ee4d533d0c478e487a4e8e59a53"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md06-006/iteration-0001/md06_result.json",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md06-006/md06_result.json",
+      "role": "md06_result",
+      "sha256": "f59bb007b7fe859092c35e5f39ed20a916732742183c4f7b9cb57bc22dc49cd7"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md06-006/iteration-0001/outputs/asset-drift.app-server-protocol.json",
+      "source": "/home/_404/src/repo_intel/codex/.analysis/reports/asset-drift.app-server-protocol.json",
+      "role": "asset_drift_app_server_protocol_output",
+      "sha256": "b2ba7e48aa9856982706a5727a7ef820e7ab57df6cf258e9550c7a6bdd2257dd"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md06-006/iteration-0001/outputs/asset-drift.plugins.json",
+      "source": "/home/_404/src/repo_intel/codex/.analysis/reports/asset-drift.plugins.json",
+      "role": "asset_drift_plugins_output",
+      "sha256": "33109042049be400a6f45ff4faffec4ecf96fc6400f2ff9899d4e2b23ded6fe5"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md06-006/iteration-0001/outputs/asset-drift.exec-server.json",
+      "source": "/home/_404/src/repo_intel/codex/.analysis/reports/asset-drift.exec-server.json",
+      "role": "asset_drift_exec_server_output",
+      "sha256": "b0087c5bf5118d2d881c7225976991650e5c1f6d1f1fc42a33700818129ec069"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md06-006/iteration-0001/outputs/asset-drift.crate-splits.json",
+      "source": "/home/_404/src/repo_intel/codex/.analysis/reports/asset-drift.crate-splits.json",
+      "role": "asset_drift_crate_splits_output",
+      "sha256": "855db04425632c07afd493cf361ca5bd80bb5fe6820cb4b059398bd4ec554e7f"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md06-006/iteration-0001/evidence/just_test_md06.json",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/evidence/md06/just_test_md06.json",
+      "role": "just_test_md06_check",
+      "sha256": "c8cc7d07e6921409e46869bf543ee863096e6dda973b77cda91bfee0e69d7c8d",
+      "name": "just test-md06-asset-drift"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md06-006/iteration-0001/evidence/just_ci.json",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/evidence/md06/just_ci.json",
+      "role": "just_ci_check",
+      "sha256": "ab074901e689611086f27943e96525c4b20a6b85d3304bcd4333b8b4f192111d",
+      "name": "just ci-md06"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md06-006/iteration-0001/ref_header.json",
+      "source": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-md06-006.iteration-0001.json",
+      "role": "ref_header",
+      "sha256": "8731ec6c6e6a6311882efff41f7ef073a336853a1a02c0d6163dd946b22f4df7"
+    }
+  ]
+}

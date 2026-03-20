@@ -1,0 +1,126 @@
+{
+  "kind": "review_bundle_artifacts_manifest.v1",
+  "project": "metadata_baseline",
+  "bundle_id": "metadata-baseline-md07-007",
+  "iteration_id": "iteration-0001",
+  "manifest_path": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-md07-007.iteration-0001.json",
+  "output_root": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md07-007/iteration-0001",
+  "lineage": {
+    "relationship": "derived_from",
+    "parent_bundle_id": "metadata-baseline-plan-merge-001",
+    "parent_manifest": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-plan-merge-001.iteration-0001.json"
+  },
+  "integrity_mode": "all_files",
+  "files": [
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md07-007/iteration-0001/PLAN/README.md",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md07-007/PLAN/README.md",
+      "role": "plan_readme",
+      "sha256": "ee6b79f159fce23b71e6c2a8a523b8a34b1cc853c26a5db20d82e8b34e257910"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md07-007/iteration-0001/PLAN/request.instance.json",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md07-007/PLAN/request.instance.json",
+      "role": "plan_request_instance",
+      "sha256": "2af8766068df9dee773e226073051cde091b94e807b269658a34a9050afb2411"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md07-007/iteration-0001/IMPLEMENT/IMPLEMENT.md",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md07-007/IMPLEMENT/IMPLEMENT.md",
+      "role": "implement_readme",
+      "sha256": "baec656359ea7079a67261c0eeba94734669cacc4eb85ee4ceda48942737e21d"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md07-007/iteration-0001/IMPLEMENT/response.instance.json",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md07-007/IMPLEMENT/response.instance.json",
+      "role": "implement_response_instance",
+      "sha256": "5809030f7426937714a73a147fe06227ca5ab7fca9e3916bd30ceeb02e8c7ede"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md07-007/iteration-0001/md07_result.json",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md07-007/md07_result.json",
+      "role": "md07_result",
+      "sha256": "1931e3c9af94e3603b6d0a6d8a6c314fea6cd3a1aef574efade1779e6d7efca7"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md07-007/iteration-0001/outputs/core.json",
+      "source": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/core.json",
+      "role": "core_output",
+      "sha256": "389dc8415fc0488bb87b32def16811ed42e80a492632414fbef1a1dc5313e1a5"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md07-007/iteration-0001/outputs/plugins.json",
+      "source": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/plugins.json",
+      "role": "plugins_output",
+      "sha256": "ebc0d5344608547896eb03f2c9625899c2729381f6e40896eac8e181c7d1bdc2"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md07-007/iteration-0001/outputs/app-server.json",
+      "source": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/app-server.json",
+      "role": "app_server_output",
+      "sha256": "f41b7d686a937ee818a8641cd1b86b0b67889debf2f373538627662c3641e775"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md07-007/iteration-0001/outputs/tui_app_server.json",
+      "source": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/tui_app_server.json",
+      "role": "tui_app_server_output",
+      "sha256": "c34339a882f78b100e41b2d8450eb4f2ff9607cc42004f2ba47c20674b3832ed"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md07-007/iteration-0001/outputs/app-server-protocol.json",
+      "source": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/app-server-protocol.json",
+      "role": "app_server_protocol_output",
+      "sha256": "a9d99d6f52c4b93196371d36e4b958b355d638e5ebba4ec4bc6c6786bb289c89"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md07-007/iteration-0001/outputs/exec-server.json",
+      "source": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/exec-server.json",
+      "role": "exec_server_output",
+      "sha256": "668fdae8429fb9aa18d043182a1496e993373322b42abcc9e7ef32d1b5879969"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md07-007/iteration-0001/outputs/codex-login.json",
+      "source": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/codex-login.json",
+      "role": "codex_login_output",
+      "sha256": "62b8e4b6fa645fac134a1c122d08b7893a24567aa0ffb634ceeb8538b00d7122"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md07-007/iteration-0001/outputs/codex-features.json",
+      "source": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/codex-features.json",
+      "role": "codex_features_output",
+      "sha256": "2e5fccd804cb0dd1bdeaee0500c9a06c7305a1e9c34a998e1e582a5dcc552832"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md07-007/iteration-0001/outputs/state.json",
+      "source": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/state.json",
+      "role": "state_output",
+      "sha256": "2decaf739de43c9edfafc36d224e15717a2e7990b0c456fc4fa5968859feaea5"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md07-007/iteration-0001/outputs/Cargo.lock.json",
+      "source": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/Cargo.lock.json",
+      "role": "cargo_lock_output",
+      "sha256": "88a9792c1ec7fc44357cc0348c93acdd9a503e77640b181d4c7d28efcb21ba2a"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md07-007/iteration-0001/evidence/just_test_md07.json",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/evidence/md07/just_test_md07.json",
+      "role": "just_test_md07_check",
+      "sha256": "e848025f0b263e57391b5d8882c06c7a09a66b882d1273ee42dac52e29e0b3c8",
+      "name": "just test-md07-asset-summaries"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md07-007/iteration-0001/evidence/just_ci.json",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/evidence/md07/just_ci.json",
+      "role": "just_ci_check",
+      "sha256": "56bbafd0ee1a14b0bd8a46a700c17a9f62497e03a9c9b337a6d0d9c7e882afa2",
+      "name": "just ci-md07"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md07-007/iteration-0001/ref_header.json",
+      "source": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-md07-007.iteration-0001.json",
+      "role": "ref_header",
+      "sha256": "d1cca1c79fbdc0f7d41c96998a36c78b80f826893e2f34cb70860f2b93bac961"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "kind": "md07_asset_summary.v1",
+  "asset": "exec-server",
+  "anchor_role": "secondary",
+  "surface": {
+    "why_relevant": "Exec-server is now more clearly part of a normalized remote execution architecture.",
+    "analysis_implications": [
+      "Report transport assumptions explicitly.",
+      "Track local implementation versus remote proxy versus handler decomposition as a first-class pattern."
+    ],
+    "recent_signals": [
+      "Filesystem split between local and remote.",
+      "Process split between local and remote.",
+      "Remote Docker-backed test environment added."
+    ]
+  },
+  "delta": {
+    "commit_count": 2,
+    "file_count": 25,
+    "current_file_count": 22,
+    "deleted_in_head_count": 3,
+    "key_paths": [
+      "codex-rs/exec-server/BUILD.bazel",
+      "codex-rs/exec-server/Cargo.toml",
+      "codex-rs/exec-server/README.md",
+      "codex-rs/exec-server/src/bin/codex-exec-server.rs",
+      "codex-rs/exec-server/src/client.rs",
+      "codex-rs/exec-server/src/client/local_backend.rs",
+      "codex-rs/exec-server/src/client_api.rs",
+      "codex-rs/exec-server/src/connection.rs",
+      "codex-rs/exec-server/src/lib.rs",
+      "codex-rs/exec-server/src/protocol.rs",
+      "codex-rs/exec-server/src/rpc.rs",
+      "codex-rs/exec-server/src/server.rs"
+    ],
+    "commit_subjects": [
+      "Remove stdio transport from exec server (#15119)",
+      "Add exec-server stub server and protocol docs (#15089)"
+    ]
+  },
+  "ownership_implications": {
+    "crate_name": "codex-exec-server",
+    "local_present": true,
+    "local_missing": false,
+    "promoted_edge_count": 12
+  },
+  "drift_signals": {
+    "commit_count": 2,
+    "file_count": 25,
+    "current_file_count": 22,
+    "deleted_in_head_count": 3,
+    "key_paths": [
+      "codex-rs/exec-server/BUILD.bazel",
+      "codex-rs/exec-server/Cargo.toml",
+      "codex-rs/exec-server/README.md",
+      "codex-rs/exec-server/src/bin/codex-exec-server.rs",
+      "codex-rs/exec-server/src/client.rs",
+      "codex-rs/exec-server/src/client/local_backend.rs",
+      "codex-rs/exec-server/src/client_api.rs",
+      "codex-rs/exec-server/src/connection.rs",
+      "codex-rs/exec-server/src/lib.rs",
+      "codex-rs/exec-server/src/protocol.rs",
+      "codex-rs/exec-server/src/rpc.rs",
+      "codex-rs/exec-server/src/server.rs"
+    ],
+    "commit_subjects": [
+      "Remove stdio transport from exec server (#15119)",
+      "Add exec-server stub server and protocol docs (#15089)"
+    ],
+    "analysis_tags": [
+      "local_remote_handler"
+    ]
+  }
+}

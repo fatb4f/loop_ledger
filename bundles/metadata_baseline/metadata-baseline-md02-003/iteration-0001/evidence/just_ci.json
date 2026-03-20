@@ -1,0 +1,12 @@
+{
+  "kind": "command_check.v1",
+  "name": "just ci-md02",
+  "argv": [
+    "just",
+    "_ci-md02"
+  ],
+  "cwd": "/home/_404/src/repo_intel/metadata_baseline",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "just test-md02-metadata-pair\npython3 /home/_404/src/repo_intel/metadata_baseline/scripts/run_check.py --name \"just test-md02-metadata-pair\" --cwd /home/_404/src/repo_intel/metadata_baseline --output /home/_404/src/repo_intel/metadata_baseline/evidence/md02/just_test_md02.json -- just _test-md02-metadata-pair\nbash /home/_404/src/repo_intel/metadata_baseline/tests/test_md02_metadata_pair.sh /home/_404/src/repo_intel/metadata_baseline/targets/codex.snapshot.json\n"
+}

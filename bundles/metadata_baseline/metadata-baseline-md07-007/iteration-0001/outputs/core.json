@@ -1,0 +1,55 @@
+{
+  "kind": "md07_asset_summary.v1",
+  "asset": "core",
+  "anchor_role": "primary",
+  "surface": {
+    "why_relevant": "Still the primary behavioral and structural hotspot, but no longer a monolith. Analysis must now account for authority moving out of core into dedicated crates.",
+    "analysis_implications": [
+      "Treat core as the primary blast-radius anchor, but track boundaries that moved into codex-login and codex-features.",
+      "Bias summaries toward remote execution normalization, plugin lifecycle movement, and guardian/exec hardening."
+    ],
+    "recent_signals": [
+      "Local/remote/handler execution split is being standardized.",
+      "Full-buffer exec capture policy was added.",
+      "Guardian follow-up and prior-review reuse behavior changed."
+    ]
+  },
+  "delta": {
+    "commit_count": 47,
+    "file_count": 151,
+    "current_file_count": 151,
+    "deleted_in_head_count": 0,
+    "key_paths": [
+      "codex-rs/core/Cargo.toml",
+      "codex-rs/core/README.md",
+      "codex-rs/core/config.schema.json",
+      "codex-rs/core/models.json",
+      "codex-rs/core/src/agent/control.rs",
+      "codex-rs/core/src/agent/control_tests.rs",
+      "codex-rs/core/src/auth.rs",
+      "codex-rs/core/src/auth_env_telemetry.rs",
+      "codex-rs/core/src/client.rs",
+      "codex-rs/core/src/client_common.rs",
+      "codex-rs/core/src/client_common_tests.rs",
+      "codex-rs/core/src/client_tests.rs"
+    ],
+    "commit_subjects": [
+      "fix: case where agent is already closed (#15163)",
+      "feat: add graph representation of agent network (#15056)",
+      "feat: support product-scoped plugins. (#15041)",
+      "Add thread/shellCommand to app server API surface (#14988)",
+      "[hooks] turn_id extension for Stop & UserPromptSubmit (#15118)",
+      "Forward session and turn headers to MCP HTTP requests (#15011)",
+      "feat(core, tracing): create turn spans over websockets (#14632)",
+      "Support featured plugins (#15042)",
+      "fix: harden plugin feature gating (#15104)",
+      "Add apply_patch code mode result (#15100)"
+    ]
+  },
+  "ownership_implications": {
+    "crate_name": "codex-core",
+    "local_present": true,
+    "local_missing": false,
+    "promoted_edge_count": 118
+  }
+}

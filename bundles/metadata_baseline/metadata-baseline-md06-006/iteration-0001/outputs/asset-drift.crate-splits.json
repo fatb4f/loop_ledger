@@ -1,0 +1,70 @@
+{
+  "kind": "md06_asset_drift_crate_splits.v1",
+  "asset": "crate-splits",
+  "snapshot": {
+    "repo_path": "/home/_404/src/repo_intel/codex",
+    "analysis_worktree": "/tmp/codex-origin-main-20260319-2",
+    "updated_remote_head": "32d2df5c1e97948cb5c55481f0b5fd3f8dfabf43",
+    "window": "last_48h",
+    "window_anchor_date": "2026-03-19",
+    "commit_count": 63,
+    "asset_count": 26,
+    "changed_file_count": 407,
+    "copied_file_count": 391,
+    "deleted_in_head_count": 16
+  },
+  "surface": {
+    "operational_reading_order": [
+      "core",
+      "plugins",
+      "app-server-protocol",
+      "app-server",
+      "exec-server",
+      "tui_app_server",
+      "codex-login",
+      "codex-features",
+      "state",
+      "Cargo.lock"
+    ],
+    "immediate_analysis_rules": [
+      "Treat plugins as a first-class asset bucket rather than scattered product changes.",
+      "Track new crates and crate splits explicitly; do not let codex-core absorb their ownership in summaries.",
+      "Use the local/remote/handler pattern as an analysis tag for execution-related crates.",
+      "Prefer artifact-first summaries over direct TUI/app-server shape commitments while upstream remains volatile.",
+      "Invalidate cached structural outputs whenever Cargo.lock or the promoted crate set changes."
+    ]
+  },
+  "delta": {
+    "split_status": {
+      "codex-login": {
+        "crate_name": "codex-login",
+        "present": true,
+        "why_relevant": "Auth moved out of codex-core into a dedicated crate, changing package ownership and cross-crate authority assumptions.",
+        "recent_signals": [
+          "Auth implementation and token data moved into codex-login."
+        ]
+      },
+      "codex-features": {
+        "crate_name": "codex-features",
+        "present": false,
+        "why_relevant": "Feature policy moved into a dedicated crate, materially changing where feature gating and warnings live.",
+        "recent_signals": [
+          "Feature system split into codex-features across many workspace consumers."
+        ]
+      }
+    }
+  },
+  "local_snapshot": {
+    "promoted_present": [
+      "codex-core",
+      "codex-app-server",
+      "codex-tui-app-server",
+      "codex-app-server-protocol",
+      "codex-exec-server",
+      "codex-login"
+    ],
+    "promoted_missing": [
+      "codex-features"
+    ]
+  }
+}

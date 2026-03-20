@@ -1,0 +1,12 @@
+{
+  "kind": "command_check.v1",
+  "name": "just test-md07-asset-summaries",
+  "argv": [
+    "just",
+    "_test-md07-asset-summaries"
+  ],
+  "cwd": "/home/_404/src/repo_intel/metadata_baseline",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "bash /home/_404/src/repo_intel/metadata_baseline/tests/test_md07_asset_summaries.sh\n"
+}

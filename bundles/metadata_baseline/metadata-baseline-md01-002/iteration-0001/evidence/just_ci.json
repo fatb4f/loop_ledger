@@ -1,0 +1,12 @@
+{
+  "kind": "command_check.v1",
+  "name": "just ci",
+  "argv": [
+    "just",
+    "_ci"
+  ],
+  "cwd": "/home/_404/src/repo_intel/metadata_baseline",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "just test-md01-workspace-probe\npython3 /home/_404/src/repo_intel/metadata_baseline/scripts/run_check.py --name \"just test-md01-workspace-probe\" --cwd /home/_404/src/repo_intel/metadata_baseline --output /home/_404/src/repo_intel/metadata_baseline/evidence/md01/just_test_md01.json -- just _test-md01-workspace-probe\nbash /home/_404/src/repo_intel/metadata_baseline/tests/test_md01_workspace_probe.sh /home/_404/src/repo_intel/metadata_baseline/targets/codex.snapshot.json\n"
+}

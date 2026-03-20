@@ -1,0 +1,47 @@
+{
+  "kind": "md03_workspace_summary.v1",
+  "workspace_root": "/home/_404/src/repo_intel/codex/codex-rs",
+  "workspace_package_count": 76,
+  "workspace_member_count": 76,
+  "promoted_crates": {
+    "core": {
+      "crate_name": "codex-core",
+      "present": true
+    },
+    "app-server": {
+      "crate_name": "codex-app-server",
+      "present": true
+    },
+    "tui_app_server": {
+      "crate_name": "codex-tui-app-server",
+      "present": true
+    },
+    "app-server-protocol": {
+      "crate_name": "codex-app-server-protocol",
+      "present": true
+    },
+    "exec-server": {
+      "crate_name": "codex-exec-server",
+      "present": true
+    },
+    "codex-login": {
+      "crate_name": "codex-login",
+      "present": true
+    },
+    "codex-features": {
+      "crate_name": "codex-features",
+      "present": false
+    }
+  },
+  "promoted_present": [
+    "codex-core",
+    "codex-app-server",
+    "codex-tui-app-server",
+    "codex-app-server-protocol",
+    "codex-exec-server",
+    "codex-login"
+  ],
+  "promoted_missing": [
+    "codex-features"
+  ]
+}

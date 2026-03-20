@@ -1,0 +1,35 @@
+{
+  "kind": "md01_workspace_probe.v2",
+  "target_spec": "/home/_404/src/repo_intel/metadata_baseline/targets/codex.snapshot.json",
+  "repo_root": "/home/_404/src/repo_intel/codex",
+  "analysis_root": "/home/_404/src/repo_intel/codex/.analysis",
+  "manifest_path": "/home/_404/src/repo_intel/codex/codex-rs/Cargo.toml",
+  "discovered": {
+    "workspace_manifest_abs": "/home/_404/src/repo_intel/codex/codex-rs/Cargo.toml",
+    "workspace_manifest_rel": "codex-rs/Cargo.toml",
+    "workspace_root_abs": "/home/_404/src/repo_intel/codex/codex-rs",
+    "workspace_root_rel": "codex-rs"
+  },
+  "expected": {
+    "workspace_manifest_abs": "/home/_404/src/repo_intel/codex/codex-rs/Cargo.toml",
+    "workspace_manifest_rel": "codex-rs/Cargo.toml",
+    "workspace_root_abs": "/home/_404/src/repo_intel/codex/codex-rs",
+    "workspace_root_rel": "codex-rs"
+  },
+  "comparison": {
+    "workspace_manifest_match": true,
+    "workspace_root_match": true
+  },
+  "command": {
+    "argv": [
+      "cargo",
+      "locate-project",
+      "--workspace",
+      "--message-format",
+      "plain",
+      "--manifest-path",
+      "/home/_404/src/repo_intel/codex/codex-rs/Cargo.toml"
+    ],
+    "exit_code": 0
+  }
+}

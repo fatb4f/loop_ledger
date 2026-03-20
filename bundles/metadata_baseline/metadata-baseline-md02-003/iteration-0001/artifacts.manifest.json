@@ -1,0 +1,92 @@
+{
+  "kind": "review_bundle_artifacts_manifest.v1",
+  "project": "metadata_baseline",
+  "bundle_id": "metadata-baseline-md02-003",
+  "iteration_id": "iteration-0001",
+  "manifest_path": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-md02-003.iteration-0001.json",
+  "output_root": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md02-003/iteration-0001",
+  "lineage": {
+    "relationship": "derived_from",
+    "parent_bundle_id": "metadata-baseline-plan-merge-001",
+    "parent_manifest": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-plan-merge-001.iteration-0001.json"
+  },
+  "integrity_mode": "all_files",
+  "files": [
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md02-003/iteration-0001/PLAN/README.md",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md02-003/PLAN/README.md",
+      "role": "plan_readme",
+      "sha256": "168dee39d837189e69b91594b4bde140a3e09f49646252f01d6a8277451f84b9"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md02-003/iteration-0001/PLAN/request.instance.json",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md02-003/PLAN/request.instance.json",
+      "role": "plan_request_instance",
+      "sha256": "3ad184bb1595e2feb8bf30461ac7b284cc8a9903a4daa60c30b5dc476115d843"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md02-003/iteration-0001/IMPLEMENT/IMPLEMENT.md",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md02-003/IMPLEMENT/IMPLEMENT.md",
+      "role": "implement_readme",
+      "sha256": "c5859f7bd1c2cf1ceeae850fd5e7fd8d002bd88689cda3e842b37fd721541262"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md02-003/iteration-0001/IMPLEMENT/response.instance.json",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md02-003/IMPLEMENT/response.instance.json",
+      "role": "implement_response_instance",
+      "sha256": "751faa8159767c684faa28665a0da3e5fa3699adf443a1d3595a7d3b736eafde"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md02-003/iteration-0001/md02_result.json",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md02-003/md02_result.json",
+      "role": "md02_result",
+      "sha256": "4e1c5fbf612f7643890e4cc6d681576442199edd64317ebcb0d8170ee347f1d8"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md02-003/iteration-0001/outputs/metadata.workspace.json",
+      "source": "/home/_404/src/repo_intel/codex/.analysis/raw/metadata.workspace.json",
+      "role": "metadata_workspace_output",
+      "sha256": "2073b9f8f8fedac0e980f225d66a78791c73e5f9dca733e28fbffc9d3687f564"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md02-003/iteration-0001/outputs/metadata.host.json",
+      "source": "/home/_404/src/repo_intel/codex/.analysis/raw/metadata.host.json",
+      "role": "metadata_host_output",
+      "sha256": "823d8f8bf5ecf0dfbb9e355d0e56e0cac2e2c9619a52f9f734dd5586c190853d"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md02-003/iteration-0001/evidence/cargo_metadata_workspace.json",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/evidence/md02/cargo_metadata_workspace.json",
+      "role": "cargo_metadata_workspace_check",
+      "sha256": "6cb2ac233b68720da316a83d1c29c6d273241b11c5cf9b4da3217c32e0a73d42",
+      "name": "cargo metadata --no-deps"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md02-003/iteration-0001/evidence/cargo_metadata_host.json",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/evidence/md02/cargo_metadata_host.json",
+      "role": "cargo_metadata_host_check",
+      "sha256": "ff11ea9a38551d7f4976d5dff89d6066fa270ff48d8bc18b07344778d7638598",
+      "name": "cargo metadata"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md02-003/iteration-0001/evidence/just_test_md02.json",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/evidence/md02/just_test_md02.json",
+      "role": "just_test_md02_check",
+      "sha256": "35f0afbec7cfdec5c8a83053a87ede48a9e699aa43fa2b163daa8413b039a038",
+      "name": "just test-md02-metadata-pair"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md02-003/iteration-0001/evidence/just_ci.json",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/evidence/md02/just_ci.json",
+      "role": "just_ci_check",
+      "sha256": "6872bdbc9ac452bb5e5401d56e618671d3952da3d2cc87b6e5b5758edb867000",
+      "name": "just ci-md02"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md02-003/iteration-0001/ref_header.json",
+      "source": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-md02-003.iteration-0001.json",
+      "role": "ref_header",
+      "sha256": "40db42cde9e09487f2355bcccf7f8f6804394ea5a93e33c74fa8936cb5545b7d"
+    }
+  ]
+}

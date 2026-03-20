@@ -1,0 +1,37 @@
+{
+  "kind": "metadata_baseline_implement_response.v1",
+  "loop_instance_id": "metadata-baseline-md02-003",
+  "iteration_id": "iteration-0001",
+  "micro_deliverable": "MD-02",
+  "verdict": "APPROVED",
+  "summary": "The raw workspace and host metadata pair were emitted for the refreshed Codex pilot, with structured evidence for both cargo metadata commands and the wrapped just validations.",
+  "evidence": {
+    "checks": [
+      {
+        "name": "cargo metadata --no-deps",
+        "exit_code": 0,
+        "evidence": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md02-003/evidence/cargo_metadata_workspace.json"
+      },
+      {
+        "name": "cargo metadata",
+        "exit_code": 0,
+        "evidence": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md02-003/evidence/cargo_metadata_host.json"
+      },
+      {
+        "name": "just test-md02-metadata-pair",
+        "exit_code": 0,
+        "evidence": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md02-003/evidence/just_test_md02.json"
+      },
+      {
+        "name": "just ci-md02",
+        "exit_code": 0,
+        "evidence": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md02-003/evidence/just_ci.json"
+      }
+    ],
+    "outputs": {
+      "metadata_workspace_json": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md02-003/outputs/metadata.workspace.json",
+      "metadata_host_json": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md02-003/outputs/metadata.host.json"
+    }
+  },
+  "next_patch_set": "MD-03"
+}

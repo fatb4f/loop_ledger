@@ -1,0 +1,260 @@
+{
+  "kind": "metadata_baseline_merged_micro_deliverables.v1",
+  "generated_on": "2026-03-19",
+  "pilot_ref": "/home/_404/src/workbench/metadata_baseline/planning/deliverables/post319_micro_deliverables.json",
+  "dag_ref": "/home/_404/src/repo_intel/metadata_baseline/loop_instances/metadata-baseline-plan-merge-001/iteration-0001/PLAN/deliverable_dependency_dag.json",
+  "pilot_assets": [
+    "core",
+    "app-server",
+    "tui_app_server",
+    "app-server-protocol",
+    "Cargo.lock",
+    "state",
+    "exec-server",
+    "artifacts",
+    "environment"
+  ],
+  "functional_checks": [
+    {
+      "id": "FC-01",
+      "name": "Codex workspace resolution",
+      "checks": [
+        "cargo locate-project --workspace returns codex-rs/Cargo.toml",
+        "workspace_manifest.txt is written",
+        "workspace_root.txt resolves to the codex-rs root"
+      ]
+    },
+    {
+      "id": "FC-02",
+      "name": "Dual metadata capture",
+      "checks": [
+        "metadata.workspace.json is valid JSON and contains workspace members",
+        "metadata.host.json is valid JSON and contains resolve nodes",
+        "capture provenance records the source head and codex-rs workspace"
+      ]
+    },
+    {
+      "id": "FC-03",
+      "name": "Pilot package census",
+      "checks": [
+        "packages.tsv is emitted",
+        "the pilot assets appear as package or asset buckets where applicable",
+        "workspace-summary.json records package count and workspace root"
+      ]
+    },
+    {
+      "id": "FC-04",
+      "name": "Pilot dependency edges",
+      "checks": [
+        "package-edges.tsv is emitted",
+        "core/app-server/tui_app_server/state/exec-server relationships are derivable",
+        "Cargo.lock movement can invalidate edge freshness"
+      ]
+    },
+    {
+      "id": "FC-05",
+      "name": "Target and ownership inventory",
+      "checks": [
+        "targets.tsv is emitted",
+        "ownership can be mapped at file/package-root precision",
+        "environment path semantics are reflected in ownership joins"
+      ]
+    },
+    {
+      "id": "FC-06",
+      "name": "Protocol and transport drift detection",
+      "checks": [
+        "app-server-protocol changes are represented as an analysis-significant asset",
+        "deleted protocol/schema paths are recorded explicitly",
+        "exec-server transport deletions are preserved in summaries"
+      ]
+    },
+    {
+      "id": "FC-07",
+      "name": "Asset-bucket reporting",
+      "checks": [
+        "changed files roll up into the post319 asset buckets",
+        "each asset gets a summary with commit count and key paths",
+        "core is treated as the primary reading anchor"
+      ]
+    },
+    {
+      "id": "FC-08",
+      "name": "New-folder detection",
+      "checks": [
+        "current top-level codex-rs asset folders are inventoried",
+        "previous vs current asset inventory can detect introduced folders",
+        "introduced asset folders trigger index_refresh_required"
+      ]
+    },
+    {
+      "id": "FC-09",
+      "name": "Freshness gating",
+      "checks": [
+        "index.json records target triple, feature mode, cargo version, source head, and Cargo.lock signal",
+        "changing any invalidator marks the index stale",
+        "downstream package-aware analysis can deny on stale or missing index"
+      ]
+    },
+    {
+      "id": "FC-10",
+      "name": "Artifact-first handoff",
+      "checks": [
+        "index.json points to all produced pilot artifacts",
+        "deleted-in-head and introduced-assets signals are carried in the handoff",
+        "codex-web can consume the index without reading unstable app-server/TUI internals directly"
+      ]
+    }
+  ],
+  "micro_deliverables": [
+    {
+      "id": "MD-01",
+      "name": "Codex workspace probe",
+      "functional_checks": [
+        "FC-01"
+      ],
+      "outputs": [
+        ".analysis/raw/workspace_manifest.txt",
+        ".analysis/raw/workspace_root.txt"
+      ],
+      "release_value": "Proves the producer is anchored to the correct codex-rs workspace."
+    },
+    {
+      "id": "MD-02",
+      "name": "Raw metadata pair",
+      "functional_checks": [
+        "FC-02"
+      ],
+      "outputs": [
+        ".analysis/raw/metadata.workspace.json",
+        ".analysis/raw/metadata.host.json"
+      ],
+      "release_value": "Establishes the structural truth source for the narrowed Codex pilot."
+    },
+    {
+      "id": "MD-03",
+      "name": "Pilot package census",
+      "functional_checks": [
+        "FC-03"
+      ],
+      "outputs": [
+        ".analysis/reports/packages.tsv",
+        ".analysis/reports/workspace-summary.json"
+      ],
+      "release_value": "Gives codex-web and scripts a stable package inventory for the relevant Codex surfaces."
+    },
+    {
+      "id": "MD-04",
+      "name": "Pilot edge table",
+      "functional_checks": [
+        "FC-04"
+      ],
+      "outputs": [
+        ".analysis/reports/package-edges.tsv"
+      ],
+      "release_value": "Makes cross-asset dependency structure visible without deeper protocol binding."
+    },
+    {
+      "id": "MD-05",
+      "name": "Ownership table",
+      "functional_checks": [
+        "FC-05"
+      ],
+      "outputs": [
+        ".analysis/reports/targets.tsv"
+      ],
+      "release_value": "Enables package-aware attribution for files and summaries."
+    },
+    {
+      "id": "MD-06",
+      "name": "Protocol and transport drift report",
+      "functional_checks": [
+        "FC-06"
+      ],
+      "outputs": [
+        ".analysis/reports/asset-drift.app-server-protocol.json",
+        ".analysis/reports/asset-drift.exec-server.json"
+      ],
+      "release_value": "Preserves the most analysis-shaping contract and transport changes, including deletions."
+    },
+    {
+      "id": "MD-07",
+      "name": "Asset-bucket summaries",
+      "functional_checks": [
+        "FC-07"
+      ],
+      "outputs": [
+        ".analysis/reports/assets/core.json",
+        ".analysis/reports/assets/app-server.json",
+        ".analysis/reports/assets/tui_app_server.json",
+        ".analysis/reports/assets/app-server-protocol.json",
+        ".analysis/reports/assets/state.json",
+        ".analysis/reports/assets/exec-server.json",
+        ".analysis/reports/assets/artifacts.json",
+        ".analysis/reports/assets/environment.json",
+        ".analysis/reports/assets/Cargo.lock.json"
+      ],
+      "release_value": "Turns changed files into stable analysis units aligned with the post319 reading model."
+    },
+    {
+      "id": "MD-08",
+      "name": "Asset inventory trigger",
+      "functional_checks": [
+        "FC-08"
+      ],
+      "outputs": [
+        ".analysis/reports/asset-inventory.json"
+      ],
+      "release_value": "Adds the new-folder signal that should force internal index refresh."
+    },
+    {
+      "id": "MD-09",
+      "name": "Freshness-aware handoff index",
+      "functional_checks": [
+        "FC-09",
+        "FC-10"
+      ],
+      "outputs": [
+        ".analysis/index.json"
+      ],
+      "release_value": "Creates the minimal production handoff surface for codex-web and just/scripts."
+    }
+  ],
+  "deferred_follow_on": [
+    {
+      "id": "D-01",
+      "name": "Reverse-deps and feature drilldowns",
+      "lane": "deferred",
+      "deferred_batch": true
+    },
+    {
+      "id": "D-02",
+      "name": "Heavy cargo check capture",
+      "lane": "deferred",
+      "deferred_batch": true
+    },
+    {
+      "id": "D-03",
+      "name": "Timings and build-cost observation",
+      "lane": "deferred",
+      "deferred_batch": true
+    },
+    {
+      "id": "D-04",
+      "name": "sem/inspect sidecar overlays",
+      "lane": "deferred",
+      "deferred_batch": true
+    }
+  ],
+  "first_cut": [
+    "MD-01",
+    "MD-02",
+    "MD-03",
+    "MD-04",
+    "MD-05",
+    "MD-06",
+    "MD-07",
+    "MD-08",
+    "MD-09"
+  ]
+}

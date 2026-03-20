@@ -1,0 +1,27 @@
+{
+  "kind": "metadata_baseline_implement_response.v1",
+  "loop_instance_id": "metadata-baseline-md03-004",
+  "iteration_id": "iteration-0001",
+  "micro_deliverable": "MD-03",
+  "verdict": "APPROVED",
+  "summary": "The refreshed pilot package census was emitted from the accepted metadata pair, with the current local Codex snapshot accurately showing the promoted crate set and the absence of codex-features.",
+  "evidence": {
+    "checks": [
+      {
+        "name": "just test-md03-package-census",
+        "exit_code": 0,
+        "evidence": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md03-004/evidence/just_test_md03.json"
+      },
+      {
+        "name": "just ci-md03",
+        "exit_code": 0,
+        "evidence": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md03-004/evidence/just_ci.json"
+      }
+    ],
+    "outputs": {
+      "packages_tsv": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md03-004/outputs/packages.tsv",
+      "workspace_summary_json": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md03-004/outputs/workspace-summary.json"
+    }
+  },
+  "next_patch_set": "MD-04"
+}

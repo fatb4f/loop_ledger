@@ -1,0 +1,12 @@
+{
+  "kind": "command_check.v1",
+  "name": "just test-md03-package-census",
+  "argv": [
+    "just",
+    "_test-md03-package-census"
+  ],
+  "cwd": "/home/_404/src/repo_intel/metadata_baseline",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "bash /home/_404/src/repo_intel/metadata_baseline/tests/test_md03_package_census.sh\n"
+}

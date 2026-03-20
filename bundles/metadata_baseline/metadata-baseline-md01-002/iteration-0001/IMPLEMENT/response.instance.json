@@ -1,0 +1,35 @@
+{
+  "kind": "metadata_baseline_implement_response.v1",
+  "loop_instance_id": "metadata-baseline-md01-002",
+  "iteration_id": "iteration-0001",
+  "micro_deliverable": "MD-01",
+  "verdict": "APPROVED",
+  "summary": "The Codex workspace probe produced the known-good manifest/root shape, emitted the declared raw outputs, and recorded machine-checkable check evidence.",
+  "evidence": {
+    "checks": [
+      {
+        "name": "cargo locate-project --workspace",
+        "exit_code": 0,
+        "evidence": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md01-002/evidence/cargo_locate_project.json"
+      },
+      {
+        "name": "just test-md01-workspace-probe",
+        "exit_code": 0,
+        "evidence": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md01-002/evidence/just_test_md01.json"
+      },
+      {
+        "name": "just ci",
+        "exit_code": 0,
+        "evidence": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md01-002/evidence/just_ci.json"
+      }
+    ],
+    "workspace_manifest": "/home/_404/src/repo_intel/codex/codex-rs/Cargo.toml",
+    "workspace_root": "/home/_404/src/repo_intel/codex/codex-rs",
+    "outputs": {
+      "workspace_manifest_txt": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md01-002/outputs/workspace_manifest.txt",
+      "workspace_root_txt": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md01-002/outputs/workspace_root.txt",
+      "workspace_probe_json": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md01-002/outputs/workspace_probe.json"
+    }
+  },
+  "next_patch_set": "MD-02"
+}

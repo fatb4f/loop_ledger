@@ -1,0 +1,12 @@
+{
+  "kind": "command_check.v1",
+  "name": "just test-md02-metadata-pair",
+  "argv": [
+    "just",
+    "_test-md02-metadata-pair"
+  ],
+  "cwd": "/home/_404/src/repo_intel/metadata_baseline",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "bash /home/_404/src/repo_intel/metadata_baseline/tests/test_md02_metadata_pair.sh /home/_404/src/repo_intel/metadata_baseline/targets/codex.snapshot.json\n"
+}

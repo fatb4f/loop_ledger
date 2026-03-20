@@ -1,0 +1,29 @@
+{
+  "kind": "metadata_baseline_implement_response.v1",
+  "loop_instance_id": "metadata-baseline-md06-006",
+  "iteration_id": "iteration-0001",
+  "micro_deliverable": "MD-06",
+  "verdict": "APPROVED",
+  "summary": "The protocol/plugin/execution drift reports were emitted from the accepted post320 surface and the stored Codex delta extract, with the local snapshot truth for codex-login and codex-features preserved explicitly.",
+  "evidence": {
+    "checks": [
+      {
+        "name": "just test-md06-asset-drift",
+        "exit_code": 0,
+        "evidence": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md06-006/evidence/just_test_md06.json"
+      },
+      {
+        "name": "just ci-md06",
+        "exit_code": 0,
+        "evidence": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md06-006/evidence/just_ci.json"
+      }
+    ],
+    "outputs": {
+      "asset_drift_app_server_protocol_json": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md06-006/outputs/asset-drift.app-server-protocol.json",
+      "asset_drift_plugins_json": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md06-006/outputs/asset-drift.plugins.json",
+      "asset_drift_exec_server_json": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md06-006/outputs/asset-drift.exec-server.json",
+      "asset_drift_crate_splits_json": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md06-006/outputs/asset-drift.crate-splits.json"
+    }
+  },
+  "next_patch_set": "MD-07"
+}

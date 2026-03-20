@@ -1,0 +1,12 @@
+{
+  "kind": "command_check.v1",
+  "name": "just ci-md07",
+  "argv": [
+    "just",
+    "_ci-md07"
+  ],
+  "cwd": "/home/_404/src/repo_intel/metadata_baseline",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "just test-md07-asset-summaries\npython3 /home/_404/src/repo_intel/metadata_baseline/scripts/run_check.py --name \"just test-md07-asset-summaries\" --cwd /home/_404/src/repo_intel/metadata_baseline --output /home/_404/src/repo_intel/metadata_baseline/evidence/md07/just_test_md07.json -- just _test-md07-asset-summaries\nbash /home/_404/src/repo_intel/metadata_baseline/tests/test_md07_asset_summaries.sh\n"
+}

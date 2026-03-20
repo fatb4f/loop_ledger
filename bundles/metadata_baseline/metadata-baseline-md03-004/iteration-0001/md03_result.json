@@ -1,0 +1,41 @@
+{
+  "kind": "md03_result.v1",
+  "loop_instance_id": "metadata-baseline-md03-004",
+  "iteration_id": "iteration-0001",
+  "discovered": {
+    "workspace_package_count": 76,
+    "workspace_member_count": 76,
+    "promoted_present": [
+      "codex-core",
+      "codex-app-server",
+      "codex-tui-app-server",
+      "codex-app-server-protocol",
+      "codex-exec-server",
+      "codex-login"
+    ],
+    "promoted_missing": [
+      "codex-features"
+    ]
+  },
+  "comparison": {
+    "workspace_package_count_matches_members": true,
+    "codex_login_present": true,
+    "codex_features_present": false
+  },
+  "checks": [
+    {
+      "name": "just test-md03-package-census",
+      "exit_code": 0,
+      "evidence": "/home/_404/src/repo_intel/metadata_baseline/evidence/md03/just_test_md03.json"
+    },
+    {
+      "name": "just ci-md03",
+      "exit_code": 0,
+      "evidence": "/home/_404/src/repo_intel/metadata_baseline/evidence/md03/just_ci.json"
+    }
+  ],
+  "outputs": {
+    "packages_tsv": "/home/_404/src/repo_intel/codex/.analysis/reports/packages.tsv",
+    "workspace_summary_json": "/home/_404/src/repo_intel/codex/.analysis/reports/workspace-summary.json"
+  }
+}

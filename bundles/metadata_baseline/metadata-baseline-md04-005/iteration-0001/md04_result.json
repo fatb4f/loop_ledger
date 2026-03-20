@@ -1,0 +1,52 @@
+{
+  "kind": "md04_result.v1",
+  "loop_instance_id": "metadata-baseline-md04-005",
+  "iteration_id": "iteration-0001",
+  "discovered": {
+    "workspace_package_count": 76,
+    "edge_row_count": 1175,
+    "promoted_edge_counts": {
+      "codex-core": 118,
+      "codex-app-server": 53,
+      "codex-tui-app-server": 88,
+      "codex-app-server-protocol": 22,
+      "codex-exec-server": 12,
+      "codex-login": 21,
+      "codex-features": 0
+    },
+    "promoted_present": [
+      "codex-core",
+      "codex-app-server",
+      "codex-tui-app-server",
+      "codex-app-server-protocol",
+      "codex-exec-server",
+      "codex-login"
+    ],
+    "promoted_missing": [
+      "codex-features"
+    ],
+    "cargo_lock_sha256": "bdbe6be71c349ce29d8d68af81e77bd7e5320432a37067835a1e08d40f5c79c7"
+  },
+  "comparison": {
+    "codex_app_server_has_edges": true,
+    "codex_exec_server_has_edges": true,
+    "codex_login_has_edges": true,
+    "codex_features_present": false
+  },
+  "checks": [
+    {
+      "name": "just test-md04-edge-table",
+      "exit_code": 0,
+      "evidence": "/home/_404/src/repo_intel/metadata_baseline/evidence/md04/just_test_md04.json"
+    },
+    {
+      "name": "just ci-md04",
+      "exit_code": 0,
+      "evidence": "/home/_404/src/repo_intel/metadata_baseline/evidence/md04/just_ci.json"
+    }
+  ],
+  "outputs": {
+    "package_edges_tsv": "/home/_404/src/repo_intel/codex/.analysis/reports/package-edges.tsv",
+    "edge_summary_json": "/home/_404/src/repo_intel/codex/.analysis/reports/edge-summary.json"
+  }
+}

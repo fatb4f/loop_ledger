@@ -1,0 +1,26 @@
+{
+  "kind": "metadata_baseline_implement_response.v1",
+  "loop_instance_id": "metadata-baseline-md09-008",
+  "iteration_id": "iteration-0001",
+  "micro_deliverable": "MD-09",
+  "verdict": "APPROVED",
+  "summary": "The freshness-aware handoff index was emitted from the accepted metadata baseline outputs, with source head, Cargo.lock, promoted crate set, and deny-on-missing/stale rules recorded explicitly.",
+  "evidence": {
+    "checks": [
+      {
+        "name": "just test-md09-handoff-index",
+        "exit_code": 0,
+        "evidence": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md09-008/evidence/just_test_md09.json"
+      },
+      {
+        "name": "just ci-md09",
+        "exit_code": 0,
+        "evidence": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md09-008/evidence/just_ci.json"
+      }
+    ],
+    "outputs": {
+      "index_json": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md09-008/outputs/index.json"
+    }
+  },
+  "next_patch_set": "close_current_post320_md_loop"
+}

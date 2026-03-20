@@ -1,0 +1,19 @@
+{
+  "kind": "command_check.v1",
+  "name": "cargo locate-project --workspace",
+  "argv": [
+    "cargo",
+    "locate-project",
+    "--workspace",
+    "--message-format",
+    "plain",
+    "--manifest-path",
+    "/home/_404/src/repo_intel/codex/codex-rs/Cargo.toml"
+  ],
+  "cwd": "/home/_404/src/repo_intel/codex",
+  "exit_code": 0,
+  "stdout": "/home/_404/src/repo_intel/codex/codex-rs/Cargo.toml",
+  "stderr": "",
+  "discovered_workspace_manifest": "/home/_404/src/repo_intel/codex/codex-rs/Cargo.toml",
+  "discovered_workspace_root": "/home/_404/src/repo_intel/codex/codex-rs"
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "md06_result.v1",
+  "loop_instance_id": "metadata-baseline-md06-006",
+  "iteration_id": "iteration-0001",
+  "discovered": {
+    "protocol_deleted_in_head_count": 12,
+    "plugin_signal_count": 4,
+    "exec_server_deleted_in_head_count": 3,
+    "codex_login_present": true,
+    "codex_features_present": false
+  },
+  "comparison": {
+    "protocol_has_deleted_paths": true,
+    "plugins_have_lifecycle_signals": true,
+    "exec_server_has_local_remote_handler_tag": true,
+    "codex_features_missing": true
+  },
+  "checks": [
+    {
+      "name": "just test-md06-asset-drift",
+      "exit_code": 0,
+      "evidence": "/home/_404/src/repo_intel/metadata_baseline/evidence/md06/just_test_md06.json"
+    },
+    {
+      "name": "just ci-md06",
+      "exit_code": 0,
+      "evidence": "/home/_404/src/repo_intel/metadata_baseline/evidence/md06/just_ci.json"
+    }
+  ],
+  "outputs": {
+    "asset-drift_app-server-protocol": "/home/_404/src/repo_intel/codex/.analysis/reports/asset-drift.app-server-protocol.json",
+    "asset-drift_plugins": "/home/_404/src/repo_intel/codex/.analysis/reports/asset-drift.plugins.json",
+    "asset-drift_exec-server": "/home/_404/src/repo_intel/codex/.analysis/reports/asset-drift.exec-server.json",
+    "asset-drift_crate-splits": "/home/_404/src/repo_intel/codex/.analysis/reports/asset-drift.crate-splits.json"
+  }
+}

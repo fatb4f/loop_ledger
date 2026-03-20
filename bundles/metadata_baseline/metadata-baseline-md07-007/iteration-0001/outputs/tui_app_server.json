@@ -1,0 +1,54 @@
+{
+  "kind": "md07_asset_summary.v1",
+  "asset": "tui_app_server",
+  "anchor_role": "secondary",
+  "surface": {
+    "why_relevant": "App-server-backed operator flows remain highly volatile and materially shape what a user can observe and resume.",
+    "analysis_implications": [
+      "Review tui_app_server alongside app-server as a coupled operator surface.",
+      "Pay attention to resumed history and startup-state parity."
+    ],
+    "recent_signals": [
+      "Resumed thread history fidelity improved.",
+      "Plugin visibility and startup-state flows are becoming richer."
+    ]
+  },
+  "delta": {
+    "commit_count": 16,
+    "file_count": 29,
+    "current_file_count": 28,
+    "deleted_in_head_count": 1,
+    "key_paths": [
+      "codex-rs/tui_app_server/src/app.rs",
+      "codex-rs/tui_app_server/src/app/app_server_adapter.rs",
+      "codex-rs/tui_app_server/src/app/app_server_requests.rs",
+      "codex-rs/tui_app_server/src/app/pending_interactive_replay.rs",
+      "codex-rs/tui_app_server/src/app_backtrack.rs",
+      "codex-rs/tui_app_server/src/app_command.rs",
+      "codex-rs/tui_app_server/src/app_event.rs",
+      "codex-rs/tui_app_server/src/app_server_session.rs",
+      "codex-rs/tui_app_server/src/bottom_pane/chat_composer.rs",
+      "codex-rs/tui_app_server/src/bottom_pane/chat_composer_history.rs",
+      "codex-rs/tui_app_server/src/bottom_pane/mcp_server_elicitation.rs",
+      "codex-rs/tui_app_server/src/bottom_pane/mod.rs"
+    ],
+    "commit_subjects": [
+      "feat: support product-scoped plugins. (#15041)",
+      "Add thread/shellCommand to app server API surface (#14988)",
+      "Simple directory mentions (#14970)",
+      "feat(tui): restore composer history in app-server tui (#14945)",
+      "Removed remaining core events from tui_app_server (#14942)",
+      "feat: add memory citation to agent message (#14821)",
+      "[hooks] userpromptsubmit - hook before user's prompt is executed (#14626)",
+      "Use workspace requirements for guardian prompt override (#14727)",
+      "Handle realtime conversation end in the TUI (#14903)",
+      "fix(linux-sandbox): prefer system /usr/bin/bwrap when available (#14963)"
+    ]
+  },
+  "ownership_implications": {
+    "crate_name": "codex-tui-app-server",
+    "local_present": true,
+    "local_missing": false,
+    "promoted_edge_count": 88
+  }
+}

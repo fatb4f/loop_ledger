@@ -1,0 +1,22 @@
+{
+  "kind": "metadata_baseline_plan_request.v1",
+  "loop_instance_id": "metadata-baseline-md01-002",
+  "iteration_id": "iteration-0001",
+  "micro_deliverable": "MD-01",
+  "title": "Codex workspace probe",
+  "objective": "Validate the known-good Codex workspace shape with the smallest stackable check.",
+  "target_spec": "/home/_404/src/repo_intel/metadata_baseline/targets/codex.snapshot.json",
+  "expected_outputs": [
+    ".analysis/raw/workspace_manifest.txt",
+    ".analysis/raw/workspace_root.txt",
+    ".analysis/raw/workspace_probe.json"
+  ],
+  "success_conditions": [
+    "cargo locate-project --workspace resolves codex-rs/Cargo.toml",
+    "workspace_manifest.txt matches expected_workspace_manifest",
+    "workspace_root.txt matches expected_workspace_root",
+    "just test-md01-workspace-probe passes",
+    "just ci passes"
+  ],
+  "reviewed_head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6"
+}

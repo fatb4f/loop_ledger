@@ -1,0 +1,54 @@
+{
+  "kind": "md07_asset_summary.v1",
+  "asset": "app-server",
+  "anchor_role": "secondary",
+  "surface": {
+    "why_relevant": "Remote execution and product/plugin flows continue to accumulate here, making it a first-class operational surface rather than thin transport glue.",
+    "analysis_implications": [
+      "Inspect app-server before attributing behavior to the TUI.",
+      "Treat shell/thread/plugin surfaces as core operational interfaces."
+    ],
+    "recent_signals": [
+      "Startup status notifications continue to become more stateful.",
+      "Thread and shell command behavior remains a key surface."
+    ]
+  },
+  "delta": {
+    "commit_count": 20,
+    "file_count": 28,
+    "current_file_count": 28,
+    "deleted_in_head_count": 0,
+    "key_paths": [
+      "codex-rs/app-server/Cargo.toml",
+      "codex-rs/app-server/README.md",
+      "codex-rs/app-server/src/bespoke_event_handling.rs",
+      "codex-rs/app-server/src/codex_message_processor.rs",
+      "codex-rs/app-server/src/config_api.rs",
+      "codex-rs/app-server/src/filters.rs",
+      "codex-rs/app-server/src/fs_api.rs",
+      "codex-rs/app-server/src/fuzzy_file_search.rs",
+      "codex-rs/app-server/src/in_process.rs",
+      "codex-rs/app-server/src/lib.rs",
+      "codex-rs/app-server/src/main.rs",
+      "codex-rs/app-server/src/message_processor.rs"
+    ],
+    "commit_subjects": [
+      "feat: support product-scoped plugins. (#15041)",
+      "Add thread/shellCommand to app server API surface (#14988)",
+      "Simple directory mentions (#14970)",
+      "Support featured plugins (#15042)",
+      "fix: harden plugin feature gating (#15104)",
+      "Feat: reuse persisted model and reasoning effort on thread resume (#14888)",
+      "Revert \"fix: harden plugin feature gating\" (#15102)",
+      "fix: harden plugin feature gating (#15020)",
+      "feat: add memory citation to agent message (#14821)",
+      "Use workspace requirements for guardian prompt override (#14727)"
+    ]
+  },
+  "ownership_implications": {
+    "crate_name": "codex-app-server",
+    "local_present": true,
+    "local_missing": false,
+    "promoted_edge_count": 53
+  }
+}

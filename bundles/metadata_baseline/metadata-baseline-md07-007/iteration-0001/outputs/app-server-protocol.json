@@ -1,0 +1,86 @@
+{
+  "kind": "md07_asset_summary.v1",
+  "asset": "app-server-protocol",
+  "anchor_role": "secondary",
+  "surface": {
+    "why_relevant": "This remains the highest-signal boundary-contract surface for stateful UI and remote execution behavior.",
+    "analysis_implications": [
+      "Treat protocol additions and removals as analysis-shaping inputs.",
+      "Track startup notifications and resumable-state payload changes explicitly."
+    ],
+    "recent_signals": [
+      "Startup status notification formalization.",
+      "Resumed image-generation history restoration."
+    ]
+  },
+  "delta": {
+    "commit_count": 12,
+    "file_count": 66,
+    "current_file_count": 54,
+    "deleted_in_head_count": 12,
+    "key_paths": [
+      "codex-rs/app-server-protocol/schema/json/ClientRequest.json",
+      "codex-rs/app-server-protocol/schema/json/FuzzyFileSearchResponse.json",
+      "codex-rs/app-server-protocol/schema/json/FuzzyFileSearchSessionUpdatedNotification.json",
+      "codex-rs/app-server-protocol/schema/json/ServerNotification.json",
+      "codex-rs/app-server-protocol/schema/json/codex_app_server_protocol.schemas.json",
+      "codex-rs/app-server-protocol/schema/json/codex_app_server_protocol.v2.schemas.json",
+      "codex-rs/app-server-protocol/schema/json/v2/HookCompletedNotification.json",
+      "codex-rs/app-server-protocol/schema/json/v2/HookStartedNotification.json",
+      "codex-rs/app-server-protocol/schema/json/v2/ItemCompletedNotification.json",
+      "codex-rs/app-server-protocol/schema/json/v2/ItemStartedNotification.json",
+      "codex-rs/app-server-protocol/schema/json/v2/PluginListResponse.json",
+      "codex-rs/app-server-protocol/schema/json/v2/RawResponseItemCompletedNotification.json"
+    ],
+    "commit_subjects": [
+      "feat: support product-scoped plugins. (#15041)",
+      "Add thread/shellCommand to app server API surface (#14988)",
+      "Simple directory mentions (#14970)",
+      "Support featured plugins (#15042)",
+      "Revert \"fix: harden plugin feature gating\" (#15102)",
+      "fix: harden plugin feature gating (#15020)",
+      "Add notify to code-mode (#14842)",
+      "feat: add memory citation to agent message (#14821)",
+      "[hooks] userpromptsubmit - hook before user's prompt is executed (#14626)",
+      "Gate realtime audio interruption logic to v2 (#14984)"
+    ]
+  },
+  "ownership_implications": {
+    "crate_name": "codex-app-server-protocol",
+    "local_present": true,
+    "local_missing": false,
+    "promoted_edge_count": 22
+  },
+  "drift_signals": {
+    "commit_count": 12,
+    "file_count": 66,
+    "current_file_count": 54,
+    "deleted_in_head_count": 12,
+    "key_paths": [
+      "codex-rs/app-server-protocol/schema/json/ClientRequest.json",
+      "codex-rs/app-server-protocol/schema/json/FuzzyFileSearchResponse.json",
+      "codex-rs/app-server-protocol/schema/json/FuzzyFileSearchSessionUpdatedNotification.json",
+      "codex-rs/app-server-protocol/schema/json/ServerNotification.json",
+      "codex-rs/app-server-protocol/schema/json/codex_app_server_protocol.schemas.json",
+      "codex-rs/app-server-protocol/schema/json/codex_app_server_protocol.v2.schemas.json",
+      "codex-rs/app-server-protocol/schema/json/v2/HookCompletedNotification.json",
+      "codex-rs/app-server-protocol/schema/json/v2/HookStartedNotification.json",
+      "codex-rs/app-server-protocol/schema/json/v2/ItemCompletedNotification.json",
+      "codex-rs/app-server-protocol/schema/json/v2/ItemStartedNotification.json",
+      "codex-rs/app-server-protocol/schema/json/v2/PluginListResponse.json",
+      "codex-rs/app-server-protocol/schema/json/v2/RawResponseItemCompletedNotification.json"
+    ],
+    "commit_subjects": [
+      "feat: support product-scoped plugins. (#15041)",
+      "Add thread/shellCommand to app server API surface (#14988)",
+      "Simple directory mentions (#14970)",
+      "Support featured plugins (#15042)",
+      "Revert \"fix: harden plugin feature gating\" (#15102)",
+      "fix: harden plugin feature gating (#15020)",
+      "Add notify to code-mode (#14842)",
+      "feat: add memory citation to agent message (#14821)",
+      "[hooks] userpromptsubmit - hook before user's prompt is executed (#14626)",
+      "Gate realtime audio interruption logic to v2 (#14984)"
+    ]
+  }
+}

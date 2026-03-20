@@ -1,0 +1,72 @@
+{
+  "kind": "md09_index.v1",
+  "source": {
+    "repo_path": "/home/_404/src/repo_intel/codex",
+    "source_head": "903660edba6e1ecfd7c9b1782105be4ebf0e02a7",
+    "workspace_root": "/home/_404/src/repo_intel/codex/codex-rs"
+  },
+  "freshness": {
+    "status": "fresh",
+    "deny_if_missing": true,
+    "deny_if_stale": true,
+    "inputs": {
+      "cargo_lock_sha256": "bdbe6be71c349ce29d8d68af81e77bd7e5320432a37067835a1e08d40f5c79c7",
+      "promoted_present": [
+        "codex-core",
+        "codex-app-server",
+        "codex-tui-app-server",
+        "codex-app-server-protocol",
+        "codex-exec-server",
+        "codex-login"
+      ],
+      "promoted_missing": [
+        "codex-features"
+      ],
+      "crate_set_signature": "codex-core,codex-app-server,codex-tui-app-server,codex-app-server-protocol,codex-exec-server,codex-login,codex-features"
+    },
+    "stale_rules": [
+      "Cargo.lock sha256 changed",
+      "promoted crate set changed",
+      "index file missing"
+    ]
+  },
+  "artifacts": {
+    "workspace_probe_json": "/home/_404/src/repo_intel/codex/.analysis/raw/workspace_probe.json",
+    "metadata_workspace_json": "/home/_404/src/repo_intel/codex/.analysis/raw/metadata.workspace.json",
+    "metadata_host_json": "/home/_404/src/repo_intel/codex/.analysis/raw/metadata.host.json",
+    "packages_tsv": "/home/_404/src/repo_intel/codex/.analysis/reports/packages.tsv",
+    "workspace_summary_json": "/home/_404/src/repo_intel/codex/.analysis/reports/workspace-summary.json",
+    "package_edges_tsv": "/home/_404/src/repo_intel/codex/.analysis/reports/package-edges.tsv",
+    "edge_summary_json": "/home/_404/src/repo_intel/codex/.analysis/reports/edge-summary.json",
+    "asset_drift_app_server_protocol_json": "/home/_404/src/repo_intel/codex/.analysis/reports/asset-drift.app-server-protocol.json",
+    "asset_drift_plugins_json": "/home/_404/src/repo_intel/codex/.analysis/reports/asset-drift.plugins.json",
+    "asset_drift_exec_server_json": "/home/_404/src/repo_intel/codex/.analysis/reports/asset-drift.exec-server.json",
+    "asset_drift_crate_splits_json": "/home/_404/src/repo_intel/codex/.analysis/reports/asset-drift.crate-splits.json",
+    "assets_root": "/home/_404/src/repo_intel/codex/.analysis/reports/assets"
+  },
+  "promoted_crates": {
+    "present": [
+      "codex-core",
+      "codex-app-server",
+      "codex-tui-app-server",
+      "codex-app-server-protocol",
+      "codex-exec-server",
+      "codex-login"
+    ],
+    "missing": [
+      "codex-features"
+    ]
+  },
+  "derived_truth": {
+    "workspace_package_count": 76,
+    "workspace_member_count": 76,
+    "edge_row_count": 1175,
+    "protocol_deleted_in_head_count": 12,
+    "asset_count": 10
+  },
+  "consumer_contract": {
+    "artifact_first": true,
+    "downstream_package_aware_analysis_denies_without_index": true,
+    "downstream_package_aware_analysis_denies_when_stale": true
+  }
+}

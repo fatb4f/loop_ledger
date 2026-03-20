@@ -1,0 +1,12 @@
+{
+  "kind": "command_check.v1",
+  "name": "just ci-md04",
+  "argv": [
+    "just",
+    "_ci-md04"
+  ],
+  "cwd": "/home/_404/src/repo_intel/metadata_baseline",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "just test-md04-edge-table\npython3 /home/_404/src/repo_intel/metadata_baseline/scripts/run_check.py --name \"just test-md04-edge-table\" --cwd /home/_404/src/repo_intel/metadata_baseline --output /home/_404/src/repo_intel/metadata_baseline/evidence/md04/just_test_md04.json -- just _test-md04-edge-table\nbash /home/_404/src/repo_intel/metadata_baseline/tests/test_md04_edge_table.sh\n"
+}

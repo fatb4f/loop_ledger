@@ -1,0 +1,33 @@
+{
+  "kind": "md09_result.v1",
+  "loop_instance_id": "metadata-baseline-md09-008",
+  "iteration_id": "iteration-0001",
+  "discovered": {
+    "source_head": "903660edba6e1ecfd7c9b1782105be4ebf0e02a7",
+    "cargo_lock_sha256": "bdbe6be71c349ce29d8d68af81e77bd7e5320432a37067835a1e08d40f5c79c7",
+    "promoted_present_count": 6,
+    "promoted_missing_count": 1,
+    "asset_count": 10
+  },
+  "comparison": {
+    "index_is_fresh": true,
+    "deny_if_missing": true,
+    "deny_if_stale": true,
+    "codex_features_missing": true
+  },
+  "checks": [
+    {
+      "name": "just test-md09-handoff-index",
+      "exit_code": 0,
+      "evidence": "/home/_404/src/repo_intel/metadata_baseline/evidence/md09/just_test_md09.json"
+    },
+    {
+      "name": "just ci-md09",
+      "exit_code": 0,
+      "evidence": "/home/_404/src/repo_intel/metadata_baseline/evidence/md09/just_ci.json"
+    }
+  ],
+  "outputs": {
+    "index_json": "/home/_404/src/repo_intel/codex/.analysis/index.json"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "kind": "command_check.v1",
+  "name": "just ci-md06",
+  "argv": [
+    "just",
+    "_ci-md06"
+  ],
+  "cwd": "/home/_404/src/repo_intel/metadata_baseline",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "just test-md06-asset-drift\npython3 /home/_404/src/repo_intel/metadata_baseline/scripts/run_check.py --name \"just test-md06-asset-drift\" --cwd /home/_404/src/repo_intel/metadata_baseline --output /home/_404/src/repo_intel/metadata_baseline/evidence/md06/just_test_md06.json -- just _test-md06-asset-drift\nbash /home/_404/src/repo_intel/metadata_baseline/tests/test_md06_asset_drift.sh\n"
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "md07_asset_summary.v1",
+  "asset": "codex-features",
+  "anchor_role": "secondary",
+  "surface": {
+    "why_relevant": "Feature policy moved into a dedicated crate, materially changing where feature gating and warnings live.",
+    "analysis_implications": [
+      "Track feature policy as a separate crate-level surface.",
+      "Detect call-site churn caused by feature API migration."
+    ],
+    "recent_signals": [
+      "Feature system split into codex-features across many workspace consumers."
+    ]
+  },
+  "delta": {
+    "commit_count": 0,
+    "file_count": 0,
+    "current_file_count": 0,
+    "deleted_in_head_count": 0,
+    "key_paths": [],
+    "commit_subjects": []
+  },
+  "ownership_implications": {
+    "crate_name": "codex-features",
+    "local_present": false,
+    "local_missing": true,
+    "promoted_edge_count": 0
+  },
+  "drift_signals": {
+    "split_status": {
+      "crate_name": "codex-features",
+      "present": false,
+      "why_relevant": "Feature policy moved into a dedicated crate, materially changing where feature gating and warnings live.",
+      "recent_signals": [
+        "Feature system split into codex-features across many workspace consumers."
+      ]
+    }
+  }
+}

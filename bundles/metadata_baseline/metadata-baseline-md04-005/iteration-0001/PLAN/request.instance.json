@@ -1,0 +1,22 @@
+{
+  "kind": "metadata_baseline_plan_request.v1",
+  "loop_instance_id": "metadata-baseline-md04-005",
+  "iteration_id": "iteration-0001",
+  "micro_deliverable": "MD-04",
+  "title": "Refreshed edge table",
+  "objective": "Emit a stable package edge table and edge summary from the accepted metadata pair, including promoted crate edge counts and the current Cargo.lock freshness input.",
+  "expected_outputs": [
+    ".analysis/reports/package-edges.tsv",
+    ".analysis/reports/edge-summary.json"
+  ],
+  "success_conditions": [
+    "package-edges.tsv is emitted",
+    "edge-summary.json is emitted",
+    "edges involving codex-app-server, codex-exec-server, and codex-login are derivable",
+    "missing promoted crates are surfaced explicitly",
+    "Cargo.lock sha256 is recorded",
+    "just test-md04-edge-table exits 0",
+    "just ci-md04 exits 0"
+  ],
+  "reviewed_head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6"
+}

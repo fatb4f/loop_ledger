@@ -1,0 +1,86 @@
+{
+  "kind": "review_bundle_manifest.v1",
+  "project": "metadata_baseline",
+  "bundle_id": "metadata-baseline-md06-006",
+  "iteration_id": "iteration-0001",
+  "scope_root": "/home/_404/src/repo_intel/metadata_baseline",
+  "reviewed_head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6",
+  "output_root": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md06-006/iteration-0001",
+  "lineage": {
+    "relationship": "derived_from",
+    "parent_bundle_id": "metadata-baseline-plan-merge-001",
+    "parent_manifest": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-plan-merge-001.iteration-0001.json"
+  },
+  "refs": {
+    "upstream_project": "/home/_404/src/repo_intel/metadata_baseline",
+    "target_spec": "/home/_404/src/repo_intel/metadata_baseline/targets/codex.snapshot.json",
+    "base_surface": "/home/_404/src/workbench/metadata_baseline/planning/surfaces/post320_surface.json",
+    "delta_extract": "/home/_404/src/workbench/codex_48h_asset_extract_2026-03-19"
+  },
+  "evidence_bundle": {
+    "required_outputs": [
+      {
+        "source": "/home/_404/src/repo_intel/codex/.analysis/reports/asset-drift.app-server-protocol.json",
+        "dest": "outputs/asset-drift.app-server-protocol.json",
+        "role": "asset_drift_app_server_protocol_output"
+      },
+      {
+        "source": "/home/_404/src/repo_intel/codex/.analysis/reports/asset-drift.plugins.json",
+        "dest": "outputs/asset-drift.plugins.json",
+        "role": "asset_drift_plugins_output"
+      },
+      {
+        "source": "/home/_404/src/repo_intel/codex/.analysis/reports/asset-drift.exec-server.json",
+        "dest": "outputs/asset-drift.exec-server.json",
+        "role": "asset_drift_exec_server_output"
+      },
+      {
+        "source": "/home/_404/src/repo_intel/codex/.analysis/reports/asset-drift.crate-splits.json",
+        "dest": "outputs/asset-drift.crate-splits.json",
+        "role": "asset_drift_crate_splits_output"
+      }
+    ],
+    "required_checks": [
+      {
+        "name": "just test-md06-asset-drift",
+        "source": "/home/_404/src/repo_intel/metadata_baseline/evidence/md06/just_test_md06.json",
+        "dest": "evidence/just_test_md06.json",
+        "role": "just_test_md06_check"
+      },
+      {
+        "name": "just ci-md06",
+        "source": "/home/_404/src/repo_intel/metadata_baseline/evidence/md06/just_ci.json",
+        "dest": "evidence/just_ci.json",
+        "role": "just_ci_check"
+      }
+    ],
+    "integrity_mode": "all_files"
+  },
+  "include": [
+    {
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md06-006/PLAN/README.md",
+      "dest": "PLAN/README.md",
+      "role": "plan_readme"
+    },
+    {
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md06-006/PLAN/request.instance.json",
+      "dest": "PLAN/request.instance.json",
+      "role": "plan_request_instance"
+    },
+    {
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md06-006/IMPLEMENT/IMPLEMENT.md",
+      "dest": "IMPLEMENT/IMPLEMENT.md",
+      "role": "implement_readme"
+    },
+    {
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md06-006/IMPLEMENT/response.instance.json",
+      "dest": "IMPLEMENT/response.instance.json",
+      "role": "implement_response_instance"
+    },
+    {
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md06-006/md06_result.json",
+      "dest": "md06_result.json",
+      "role": "md06_result"
+    }
+  ]
+}

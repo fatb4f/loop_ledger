@@ -1,0 +1,48 @@
+{
+  "kind": "review_bundle_artifacts_manifest.v1",
+  "project": "metadata_baseline",
+  "bundle_id": "metadata-baseline-plan-merge-001",
+  "iteration_id": "iteration-0001",
+  "manifest_path": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-plan-merge-001.iteration-0001.json",
+  "output_root": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-plan-merge-001/iteration-0001",
+  "lineage": {},
+  "integrity_mode": "all_files",
+  "files": [
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-plan-merge-001/iteration-0001/merged_surface.json",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-plan-merge-001/merged_surface.json",
+      "role": "merged_surface_contract",
+      "sha256": "b21603ecdefe0ddb114072ee2254c4f9049e600314b7db59521638dac346bd8b"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-plan-merge-001/iteration-0001/merged_micro_deliverables.json",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-plan-merge-001/merged_micro_deliverables.json",
+      "role": "merged_micro_deliverable_inventory",
+      "sha256": "a4f4fd7e09c1f411acc3af65d46d5bc313d3311b1ffe514a66cca49972db326f"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-plan-merge-001/iteration-0001/merged_release_plan.json",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-plan-merge-001/merged_release_plan.json",
+      "role": "merged_release_plan",
+      "sha256": "3cdf5560d3d84a883d4b71723d1ffe2ed7389168103d2b1a2dbd498e8101703e"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-plan-merge-001/iteration-0001/source/ref_header.json",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-plan-merge-001/ref_header.json",
+      "role": "source_plan_ref_header",
+      "sha256": "e87498f7589a7b37b90de927364f6192d4be2c3080430c7f1687ac0ea4dfa383"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-plan-merge-001/iteration-0001/source/artifacts.manifest.json",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-plan-merge-001/artifacts.manifest.json",
+      "role": "source_plan_artifacts_manifest",
+      "sha256": "bb40d9b434401569f273f5c908c11cd8c6a74a0120bb99d899782c999d07b1f2"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-plan-merge-001/iteration-0001/ref_header.json",
+      "source": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-plan-merge-001.iteration-0001.json",
+      "role": "ref_header",
+      "sha256": "14091c34a4f8b6e32d71ed9ee7586b71fae4bc71069a2f88f94c1918016c8b79"
+    }
+  ]
+}

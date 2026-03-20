@@ -1,0 +1,27 @@
+{
+  "kind": "metadata_baseline_implement_response.v1",
+  "loop_instance_id": "metadata-baseline-md04-005",
+  "iteration_id": "iteration-0001",
+  "micro_deliverable": "MD-04",
+  "verdict": "APPROVED",
+  "summary": "The refreshed edge table was emitted from the accepted metadata pair, with promoted crate edge counts and the current Cargo.lock freshness input recorded from the local Codex snapshot.",
+  "evidence": {
+    "checks": [
+      {
+        "name": "just test-md04-edge-table",
+        "exit_code": 0,
+        "evidence": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md04-005/evidence/just_test_md04.json"
+      },
+      {
+        "name": "just ci-md04",
+        "exit_code": 0,
+        "evidence": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md04-005/evidence/just_ci.json"
+      }
+    ],
+    "outputs": {
+      "package_edges_tsv": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md04-005/outputs/package-edges.tsv",
+      "edge_summary_json": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md04-005/outputs/edge-summary.json"
+    }
+  },
+  "next_patch_set": "MD-06"
+}

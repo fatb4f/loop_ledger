@@ -1,0 +1,12 @@
+{
+  "kind": "command_check.v1",
+  "name": "just ci-md09",
+  "argv": [
+    "just",
+    "_ci-md09"
+  ],
+  "cwd": "/home/_404/src/repo_intel/metadata_baseline",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "just test-md09-handoff-index\npython3 /home/_404/src/repo_intel/metadata_baseline/scripts/run_check.py --name \"just test-md09-handoff-index\" --cwd /home/_404/src/repo_intel/metadata_baseline --output /home/_404/src/repo_intel/metadata_baseline/evidence/md09/just_test_md09.json -- just _test-md09-handoff-index\nbash /home/_404/src/repo_intel/metadata_baseline/tests/test_md09_handoff_index.sh\n"
+}

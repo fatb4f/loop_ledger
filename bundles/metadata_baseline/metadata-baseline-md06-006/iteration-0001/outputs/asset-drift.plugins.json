@@ -1,0 +1,55 @@
+{
+  "kind": "md06_asset_drift_plugins.v1",
+  "asset": "plugins",
+  "snapshot": {
+    "repo_path": "/home/_404/src/repo_intel/codex",
+    "analysis_worktree": "/tmp/codex-origin-main-20260319-2",
+    "updated_remote_head": "32d2df5c1e97948cb5c55481f0b5fd3f8dfabf43",
+    "window": "last_48h",
+    "window_anchor_date": "2026-03-19",
+    "commit_count": 63,
+    "asset_count": 26,
+    "changed_file_count": 407,
+    "copied_file_count": 391,
+    "deleted_in_head_count": 16
+  },
+  "surface": {
+    "why_relevant": "Plugins are now the fastest-moving product surface and must be treated as a first-class analysis bucket.",
+    "analysis_implications": [
+      "Track plugin discover/install/auth/sync/UI as one lifecycle, not scattered changes.",
+      "Expect plugin changes to cross core, protocol, app-server, and TUI surfaces."
+    ],
+    "recent_signals": [
+      "plugin/install now installs/auths MCPs.",
+      "Missing versus empty product-list semantics were corrected.",
+      "One-time startup remote sync and git-first curated sync landed.",
+      "Initial /plugins TUI exposure landed."
+    ]
+  },
+  "delta": {
+    "plugin_commit_subjects": [
+      "feat: support product-scoped plugins. (#15041)",
+      "Support featured plugins (#15042)",
+      "fix: harden plugin feature gating (#15104)",
+      "Revert \"fix: harden plugin feature gating\" (#15102)",
+      "fix: harden plugin feature gating (#15020)"
+    ],
+    "plugin_lifecycle_signals": [
+      "plugin/install now installs/auths MCPs.",
+      "Missing versus empty product-list semantics were corrected.",
+      "One-time startup remote sync and git-first curated sync landed.",
+      "Initial /plugins TUI exposure landed."
+    ],
+    "cross_asset_sources": [
+      "core",
+      "app-server",
+      "app-server-protocol",
+      "tui_app_server"
+    ]
+  },
+  "local_snapshot": {
+    "app_server_present": true,
+    "app_server_protocol_present": true,
+    "tui_app_server_present": true
+  }
+}

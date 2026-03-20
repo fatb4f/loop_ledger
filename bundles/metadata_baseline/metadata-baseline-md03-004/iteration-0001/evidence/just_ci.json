@@ -1,0 +1,12 @@
+{
+  "kind": "command_check.v1",
+  "name": "just ci-md03",
+  "argv": [
+    "just",
+    "_ci-md03"
+  ],
+  "cwd": "/home/_404/src/repo_intel/metadata_baseline",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "just test-md03-package-census\npython3 /home/_404/src/repo_intel/metadata_baseline/scripts/run_check.py --name \"just test-md03-package-census\" --cwd /home/_404/src/repo_intel/metadata_baseline --output /home/_404/src/repo_intel/metadata_baseline/evidence/md03/just_test_md03.json -- just _test-md03-package-census\nbash /home/_404/src/repo_intel/metadata_baseline/tests/test_md03_package_census.sh\n"
+}

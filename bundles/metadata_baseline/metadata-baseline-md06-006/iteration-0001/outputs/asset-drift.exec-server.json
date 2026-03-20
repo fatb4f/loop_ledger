@@ -1,0 +1,58 @@
+{
+  "kind": "md06_asset_drift_exec_server.v1",
+  "asset": "exec-server",
+  "snapshot": {
+    "repo_path": "/home/_404/src/repo_intel/codex",
+    "analysis_worktree": "/tmp/codex-origin-main-20260319-2",
+    "updated_remote_head": "32d2df5c1e97948cb5c55481f0b5fd3f8dfabf43",
+    "window": "last_48h",
+    "window_anchor_date": "2026-03-19",
+    "commit_count": 63,
+    "asset_count": 26,
+    "changed_file_count": 407,
+    "copied_file_count": 391,
+    "deleted_in_head_count": 16
+  },
+  "surface": {
+    "why_relevant": "Exec-server is now more clearly part of a normalized remote execution architecture.",
+    "analysis_implications": [
+      "Report transport assumptions explicitly.",
+      "Track local implementation versus remote proxy versus handler decomposition as a first-class pattern."
+    ],
+    "recent_signals": [
+      "Filesystem split between local and remote.",
+      "Process split between local and remote.",
+      "Remote Docker-backed test environment added."
+    ],
+    "analysis_tags": [
+      "local_remote_handler"
+    ]
+  },
+  "delta": {
+    "commit_count": 2,
+    "file_count": 25,
+    "current_file_count": 22,
+    "deleted_in_head_count": 3,
+    "key_paths": [
+      "codex-rs/exec-server/BUILD.bazel",
+      "codex-rs/exec-server/Cargo.toml",
+      "codex-rs/exec-server/README.md",
+      "codex-rs/exec-server/src/bin/codex-exec-server.rs",
+      "codex-rs/exec-server/src/client.rs",
+      "codex-rs/exec-server/src/client/local_backend.rs",
+      "codex-rs/exec-server/src/client_api.rs",
+      "codex-rs/exec-server/src/connection.rs",
+      "codex-rs/exec-server/src/lib.rs",
+      "codex-rs/exec-server/src/protocol.rs",
+      "codex-rs/exec-server/src/rpc.rs",
+      "codex-rs/exec-server/src/server.rs"
+    ],
+    "commit_subjects": [
+      "Remove stdio transport from exec server (#15119)",
+      "Add exec-server stub server and protocol docs (#15089)"
+    ]
+  },
+  "local_snapshot": {
+    "crate_present": true
+  }
+}

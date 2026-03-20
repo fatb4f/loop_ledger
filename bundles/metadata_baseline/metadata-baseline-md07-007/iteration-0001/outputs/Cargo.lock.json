@@ -1,0 +1,39 @@
+{
+  "kind": "md07_asset_summary.v1",
+  "asset": "Cargo.lock",
+  "anchor_role": "secondary",
+  "surface": {
+    "why_relevant": "Cargo.lock remains the cheapest freshness invalidator for the structural layer while crate boundaries keep moving.",
+    "analysis_implications": [
+      "Invalidate structural summaries when Cargo.lock moves.",
+      "Use it to detect when package-edge or package-count artifacts need regeneration."
+    ],
+    "recent_signals": [
+      "Cross-crate refactors and new crates make lockfile drift more meaningful."
+    ]
+  },
+  "delta": {
+    "commit_count": 7,
+    "file_count": 1,
+    "current_file_count": 1,
+    "deleted_in_head_count": 0,
+    "key_paths": [
+      "codex-rs/Cargo.lock"
+    ],
+    "commit_subjects": [
+      "feat: add graph representation of agent network (#15056)",
+      "feat(core, tracing): create turn spans over websockets (#14632)",
+      "Remove stdio transport from exec server (#15119)",
+      "Add exec-server stub server and protocol docs (#15089)",
+      "Return image URL from view_image tool (#15072)",
+      "feat: adapt artifacts to new packaging and 2.5.6 (#14947)",
+      "Add FS abstraction and use in view_image (#14960)"
+    ]
+  },
+  "ownership_implications": {
+    "crate_name": null,
+    "local_present": null,
+    "local_missing": null,
+    "promoted_edge_count": null
+  }
+}

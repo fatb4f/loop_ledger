@@ -1,0 +1,78 @@
+{
+  "kind": "review_bundle_artifacts_manifest.v1",
+  "project": "metadata_baseline",
+  "bundle_id": "metadata-baseline-md04-005",
+  "iteration_id": "iteration-0001",
+  "manifest_path": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-md04-005.iteration-0001.json",
+  "output_root": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md04-005/iteration-0001",
+  "lineage": {
+    "relationship": "derived_from",
+    "parent_bundle_id": "metadata-baseline-plan-merge-001",
+    "parent_manifest": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-plan-merge-001.iteration-0001.json"
+  },
+  "integrity_mode": "all_files",
+  "files": [
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md04-005/iteration-0001/PLAN/README.md",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md04-005/PLAN/README.md",
+      "role": "plan_readme",
+      "sha256": "5d24ee3ee461acf43d8dc6b820242b0a6799f9114929a818ab6501286759000c"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md04-005/iteration-0001/PLAN/request.instance.json",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md04-005/PLAN/request.instance.json",
+      "role": "plan_request_instance",
+      "sha256": "73447d5b51a9889ce002af2be22eb01604ca4131aacd6a3077179d73e3fc4f76"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md04-005/iteration-0001/IMPLEMENT/IMPLEMENT.md",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md04-005/IMPLEMENT/IMPLEMENT.md",
+      "role": "implement_readme",
+      "sha256": "cddd87309fd4c481143bd56ddde832777c076ecb0ebe3c71a5114fc35cddd032"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md04-005/iteration-0001/IMPLEMENT/response.instance.json",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md04-005/IMPLEMENT/response.instance.json",
+      "role": "implement_response_instance",
+      "sha256": "e5a0fa657ca86d599eb3cb2003438fd8aefadc2589ad9a86319f7601552003c7"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md04-005/iteration-0001/md04_result.json",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md04-005/md04_result.json",
+      "role": "md04_result",
+      "sha256": "10f75505b6710ea3848a94b8ec1634725114b789cd46d327796740d70422172a"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md04-005/iteration-0001/outputs/package-edges.tsv",
+      "source": "/home/_404/src/repo_intel/codex/.analysis/reports/package-edges.tsv",
+      "role": "package_edges_output",
+      "sha256": "f02e2635f2aebbd3a3e469dd2f6069df52826c88626980967354ce03b3c92185"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md04-005/iteration-0001/outputs/edge-summary.json",
+      "source": "/home/_404/src/repo_intel/codex/.analysis/reports/edge-summary.json",
+      "role": "edge_summary_output",
+      "sha256": "fb94524c843791419ae9b0fe1b055d53a5bdfdc6fc3e651dd67029879a40b611"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md04-005/iteration-0001/evidence/just_test_md04.json",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/evidence/md04/just_test_md04.json",
+      "role": "just_test_md04_check",
+      "sha256": "979af689987416f4ad9d5a33384ca44a2be795b5f5699d1302523ef7c384aad6",
+      "name": "just test-md04-edge-table"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md04-005/iteration-0001/evidence/just_ci.json",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/evidence/md04/just_ci.json",
+      "role": "just_ci_check",
+      "sha256": "394046be88258ce4b54d057fbc469118737a9168c009ca715dcf3416c255fdad",
+      "name": "just ci-md04"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md04-005/iteration-0001/ref_header.json",
+      "source": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-md04-005.iteration-0001.json",
+      "role": "ref_header",
+      "sha256": "92bdec61d691735c6aeda4b6de5c02552133637ee0c002dbe2228b479c3ac1cd"
+    }
+  ]
+}

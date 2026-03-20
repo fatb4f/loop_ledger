@@ -1,0 +1,30 @@
+{
+  "kind": "metadata_baseline_implement_response.v1",
+  "loop_instance_id": "metadata-baseline-md07-007",
+  "iteration_id": "iteration-0001",
+  "micro_deliverable": "MD-07",
+  "verdict": "APPROVED",
+  "summary": "The refreshed asset-bucket summaries were emitted from the accepted post320 surface and accepted MD-03 through MD-06 outputs, preserving core as the primary anchor while keeping plugins and crate splits distinct.",
+  "evidence": {
+    "checks": [
+      {
+        "name": "just test-md07-asset-summaries",
+        "exit_code": 0,
+        "evidence": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md07-007/evidence/just_test_md07.json"
+      },
+      {
+        "name": "just ci-md07",
+        "exit_code": 0,
+        "evidence": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md07-007/evidence/just_ci.json"
+      }
+    ],
+    "outputs": {
+      "core_json": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md07-007/outputs/core.json",
+      "plugins_json": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md07-007/outputs/plugins.json",
+      "app_server_protocol_json": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md07-007/outputs/app-server-protocol.json",
+      "exec_server_json": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md07-007/outputs/exec-server.json",
+      "codex_features_json": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md07-007/outputs/codex-features.json"
+    }
+  },
+  "next_patch_set": "MD-09"
+}

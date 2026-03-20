@@ -1,0 +1,53 @@
+{
+  "kind": "md07_asset_summary.v1",
+  "asset": "plugins",
+  "anchor_role": "secondary",
+  "surface": {
+    "why_relevant": "Plugins are now the fastest-moving product surface and must be treated as a first-class analysis bucket.",
+    "analysis_implications": [
+      "Track plugin discover/install/auth/sync/UI as one lifecycle, not scattered changes.",
+      "Expect plugin changes to cross core, protocol, app-server, and TUI surfaces."
+    ],
+    "recent_signals": [
+      "plugin/install now installs/auths MCPs.",
+      "Missing versus empty product-list semantics were corrected.",
+      "One-time startup remote sync and git-first curated sync landed.",
+      "Initial /plugins TUI exposure landed."
+    ]
+  },
+  "delta": {
+    "commit_count": 5,
+    "file_count": 0,
+    "current_file_count": 0,
+    "deleted_in_head_count": 0,
+    "key_paths": [],
+    "commit_subjects": []
+  },
+  "ownership_implications": {
+    "crate_name": null,
+    "local_present": null,
+    "local_missing": null,
+    "promoted_edge_count": null
+  },
+  "drift_signals": {
+    "plugin_commit_subjects": [
+      "feat: support product-scoped plugins. (#15041)",
+      "Support featured plugins (#15042)",
+      "fix: harden plugin feature gating (#15104)",
+      "Revert \"fix: harden plugin feature gating\" (#15102)",
+      "fix: harden plugin feature gating (#15020)"
+    ],
+    "plugin_lifecycle_signals": [
+      "plugin/install now installs/auths MCPs.",
+      "Missing versus empty product-list semantics were corrected.",
+      "One-time startup remote sync and git-first curated sync landed.",
+      "Initial /plugins TUI exposure landed."
+    ],
+    "cross_asset_sources": [
+      "core",
+      "app-server",
+      "app-server-protocol",
+      "tui_app_server"
+    ]
+  }
+}

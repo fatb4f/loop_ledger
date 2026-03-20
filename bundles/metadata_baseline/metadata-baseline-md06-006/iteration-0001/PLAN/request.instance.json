@@ -1,0 +1,27 @@
+{
+  "kind": "metadata_baseline_plan_request.v1",
+  "loop_instance_id": "metadata-baseline-md06-006",
+  "iteration_id": "iteration-0001",
+  "micro_deliverable": "MD-06",
+  "title": "Protocol/plugin/execution drift report",
+  "objective": "Emit stable drift reports for app-server-protocol, plugins, exec-server, and crate splits from the accepted post320 surface and the stored Codex delta extract.",
+  "expected_outputs": [
+    ".analysis/reports/asset-drift.app-server-protocol.json",
+    ".analysis/reports/asset-drift.plugins.json",
+    ".analysis/reports/asset-drift.exec-server.json",
+    ".analysis/reports/asset-drift.crate-splits.json"
+  ],
+  "success_conditions": [
+    "app-server-protocol drift report is emitted",
+    "plugins drift report is emitted",
+    "exec-server drift report is emitted",
+    "crate-splits drift report is emitted",
+    "protocol deletions in head are recorded",
+    "plugin lifecycle signals are preserved",
+    "exec-server local/remote/handler tag is preserved",
+    "codex-login and codex-features split state is recorded accurately",
+    "just test-md06-asset-drift exits 0",
+    "just ci-md06 exits 0"
+  ],
+  "reviewed_head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6"
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "md07_asset_summary.v1",
+  "asset": "codex-login",
+  "anchor_role": "secondary",
+  "surface": {
+    "why_relevant": "Auth moved out of codex-core into a dedicated crate, changing package ownership and cross-crate authority assumptions.",
+    "analysis_implications": [
+      "Track auth functionality as a separate ownership target from core.",
+      "Use crate-split detection to avoid stale core-centric summaries."
+    ],
+    "recent_signals": [
+      "Auth implementation and token data moved into codex-login."
+    ]
+  },
+  "delta": {
+    "commit_count": 0,
+    "file_count": 0,
+    "current_file_count": 0,
+    "deleted_in_head_count": 0,
+    "key_paths": [],
+    "commit_subjects": []
+  },
+  "ownership_implications": {
+    "crate_name": "codex-login",
+    "local_present": true,
+    "local_missing": false,
+    "promoted_edge_count": 21
+  },
+  "drift_signals": {
+    "split_status": {
+      "crate_name": "codex-login",
+      "present": true,
+      "why_relevant": "Auth moved out of codex-core into a dedicated crate, changing package ownership and cross-crate authority assumptions.",
+      "recent_signals": [
+        "Auth implementation and token data moved into codex-login."
+      ]
+    }
+  }
+}

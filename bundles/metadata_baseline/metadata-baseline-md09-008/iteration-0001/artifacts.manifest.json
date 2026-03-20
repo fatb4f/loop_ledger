@@ -1,0 +1,72 @@
+{
+  "kind": "review_bundle_artifacts_manifest.v1",
+  "project": "metadata_baseline",
+  "bundle_id": "metadata-baseline-md09-008",
+  "iteration_id": "iteration-0001",
+  "manifest_path": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-md09-008.iteration-0001.json",
+  "output_root": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md09-008/iteration-0001",
+  "lineage": {
+    "relationship": "derived_from",
+    "parent_bundle_id": "metadata-baseline-plan-merge-001",
+    "parent_manifest": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-plan-merge-001.iteration-0001.json"
+  },
+  "integrity_mode": "all_files",
+  "files": [
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md09-008/iteration-0001/PLAN/README.md",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md09-008/PLAN/README.md",
+      "role": "plan_readme",
+      "sha256": "1a30f75176f6e495a5fd4383804658f25906d928681f2c53c969e2b7da0f3816"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md09-008/iteration-0001/PLAN/request.instance.json",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md09-008/PLAN/request.instance.json",
+      "role": "plan_request_instance",
+      "sha256": "22328a7b31523b721c64e489e35f357a2201d3ea3e9403c7601708189643a7cd"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md09-008/iteration-0001/IMPLEMENT/IMPLEMENT.md",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md09-008/IMPLEMENT/IMPLEMENT.md",
+      "role": "implement_readme",
+      "sha256": "aac7f3e7cec1e3a60ac7a0027655a6b9d44108fc8db0d772f2e81b1eab7bb815"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md09-008/iteration-0001/IMPLEMENT/response.instance.json",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md09-008/IMPLEMENT/response.instance.json",
+      "role": "implement_response_instance",
+      "sha256": "8f9f85709106a4eacfc605ca1ea8680ca2dc19da54188b22ea894533472f5146"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md09-008/iteration-0001/md09_result.json",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md09-008/md09_result.json",
+      "role": "md09_result",
+      "sha256": "66a968bcd1c39cb68b7b610920306c459a60ef45d0db0fa49612b260e69f6905"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md09-008/iteration-0001/outputs/index.json",
+      "source": "/home/_404/src/repo_intel/codex/.analysis/index.json",
+      "role": "index_output",
+      "sha256": "b0cf434d7c2fc53aa2569760d265eddf9873d53deab1bf8c5b276c4aa0982bbd"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md09-008/iteration-0001/evidence/just_test_md09.json",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/evidence/md09/just_test_md09.json",
+      "role": "just_test_md09_check",
+      "sha256": "e96c78fa5070534db40f656d1ac1234af2883cb745994f840f9dff32b963474f",
+      "name": "just test-md09-handoff-index"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md09-008/iteration-0001/evidence/just_ci.json",
+      "source": "/home/_404/src/repo_intel/metadata_baseline/evidence/md09/just_ci.json",
+      "role": "just_ci_check",
+      "sha256": "983058d02296fed6255f1bd5850d9eb290d80358ca0b1aae828c4d4d367bac65",
+      "name": "just ci-md09"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md09-008/iteration-0001/ref_header.json",
+      "source": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-md09-008.iteration-0001.json",
+      "role": "ref_header",
+      "sha256": "6417a985499179e3654cc9452151fd3b098fceec967df4e12d8d79bc5736488c"
+    }
+  ]
+}

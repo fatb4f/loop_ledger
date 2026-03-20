@@ -1,0 +1,45 @@
+{
+  "kind": "md02_result.v1",
+  "loop_instance_id": "metadata-baseline-md02-003",
+  "iteration_id": "iteration-0001",
+  "target_spec": "/home/_404/src/repo_intel/metadata_baseline/targets/codex.snapshot.json",
+  "discovered": {
+    "workspace_member_count": 76,
+    "workspace_package_count": 76,
+    "host_package_count": 1053,
+    "host_resolve_node_count": 1053,
+    "workspace_root": "/home/_404/src/repo_intel/codex/codex-rs"
+  },
+  "comparison": {
+    "workspace_metadata_has_members": true,
+    "workspace_metadata_has_packages": true,
+    "host_metadata_has_resolve": true,
+    "host_metadata_has_nodes": true
+  },
+  "checks": [
+    {
+      "name": "cargo metadata --no-deps",
+      "exit_code": 0,
+      "evidence": "/home/_404/src/repo_intel/metadata_baseline/evidence/md02/cargo_metadata_workspace.json"
+    },
+    {
+      "name": "cargo metadata",
+      "exit_code": 0,
+      "evidence": "/home/_404/src/repo_intel/metadata_baseline/evidence/md02/cargo_metadata_host.json"
+    },
+    {
+      "name": "just test-md02-metadata-pair",
+      "exit_code": 0,
+      "evidence": "/home/_404/src/repo_intel/metadata_baseline/evidence/md02/just_test_md02.json"
+    },
+    {
+      "name": "just ci-md02",
+      "exit_code": 0,
+      "evidence": "/home/_404/src/repo_intel/metadata_baseline/evidence/md02/just_ci.json"
+    }
+  ],
+  "outputs": {
+    "metadata_workspace_json": "/home/_404/src/repo_intel/codex/.analysis/raw/metadata.workspace.json",
+    "metadata_host_json": "/home/_404/src/repo_intel/codex/.analysis/raw/metadata.host.json"
+  }
+}

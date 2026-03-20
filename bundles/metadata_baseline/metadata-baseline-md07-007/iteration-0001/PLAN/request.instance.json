@@ -1,0 +1,30 @@
+{
+  "kind": "metadata_baseline_plan_request.v1",
+  "loop_instance_id": "metadata-baseline-md07-007",
+  "iteration_id": "iteration-0001",
+  "micro_deliverable": "MD-07",
+  "title": "Refreshed asset-bucket summaries",
+  "objective": "Emit ten stable asset summaries from the accepted post320 surface and accepted MD-03 through MD-06 outputs.",
+  "expected_outputs": [
+    ".analysis/reports/assets/core.json",
+    ".analysis/reports/assets/plugins.json",
+    ".analysis/reports/assets/app-server.json",
+    ".analysis/reports/assets/tui_app_server.json",
+    ".analysis/reports/assets/app-server-protocol.json",
+    ".analysis/reports/assets/exec-server.json",
+    ".analysis/reports/assets/codex-login.json",
+    ".analysis/reports/assets/codex-features.json",
+    ".analysis/reports/assets/state.json",
+    ".analysis/reports/assets/Cargo.lock.json"
+  ],
+  "success_conditions": [
+    "ten asset summaries are emitted",
+    "each promoted asset gets a summary with commit rationale and ownership implications",
+    "core remains the primary anchor but not the only authority bucket",
+    "plugins remain a distinct asset bucket",
+    "codex-features local absence remains explicit",
+    "just test-md07-asset-summaries exits 0",
+    "just ci-md07 exits 0"
+  ],
+  "reviewed_head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6"
+}

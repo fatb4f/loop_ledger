@@ -1,0 +1,18 @@
+{
+  "kind": "review_bundle_ref_header.v1",
+  "project": "metadata_baseline",
+  "bundle_id": "metadata-baseline-plan-merge-001",
+  "iteration_id": "iteration-0001",
+  "scope_root": "/home/_404/src/repo_intel/metadata_baseline",
+  "reviewed_head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6",
+  "lineage": {},
+  "refs": {
+    "upstream_project": "/home/_404/src/repo_intel/metadata_baseline",
+    "source_review_bundle": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-plan-merge-001"
+  },
+  "evidence_bundle": {
+    "integrity_mode": "all_files",
+    "required_output_roles": [],
+    "required_check_roles": []
+  }
+}

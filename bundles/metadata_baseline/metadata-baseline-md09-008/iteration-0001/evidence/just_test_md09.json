@@ -1,0 +1,12 @@
+{
+  "kind": "command_check.v1",
+  "name": "just test-md09-handoff-index",
+  "argv": [
+    "just",
+    "_test-md09-handoff-index"
+  ],
+  "cwd": "/home/_404/src/repo_intel/metadata_baseline",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "bash /home/_404/src/repo_intel/metadata_baseline/tests/test_md09_handoff_index.sh\n"
+}
