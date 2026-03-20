@@ -1,0 +1,12 @@
+{
+  "kind": "loop_state.v1",
+  "loop_instance_id": "asset-control-model-loop-pipeline-working-model-001",
+  "iteration_id": "iteration-0001",
+  "phase": "TERMINATE",
+  "previous_phase": "VERIFY",
+  "decision": "APPROVED",
+  "transition_gate": "PASS",
+  "verification_result": "PASS",
+  "rollback_status": "not_requested",
+  "archive_ref": "/home/_404/src/loop_ledger/dist/asset-control-model-loop-pipeline-working-model-001.iteration-0001.review.zip"
+}

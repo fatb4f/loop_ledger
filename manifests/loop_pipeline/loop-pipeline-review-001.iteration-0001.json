@@ -1,0 +1,718 @@
+{
+  "kind": "review_bundle_manifest.v1",
+  "project": "loop_pipeline",
+  "bundle_id": "loop-pipeline-review-001",
+  "iteration_id": "iteration-0001",
+  "scope_root": "/home/_404/src",
+  "reviewed_head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+  "output_root": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001",
+  "refs": {
+    "codex_home": "/home/_404/.config/codex",
+    "dotfiles_repo": "/home/_404/src/dotfiles",
+    "dotfiles_head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+    "loop_ledger_repo": "/home/_404/src/loop_ledger",
+    "loop_ledger_head": "5196465ced560a5ea263db5b6721cb2b369fb1a8"
+  },
+  "evidence_bundle": {
+    "required_outputs": [],
+    "required_checks": [],
+    "integrity_mode": "all_files"
+  },
+  "include": [
+    {
+      "source": "/home/_404/src/loop_ledger/manifests/loop_pipeline/loop-pipeline-review-001.scope.md",
+      "dest": "SCOPE.md",
+      "role": "review_scope",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/loop_pipeline/loop-pipeline-review-001.scope.md",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/loop_pipeline/loop-pipeline-review-001.scope.md"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/CONSOLIDATED_BUNDLE.md",
+      "dest": "codex/CONSOLIDATED_BUNDLE.md",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/CONSOLIDATED_BUNDLE.md",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/CONSOLIDATED_BUNDLE.md"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/plan.request_response_contract.v1.json",
+      "dest": "codex/plan.request_response_contract.v1.json",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/plan.request_response_contract.v1.json",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/plan.request_response_contract.v1.json"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/prompt-registry/workflows/git-flow.integration-worktree.json",
+      "dest": "codex/prompt-registry/workflows/git-flow.integration-worktree.json",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/prompt-registry/workflows/git-flow.integration-worktree.json",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/prompt-registry/workflows/git-flow.integration-worktree.json"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/registry.json",
+      "dest": "codex/skills/registry.json",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/registry.json",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/registry.json"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/control/git-flow/README.md",
+      "dest": "codex/control/git-flow/README.md",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/control/git-flow/README.md",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/control/git-flow/README.md"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/control/git-flow/git_flow.dag.json",
+      "dest": "codex/control/git-flow/git_flow.dag.json",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/control/git-flow/git_flow.dag.json",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/control/git-flow/git_flow.dag.json"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/control/git-flow/git_flow.dag.mmd",
+      "dest": "codex/control/git-flow/git_flow.dag.mmd",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/control/git-flow/git_flow.dag.mmd",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/control/git-flow/git_flow.dag.mmd"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/control/git-flow/git_flow.manifest.json",
+      "dest": "codex/control/git-flow/git_flow.manifest.json",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/control/git-flow/git_flow.manifest.json",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/control/git-flow/git_flow.manifest.json"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/control/git-flow/schemas/git_flow_dag.schema.json",
+      "dest": "codex/control/git-flow/schemas/git_flow_dag.schema.json",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/control/git-flow/schemas/git_flow_dag.schema.json",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/control/git-flow/schemas/git_flow_dag.schema.json"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/control/git-flow/schemas/git_flow_manifest.schema.json",
+      "dest": "codex/control/git-flow/schemas/git_flow_manifest.schema.json",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/control/git-flow/schemas/git_flow_manifest.schema.json",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/control/git-flow/schemas/git_flow_manifest.schema.json"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/SKILL.md",
+      "dest": "codex/skills/loop/SKILL.md",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/loop/SKILL.md",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/SKILL.md"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/assets/LOOP.packet.template.md",
+      "dest": "codex/skills/loop/assets/LOOP.packet.template.md",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/loop/assets/LOOP.packet.template.md",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/assets/LOOP.packet.template.md"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/assets/handoff.contract.json",
+      "dest": "codex/skills/loop/assets/handoff.contract.json",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/loop/assets/handoff.contract.json",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/assets/handoff.contract.json"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/assets/init.asset.json",
+      "dest": "codex/skills/loop/assets/init.asset.json",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/loop/assets/init.asset.json",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/assets/init.asset.json"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/assets/interface.json",
+      "dest": "codex/skills/loop/assets/interface.json",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/loop/assets/interface.json",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/assets/interface.json"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/assets/sequence_dag.md",
+      "dest": "codex/skills/loop/assets/sequence_dag.md",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/loop/assets/sequence_dag.md",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/assets/sequence_dag.md"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/assets/terminate.asset.json",
+      "dest": "codex/skills/loop/assets/terminate.asset.json",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/loop/assets/terminate.asset.json",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/assets/terminate.asset.json"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/assets/workflow.json",
+      "dest": "codex/skills/loop/assets/workflow.json",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/loop/assets/workflow.json",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/assets/workflow.json"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/references/composition.md",
+      "dest": "codex/skills/loop/references/composition.md",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/loop/references/composition.md",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/references/composition.md"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/references/handoff_contracts.md",
+      "dest": "codex/skills/loop/references/handoff_contracts.md",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/loop/references/handoff_contracts.md",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/references/handoff_contracts.md"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/references/phase_profiles.md",
+      "dest": "codex/skills/loop/references/phase_profiles.md",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/loop/references/phase_profiles.md",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/references/phase_profiles.md"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/references/transition_semantics.md",
+      "dest": "codex/skills/loop/references/transition_semantics.md",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/loop/references/transition_semantics.md",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/references/transition_semantics.md"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/scripts/validate_contract_bridge.py",
+      "dest": "codex/skills/loop/scripts/validate_contract_bridge.py",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/loop/scripts/validate_contract_bridge.py",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/scripts/validate_contract_bridge.py"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/scripts/validate_handoff.py",
+      "dest": "codex/skills/loop/scripts/validate_handoff.py",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/loop/scripts/validate_handoff.py",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/scripts/validate_handoff.py"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/scripts/validate_loop_packet.py",
+      "dest": "codex/skills/loop/scripts/validate_loop_packet.py",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/loop/scripts/validate_loop_packet.py",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/scripts/validate_loop_packet.py"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/plan/SKILL.md",
+      "dest": "codex/skills/plan/SKILL.md",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/plan/SKILL.md",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/plan/SKILL.md"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/plan/assets/README.plan.template.md",
+      "dest": "codex/skills/plan/assets/README.plan.template.md",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/plan/assets/README.plan.template.md",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/plan/assets/README.plan.template.md"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/plan/assets/interface.json",
+      "dest": "codex/skills/plan/assets/interface.json",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/plan/assets/interface.json",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/plan/assets/interface.json"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/plan/assets/sequence_dag.md",
+      "dest": "codex/skills/plan/assets/sequence_dag.md",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/plan/assets/sequence_dag.md",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/plan/assets/sequence_dag.md"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/plan/assets/workflow.json",
+      "dest": "codex/skills/plan/assets/workflow.json",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/plan/assets/workflow.json",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/plan/assets/workflow.json"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/plan/references/contract_layer.md",
+      "dest": "codex/skills/plan/references/contract_layer.md",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/plan/references/contract_layer.md",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/plan/references/contract_layer.md"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/plan/references/decision_semantics.md",
+      "dest": "codex/skills/plan/references/decision_semantics.md",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/plan/references/decision_semantics.md",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/plan/references/decision_semantics.md"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/plan/references/git_flow.md",
+      "dest": "codex/skills/plan/references/git_flow.md",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/plan/references/git_flow.md",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/plan/references/git_flow.md"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/plan/references/plan_packet_validation.md",
+      "dest": "codex/skills/plan/references/plan_packet_validation.md",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/plan/references/plan_packet_validation.md",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/plan/references/plan_packet_validation.md"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/plan/references/template_generation.md",
+      "dest": "codex/skills/plan/references/template_generation.md",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/plan/references/template_generation.md",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/plan/references/template_generation.md"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/plan/references/xdg_state_config_directives.md",
+      "dest": "codex/skills/plan/references/xdg_state_config_directives.md",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/plan/references/xdg_state_config_directives.md",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/plan/references/xdg_state_config_directives.md"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/plan/scripts/generate_plan_packet.py",
+      "dest": "codex/skills/plan/scripts/generate_plan_packet.py",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/plan/scripts/generate_plan_packet.py",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/plan/scripts/generate_plan_packet.py"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/plan/scripts/validate_plan_packet.py",
+      "dest": "codex/skills/plan/scripts/validate_plan_packet.py",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/plan/scripts/validate_plan_packet.py",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/plan/scripts/validate_plan_packet.py"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/implement/SKILL.md",
+      "dest": "codex/skills/implement/SKILL.md",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/implement/SKILL.md",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/implement/SKILL.md"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/implement/assets/IMPLEMENT.packet.template.md",
+      "dest": "codex/skills/implement/assets/IMPLEMENT.packet.template.md",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/implement/assets/IMPLEMENT.packet.template.md",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/implement/assets/IMPLEMENT.packet.template.md"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/implement/assets/interface.json",
+      "dest": "codex/skills/implement/assets/interface.json",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/implement/assets/interface.json",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/implement/assets/interface.json"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/implement/assets/sequence_dag.md",
+      "dest": "codex/skills/implement/assets/sequence_dag.md",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/implement/assets/sequence_dag.md",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/implement/assets/sequence_dag.md"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/implement/assets/workflow.json",
+      "dest": "codex/skills/implement/assets/workflow.json",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/implement/assets/workflow.json",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/implement/assets/workflow.json"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/implement/references/domain_profiles.md",
+      "dest": "codex/skills/implement/references/domain_profiles.md",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/implement/references/domain_profiles.md",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/implement/references/domain_profiles.md"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/implement/references/evidence_gate.md",
+      "dest": "codex/skills/implement/references/evidence_gate.md",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/implement/references/evidence_gate.md",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/implement/references/evidence_gate.md"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/implement/references/execution_modes.md",
+      "dest": "codex/skills/implement/references/execution_modes.md",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/implement/references/execution_modes.md",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/implement/references/execution_modes.md"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/implement/references/git_flow_preference_set.md",
+      "dest": "codex/skills/implement/references/git_flow_preference_set.md",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/implement/references/git_flow_preference_set.md",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/implement/references/git_flow_preference_set.md"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/implement/references/plan_handoff.md",
+      "dest": "codex/skills/implement/references/plan_handoff.md",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/implement/references/plan_handoff.md",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/implement/references/plan_handoff.md"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/implement/references/python_cli_daemon_preferences.md",
+      "dest": "codex/skills/implement/references/python_cli_daemon_preferences.md",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/implement/references/python_cli_daemon_preferences.md",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/implement/references/python_cli_daemon_preferences.md"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/implement/scripts/generate_implement_packet.py",
+      "dest": "codex/skills/implement/scripts/generate_implement_packet.py",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/implement/scripts/generate_implement_packet.py",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/implement/scripts/generate_implement_packet.py"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/implement/scripts/validate_implement_packet.py",
+      "dest": "codex/skills/implement/scripts/validate_implement_packet.py",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/implement/scripts/validate_implement_packet.py",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/implement/scripts/validate_implement_packet.py"
+    },
+    {
+      "source": "/home/_404/src/loop_ledger/AGENTS.md",
+      "dest": "loop_ledger/AGENTS.md",
+      "role": "loop_ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "AGENTS.md",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "absolute_path": "/home/_404/src/loop_ledger/AGENTS.md"
+    },
+    {
+      "source": "/home/_404/src/loop_ledger/README.md",
+      "dest": "loop_ledger/README.md",
+      "role": "loop_ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "README.md",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "absolute_path": "/home/_404/src/loop_ledger/README.md"
+    },
+    {
+      "source": "/home/_404/src/loop_ledger/justfile",
+      "dest": "loop_ledger/justfile",
+      "role": "loop_ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "justfile",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "absolute_path": "/home/_404/src/loop_ledger/justfile"
+    },
+    {
+      "source": "/home/_404/src/loop_ledger/schemas/review_bundle_manifest.v1.schema.json",
+      "dest": "loop_ledger/schemas/review_bundle_manifest.v1.schema.json",
+      "role": "loop_ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "schemas/review_bundle_manifest.v1.schema.json",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "absolute_path": "/home/_404/src/loop_ledger/schemas/review_bundle_manifest.v1.schema.json"
+    },
+    {
+      "source": "/home/_404/src/loop_ledger/scripts/check_review_bundle_inputs.py",
+      "dest": "loop_ledger/scripts/check_review_bundle_inputs.py",
+      "role": "loop_ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "scripts/check_review_bundle_inputs.py",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "absolute_path": "/home/_404/src/loop_ledger/scripts/check_review_bundle_inputs.py"
+    },
+    {
+      "source": "/home/_404/src/loop_ledger/scripts/materialize_review_bundle.py",
+      "dest": "loop_ledger/scripts/materialize_review_bundle.py",
+      "role": "loop_ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "scripts/materialize_review_bundle.py",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "absolute_path": "/home/_404/src/loop_ledger/scripts/materialize_review_bundle.py"
+    },
+    {
+      "source": "/home/_404/src/loop_ledger/scripts/validate_json.py",
+      "dest": "loop_ledger/scripts/validate_json.py",
+      "role": "loop_ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "scripts/validate_json.py",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "absolute_path": "/home/_404/src/loop_ledger/scripts/validate_json.py"
+    },
+    {
+      "source": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-md01-002.iteration-0001.json",
+      "dest": "loop_ledger/manifests/metadata_baseline/metadata-baseline-md01-002.iteration-0001.json",
+      "role": "loop_ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/metadata_baseline/metadata-baseline-md01-002.iteration-0001.json",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-md01-002.iteration-0001.json"
+    },
+    {
+      "source": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-md02-003.iteration-0001.json",
+      "dest": "loop_ledger/manifests/metadata_baseline/metadata-baseline-md02-003.iteration-0001.json",
+      "role": "loop_ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/metadata_baseline/metadata-baseline-md02-003.iteration-0001.json",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-md02-003.iteration-0001.json"
+    },
+    {
+      "source": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-md03-004.iteration-0001.json",
+      "dest": "loop_ledger/manifests/metadata_baseline/metadata-baseline-md03-004.iteration-0001.json",
+      "role": "loop_ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/metadata_baseline/metadata-baseline-md03-004.iteration-0001.json",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-md03-004.iteration-0001.json"
+    },
+    {
+      "source": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-md04-005.iteration-0001.json",
+      "dest": "loop_ledger/manifests/metadata_baseline/metadata-baseline-md04-005.iteration-0001.json",
+      "role": "loop_ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/metadata_baseline/metadata-baseline-md04-005.iteration-0001.json",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-md04-005.iteration-0001.json"
+    },
+    {
+      "source": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-md06-006.iteration-0001.json",
+      "dest": "loop_ledger/manifests/metadata_baseline/metadata-baseline-md06-006.iteration-0001.json",
+      "role": "loop_ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/metadata_baseline/metadata-baseline-md06-006.iteration-0001.json",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-md06-006.iteration-0001.json"
+    },
+    {
+      "source": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-md07-007.iteration-0001.json",
+      "dest": "loop_ledger/manifests/metadata_baseline/metadata-baseline-md07-007.iteration-0001.json",
+      "role": "loop_ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/metadata_baseline/metadata-baseline-md07-007.iteration-0001.json",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-md07-007.iteration-0001.json"
+    },
+    {
+      "source": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-md09-008.iteration-0001.json",
+      "dest": "loop_ledger/manifests/metadata_baseline/metadata-baseline-md09-008.iteration-0001.json",
+      "role": "loop_ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/metadata_baseline/metadata-baseline-md09-008.iteration-0001.json",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-md09-008.iteration-0001.json"
+    },
+    {
+      "source": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-plan-merge-001.iteration-0001.json",
+      "dest": "loop_ledger/manifests/metadata_baseline/metadata-baseline-plan-merge-001.iteration-0001.json",
+      "role": "loop_ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/metadata_baseline/metadata-baseline-plan-merge-001.iteration-0001.json",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-plan-merge-001.iteration-0001.json"
+    },
+    {
+      "source": "/home/_404/src/loop_ledger/dist/metadata-baseline-md01-002.iteration-0001.review.zip",
+      "dest": "loop_ledger/dist/metadata-baseline-md01-002.iteration-0001.review.zip",
+      "role": "loop_ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "dist/metadata-baseline-md01-002.iteration-0001.review.zip",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "absolute_path": "/home/_404/src/loop_ledger/dist/metadata-baseline-md01-002.iteration-0001.review.zip"
+    },
+    {
+      "source": "/home/_404/src/loop_ledger/dist/metadata-baseline-md02-003.iteration-0001.review.zip",
+      "dest": "loop_ledger/dist/metadata-baseline-md02-003.iteration-0001.review.zip",
+      "role": "loop_ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "dist/metadata-baseline-md02-003.iteration-0001.review.zip",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "absolute_path": "/home/_404/src/loop_ledger/dist/metadata-baseline-md02-003.iteration-0001.review.zip"
+    },
+    {
+      "source": "/home/_404/src/loop_ledger/dist/metadata-baseline-md03-004.iteration-0001.review.zip",
+      "dest": "loop_ledger/dist/metadata-baseline-md03-004.iteration-0001.review.zip",
+      "role": "loop_ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "dist/metadata-baseline-md03-004.iteration-0001.review.zip",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "absolute_path": "/home/_404/src/loop_ledger/dist/metadata-baseline-md03-004.iteration-0001.review.zip"
+    },
+    {
+      "source": "/home/_404/src/loop_ledger/dist/metadata-baseline-md04-005.iteration-0001.review.zip",
+      "dest": "loop_ledger/dist/metadata-baseline-md04-005.iteration-0001.review.zip",
+      "role": "loop_ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "dist/metadata-baseline-md04-005.iteration-0001.review.zip",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "absolute_path": "/home/_404/src/loop_ledger/dist/metadata-baseline-md04-005.iteration-0001.review.zip"
+    },
+    {
+      "source": "/home/_404/src/loop_ledger/dist/metadata-baseline-md06-006.iteration-0001.review.zip",
+      "dest": "loop_ledger/dist/metadata-baseline-md06-006.iteration-0001.review.zip",
+      "role": "loop_ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "dist/metadata-baseline-md06-006.iteration-0001.review.zip",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "absolute_path": "/home/_404/src/loop_ledger/dist/metadata-baseline-md06-006.iteration-0001.review.zip"
+    },
+    {
+      "source": "/home/_404/src/loop_ledger/dist/metadata-baseline-md07-007.iteration-0001.review.zip",
+      "dest": "loop_ledger/dist/metadata-baseline-md07-007.iteration-0001.review.zip",
+      "role": "loop_ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "dist/metadata-baseline-md07-007.iteration-0001.review.zip",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "absolute_path": "/home/_404/src/loop_ledger/dist/metadata-baseline-md07-007.iteration-0001.review.zip"
+    },
+    {
+      "source": "/home/_404/src/loop_ledger/dist/metadata-baseline-md09-008.iteration-0001.review.zip",
+      "dest": "loop_ledger/dist/metadata-baseline-md09-008.iteration-0001.review.zip",
+      "role": "loop_ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "dist/metadata-baseline-md09-008.iteration-0001.review.zip",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "absolute_path": "/home/_404/src/loop_ledger/dist/metadata-baseline-md09-008.iteration-0001.review.zip"
+    },
+    {
+      "source": "/home/_404/src/loop_ledger/dist/metadata-baseline-plan-merge-001.iteration-0001.review.zip",
+      "dest": "loop_ledger/dist/metadata-baseline-plan-merge-001.iteration-0001.review.zip",
+      "role": "loop_ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "dist/metadata-baseline-plan-merge-001.iteration-0001.review.zip",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "absolute_path": "/home/_404/src/loop_ledger/dist/metadata-baseline-plan-merge-001.iteration-0001.review.zip"
+    }
+  ],
+  "source_roots": {
+    "dotfiles": {
+      "root": "/home/_404/src/dotfiles",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3"
+    },
+    "loop_ledger": {
+      "root": "/home/_404/src/loop_ledger",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8"
+    }
+  },
+  "controller_surfaces": {
+    "codex_skills": {
+      "root": "/home/_404/src/dotfiles",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3"
+    },
+    "loop_ledger": {
+      "root": "/home/_404/src/loop_ledger",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8"
+    }
+  }
+}

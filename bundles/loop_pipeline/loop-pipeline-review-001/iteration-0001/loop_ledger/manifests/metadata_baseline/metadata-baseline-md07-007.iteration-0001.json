@@ -1,0 +1,115 @@
+{
+  "kind": "review_bundle_manifest.v1",
+  "project": "metadata_baseline",
+  "bundle_id": "metadata-baseline-md07-007",
+  "iteration_id": "iteration-0001",
+  "scope_root": "/home/_404/src/repo_intel/metadata_baseline",
+  "reviewed_head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6",
+  "output_root": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md07-007/iteration-0001",
+  "lineage": {
+    "relationship": "derived_from",
+    "parent_bundle_id": "metadata-baseline-plan-merge-001",
+    "parent_manifest": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-plan-merge-001.iteration-0001.json"
+  },
+  "refs": {
+    "upstream_project": "/home/_404/src/repo_intel/metadata_baseline",
+    "target_spec": "/home/_404/src/repo_intel/metadata_baseline/targets/codex.snapshot.json",
+    "base_surface": "/home/_404/src/workbench/metadata_baseline/planning/surfaces/post320_surface.json"
+  },
+  "evidence_bundle": {
+    "required_outputs": [
+      {
+        "source": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/core.json",
+        "dest": "outputs/core.json",
+        "role": "core_output"
+      },
+      {
+        "source": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/plugins.json",
+        "dest": "outputs/plugins.json",
+        "role": "plugins_output"
+      },
+      {
+        "source": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/app-server.json",
+        "dest": "outputs/app-server.json",
+        "role": "app_server_output"
+      },
+      {
+        "source": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/tui_app_server.json",
+        "dest": "outputs/tui_app_server.json",
+        "role": "tui_app_server_output"
+      },
+      {
+        "source": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/app-server-protocol.json",
+        "dest": "outputs/app-server-protocol.json",
+        "role": "app_server_protocol_output"
+      },
+      {
+        "source": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/exec-server.json",
+        "dest": "outputs/exec-server.json",
+        "role": "exec_server_output"
+      },
+      {
+        "source": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/codex-login.json",
+        "dest": "outputs/codex-login.json",
+        "role": "codex_login_output"
+      },
+      {
+        "source": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/codex-features.json",
+        "dest": "outputs/codex-features.json",
+        "role": "codex_features_output"
+      },
+      {
+        "source": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/state.json",
+        "dest": "outputs/state.json",
+        "role": "state_output"
+      },
+      {
+        "source": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/Cargo.lock.json",
+        "dest": "outputs/Cargo.lock.json",
+        "role": "cargo_lock_output"
+      }
+    ],
+    "required_checks": [
+      {
+        "name": "just test-md07-asset-summaries",
+        "source": "/home/_404/src/repo_intel/metadata_baseline/evidence/md07/just_test_md07.json",
+        "dest": "evidence/just_test_md07.json",
+        "role": "just_test_md07_check"
+      },
+      {
+        "name": "just ci-md07",
+        "source": "/home/_404/src/repo_intel/metadata_baseline/evidence/md07/just_ci.json",
+        "dest": "evidence/just_ci.json",
+        "role": "just_ci_check"
+      }
+    ],
+    "integrity_mode": "all_files"
+  },
+  "include": [
+    {
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md07-007/PLAN/README.md",
+      "dest": "PLAN/README.md",
+      "role": "plan_readme"
+    },
+    {
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md07-007/PLAN/request.instance.json",
+      "dest": "PLAN/request.instance.json",
+      "role": "plan_request_instance"
+    },
+    {
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md07-007/IMPLEMENT/IMPLEMENT.md",
+      "dest": "IMPLEMENT/IMPLEMENT.md",
+      "role": "implement_readme"
+    },
+    {
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md07-007/IMPLEMENT/response.instance.json",
+      "dest": "IMPLEMENT/response.instance.json",
+      "role": "implement_response_instance"
+    },
+    {
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md07-007/md07_result.json",
+      "dest": "md07_result.json",
+      "role": "md07_result"
+    }
+  ]
+}

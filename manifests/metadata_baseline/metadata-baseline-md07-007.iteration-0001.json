@@ -21,52 +21,92 @@
       {
         "source": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/core.json",
         "dest": "outputs/core.json",
-        "role": "core_output"
+        "role": "core_output",
+        "repo_key": "codex",
+        "repo_relative_path": ".analysis/reports/assets/core.json",
+        "head": "903660edba6e1ecfd7c9b1782105be4ebf0e02a7",
+        "absolute_path": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/core.json"
       },
       {
         "source": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/plugins.json",
         "dest": "outputs/plugins.json",
-        "role": "plugins_output"
+        "role": "plugins_output",
+        "repo_key": "codex",
+        "repo_relative_path": ".analysis/reports/assets/plugins.json",
+        "head": "903660edba6e1ecfd7c9b1782105be4ebf0e02a7",
+        "absolute_path": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/plugins.json"
       },
       {
         "source": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/app-server.json",
         "dest": "outputs/app-server.json",
-        "role": "app_server_output"
+        "role": "app_server_output",
+        "repo_key": "codex",
+        "repo_relative_path": ".analysis/reports/assets/app-server.json",
+        "head": "903660edba6e1ecfd7c9b1782105be4ebf0e02a7",
+        "absolute_path": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/app-server.json"
       },
       {
         "source": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/tui_app_server.json",
         "dest": "outputs/tui_app_server.json",
-        "role": "tui_app_server_output"
+        "role": "tui_app_server_output",
+        "repo_key": "codex",
+        "repo_relative_path": ".analysis/reports/assets/tui_app_server.json",
+        "head": "903660edba6e1ecfd7c9b1782105be4ebf0e02a7",
+        "absolute_path": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/tui_app_server.json"
       },
       {
         "source": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/app-server-protocol.json",
         "dest": "outputs/app-server-protocol.json",
-        "role": "app_server_protocol_output"
+        "role": "app_server_protocol_output",
+        "repo_key": "codex",
+        "repo_relative_path": ".analysis/reports/assets/app-server-protocol.json",
+        "head": "903660edba6e1ecfd7c9b1782105be4ebf0e02a7",
+        "absolute_path": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/app-server-protocol.json"
       },
       {
         "source": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/exec-server.json",
         "dest": "outputs/exec-server.json",
-        "role": "exec_server_output"
+        "role": "exec_server_output",
+        "repo_key": "codex",
+        "repo_relative_path": ".analysis/reports/assets/exec-server.json",
+        "head": "903660edba6e1ecfd7c9b1782105be4ebf0e02a7",
+        "absolute_path": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/exec-server.json"
       },
       {
         "source": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/codex-login.json",
         "dest": "outputs/codex-login.json",
-        "role": "codex_login_output"
+        "role": "codex_login_output",
+        "repo_key": "codex",
+        "repo_relative_path": ".analysis/reports/assets/codex-login.json",
+        "head": "903660edba6e1ecfd7c9b1782105be4ebf0e02a7",
+        "absolute_path": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/codex-login.json"
       },
       {
         "source": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/codex-features.json",
         "dest": "outputs/codex-features.json",
-        "role": "codex_features_output"
+        "role": "codex_features_output",
+        "repo_key": "codex",
+        "repo_relative_path": ".analysis/reports/assets/codex-features.json",
+        "head": "903660edba6e1ecfd7c9b1782105be4ebf0e02a7",
+        "absolute_path": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/codex-features.json"
       },
       {
         "source": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/state.json",
         "dest": "outputs/state.json",
-        "role": "state_output"
+        "role": "state_output",
+        "repo_key": "codex",
+        "repo_relative_path": ".analysis/reports/assets/state.json",
+        "head": "903660edba6e1ecfd7c9b1782105be4ebf0e02a7",
+        "absolute_path": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/state.json"
       },
       {
         "source": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/Cargo.lock.json",
         "dest": "outputs/Cargo.lock.json",
-        "role": "cargo_lock_output"
+        "role": "cargo_lock_output",
+        "repo_key": "codex",
+        "repo_relative_path": ".analysis/reports/assets/Cargo.lock.json",
+        "head": "903660edba6e1ecfd7c9b1782105be4ebf0e02a7",
+        "absolute_path": "/home/_404/src/repo_intel/codex/.analysis/reports/assets/Cargo.lock.json"
       }
     ],
     "required_checks": [
@@ -74,13 +114,21 @@
         "name": "just test-md07-asset-summaries",
         "source": "/home/_404/src/repo_intel/metadata_baseline/evidence/md07/just_test_md07.json",
         "dest": "evidence/just_test_md07.json",
-        "role": "just_test_md07_check"
+        "role": "just_test_md07_check",
+        "repo_key": "metadata_baseline",
+        "repo_relative_path": "evidence/md07/just_test_md07.json",
+        "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6",
+        "absolute_path": "/home/_404/src/repo_intel/metadata_baseline/evidence/md07/just_test_md07.json"
       },
       {
         "name": "just ci-md07",
         "source": "/home/_404/src/repo_intel/metadata_baseline/evidence/md07/just_ci.json",
         "dest": "evidence/just_ci.json",
-        "role": "just_ci_check"
+        "role": "just_ci_check",
+        "repo_key": "metadata_baseline",
+        "repo_relative_path": "evidence/md07/just_ci.json",
+        "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6",
+        "absolute_path": "/home/_404/src/repo_intel/metadata_baseline/evidence/md07/just_ci.json"
       }
     ],
     "integrity_mode": "all_files"
@@ -89,27 +137,63 @@
     {
       "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md07-007/PLAN/README.md",
       "dest": "PLAN/README.md",
-      "role": "plan_readme"
+      "role": "plan_readme",
+      "repo_key": "metadata_baseline",
+      "repo_relative_path": "review/bundles/metadata-baseline-md07-007/PLAN/README.md",
+      "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6",
+      "absolute_path": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md07-007/PLAN/README.md"
     },
     {
       "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md07-007/PLAN/request.instance.json",
       "dest": "PLAN/request.instance.json",
-      "role": "plan_request_instance"
+      "role": "plan_request_instance",
+      "repo_key": "metadata_baseline",
+      "repo_relative_path": "review/bundles/metadata-baseline-md07-007/PLAN/request.instance.json",
+      "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6",
+      "absolute_path": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md07-007/PLAN/request.instance.json"
     },
     {
       "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md07-007/IMPLEMENT/IMPLEMENT.md",
       "dest": "IMPLEMENT/IMPLEMENT.md",
-      "role": "implement_readme"
+      "role": "implement_readme",
+      "repo_key": "metadata_baseline",
+      "repo_relative_path": "review/bundles/metadata-baseline-md07-007/IMPLEMENT/IMPLEMENT.md",
+      "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6",
+      "absolute_path": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md07-007/IMPLEMENT/IMPLEMENT.md"
     },
     {
       "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md07-007/IMPLEMENT/response.instance.json",
       "dest": "IMPLEMENT/response.instance.json",
-      "role": "implement_response_instance"
+      "role": "implement_response_instance",
+      "repo_key": "metadata_baseline",
+      "repo_relative_path": "review/bundles/metadata-baseline-md07-007/IMPLEMENT/response.instance.json",
+      "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6",
+      "absolute_path": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md07-007/IMPLEMENT/response.instance.json"
     },
     {
       "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md07-007/md07_result.json",
       "dest": "md07_result.json",
-      "role": "md07_result"
+      "role": "md07_result",
+      "repo_key": "metadata_baseline",
+      "repo_relative_path": "review/bundles/metadata-baseline-md07-007/md07_result.json",
+      "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6",
+      "absolute_path": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md07-007/md07_result.json"
     }
-  ]
+  ],
+  "source_roots": {
+    "codex": {
+      "root": "/home/_404/src/repo_intel/codex",
+      "head": "903660edba6e1ecfd7c9b1782105be4ebf0e02a7"
+    },
+    "metadata_baseline": {
+      "root": "/home/_404/src/repo_intel/metadata_baseline",
+      "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6"
+    }
+  },
+  "controller_surfaces": {
+    "metadata_baseline": {
+      "root": "/home/_404/src/repo_intel/metadata_baseline",
+      "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6"
+    }
+  }
 }

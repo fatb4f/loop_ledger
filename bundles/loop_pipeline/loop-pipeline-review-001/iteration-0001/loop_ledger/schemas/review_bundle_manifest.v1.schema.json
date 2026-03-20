@@ -1,0 +1,158 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "review_bundle_manifest.v1.schema.json",
+  "type": "object",
+  "required": [
+    "kind",
+    "project",
+    "bundle_id",
+    "iteration_id",
+    "scope_root",
+    "output_root",
+    "evidence_bundle",
+    "include"
+  ],
+  "properties": {
+    "kind": {
+      "const": "review_bundle_manifest.v1"
+    },
+    "project": {
+      "type": "string",
+      "minLength": 1
+    },
+    "bundle_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "iteration_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scope_root": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewed_head": {
+      "type": "string"
+    },
+    "output_root": {
+      "type": "string",
+      "minLength": 1
+    },
+    "lineage": {
+      "type": "object",
+      "required": [
+        "relationship",
+        "parent_bundle_id",
+        "parent_manifest"
+      ],
+      "properties": {
+        "relationship": {
+          "const": "derived_from"
+        },
+        "parent_bundle_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "parent_manifest": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "refs": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "evidence_bundle": {
+      "type": "object",
+      "required": [
+        "required_outputs",
+        "required_checks",
+        "integrity_mode"
+      ],
+      "properties": {
+        "required_outputs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/include_item"
+          }
+        },
+        "required_checks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/check_item"
+          }
+        },
+        "integrity_mode": {
+          "enum": [
+            "all_files"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "include": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/include_item"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "include_item": {
+      "type": "object",
+      "required": [
+        "source",
+        "dest",
+        "role"
+      ],
+      "properties": {
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "dest": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "check_item": {
+      "type": "object",
+      "required": [
+        "name",
+        "source",
+        "dest",
+        "role"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "dest": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

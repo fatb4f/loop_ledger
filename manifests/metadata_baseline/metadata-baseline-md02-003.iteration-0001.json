@@ -21,12 +21,20 @@
       {
         "source": "/home/_404/src/repo_intel/codex/.analysis/raw/metadata.workspace.json",
         "dest": "outputs/metadata.workspace.json",
-        "role": "metadata_workspace_output"
+        "role": "metadata_workspace_output",
+        "repo_key": "codex",
+        "repo_relative_path": ".analysis/raw/metadata.workspace.json",
+        "head": "903660edba6e1ecfd7c9b1782105be4ebf0e02a7",
+        "absolute_path": "/home/_404/src/repo_intel/codex/.analysis/raw/metadata.workspace.json"
       },
       {
         "source": "/home/_404/src/repo_intel/codex/.analysis/raw/metadata.host.json",
         "dest": "outputs/metadata.host.json",
-        "role": "metadata_host_output"
+        "role": "metadata_host_output",
+        "repo_key": "codex",
+        "repo_relative_path": ".analysis/raw/metadata.host.json",
+        "head": "903660edba6e1ecfd7c9b1782105be4ebf0e02a7",
+        "absolute_path": "/home/_404/src/repo_intel/codex/.analysis/raw/metadata.host.json"
       }
     ],
     "required_checks": [
@@ -34,25 +42,41 @@
         "name": "cargo metadata --no-deps",
         "source": "/home/_404/src/repo_intel/metadata_baseline/evidence/md02/cargo_metadata_workspace.json",
         "dest": "evidence/cargo_metadata_workspace.json",
-        "role": "cargo_metadata_workspace_check"
+        "role": "cargo_metadata_workspace_check",
+        "repo_key": "metadata_baseline",
+        "repo_relative_path": "evidence/md02/cargo_metadata_workspace.json",
+        "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6",
+        "absolute_path": "/home/_404/src/repo_intel/metadata_baseline/evidence/md02/cargo_metadata_workspace.json"
       },
       {
         "name": "cargo metadata",
         "source": "/home/_404/src/repo_intel/metadata_baseline/evidence/md02/cargo_metadata_host.json",
         "dest": "evidence/cargo_metadata_host.json",
-        "role": "cargo_metadata_host_check"
+        "role": "cargo_metadata_host_check",
+        "repo_key": "metadata_baseline",
+        "repo_relative_path": "evidence/md02/cargo_metadata_host.json",
+        "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6",
+        "absolute_path": "/home/_404/src/repo_intel/metadata_baseline/evidence/md02/cargo_metadata_host.json"
       },
       {
         "name": "just test-md02-metadata-pair",
         "source": "/home/_404/src/repo_intel/metadata_baseline/evidence/md02/just_test_md02.json",
         "dest": "evidence/just_test_md02.json",
-        "role": "just_test_md02_check"
+        "role": "just_test_md02_check",
+        "repo_key": "metadata_baseline",
+        "repo_relative_path": "evidence/md02/just_test_md02.json",
+        "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6",
+        "absolute_path": "/home/_404/src/repo_intel/metadata_baseline/evidence/md02/just_test_md02.json"
       },
       {
         "name": "just ci-md02",
         "source": "/home/_404/src/repo_intel/metadata_baseline/evidence/md02/just_ci.json",
         "dest": "evidence/just_ci.json",
-        "role": "just_ci_check"
+        "role": "just_ci_check",
+        "repo_key": "metadata_baseline",
+        "repo_relative_path": "evidence/md02/just_ci.json",
+        "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6",
+        "absolute_path": "/home/_404/src/repo_intel/metadata_baseline/evidence/md02/just_ci.json"
       }
     ],
     "integrity_mode": "all_files"
@@ -61,27 +85,63 @@
     {
       "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md02-003/PLAN/README.md",
       "dest": "PLAN/README.md",
-      "role": "plan_readme"
+      "role": "plan_readme",
+      "repo_key": "metadata_baseline",
+      "repo_relative_path": "review/bundles/metadata-baseline-md02-003/PLAN/README.md",
+      "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6",
+      "absolute_path": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md02-003/PLAN/README.md"
     },
     {
       "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md02-003/PLAN/request.instance.json",
       "dest": "PLAN/request.instance.json",
-      "role": "plan_request_instance"
+      "role": "plan_request_instance",
+      "repo_key": "metadata_baseline",
+      "repo_relative_path": "review/bundles/metadata-baseline-md02-003/PLAN/request.instance.json",
+      "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6",
+      "absolute_path": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md02-003/PLAN/request.instance.json"
     },
     {
       "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md02-003/IMPLEMENT/IMPLEMENT.md",
       "dest": "IMPLEMENT/IMPLEMENT.md",
-      "role": "implement_readme"
+      "role": "implement_readme",
+      "repo_key": "metadata_baseline",
+      "repo_relative_path": "review/bundles/metadata-baseline-md02-003/IMPLEMENT/IMPLEMENT.md",
+      "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6",
+      "absolute_path": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md02-003/IMPLEMENT/IMPLEMENT.md"
     },
     {
       "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md02-003/IMPLEMENT/response.instance.json",
       "dest": "IMPLEMENT/response.instance.json",
-      "role": "implement_response_instance"
+      "role": "implement_response_instance",
+      "repo_key": "metadata_baseline",
+      "repo_relative_path": "review/bundles/metadata-baseline-md02-003/IMPLEMENT/response.instance.json",
+      "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6",
+      "absolute_path": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md02-003/IMPLEMENT/response.instance.json"
     },
     {
       "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md02-003/md02_result.json",
       "dest": "md02_result.json",
-      "role": "md02_result"
+      "role": "md02_result",
+      "repo_key": "metadata_baseline",
+      "repo_relative_path": "review/bundles/metadata-baseline-md02-003/md02_result.json",
+      "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6",
+      "absolute_path": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md02-003/md02_result.json"
     }
-  ]
+  ],
+  "source_roots": {
+    "codex": {
+      "root": "/home/_404/src/repo_intel/codex",
+      "head": "903660edba6e1ecfd7c9b1782105be4ebf0e02a7"
+    },
+    "metadata_baseline": {
+      "root": "/home/_404/src/repo_intel/metadata_baseline",
+      "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6"
+    }
+  },
+  "controller_surfaces": {
+    "metadata_baseline": {
+      "root": "/home/_404/src/repo_intel/metadata_baseline",
+      "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6"
+    }
+  }
 }

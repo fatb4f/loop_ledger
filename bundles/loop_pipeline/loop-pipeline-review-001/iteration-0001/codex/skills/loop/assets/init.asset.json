@@ -1,0 +1,33 @@
+{
+  "name": "loop_init",
+  "version": "1.0",
+  "inputs": {
+    "repo_root": "path",
+    "worktree_base": "path",
+    "contract_root": "path"
+  },
+  "steps": [
+    "create integration worktree under worktree_base",
+    "create $wt/{PLAN,IMPLEMENT,LOOP}",
+    "capture initial repo git state",
+    "record contract_root used for the run"
+  ],
+  "outputs": {
+    "wt": "$worktree_base/<run_id>",
+    "plan_root": "$wt/PLAN",
+    "implement_root": "$wt/IMPLEMENT",
+    "loop_root": "$wt/LOOP",
+    "contract_root": "$contract_root",
+    "repo_git_state_init": "clean|dirty|unknown"
+  },
+  "gates": [
+    "wt_exists",
+    "plan_root_created",
+    "implement_root_created",
+    "loop_root_created"
+  ],
+  "rollback": [
+    "git worktree remove <wt> --force",
+    "remove partial artifact roots under <wt>"
+  ]
+}

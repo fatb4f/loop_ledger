@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "loop_state.schema.json",
+  "type": "object",
+  "required": [
+    "kind",
+    "loop_instance_id",
+    "iteration_id",
+    "phase",
+    "previous_phase",
+    "decision",
+    "transition_gate",
+    "verification_result",
+    "rollback_status",
+    "archive_ref"
+  ],
+  "properties": {
+    "kind": {
+      "const": "loop_state.v1"
+    },
+    "loop_instance_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "iteration_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "phase": {
+      "type": "string",
+      "enum": [
+        "INIT",
+        "PLAN",
+        "DECISION",
+        "IMPLEMENT",
+        "VERIFY",
+        "TERMINATE"
+      ]
+    },
+    "previous_phase": {
+      "type": "string",
+      "enum": [
+        "INIT",
+        "PLAN",
+        "DECISION",
+        "IMPLEMENT",
+        "VERIFY",
+        "TERMINATE"
+      ]
+    },
+    "decision": {
+      "type": "string",
+      "enum": [
+        "APPROVED",
+        "REJECTED",
+        "NEEDS_INFO",
+        "IN_PROGRESS"
+      ]
+    },
+    "transition_gate": {
+      "type": "string",
+      "enum": [
+        "PASS",
+        "FAIL",
+        "PENDING"
+      ]
+    },
+    "verification_result": {
+      "type": "string",
+      "enum": [
+        "PASS",
+        "FAIL",
+        "PENDING"
+      ]
+    },
+    "rollback_status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "archive_ref": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": false
+}

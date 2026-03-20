@@ -21,12 +21,20 @@
       {
         "source": "/home/_404/src/repo_intel/codex/.analysis/reports/package-edges.tsv",
         "dest": "outputs/package-edges.tsv",
-        "role": "package_edges_output"
+        "role": "package_edges_output",
+        "repo_key": "codex",
+        "repo_relative_path": ".analysis/reports/package-edges.tsv",
+        "head": "903660edba6e1ecfd7c9b1782105be4ebf0e02a7",
+        "absolute_path": "/home/_404/src/repo_intel/codex/.analysis/reports/package-edges.tsv"
       },
       {
         "source": "/home/_404/src/repo_intel/codex/.analysis/reports/edge-summary.json",
         "dest": "outputs/edge-summary.json",
-        "role": "edge_summary_output"
+        "role": "edge_summary_output",
+        "repo_key": "codex",
+        "repo_relative_path": ".analysis/reports/edge-summary.json",
+        "head": "903660edba6e1ecfd7c9b1782105be4ebf0e02a7",
+        "absolute_path": "/home/_404/src/repo_intel/codex/.analysis/reports/edge-summary.json"
       }
     ],
     "required_checks": [
@@ -34,13 +42,21 @@
         "name": "just test-md04-edge-table",
         "source": "/home/_404/src/repo_intel/metadata_baseline/evidence/md04/just_test_md04.json",
         "dest": "evidence/just_test_md04.json",
-        "role": "just_test_md04_check"
+        "role": "just_test_md04_check",
+        "repo_key": "metadata_baseline",
+        "repo_relative_path": "evidence/md04/just_test_md04.json",
+        "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6",
+        "absolute_path": "/home/_404/src/repo_intel/metadata_baseline/evidence/md04/just_test_md04.json"
       },
       {
         "name": "just ci-md04",
         "source": "/home/_404/src/repo_intel/metadata_baseline/evidence/md04/just_ci.json",
         "dest": "evidence/just_ci.json",
-        "role": "just_ci_check"
+        "role": "just_ci_check",
+        "repo_key": "metadata_baseline",
+        "repo_relative_path": "evidence/md04/just_ci.json",
+        "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6",
+        "absolute_path": "/home/_404/src/repo_intel/metadata_baseline/evidence/md04/just_ci.json"
       }
     ],
     "integrity_mode": "all_files"
@@ -49,27 +65,63 @@
     {
       "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md04-005/PLAN/README.md",
       "dest": "PLAN/README.md",
-      "role": "plan_readme"
+      "role": "plan_readme",
+      "repo_key": "metadata_baseline",
+      "repo_relative_path": "review/bundles/metadata-baseline-md04-005/PLAN/README.md",
+      "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6",
+      "absolute_path": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md04-005/PLAN/README.md"
     },
     {
       "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md04-005/PLAN/request.instance.json",
       "dest": "PLAN/request.instance.json",
-      "role": "plan_request_instance"
+      "role": "plan_request_instance",
+      "repo_key": "metadata_baseline",
+      "repo_relative_path": "review/bundles/metadata-baseline-md04-005/PLAN/request.instance.json",
+      "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6",
+      "absolute_path": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md04-005/PLAN/request.instance.json"
     },
     {
       "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md04-005/IMPLEMENT/IMPLEMENT.md",
       "dest": "IMPLEMENT/IMPLEMENT.md",
-      "role": "implement_readme"
+      "role": "implement_readme",
+      "repo_key": "metadata_baseline",
+      "repo_relative_path": "review/bundles/metadata-baseline-md04-005/IMPLEMENT/IMPLEMENT.md",
+      "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6",
+      "absolute_path": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md04-005/IMPLEMENT/IMPLEMENT.md"
     },
     {
       "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md04-005/IMPLEMENT/response.instance.json",
       "dest": "IMPLEMENT/response.instance.json",
-      "role": "implement_response_instance"
+      "role": "implement_response_instance",
+      "repo_key": "metadata_baseline",
+      "repo_relative_path": "review/bundles/metadata-baseline-md04-005/IMPLEMENT/response.instance.json",
+      "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6",
+      "absolute_path": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md04-005/IMPLEMENT/response.instance.json"
     },
     {
       "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md04-005/md04_result.json",
       "dest": "md04_result.json",
-      "role": "md04_result"
+      "role": "md04_result",
+      "repo_key": "metadata_baseline",
+      "repo_relative_path": "review/bundles/metadata-baseline-md04-005/md04_result.json",
+      "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6",
+      "absolute_path": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md04-005/md04_result.json"
     }
-  ]
+  ],
+  "source_roots": {
+    "codex": {
+      "root": "/home/_404/src/repo_intel/codex",
+      "head": "903660edba6e1ecfd7c9b1782105be4ebf0e02a7"
+    },
+    "metadata_baseline": {
+      "root": "/home/_404/src/repo_intel/metadata_baseline",
+      "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6"
+    }
+  },
+  "controller_surfaces": {
+    "metadata_baseline": {
+      "root": "/home/_404/src/repo_intel/metadata_baseline",
+      "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6"
+    }
+  }
 }

@@ -1,0 +1,13 @@
+{
+  "kind": "promotion_capsule.v1",
+  "integration_id": "asset-control-model-loop-pipeline-working-model-001",
+  "base_main_commit": "c68d364167af14c6128cdfea274070ad9aafb52f",
+  "contract_commit": "c68d364167af14c6128cdfea274070ad9aafb52f",
+  "bounded_batch_id": "loop-pipeline-working-model-freeze",
+  "patch_hash": "working-model-freeze-no-patch-promoted",
+  "validation_refs": [
+    "/home/_404/src/loop_ledger/manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.review-manifest-validate.check.json",
+    "/home/_404/src/loop_ledger/manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.review-bundle-status.check.json"
+  ],
+  "status": "PENDING"
+}

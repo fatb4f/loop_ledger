@@ -1,0 +1,418 @@
+{
+  "kind": "review_bundle_artifacts_manifest.v1",
+  "project": "asset_control_model",
+  "bundle_id": "asset-control-model-loop-pipeline-working-model-001",
+  "iteration_id": "iteration-0001",
+  "manifest_path": "/home/_404/src/loop_ledger/manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.iteration-0001.json",
+  "output_root": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001",
+  "lineage": {},
+  "source_roots": {
+    "asset_control_model": {
+      "root": "/home/_404/src/runtime/asset-control-model",
+      "head": "c68d364167af14c6128cdfea274070ad9aafb52f"
+    },
+    "dotfiles": {
+      "root": "/home/_404/src/dotfiles",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3"
+    },
+    "loop_ledger": {
+      "root": "/home/_404/src/loop_ledger",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8"
+    }
+  },
+  "controller_surfaces": {
+    "codex_skills": {
+      "root": "/home/_404/src/dotfiles",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3"
+    },
+    "loop_ledger": {
+      "root": "/home/_404/src/loop_ledger",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8"
+    },
+    "asset_control_model": {
+      "root": "/home/_404/src/runtime/asset-control-model",
+      "head": "c68d364167af14c6128cdfea274070ad9aafb52f"
+    }
+  },
+  "integrity_mode": "all_files",
+  "evidence_bundle": {
+    "required_output_roles": [
+      "loop_state_output",
+      "promotion_capsule_output"
+    ],
+    "required_check_roles": [
+      "review_manifest_validate_check",
+      "review_bundle_status_check"
+    ]
+  },
+  "files": [
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/SCOPE.md",
+      "source": "/home/_404/src/loop_ledger/manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.scope.md",
+      "role": "review_scope",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.scope.md",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "sha256": "6b282c7331fc7018f6b130df0feb27f660acff031567bcea044594667e5a8440",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.scope.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/asset-control-model/README.md",
+      "source": "/home/_404/src/runtime/asset-control-model/README.md",
+      "role": "acm_asset",
+      "repo_key": "asset_control_model",
+      "repo_relative_path": "README.md",
+      "head": "c68d364167af14c6128cdfea274070ad9aafb52f",
+      "sha256": "ebd5eae9d7b3f4b40e89e16fffab6a7f5b47de2175381e2f0a5d03e5ececfd6e",
+      "absolute_path": "/home/_404/src/runtime/asset-control-model/README.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/asset-control-model/policy_framework/README.md",
+      "source": "/home/_404/src/runtime/asset-control-model/policy_framework/README.md",
+      "role": "acm_asset",
+      "repo_key": "asset_control_model",
+      "repo_relative_path": "policy_framework/README.md",
+      "head": "c68d364167af14c6128cdfea274070ad9aafb52f",
+      "sha256": "e1b7f258c58b85b12bb129b733ff39cd7ed6bb85bbd7d808486e5ee00f6da098",
+      "absolute_path": "/home/_404/src/runtime/asset-control-model/policy_framework/README.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/asset-control-model/policy_framework/policy/control_plane.cue",
+      "source": "/home/_404/src/runtime/asset-control-model/policy_framework/policy/control_plane.cue",
+      "role": "acm_asset",
+      "repo_key": "asset_control_model",
+      "repo_relative_path": "policy_framework/policy/control_plane.cue",
+      "head": "c68d364167af14c6128cdfea274070ad9aafb52f",
+      "sha256": "349304fec7d017a4bde10004ebd15b80b07a1760b1f7b67e315dc811130a2033",
+      "absolute_path": "/home/_404/src/runtime/asset-control-model/policy_framework/policy/control_plane.cue"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/asset-control-model/policy_framework/policy/loop_pipeline_working_model.md",
+      "source": "/home/_404/src/runtime/asset-control-model/policy_framework/policy/loop_pipeline_working_model.md",
+      "role": "acm_asset",
+      "repo_key": "asset_control_model",
+      "repo_relative_path": "policy_framework/policy/loop_pipeline_working_model.md",
+      "head": "c68d364167af14c6128cdfea274070ad9aafb52f",
+      "sha256": "b0762be5698ecd2131bfe9e41063d10b7691b4158f02b91008ae0091b6f081d6",
+      "absolute_path": "/home/_404/src/runtime/asset-control-model/policy_framework/policy/loop_pipeline_working_model.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/asset-control-model/policy_framework/policy/loop_pipeline_working_model.v1.json",
+      "source": "/home/_404/src/runtime/asset-control-model/policy_framework/policy/loop_pipeline_working_model.v1.json",
+      "role": "acm_asset",
+      "repo_key": "asset_control_model",
+      "repo_relative_path": "policy_framework/policy/loop_pipeline_working_model.v1.json",
+      "head": "c68d364167af14c6128cdfea274070ad9aafb52f",
+      "sha256": "7f4a1b2ca6be8386f15705ba9ccd5755e7309257ccec9f90a171139e704bcd31",
+      "absolute_path": "/home/_404/src/runtime/asset-control-model/policy_framework/policy/loop_pipeline_working_model.v1.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/asset-control-model/policy_framework/schemas/loop_state.schema.json",
+      "source": "/home/_404/src/runtime/asset-control-model/policy_framework/schemas/loop_state.schema.json",
+      "role": "acm_asset",
+      "repo_key": "asset_control_model",
+      "repo_relative_path": "policy_framework/schemas/loop_state.schema.json",
+      "head": "c68d364167af14c6128cdfea274070ad9aafb52f",
+      "sha256": "0db8f4988a2f835421530b8b20f8d5d310cd1cc670f888022eb59f5156d46f19",
+      "absolute_path": "/home/_404/src/runtime/asset-control-model/policy_framework/schemas/loop_state.schema.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/asset-control-model/policy_framework/schemas/promotion_capsule.schema.json",
+      "source": "/home/_404/src/runtime/asset-control-model/policy_framework/schemas/promotion_capsule.schema.json",
+      "role": "acm_asset",
+      "repo_key": "asset_control_model",
+      "repo_relative_path": "policy_framework/schemas/promotion_capsule.schema.json",
+      "head": "c68d364167af14c6128cdfea274070ad9aafb52f",
+      "sha256": "52a871c8557f076f50eaf1bf904e373be6a12625a73fe691641a46e294532bd6",
+      "absolute_path": "/home/_404/src/runtime/asset-control-model/policy_framework/schemas/promotion_capsule.schema.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/codex/plan.request_response_contract.v1.json",
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/plan.request_response_contract.v1.json",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/plan.request_response_contract.v1.json",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "sha256": "7eb4a3f2c8ee5e74453658196f03749c80ed379aa37ad42419f72dd0d3f4f6f5",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/plan.request_response_contract.v1.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/codex/control/git-flow/README.md",
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/control/git-flow/README.md",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/control/git-flow/README.md",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "sha256": "b26ff60bc0810db186f16e8e8bb861ffff26aa5ad85a8039e4bc088c9fb6ca9b",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/control/git-flow/README.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/codex/control/git-flow/git_flow.manifest.json",
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/control/git-flow/git_flow.manifest.json",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/control/git-flow/git_flow.manifest.json",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "sha256": "56f600e777a969eee0dcdbf0784d1af109242d8c1af728e62a21556e628a5a13",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/control/git-flow/git_flow.manifest.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/codex/control/git-flow/schemas/git_flow_manifest.schema.json",
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/control/git-flow/schemas/git_flow_manifest.schema.json",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/control/git-flow/schemas/git_flow_manifest.schema.json",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "sha256": "dd4ee79c0fa0446a818c8e420f3cfcdcb0e8d85903f56c28d9cdd523780da426",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/control/git-flow/schemas/git_flow_manifest.schema.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/codex/skills/loop/SKILL.md",
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/SKILL.md",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/loop/SKILL.md",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "sha256": "fc1348cb2c8ff0f7f0a4a237d146982e1c2b8bdd201f173bef49dfca3f2c2804",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/SKILL.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/codex/skills/loop/assets/handoff.contract.json",
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/assets/handoff.contract.json",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/loop/assets/handoff.contract.json",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "sha256": "ff452892c8cbc8678837223b7498596cec4ad9eebfb7c3ef38615d16eba32148",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/assets/handoff.contract.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/codex/skills/loop/assets/workflow.json",
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/assets/workflow.json",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/loop/assets/workflow.json",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "sha256": "f6de22551e3a6716aad32b223ffc45dad9480b0a521f426bdc42011ed7713c57",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/assets/workflow.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/codex/skills/loop/scripts/validate_contract_bridge.py",
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/scripts/validate_contract_bridge.py",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/loop/scripts/validate_contract_bridge.py",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "sha256": "dbaa7545e78a31059819bf83aa5a7513d89bd67e2aa02863b8218eebd2921f07",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/scripts/validate_contract_bridge.py"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/codex/skills/loop/scripts/validate_handoff.py",
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/scripts/validate_handoff.py",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/loop/scripts/validate_handoff.py",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "sha256": "719df3c2652ba6a9980901b17c76be928e4cb4ac0ba8eca00f9d8f14383d82d2",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/scripts/validate_handoff.py"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/codex/skills/loop/scripts/validate_loop_packet.py",
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/scripts/validate_loop_packet.py",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/loop/scripts/validate_loop_packet.py",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "sha256": "8ef022df0b00b0b53a928830f3905219c9d4a33d0ac0a99593d1aa42342e792d",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/loop/scripts/validate_loop_packet.py"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/codex/skills/plan/SKILL.md",
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/plan/SKILL.md",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/plan/SKILL.md",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "sha256": "3ff4a1c06a3d2d730e6af4c8e0e2361102025893641d13cf7c65dcbc2489ae0d",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/plan/SKILL.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/codex/skills/plan/scripts/generate_plan_packet.py",
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/plan/scripts/generate_plan_packet.py",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/plan/scripts/generate_plan_packet.py",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "sha256": "af5123649299cdff2e46a4f4943acc3e605a7c78c0b09e657346688b830f26df",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/plan/scripts/generate_plan_packet.py"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/codex/skills/plan/scripts/validate_plan_packet.py",
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/plan/scripts/validate_plan_packet.py",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/plan/scripts/validate_plan_packet.py",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "sha256": "d5b68cd3e2ac4baa12813ce4b67cf6364f46e2aab86bd9c47c0473e20a3dc07e",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/plan/scripts/validate_plan_packet.py"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/codex/skills/implement/SKILL.md",
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/implement/SKILL.md",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/implement/SKILL.md",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "sha256": "572f4c657f297c11a005c0b2e48602d8324f6d88150e04f5cf09dc58f645a459",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/implement/SKILL.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/codex/skills/implement/scripts/generate_implement_packet.py",
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/implement/scripts/generate_implement_packet.py",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/implement/scripts/generate_implement_packet.py",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "sha256": "b4942c054d90dd21d96476426d62ca0a7d477787e41264826d8fab910c6f10de",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/implement/scripts/generate_implement_packet.py"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/codex/skills/implement/scripts/validate_implement_packet.py",
+      "source": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/implement/scripts/validate_implement_packet.py",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "chezmoi/dot_config/codex/skills/implement/scripts/validate_implement_packet.py",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+      "sha256": "1195a5a443fd60e4fac231d5c1b40c5bf47c26c334d0951beaaec60497108241",
+      "absolute_path": "/home/_404/src/dotfiles/chezmoi/dot_config/codex/skills/implement/scripts/validate_implement_packet.py"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/loop_ledger/README.md",
+      "source": "/home/_404/src/loop_ledger/README.md",
+      "role": "ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "README.md",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "sha256": "aa0aa3964feee0ddc72f29795897aafe0406ab827ea35596b00da73f09c0c841",
+      "absolute_path": "/home/_404/src/loop_ledger/README.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/loop_ledger/AGENTS.md",
+      "source": "/home/_404/src/loop_ledger/AGENTS.md",
+      "role": "ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "AGENTS.md",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "sha256": "daebf38dabdb40dd734fbd4ce7aa3b2eaa58af331c3fca75023c73dc94eafb95",
+      "absolute_path": "/home/_404/src/loop_ledger/AGENTS.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/loop_ledger/justfile",
+      "source": "/home/_404/src/loop_ledger/justfile",
+      "role": "ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "justfile",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "sha256": "0c3ea85f7ac4d9194c417e5d4b39d610bd5d6a0aae22ba9cc294e1aa1b32bbcb",
+      "absolute_path": "/home/_404/src/loop_ledger/justfile"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/loop_ledger/schemas/review_bundle_manifest.v1.schema.json",
+      "source": "/home/_404/src/loop_ledger/schemas/review_bundle_manifest.v1.schema.json",
+      "role": "ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "schemas/review_bundle_manifest.v1.schema.json",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "sha256": "2b4a1c9fa275d101493308d3879dbf07812a76862e1de6ce326c7e8d7b3d79e0",
+      "absolute_path": "/home/_404/src/loop_ledger/schemas/review_bundle_manifest.v1.schema.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/loop_ledger/scripts/validate_json.py",
+      "source": "/home/_404/src/loop_ledger/scripts/validate_json.py",
+      "role": "ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "scripts/validate_json.py",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "sha256": "90e76ba3afef2bc946315424cc06f95249acaf2b15fd06b88cbb3be657428781",
+      "absolute_path": "/home/_404/src/loop_ledger/scripts/validate_json.py"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/loop_ledger/scripts/check_review_bundle_inputs.py",
+      "source": "/home/_404/src/loop_ledger/scripts/check_review_bundle_inputs.py",
+      "role": "ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "scripts/check_review_bundle_inputs.py",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "sha256": "9e2974371c2b7aec998a727c31928dc5433e0a6e196d1b31d72f40b31004ba00",
+      "absolute_path": "/home/_404/src/loop_ledger/scripts/check_review_bundle_inputs.py"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/loop_ledger/scripts/materialize_review_bundle.py",
+      "source": "/home/_404/src/loop_ledger/scripts/materialize_review_bundle.py",
+      "role": "ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "scripts/materialize_review_bundle.py",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "sha256": "fbd3c7a5c48d44c0e350b1cf258ea3f204edc0ca62dcdf5039cad4023cc7e05e",
+      "absolute_path": "/home/_404/src/loop_ledger/scripts/materialize_review_bundle.py"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/loop_ledger/scripts/pack_review_bundle.py",
+      "source": "/home/_404/src/loop_ledger/scripts/pack_review_bundle.py",
+      "role": "ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "scripts/pack_review_bundle.py",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "sha256": "c45e31a45241ca28364095542979ae9a52e3cc4e5885a042190253cb62a4033f",
+      "absolute_path": "/home/_404/src/loop_ledger/scripts/pack_review_bundle.py"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/LOOP/loop.state.json",
+      "source": "/home/_404/src/loop_ledger/manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.loop.state.json",
+      "role": "loop_state_output",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.loop.state.json",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "sha256": "13f4724df39c751f09e07265010781f9fa63847af6267a725071a93237c33d68",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.loop.state.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/gitflow/promotion.capsule.json",
+      "source": "/home/_404/src/loop_ledger/manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.promotion.capsule.json",
+      "role": "promotion_capsule_output",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.promotion.capsule.json",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "sha256": "d2982337d0fe7a3c8ce2f324a3a9d591876dfd4b9b08d7d4a413e73703dbac01",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.promotion.capsule.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/evidence/review-manifest-validate.check.json",
+      "source": "/home/_404/src/loop_ledger/manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.review-manifest-validate.check.json",
+      "role": "review_manifest_validate_check",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.review-manifest-validate.check.json",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "sha256": "48d53fc7c55cb48f00179d4dd977e782ca77cf9432454ecb6842f3988f34b261",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.review-manifest-validate.check.json",
+      "name": "review manifest schema validate"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/evidence/review-bundle-status.check.json",
+      "source": "/home/_404/src/loop_ledger/manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.review-bundle-status.check.json",
+      "role": "review_bundle_status_check",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.review-bundle-status.check.json",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8",
+      "sha256": "e125721249092d55f46567bc56463986e63f426b3b671bc4dc40c2ddc58c83d4",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.review-bundle-status.check.json",
+      "name": "review bundle input status"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/asset_control_model/asset-control-model-loop-pipeline-working-model-001/iteration-0001/ref_header.json",
+      "source": "/home/_404/src/loop_ledger/manifests/asset_control_model/asset-control-model-loop-pipeline-working-model-001.iteration-0001.json",
+      "role": "ref_header",
+      "sha256": "374607a896e256c73bcc0054c17e34d209518b68e86688dccf3638be1458a2c7"
+    }
+  ]
+}

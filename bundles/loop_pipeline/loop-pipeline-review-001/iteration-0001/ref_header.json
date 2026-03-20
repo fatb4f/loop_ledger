@@ -1,0 +1,21 @@
+{
+  "kind": "review_bundle_ref_header.v1",
+  "project": "loop_pipeline",
+  "bundle_id": "loop-pipeline-review-001",
+  "iteration_id": "iteration-0001",
+  "scope_root": "/home/_404/src",
+  "reviewed_head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+  "lineage": {},
+  "refs": {
+    "codex_home": "/home/_404/.config/codex",
+    "dotfiles_repo": "/home/_404/src/dotfiles",
+    "dotfiles_head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+    "loop_ledger_repo": "/home/_404/src/loop_ledger",
+    "loop_ledger_head": "5196465ced560a5ea263db5b6721cb2b369fb1a8"
+  },
+  "evidence_bundle": {
+    "integrity_mode": "all_files",
+    "required_output_roles": [],
+    "required_check_roles": []
+  }
+}

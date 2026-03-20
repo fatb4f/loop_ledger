@@ -19,27 +19,59 @@
     {
       "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-plan-merge-001/merged_surface.json",
       "dest": "merged_surface.json",
-      "role": "merged_surface_contract"
+      "role": "merged_surface_contract",
+      "repo_key": "metadata_baseline",
+      "repo_relative_path": "review/bundles/metadata-baseline-plan-merge-001/merged_surface.json",
+      "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6",
+      "absolute_path": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-plan-merge-001/merged_surface.json"
     },
     {
       "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-plan-merge-001/merged_micro_deliverables.json",
       "dest": "merged_micro_deliverables.json",
-      "role": "merged_micro_deliverable_inventory"
+      "role": "merged_micro_deliverable_inventory",
+      "repo_key": "metadata_baseline",
+      "repo_relative_path": "review/bundles/metadata-baseline-plan-merge-001/merged_micro_deliverables.json",
+      "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6",
+      "absolute_path": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-plan-merge-001/merged_micro_deliverables.json"
     },
     {
       "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-plan-merge-001/merged_release_plan.json",
       "dest": "merged_release_plan.json",
-      "role": "merged_release_plan"
+      "role": "merged_release_plan",
+      "repo_key": "metadata_baseline",
+      "repo_relative_path": "review/bundles/metadata-baseline-plan-merge-001/merged_release_plan.json",
+      "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6",
+      "absolute_path": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-plan-merge-001/merged_release_plan.json"
     },
     {
       "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-plan-merge-001/ref_header.json",
       "dest": "source/ref_header.json",
-      "role": "source_plan_ref_header"
+      "role": "source_plan_ref_header",
+      "repo_key": "metadata_baseline",
+      "repo_relative_path": "review/bundles/metadata-baseline-plan-merge-001/ref_header.json",
+      "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6",
+      "absolute_path": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-plan-merge-001/ref_header.json"
     },
     {
       "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-plan-merge-001/artifacts.manifest.json",
       "dest": "source/artifacts.manifest.json",
-      "role": "source_plan_artifacts_manifest"
+      "role": "source_plan_artifacts_manifest",
+      "repo_key": "metadata_baseline",
+      "repo_relative_path": "review/bundles/metadata-baseline-plan-merge-001/artifacts.manifest.json",
+      "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6",
+      "absolute_path": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-plan-merge-001/artifacts.manifest.json"
     }
-  ]
+  ],
+  "source_roots": {
+    "metadata_baseline": {
+      "root": "/home/_404/src/repo_intel/metadata_baseline",
+      "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6"
+    }
+  },
+  "controller_surfaces": {
+    "metadata_baseline": {
+      "root": "/home/_404/src/repo_intel/metadata_baseline",
+      "head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6"
+    }
+  }
 }

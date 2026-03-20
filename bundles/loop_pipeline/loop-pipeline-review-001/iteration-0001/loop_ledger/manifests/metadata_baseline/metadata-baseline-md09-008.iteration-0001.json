@@ -1,0 +1,69 @@
+{
+  "kind": "review_bundle_manifest.v1",
+  "project": "metadata_baseline",
+  "bundle_id": "metadata-baseline-md09-008",
+  "iteration_id": "iteration-0001",
+  "scope_root": "/home/_404/src/repo_intel/metadata_baseline",
+  "reviewed_head": "1aa193afbe52bfdb0e64a16473cf5af57af2ecb6",
+  "output_root": "/home/_404/src/loop_ledger/bundles/metadata_baseline/metadata-baseline-md09-008/iteration-0001",
+  "lineage": {
+    "relationship": "derived_from",
+    "parent_bundle_id": "metadata-baseline-plan-merge-001",
+    "parent_manifest": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-plan-merge-001.iteration-0001.json"
+  },
+  "refs": {
+    "upstream_project": "/home/_404/src/repo_intel/metadata_baseline",
+    "target_spec": "/home/_404/src/repo_intel/metadata_baseline/targets/codex.snapshot.json"
+  },
+  "evidence_bundle": {
+    "required_outputs": [
+      {
+        "source": "/home/_404/src/repo_intel/codex/.analysis/index.json",
+        "dest": "outputs/index.json",
+        "role": "index_output"
+      }
+    ],
+    "required_checks": [
+      {
+        "name": "just test-md09-handoff-index",
+        "source": "/home/_404/src/repo_intel/metadata_baseline/evidence/md09/just_test_md09.json",
+        "dest": "evidence/just_test_md09.json",
+        "role": "just_test_md09_check"
+      },
+      {
+        "name": "just ci-md09",
+        "source": "/home/_404/src/repo_intel/metadata_baseline/evidence/md09/just_ci.json",
+        "dest": "evidence/just_ci.json",
+        "role": "just_ci_check"
+      }
+    ],
+    "integrity_mode": "all_files"
+  },
+  "include": [
+    {
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md09-008/PLAN/README.md",
+      "dest": "PLAN/README.md",
+      "role": "plan_readme"
+    },
+    {
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md09-008/PLAN/request.instance.json",
+      "dest": "PLAN/request.instance.json",
+      "role": "plan_request_instance"
+    },
+    {
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md09-008/IMPLEMENT/IMPLEMENT.md",
+      "dest": "IMPLEMENT/IMPLEMENT.md",
+      "role": "implement_readme"
+    },
+    {
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md09-008/IMPLEMENT/response.instance.json",
+      "dest": "IMPLEMENT/response.instance.json",
+      "role": "implement_response_instance"
+    },
+    {
+      "source": "/home/_404/src/repo_intel/metadata_baseline/review/bundles/metadata-baseline-md09-008/md09_result.json",
+      "dest": "md09_result.json",
+      "role": "md09_result"
+    }
+  ]
+}

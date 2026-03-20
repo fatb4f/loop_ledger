@@ -1,0 +1,57 @@
+{
+  "kind": "review_bundle_ref_header.v1",
+  "project": "asset_control_model",
+  "bundle_id": "asset-control-model-loop-pipeline-working-model-001",
+  "iteration_id": "iteration-0001",
+  "scope_root": "/home/_404/src",
+  "reviewed_head": "c68d364167af14c6128cdfea274070ad9aafb52f",
+  "lineage": {},
+  "refs": {
+    "asset_control_model_repo": "/home/_404/src/runtime/asset-control-model",
+    "asset_control_model_head": "c68d364167af14c6128cdfea274070ad9aafb52f",
+    "asset_control_model_working_tree": "dirty_uncommitted",
+    "dotfiles_repo": "/home/_404/src/dotfiles",
+    "dotfiles_head": "577fc239ae2673df9d5769ed8aa5d80430d80de3",
+    "loop_ledger_repo": "/home/_404/src/loop_ledger",
+    "loop_ledger_head": "5196465ced560a5ea263db5b6721cb2b369fb1a8"
+  },
+  "source_roots": {
+    "asset_control_model": {
+      "root": "/home/_404/src/runtime/asset-control-model",
+      "head": "c68d364167af14c6128cdfea274070ad9aafb52f"
+    },
+    "dotfiles": {
+      "root": "/home/_404/src/dotfiles",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3"
+    },
+    "loop_ledger": {
+      "root": "/home/_404/src/loop_ledger",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8"
+    }
+  },
+  "controller_surfaces": {
+    "codex_skills": {
+      "root": "/home/_404/src/dotfiles",
+      "head": "577fc239ae2673df9d5769ed8aa5d80430d80de3"
+    },
+    "loop_ledger": {
+      "root": "/home/_404/src/loop_ledger",
+      "head": "5196465ced560a5ea263db5b6721cb2b369fb1a8"
+    },
+    "asset_control_model": {
+      "root": "/home/_404/src/runtime/asset-control-model",
+      "head": "c68d364167af14c6128cdfea274070ad9aafb52f"
+    }
+  },
+  "evidence_bundle": {
+    "integrity_mode": "all_files",
+    "required_output_roles": [
+      "loop_state_output",
+      "promotion_capsule_output"
+    ],
+    "required_check_roles": [
+      "review_manifest_validate_check",
+      "review_bundle_status_check"
+    ]
+  }
+}

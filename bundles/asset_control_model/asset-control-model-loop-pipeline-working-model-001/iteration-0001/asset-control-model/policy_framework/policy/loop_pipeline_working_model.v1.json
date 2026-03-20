@@ -1,0 +1,218 @@
+{
+  "kind": "loop_pipeline_working_model.v1",
+  "scope": "minimal_acm_surface_for_loop_pipeline",
+  "purpose": "Freeze the minimum ACM model needed by the current loop pipeline so contract hardening can proceed without widening architecture scope.",
+  "current_tool_authority": {
+    "cue": "primary_admissibility_engine_for_workflow_state",
+    "json_schema": "boundary_validation_for_individual_json_objects",
+    "scripts": "state_collection_file_operations_and_bundle_materialization",
+    "just": "operator_facing_command_surface",
+    "cargo": "workspace_package_truth_for_cargo_shaped_projects"
+  },
+  "deferred_controller_runtime": "rust_controller_binary",
+  "controller_surfaces_in_scope": [
+    "scripts",
+    "manifests",
+    "schemas",
+    "justfiles"
+  ],
+  "worktrees": {
+    "wt": {
+      "role": "source_repo_integration_worktree",
+      "owns": [
+        "PLAN",
+        "IMPLEMENT",
+        "runtime_evidence"
+      ]
+    },
+    "ledger_wt": {
+      "role": "loop_ledger_worktree",
+      "owns": [
+        "review_manifests",
+        "copied_review_evidence",
+        "materialized_bundles",
+        "dist_archives"
+      ]
+    }
+  },
+  "control_objects": [
+    {
+      "name": "packet_contract",
+      "required": true,
+      "surfaces": [
+        "loop_handoff_contract",
+        "plan_request_packet",
+        "implement_response_packet",
+        "contract_bridge_validation"
+      ]
+    },
+    {
+      "name": "loop_state",
+      "required": true,
+      "artifact": "LOOP/loop.state.json",
+      "minimum_fields": [
+        "loop_instance_id",
+        "iteration_id",
+        "phase",
+        "previous_phase",
+        "decision",
+        "transition_gate",
+        "verification_result",
+        "rollback_status",
+        "archive_ref"
+      ]
+    },
+    {
+      "name": "evidence_bundle",
+      "required": true,
+      "authority": "review_bundle_manifest.v1",
+      "fields": [
+        "required_outputs",
+        "required_checks",
+        "integrity_mode"
+      ]
+    },
+    {
+      "name": "review_bundle",
+      "required": true,
+      "properties": [
+        "verify_replayable",
+        "hashed_members",
+        "per_root_provenance",
+        "review_facing"
+      ]
+    },
+    {
+      "name": "lineage_and_promotion_capsule",
+      "required": true,
+      "artifact": "gitflow/promotion.capsule.json",
+      "minimum_fields": [
+        "integration_id",
+        "base_main_commit",
+        "contract_commit",
+        "bounded_batch_id",
+        "patch_hash",
+        "validation_refs",
+        "status"
+      ]
+    },
+    {
+      "name": "controller_surface",
+      "required": true,
+      "surfaces": [
+        "justfiles",
+        "validator_scripts",
+        "materializer_scripts",
+        "packet_manifests",
+        "bundle_manifests",
+        "packet_schemas",
+        "bundle_schemas"
+      ],
+      "capabilities": [
+        "validate_packet_artifacts",
+        "validate_bridge_legality",
+        "validate_review_bundle_manifests",
+        "check_required_evidence_presence",
+        "materialize_review_bundles",
+        "emit_promotion_or_rejection_evidence"
+      ]
+    }
+  ],
+  "policy_plane": {
+    "primary_admissibility_engine": "cue",
+    "deny_rules": [
+      "deny_review_bundle_if_declared_evidence_missing",
+      "deny_promotion_if_bridge_or_validation_fails",
+      "deny_package_aware_consumers_if_index_missing_or_stale",
+      "deny_derived_bundle_without_parent_lineage",
+      "deny_ad_hoc_controller_logic_outside_versioned_scripts_and_schemas"
+    ]
+  },
+  "contract_plane": {
+    "required_contracts": [
+      "loop_handoff_contract",
+      "request_response_packet_contracts",
+      "review_bundle_manifest_schema",
+      "loop_state_schema",
+      "promotion_capsule_schema",
+      "controller_manifest_and_validation_schemas",
+      "cue_policy_packages"
+    ]
+  },
+  "runtime_plane": {
+    "required_artifacts": [
+      "PLAN/*",
+      "IMPLEMENT/*",
+      "raw_outputs",
+      "check_evidence",
+      "LOOP/loop.state.json",
+      "copied_review_bundle",
+      "review_zip",
+      "invoked_scripts",
+      "justfile_entrypoints"
+    ]
+  },
+  "validation_flow": [
+    "collect_observed_state_into_json",
+    "validate_boundary_objects_with_json_schema",
+    "evaluate_cross_document_admissibility_with_cue",
+    "translate_verdict_into_control_action",
+    "invoke_through_just_entrypoints"
+  ],
+  "verify_replay_bridge": {
+    "required_bundle_members": [
+      "PLAN/contract.bindings.json",
+      "PLAN/request.validation.json",
+      "PLAN/batch.manifest.json",
+      "PLAN/integration_gate.plan.json",
+      "PLAN/promotion.plan.json",
+      "IMPLEMENT/response.manifest.json",
+      "IMPLEMENT/response.validation.json"
+    ]
+  },
+  "provenance": {
+    "mode": "per_source_root",
+    "required_roots": [
+      "codex",
+      "metadata_baseline",
+      "loop_ledger"
+    ],
+    "required_controller_surfaces": [
+      "codex_skills",
+      "metadata_baseline",
+      "loop_ledger"
+    ],
+    "artifact_fields": [
+      "repo_key",
+      "repo_relative_path",
+      "head"
+    ],
+    "optional_artifact_fields": [
+      "absolute_path"
+    ]
+  },
+  "priorities": {
+    "P0": [
+      "make_verify_replayable_from_review_bundle",
+      "materialize_loop_state",
+      "pin_provenance_per_source_root"
+    ],
+    "P1": [
+      "gate_parent_planning_bundle",
+      "emit_gitflow_promotion_capsule",
+      "prefer_repo_relative_paths",
+      "scope_controller_surfaces_into_provenance_and_review_policy"
+    ],
+    "P2": [
+      "validate_authority_completeness",
+      "formalize_heavy_bundle_policy"
+    ]
+  },
+  "deferred": [
+    "generalized_control_bundle_rollout",
+    "full_cue_policy_expansion_beyond_loop_pipeline",
+    "broad_asset_family_taxonomy",
+    "non_loop_controller_abstractions",
+    "rust_controller_binary_replacement_for_script_actuators"
+  ]
+}

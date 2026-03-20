@@ -1,0 +1,468 @@
+{
+  "kind": "review_bundle_artifacts_manifest.v1",
+  "project": "loop_pipeline",
+  "bundle_id": "loop-pipeline-review-001",
+  "iteration_id": "iteration-0001",
+  "manifest_path": "/home/_404/src/loop_ledger/manifests/loop_pipeline/loop-pipeline-review-001.iteration-0001.json",
+  "output_root": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001",
+  "lineage": {},
+  "integrity_mode": "all_files",
+  "files": [
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/SCOPE.md",
+      "source": "/home/_404/src/loop_ledger/manifests/loop_pipeline/loop-pipeline-review-001.scope.md",
+      "role": "review_scope",
+      "sha256": "14ebd1583048f79cd3118dfdb0ebaaa0909f70e1734c8951ae3d9877c8b6f537"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/CONSOLIDATED_BUNDLE.md",
+      "source": "/home/_404/.config/codex/CONSOLIDATED_BUNDLE.md",
+      "role": "codex_asset",
+      "sha256": "9a9aeaf0b557d8b66b019a1cc1e3ff05d74a7eb4253b07282c6ffe4a45b0d69f"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/plan.request_response_contract.v1.json",
+      "source": "/home/_404/.config/codex/plan.request_response_contract.v1.json",
+      "role": "codex_asset",
+      "sha256": "7eb4a3f2c8ee5e74453658196f03749c80ed379aa37ad42419f72dd0d3f4f6f5"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/prompt-registry/workflows/git-flow.integration-worktree.json",
+      "source": "/home/_404/.config/codex/prompt-registry/workflows/git-flow.integration-worktree.json",
+      "role": "codex_asset",
+      "sha256": "55bbefaf189f540d471a4ec49b0ba3fcda2a95e8e97582fc715780fd4b2945cd"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/registry.json",
+      "source": "/home/_404/.config/codex/skills/registry.json",
+      "role": "codex_asset",
+      "sha256": "ae7626be712c9e279652f45d88818cffb8b1c97bed8d877675b247654b08264a"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/control/git-flow/README.md",
+      "source": "/home/_404/.config/codex/control/git-flow/README.md",
+      "role": "codex_asset",
+      "sha256": "b26ff60bc0810db186f16e8e8bb861ffff26aa5ad85a8039e4bc088c9fb6ca9b"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/control/git-flow/git_flow.dag.json",
+      "source": "/home/_404/.config/codex/control/git-flow/git_flow.dag.json",
+      "role": "codex_asset",
+      "sha256": "00f1a9be9b4b19742177de102ad36a2a30e04db9b9b7bf6a1cf8d0c415bc8296"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/control/git-flow/git_flow.dag.mmd",
+      "source": "/home/_404/.config/codex/control/git-flow/git_flow.dag.mmd",
+      "role": "codex_asset",
+      "sha256": "7c23dee40fac492b8945d843dcf1f167bc50e19d01e7d2c7be66fcd6bd1d0f4e"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/control/git-flow/git_flow.manifest.json",
+      "source": "/home/_404/.config/codex/control/git-flow/git_flow.manifest.json",
+      "role": "codex_asset",
+      "sha256": "56f600e777a969eee0dcdbf0784d1af109242d8c1af728e62a21556e628a5a13"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/control/git-flow/schemas/git_flow_dag.schema.json",
+      "source": "/home/_404/.config/codex/control/git-flow/schemas/git_flow_dag.schema.json",
+      "role": "codex_asset",
+      "sha256": "7060239a4e05788726c9e84ecc12e60aaf776e687e3a31decdfd320a3d6eb2ff"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/control/git-flow/schemas/git_flow_manifest.schema.json",
+      "source": "/home/_404/.config/codex/control/git-flow/schemas/git_flow_manifest.schema.json",
+      "role": "codex_asset",
+      "sha256": "dd4ee79c0fa0446a818c8e420f3cfcdcb0e8d85903f56c28d9cdd523780da426"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/loop/SKILL.md",
+      "source": "/home/_404/.config/codex/skills/loop/SKILL.md",
+      "role": "codex_asset",
+      "sha256": "c4f60f331a16983cf9c279922a7e60db0aeb53320e91feeace08973adfcd70c3"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/loop/assets/LOOP.packet.template.md",
+      "source": "/home/_404/.config/codex/skills/loop/assets/LOOP.packet.template.md",
+      "role": "codex_asset",
+      "sha256": "fa8999a13f41ab274e069b90009aeffb8fab4bd58100fca550e72fcdabf26008"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/loop/assets/handoff.contract.json",
+      "source": "/home/_404/.config/codex/skills/loop/assets/handoff.contract.json",
+      "role": "codex_asset",
+      "sha256": "ca45385493faaeb97ad46f850e7be3c3600f7a13ff4b1e5229d5c900202dd6c3"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/loop/assets/init.asset.json",
+      "source": "/home/_404/.config/codex/skills/loop/assets/init.asset.json",
+      "role": "codex_asset",
+      "sha256": "ea50ea9716160b8af4ff7bea7ac21ebbff35ea097d80fff44c2d9ad81c54c926"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/loop/assets/interface.json",
+      "source": "/home/_404/.config/codex/skills/loop/assets/interface.json",
+      "role": "codex_asset",
+      "sha256": "f6bd70ef4dde5f3acb9a50e8b2e250512f7e29b28f638687b580488ca4812798"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/loop/assets/sequence_dag.md",
+      "source": "/home/_404/.config/codex/skills/loop/assets/sequence_dag.md",
+      "role": "codex_asset",
+      "sha256": "80518760f092f59e6fa5706878525b40421f34db219d8d2eb4a06ac37b265727"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/loop/assets/terminate.asset.json",
+      "source": "/home/_404/.config/codex/skills/loop/assets/terminate.asset.json",
+      "role": "codex_asset",
+      "sha256": "87f003697efdbb223a8b4e32f468263000a6073835309ea03e46c8553ae732c1"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/loop/assets/workflow.json",
+      "source": "/home/_404/.config/codex/skills/loop/assets/workflow.json",
+      "role": "codex_asset",
+      "sha256": "1fb76ad1c41ec8ca72f2a0a03b7dd70ba337caa55bfac82e31711610ebb7cae4"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/loop/references/composition.md",
+      "source": "/home/_404/.config/codex/skills/loop/references/composition.md",
+      "role": "codex_asset",
+      "sha256": "3c46bae8070d43fad8250cfafecaa40805429b6c6812da2d44d9a0a2718e2334"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/loop/references/handoff_contracts.md",
+      "source": "/home/_404/.config/codex/skills/loop/references/handoff_contracts.md",
+      "role": "codex_asset",
+      "sha256": "a0b950db04ac958be08cfb2d9992485b7a621eb603c6016f10197cce430c5480"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/loop/references/phase_profiles.md",
+      "source": "/home/_404/.config/codex/skills/loop/references/phase_profiles.md",
+      "role": "codex_asset",
+      "sha256": "053016da4694b06c84e2910840234678f2f461633c18adcb068f0d7824c8c3a3"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/loop/references/transition_semantics.md",
+      "source": "/home/_404/.config/codex/skills/loop/references/transition_semantics.md",
+      "role": "codex_asset",
+      "sha256": "8248390d17dfbb5d8f07a1f321035f172cd816d2d21000e2831276f6f2bbaea2"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/loop/scripts/validate_contract_bridge.py",
+      "source": "/home/_404/.config/codex/skills/loop/scripts/validate_contract_bridge.py",
+      "role": "codex_asset",
+      "sha256": "dbaa7545e78a31059819bf83aa5a7513d89bd67e2aa02863b8218eebd2921f07"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/loop/scripts/validate_handoff.py",
+      "source": "/home/_404/.config/codex/skills/loop/scripts/validate_handoff.py",
+      "role": "codex_asset",
+      "sha256": "719df3c2652ba6a9980901b17c76be928e4cb4ac0ba8eca00f9d8f14383d82d2"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/loop/scripts/validate_loop_packet.py",
+      "source": "/home/_404/.config/codex/skills/loop/scripts/validate_loop_packet.py",
+      "role": "codex_asset",
+      "sha256": "8ef022df0b00b0b53a928830f3905219c9d4a33d0ac0a99593d1aa42342e792d"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/plan/SKILL.md",
+      "source": "/home/_404/.config/codex/skills/plan/SKILL.md",
+      "role": "codex_asset",
+      "sha256": "705cef32f11a69e6bc1fc38accc25b6f02b7eef4f4f614aaa652ae7607029fb2"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/plan/assets/README.plan.template.md",
+      "source": "/home/_404/.config/codex/skills/plan/assets/README.plan.template.md",
+      "role": "codex_asset",
+      "sha256": "5fae1f14e8d7505c8b7f557cc34ba66e691690defd5000a9fd389077dd1f181c"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/plan/assets/interface.json",
+      "source": "/home/_404/.config/codex/skills/plan/assets/interface.json",
+      "role": "codex_asset",
+      "sha256": "07fc4f83a0c034005b501b48c44662159ae5fae281d98e1cff7b789bf66dc963"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/plan/assets/sequence_dag.md",
+      "source": "/home/_404/.config/codex/skills/plan/assets/sequence_dag.md",
+      "role": "codex_asset",
+      "sha256": "12d8132b8920d076e44435356b9cc682f774a48b4033c566ee66928197d761cb"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/plan/assets/workflow.json",
+      "source": "/home/_404/.config/codex/skills/plan/assets/workflow.json",
+      "role": "codex_asset",
+      "sha256": "eae2cc74e31af1893564dfbb49b8d050b9a2ebca2d5e1eb2557b518f6918ba67"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/plan/references/contract_layer.md",
+      "source": "/home/_404/.config/codex/skills/plan/references/contract_layer.md",
+      "role": "codex_asset",
+      "sha256": "0d4346eff205980c1c072b6ea04559403ee8afb3685da68e38095264f596cf70"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/plan/references/decision_semantics.md",
+      "source": "/home/_404/.config/codex/skills/plan/references/decision_semantics.md",
+      "role": "codex_asset",
+      "sha256": "241a4f1fad3ae21ae54d3e2f8b049bc118f9eb7f6d1f7d790da14ca364a9930b"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/plan/references/git_flow.md",
+      "source": "/home/_404/.config/codex/skills/plan/references/git_flow.md",
+      "role": "codex_asset",
+      "sha256": "e1306edf7258f6f2275e1d5b7b2b5ccd48664cce8d93b4f305f95a511e1a58ad"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/plan/references/plan_packet_validation.md",
+      "source": "/home/_404/.config/codex/skills/plan/references/plan_packet_validation.md",
+      "role": "codex_asset",
+      "sha256": "81d67dacbaeb15d488d859ca2ece68df11151593223749a2b15f95cff7a0b321"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/plan/references/template_generation.md",
+      "source": "/home/_404/.config/codex/skills/plan/references/template_generation.md",
+      "role": "codex_asset",
+      "sha256": "31119b370dc33bddea19e8d5e2bf261a2eeac4f8a9e609dc9e9747c2e4d52864"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/plan/references/xdg_state_config_directives.md",
+      "source": "/home/_404/.config/codex/skills/plan/references/xdg_state_config_directives.md",
+      "role": "codex_asset",
+      "sha256": "30eb839a204fd1e5a5ce6118fe6814a184b96b428fdf40c8a3370576aa0416c9"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/plan/scripts/generate_plan_packet.py",
+      "source": "/home/_404/.config/codex/skills/plan/scripts/generate_plan_packet.py",
+      "role": "codex_asset",
+      "sha256": "af5123649299cdff2e46a4f4943acc3e605a7c78c0b09e657346688b830f26df"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/plan/scripts/validate_plan_packet.py",
+      "source": "/home/_404/.config/codex/skills/plan/scripts/validate_plan_packet.py",
+      "role": "codex_asset",
+      "sha256": "d5b68cd3e2ac4baa12813ce4b67cf6364f46e2aab86bd9c47c0473e20a3dc07e"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/implement/SKILL.md",
+      "source": "/home/_404/.config/codex/skills/implement/SKILL.md",
+      "role": "codex_asset",
+      "sha256": "4b7130578981e2902043d4c3f4eec781570268427d6f4e871880b5a51261d6ee"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/implement/assets/IMPLEMENT.packet.template.md",
+      "source": "/home/_404/.config/codex/skills/implement/assets/IMPLEMENT.packet.template.md",
+      "role": "codex_asset",
+      "sha256": "0d3e303052e1cd701be6725497bd8ef89f93ae60a6c614bf9b81f75b1a482dff"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/implement/assets/interface.json",
+      "source": "/home/_404/.config/codex/skills/implement/assets/interface.json",
+      "role": "codex_asset",
+      "sha256": "27594494dce68f5e1f016dcf307d0161ca63cb19c1d6293dd95411ad4ce69208"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/implement/assets/sequence_dag.md",
+      "source": "/home/_404/.config/codex/skills/implement/assets/sequence_dag.md",
+      "role": "codex_asset",
+      "sha256": "9f4efbf916f912b21c51be868e921c75caf037772e1a9141ef955a3ddfbf638d"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/implement/assets/workflow.json",
+      "source": "/home/_404/.config/codex/skills/implement/assets/workflow.json",
+      "role": "codex_asset",
+      "sha256": "c9a1a873efb8b39e1caa7564ac31f950ccca78dff8f978bb95c6a30c673dd746"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/implement/references/domain_profiles.md",
+      "source": "/home/_404/.config/codex/skills/implement/references/domain_profiles.md",
+      "role": "codex_asset",
+      "sha256": "91ad64443295edda53c1585b2dfbdca187fc97de1649dcf5b257324ed5eb352a"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/implement/references/evidence_gate.md",
+      "source": "/home/_404/.config/codex/skills/implement/references/evidence_gate.md",
+      "role": "codex_asset",
+      "sha256": "d1b8d711bc8f8bbf6405bfcab7b314f73db57dd8ad6b1472c0f728c136c3c764"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/implement/references/execution_modes.md",
+      "source": "/home/_404/.config/codex/skills/implement/references/execution_modes.md",
+      "role": "codex_asset",
+      "sha256": "b201bd3242ad7e89c5d2fa853ae3fd5dd69978dcd1c053456371f310c1b1683c"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/implement/references/git_flow_preference_set.md",
+      "source": "/home/_404/.config/codex/skills/implement/references/git_flow_preference_set.md",
+      "role": "codex_asset",
+      "sha256": "2299c384302370a3e68505135e48ce61e03d6326754f97d29e87591c0d2811a9"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/implement/references/plan_handoff.md",
+      "source": "/home/_404/.config/codex/skills/implement/references/plan_handoff.md",
+      "role": "codex_asset",
+      "sha256": "f1738c95c1fc5d7cb7a9245c1d5481c25f4df9bb28232e1ee31fec27928d28d6"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/implement/references/python_cli_daemon_preferences.md",
+      "source": "/home/_404/.config/codex/skills/implement/references/python_cli_daemon_preferences.md",
+      "role": "codex_asset",
+      "sha256": "160450b8f16b4a8606992d3af0028ce3494d34cdafaeb219024b8a6c50f007bc"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/implement/scripts/generate_implement_packet.py",
+      "source": "/home/_404/.config/codex/skills/implement/scripts/generate_implement_packet.py",
+      "role": "codex_asset",
+      "sha256": "b4942c054d90dd21d96476426d62ca0a7d477787e41264826d8fab910c6f10de"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/codex/skills/implement/scripts/validate_implement_packet.py",
+      "source": "/home/_404/.config/codex/skills/implement/scripts/validate_implement_packet.py",
+      "role": "codex_asset",
+      "sha256": "1195a5a443fd60e4fac231d5c1b40c5bf47c26c334d0951beaaec60497108241"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/loop_ledger/AGENTS.md",
+      "source": "/home/_404/src/loop_ledger/AGENTS.md",
+      "role": "loop_ledger_asset",
+      "sha256": "daebf38dabdb40dd734fbd4ce7aa3b2eaa58af331c3fca75023c73dc94eafb95"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/loop_ledger/README.md",
+      "source": "/home/_404/src/loop_ledger/README.md",
+      "role": "loop_ledger_asset",
+      "sha256": "ab62710e3dfa230ce438a25a88bee7573491f7baabc8c82c3d6bc4be43a14c96"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/loop_ledger/justfile",
+      "source": "/home/_404/src/loop_ledger/justfile",
+      "role": "loop_ledger_asset",
+      "sha256": "1734a75d8b5a27d34987cfb64ec9acb7894566e197b9793d2ce5714c7439e9c0"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/loop_ledger/schemas/review_bundle_manifest.v1.schema.json",
+      "source": "/home/_404/src/loop_ledger/schemas/review_bundle_manifest.v1.schema.json",
+      "role": "loop_ledger_asset",
+      "sha256": "f222ef81c084ff8b7273352864ea1f59d7a6bf6abb3925827da31c70a576dfed"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/loop_ledger/scripts/check_review_bundle_inputs.py",
+      "source": "/home/_404/src/loop_ledger/scripts/check_review_bundle_inputs.py",
+      "role": "loop_ledger_asset",
+      "sha256": "9e2974371c2b7aec998a727c31928dc5433e0a6e196d1b31d72f40b31004ba00"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/loop_ledger/scripts/materialize_review_bundle.py",
+      "source": "/home/_404/src/loop_ledger/scripts/materialize_review_bundle.py",
+      "role": "loop_ledger_asset",
+      "sha256": "6fa47da33abe15941e4145c577e1fa75b037afd9f7b18d90e0676853a0ecdfaa"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/loop_ledger/scripts/validate_json.py",
+      "source": "/home/_404/src/loop_ledger/scripts/validate_json.py",
+      "role": "loop_ledger_asset",
+      "sha256": "90e76ba3afef2bc946315424cc06f95249acaf2b15fd06b88cbb3be657428781"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/loop_ledger/manifests/metadata_baseline/metadata-baseline-md01-002.iteration-0001.json",
+      "source": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-md01-002.iteration-0001.json",
+      "role": "loop_ledger_asset",
+      "sha256": "d220bdb5717d2252860ce768ad11463f9ef1a0ff30501ce5ce022dbab9e6e409"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/loop_ledger/manifests/metadata_baseline/metadata-baseline-md02-003.iteration-0001.json",
+      "source": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-md02-003.iteration-0001.json",
+      "role": "loop_ledger_asset",
+      "sha256": "458e0ed647571a174e248f434057caf57e98abe1a39f5e82ecedfbfa33824003"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/loop_ledger/manifests/metadata_baseline/metadata-baseline-md03-004.iteration-0001.json",
+      "source": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-md03-004.iteration-0001.json",
+      "role": "loop_ledger_asset",
+      "sha256": "8876d2cab3226c25bc3c74a3dedac76676483fbe648b6e2b61a1737d83d4aec4"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/loop_ledger/manifests/metadata_baseline/metadata-baseline-md04-005.iteration-0001.json",
+      "source": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-md04-005.iteration-0001.json",
+      "role": "loop_ledger_asset",
+      "sha256": "74412555d2a6fd26a4e46485c662a238641f598fb5094a577e25773553657c88"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/loop_ledger/manifests/metadata_baseline/metadata-baseline-md06-006.iteration-0001.json",
+      "source": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-md06-006.iteration-0001.json",
+      "role": "loop_ledger_asset",
+      "sha256": "69d0fdf67d77aab8844980f403de891515a3fd172a31c11087819734dd29ff3f"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/loop_ledger/manifests/metadata_baseline/metadata-baseline-md07-007.iteration-0001.json",
+      "source": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-md07-007.iteration-0001.json",
+      "role": "loop_ledger_asset",
+      "sha256": "e7f1879b3b4b92297933c50b7a0a5fbc2a66b94c1817d473df373a1f0b3142ce"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/loop_ledger/manifests/metadata_baseline/metadata-baseline-md09-008.iteration-0001.json",
+      "source": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-md09-008.iteration-0001.json",
+      "role": "loop_ledger_asset",
+      "sha256": "f7fb646407ed9ce6489b699c1a4c6d30677b17fea2751c9e8c4be45f2abe9553"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/loop_ledger/manifests/metadata_baseline/metadata-baseline-plan-merge-001.iteration-0001.json",
+      "source": "/home/_404/src/loop_ledger/manifests/metadata_baseline/metadata-baseline-plan-merge-001.iteration-0001.json",
+      "role": "loop_ledger_asset",
+      "sha256": "7c5831fa29a9335545ca704b0ca614dee0f168090799f345cc14d7470ed0dc15"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/loop_ledger/dist/metadata-baseline-md01-002.iteration-0001.review.zip",
+      "source": "/home/_404/src/loop_ledger/dist/metadata-baseline-md01-002.iteration-0001.review.zip",
+      "role": "loop_ledger_asset",
+      "sha256": "e1323fe8e1ab90bac3fd90f1c67621f14de2d930dfb70ee5b8f31b2380d525ad"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/loop_ledger/dist/metadata-baseline-md02-003.iteration-0001.review.zip",
+      "source": "/home/_404/src/loop_ledger/dist/metadata-baseline-md02-003.iteration-0001.review.zip",
+      "role": "loop_ledger_asset",
+      "sha256": "3a77879888615b7b5cc8c7a20b5eb3a4363981fc706e8e8d05b09598ecf3a695"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/loop_ledger/dist/metadata-baseline-md03-004.iteration-0001.review.zip",
+      "source": "/home/_404/src/loop_ledger/dist/metadata-baseline-md03-004.iteration-0001.review.zip",
+      "role": "loop_ledger_asset",
+      "sha256": "7f4a9663a87227be137e4d80100306dced5c0c705731b351aee5365b9b99cf58"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/loop_ledger/dist/metadata-baseline-md04-005.iteration-0001.review.zip",
+      "source": "/home/_404/src/loop_ledger/dist/metadata-baseline-md04-005.iteration-0001.review.zip",
+      "role": "loop_ledger_asset",
+      "sha256": "3077a106dda327457bfda868370dc2d863d84665f43ce598136dfa63dc93bce7"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/loop_ledger/dist/metadata-baseline-md06-006.iteration-0001.review.zip",
+      "source": "/home/_404/src/loop_ledger/dist/metadata-baseline-md06-006.iteration-0001.review.zip",
+      "role": "loop_ledger_asset",
+      "sha256": "7456e4b8ce20b2e5ddc3a366babdd456e7b8fb54bb984a763ed767dccbc93c14"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/loop_ledger/dist/metadata-baseline-md07-007.iteration-0001.review.zip",
+      "source": "/home/_404/src/loop_ledger/dist/metadata-baseline-md07-007.iteration-0001.review.zip",
+      "role": "loop_ledger_asset",
+      "sha256": "fb1c941b81fd1e743861647ce97ae03ae4a574e32a3b4630546047b10fee3cfd"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/loop_ledger/dist/metadata-baseline-md09-008.iteration-0001.review.zip",
+      "source": "/home/_404/src/loop_ledger/dist/metadata-baseline-md09-008.iteration-0001.review.zip",
+      "role": "loop_ledger_asset",
+      "sha256": "4ae062e13eaf0ad4042c41c592637f12131e2dae1d0d8ee61932cc9ee467c480"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/loop_ledger/dist/metadata-baseline-plan-merge-001.iteration-0001.review.zip",
+      "source": "/home/_404/src/loop_ledger/dist/metadata-baseline-plan-merge-001.iteration-0001.review.zip",
+      "role": "loop_ledger_asset",
+      "sha256": "adcbbd84cada4a94a5d3f077032a2f49cca0ed77dd26124971b8edca27d2e989"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/loop-pipeline-review-001/iteration-0001/ref_header.json",
+      "source": "/home/_404/src/loop_ledger/manifests/loop_pipeline/loop-pipeline-review-001.iteration-0001.json",
+      "role": "ref_header",
+      "sha256": "c4247058ed205b1e3c833f2895162e16b4a9a64eefa5c214d4198859173506fc"
+    }
+  ]
+}

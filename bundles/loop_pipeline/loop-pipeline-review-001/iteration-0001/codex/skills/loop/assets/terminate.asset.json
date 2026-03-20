@@ -1,0 +1,29 @@
+{
+  "name": "loop_terminate",
+  "version": "1.0",
+  "inputs": {
+    "wt": "path",
+    "verification_status": "PASS|FAIL|PENDING",
+    "request_instance": "path",
+    "response_manifest": "path"
+  },
+  "checks": [
+    "verification status must be PASS",
+    "request and response refs must still resolve",
+    "archive target path must exist before cleanup"
+  ],
+  "actions": [
+    "archive $wt/{PLAN,IMPLEMENT,LOOP}",
+    "emit closeout summary",
+    "prune temporary worktree when requested"
+  ],
+  "outputs": {
+    "reports_archive_ref": "outputs/reports/<run_id>.tar.gz",
+    "closeout_summary": "markdown section",
+    "tmp_wt_prune": "done|skipped|failed"
+  },
+  "rollback": [
+    "skip cleanup and retain worktree for inspection",
+    "mark terminate result as failed"
+  ]
+}

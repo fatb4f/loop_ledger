@@ -1,0 +1,16 @@
+{
+  "id": "workflow.git_flow.integration_worktree",
+  "kind": "workflow",
+  "description": "Integration worktree DAG for bounded batches",
+  "steps": [
+    "contract_branch_open",
+    "authority_gate",
+    "contract_package_gate",
+    "merge_contract_to_main",
+    "spawn_bounded_batch_integration_worktree",
+    "apply_batch_patch",
+    "artifact_conformance_gate",
+    "promotion_decision",
+    "promote_patch_to_main"
+  ]
+}
