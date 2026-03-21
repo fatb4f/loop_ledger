@@ -1,0 +1,80 @@
+{
+  "kind": "prompt_overlay_authority_verification.v1",
+  "slice_id": "prompt-registry-readonly-overlay-pipeline-001",
+  "authority_metadata_source": "manifest.units",
+  "rules_ref": "PLAN/overlay_derivation.rules.json",
+  "rules": [
+    {
+      "id": "workflow_units_require_authority_refs",
+      "description": "Every workflow overlay unit must declare source_of_truth_root and at least one source_of_truth_ref under control/."
+    },
+    {
+      "id": "overlay_refs_must_resolve",
+      "description": "Unresolved workflow, profile, snippet, or authority refs are fatal."
+    },
+    {
+      "id": "overlay_may_select_not_redefine",
+      "description": "Overlay artifacts may select, annotate, and order prompt assets, but may not redefine legality, gating, or promotion semantics."
+    },
+    {
+      "id": "manifest_membership_must_match_retrieval",
+      "description": "All workflow ids referenced by retrieval indexes or profiles must be listed in prompt-registry/manifest.json units."
+    },
+    {
+      "id": "authority_drift_fails_closed",
+      "description": "Moved, renamed, or deleted control authority refs fail validation until the overlay is updated."
+    }
+  ],
+  "results": [
+    {
+      "workflow_id": "workflow.contract_first",
+      "manifest_unit_present": true,
+      "workflow_path": "/home/_404/src/dotfiles/config/codex/prompt-registry/workflows/contract-first.json",
+      "workflow_id_matches_file": true,
+      "authority_metadata_source": "manifest_unit",
+      "source_of_truth_root": "control/",
+      "source_of_truth_refs": [
+        "control/git-flow/git_flow.manifest.json",
+        "control/git-flow/git_flow.dag.json",
+        "control/git-flow/plan/README.md"
+      ],
+      "resolved_source_of_truth_refs": [
+        "/home/_404/src/dotfiles/config/codex/control/git-flow/git_flow.manifest.json",
+        "/home/_404/src/dotfiles/config/codex/control/git-flow/git_flow.dag.json",
+        "/home/_404/src/dotfiles/config/codex/control/git-flow/plan/README.md"
+      ],
+      "missing_source_of_truth_refs": [],
+      "overlay_role": "retrieval_overlay",
+      "illegal_redefinition_detected": false,
+      "status": "PASS"
+    },
+    {
+      "workflow_id": "workflow.git_flow.integration_worktree",
+      "manifest_unit_present": true,
+      "workflow_path": "/home/_404/src/dotfiles/config/codex/prompt-registry/workflows/git-flow.integration-worktree.json",
+      "workflow_id_matches_file": true,
+      "authority_metadata_source": "workflow_file",
+      "source_of_truth_root": "control/git-flow/",
+      "source_of_truth_refs": [
+        "control/git-flow/git_flow.manifest.json",
+        "control/git-flow/git_flow.dag.json",
+        "control/git-flow/loop/README.md",
+        "control/git-flow/plan/README.md",
+        "control/git-flow/implement/README.md"
+      ],
+      "resolved_source_of_truth_refs": [
+        "/home/_404/src/dotfiles/config/codex/control/git-flow/git_flow.manifest.json",
+        "/home/_404/src/dotfiles/config/codex/control/git-flow/git_flow.dag.json",
+        "/home/_404/src/dotfiles/config/codex/control/git-flow/loop/README.md",
+        "/home/_404/src/dotfiles/config/codex/control/git-flow/plan/README.md",
+        "/home/_404/src/dotfiles/config/codex/control/git-flow/implement/README.md"
+      ],
+      "missing_source_of_truth_refs": [],
+      "overlay_role": "retrieval_overlay",
+      "illegal_redefinition_detected": false,
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS",
+  "errors": []
+}

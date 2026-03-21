@@ -1,0 +1,32 @@
+{
+  "kind": "integration_gate_plan.v1",
+  "bounded_batch_id": "workbench-prompt-registry-operationalization-001",
+  "runs_on": "integration_worktree",
+  "required_checks": [
+    "authority_gate",
+    "contract_package_gate",
+    "artifact_conformance_gate"
+  ],
+  "required_artifacts": [
+    "PLAN/request.instance.json",
+    "PLAN/contract.bindings.json",
+    "PLAN/batch.manifest.json",
+    "PLAN/integration_gate.plan.json",
+    "PLAN/promotion.plan.json",
+    "PLAN/overlay_slice.contract.json",
+    "PLAN/overlay_derivation.rules.json"
+  ],
+  "bounded_batch_expected_artifacts": [
+    "IMPLEMENT/resolved.overlay.json",
+    "IMPLEMENT/assembled.prompt.plan.json",
+    "IMPLEMENT/authority.verification.json",
+    "IMPLEMENT/registry.parity.check.json",
+    "IMPLEMENT/IMPLEMENT.md",
+    "IMPLEMENT/packet.meta.json",
+    "IMPLEMENT/response.instance.json",
+    "IMPLEMENT/response.manifest.json",
+    "IMPLEMENT/response.validation.json"
+  ],
+  "pass_effect": "promotion_decision_can_pass",
+  "fail_effect": "bounded_batch_rejected_or_reworked"
+}

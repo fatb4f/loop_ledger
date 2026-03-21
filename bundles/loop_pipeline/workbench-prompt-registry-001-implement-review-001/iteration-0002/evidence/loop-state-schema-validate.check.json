@@ -1,0 +1,12 @@
+{
+  "kind": "controller_check.v1",
+  "name": "loop state schema validate",
+  "argv": [
+    "python3",
+    "/home/_404/src/loop_ledger/scripts/validate_json.py",
+    "/home/_404/src/runtime/asset-control-model/policy_framework/schemas/loop_state.schema.json",
+    "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/LOOP/loop.state.json"
+  ],
+  "cwd": "/home/_404/src",
+  "exit_code": 0
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "review_response.v1",
+  "review_request_id": "req-workbench-prompt-registry-001-iteration-0001",
+  "reviewed_head": {
+    "commit": "25d159c89ca099bca1623988b0f60f6127c60295",
+    "short": "25d159c89ca0",
+    "subject": "Implement the read-only local prompt-registry overlay pipeline: loader, resolver, assembler, and authority verifier for the approved in-scope workflows and profiles"
+  },
+  "review_scope": {
+    "basis": "bounded batch execution under merged contract layer",
+    "inputs": [
+      "PLAN/request.instance.json",
+      "PLAN/contract.bindings.json",
+      "PLAN/overlay_slice.contract.json",
+      "PLAN/overlay_derivation.rules.json",
+      "IMPLEMENT/IMPLEMENT.md"
+    ],
+    "limitation": "implement packet is opened from an approved plan, but runtime execution evidence for D1-D4 is still pending"
+  },
+  "verdict": {
+    "status": "PENDING",
+    "summary": "Implement-open review accepted the packet structure, but runtime artifacts and evidence for D1-D4 are not emitted yet."
+  },
+  "findings": [],
+  "next_patch_set": [
+    "Emit IMPLEMENT/resolved.overlay.json",
+    "Emit IMPLEMENT/assembled.prompt.plan.json",
+    "Emit IMPLEMENT/authority.verification.json",
+    "Emit IMPLEMENT/registry.parity.check.json"
+  ]
+}

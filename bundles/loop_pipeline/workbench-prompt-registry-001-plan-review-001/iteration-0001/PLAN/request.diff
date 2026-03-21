@@ -1,0 +1,4 @@
+Plan request diff for workbench-prompt-registry-001.
+
+This packet records the approved first plan iteration for prompt-registry operationalization.
+The current delta is limited to PLAN/ and LOOP/ artifacts needed to define scope, authority, derivation rules, and the approved bounded read-only loader/resolver/assembler/authority-verifier slice.

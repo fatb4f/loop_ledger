@@ -1,0 +1,509 @@
+{
+  "kind": "review_bundle_artifacts_manifest.v1",
+  "project": "loop_pipeline",
+  "bundle_id": "workbench-prompt-registry-001-plan-review-001",
+  "iteration_id": "iteration-0001",
+  "manifest_path": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-plan-review-001.iteration-0001.json",
+  "output_root": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001",
+  "lineage": {},
+  "source_roots": {
+    "asset_control_model": {
+      "root": "/home/_404/src/runtime/asset-control-model",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295"
+    },
+    "asset_control_model_wt": {
+      "root": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295"
+    },
+    "dotfiles": {
+      "root": "/home/_404/src/dotfiles",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51"
+    },
+    "loop_ledger": {
+      "root": "/home/_404/src/loop_ledger",
+      "head": "04923e7bcecdaa41a56c42b9945fc52211073a11"
+    }
+  },
+  "controller_surfaces": {
+    "codex_contract_root": {
+      "root": "/home/_404/src/dotfiles/config/codex",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51"
+    },
+    "acm_policy_framework": {
+      "root": "/home/_404/src/runtime/asset-control-model/policy_framework",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295"
+    },
+    "loop_ledger_controller": {
+      "root": "/home/_404/src/loop_ledger",
+      "head": "04923e7bcecdaa41a56c42b9945fc52211073a11"
+    }
+  },
+  "integrity_mode": "all_files",
+  "evidence_bundle": {
+    "required_output_roles": [
+      "plan_packet_output",
+      "loop_state_output",
+      "promotion_capsule_output"
+    ],
+    "required_check_roles": [
+      "plan_packet_validate_check",
+      "review_manifest_validate_check",
+      "review_bundle_status_check",
+      "loop_state_schema_validate_check",
+      "promotion_capsule_schema_validate_check"
+    ]
+  },
+  "files": [
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/SCOPE.md",
+      "source": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-plan-review-001.scope.md",
+      "role": "review_scope",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/loop_pipeline/workbench-prompt-registry-001-plan-review-001.scope.md",
+      "head": "04923e7bcecdaa41a56c42b9945fc52211073a11",
+      "sha256": "7d2a7451522b933b296931a2b779210b5c89e9bfdeb925dead3ce3d1add3c7d9",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-plan-review-001.scope.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/PLAN/request.instance.json",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/PLAN/request.instance.json",
+      "role": "plan_request",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/request.instance.json",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "5d36e3c02295aedaed767aaa91f388bbc6bf18ff50c46ff2bcf56a1e3c74f5b8",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/PLAN/request.instance.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/PLAN/request.validation.json",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/PLAN/request.validation.json",
+      "role": "plan_request_validation",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/request.validation.json",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "ab1c1fbf7b2fc0a07afc87ba8b732c9088a917627ac05c1289423ada08c52eeb",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/PLAN/request.validation.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/PLAN/request.git_log.json",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/PLAN/request.git_log.json",
+      "role": "plan_request_git_log",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/request.git_log.json",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "67182152b1421a7a7248d3c045d78080fe182861490fae8bffd5ae2ef3285c2b",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/PLAN/request.git_log.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/PLAN/request.diff",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/PLAN/request.diff",
+      "role": "plan_request_diff",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/request.diff",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "d49c54e57b4e5545328c1fbc40d02a9c9551fbef683f6a9a52c33e373c3cb4ac",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/PLAN/request.diff"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/PLAN/request.status.txt",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/PLAN/request.status.txt",
+      "role": "working_tree_status",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/request.status.txt",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "43a4e16deea1ca9c5d2cee0a20bd42b2732a8470c7a51048000c66ef3514daa8",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/PLAN/request.status.txt"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/PLAN/packet.meta.json",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/PLAN/packet.meta.json",
+      "role": "plan_meta",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/packet.meta.json",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "91dabd4f65aeff3b8e9978489de2bd3fe62402a72d3a75be68c692496ae66df8",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/PLAN/packet.meta.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/PLAN/contract.bindings.json",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/PLAN/contract.bindings.json",
+      "role": "contract_bindings",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/contract.bindings.json",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "c54a646f73e37663f2aa5f1efa72e727f9afc9e8c6d30331c8b10c60cbfa47b0",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/PLAN/contract.bindings.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/PLAN/batch.manifest.json",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/PLAN/batch.manifest.json",
+      "role": "bounded_batch_manifest",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/batch.manifest.json",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "e5d0070ebb95f83b2a9618bce54d33b6abd036255039b74cc6c89adb7a5b884f",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/PLAN/batch.manifest.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/PLAN/integration_gate.plan.json",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/PLAN/integration_gate.plan.json",
+      "role": "integration_gate_plan",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/integration_gate.plan.json",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "b86c27f619c4cb06a81473be05a332ea04f22999d3f51cd4464e1ddfccd702a5",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/PLAN/integration_gate.plan.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/PLAN/promotion.plan.json",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/PLAN/promotion.plan.json",
+      "role": "promotion_plan",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/promotion.plan.json",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "610f1f9008f2fb6394afb811dcfa719f972dd21d2693329792db4bd2cbb7ab67",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/PLAN/promotion.plan.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/PLAN/overlay_slice.contract.json",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/PLAN/overlay_slice.contract.json",
+      "role": "overlay_slice_contract",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/overlay_slice.contract.json",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "f5e1ed47736c897045ce8585933efe7c61dacf95f500e4c510caf6c7ed08d134",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/PLAN/overlay_slice.contract.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/PLAN/overlay_derivation.rules.json",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/PLAN/overlay_derivation.rules.json",
+      "role": "overlay_derivation_rules",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/overlay_derivation.rules.json",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "691c34340f155601af7b6557073683c0cc6c953aa3046d7758bfed5d41418ec0",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/PLAN/overlay_derivation.rules.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/LOOP/LOOP.md",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/LOOP/LOOP.md",
+      "role": "loop_packet",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "LOOP/LOOP.md",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "158a13aee96d011c27b06437cd25fc1d2078576ce19f90d17a9d16ff30ecdf0e",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/LOOP/LOOP.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/REVIEW/review.request.json",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/REVIEW/review.request.json",
+      "role": "review_request_ref",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "REVIEW/review.request.json",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "903f1fa8388375652f25391cb18bd67e59648d53ff58dc9bbe244b779ca3b617",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/REVIEW/review.request.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/REVIEW/review.reply.instance.json",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/REVIEW/review.reply.instance.json",
+      "role": "review_reply_instance",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "REVIEW/review.reply.instance.json",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "50bbdbff693cdf08282b2283a80c1c03781d4bf4bd6ca0258ffd8a3c85a34e36",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/REVIEW/review.reply.instance.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/codex/control/git-flow/README.md",
+      "source": "/home/_404/src/dotfiles/config/codex/control/git-flow/README.md",
+      "role": "git_flow_root",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/control/git-flow/README.md",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "22f98a68f6d66e20cf499f36cfc15748292c0f5b022c25f6e47e308f1cedcdce",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/control/git-flow/README.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/codex/control/git-flow/git_flow.manifest.json",
+      "source": "/home/_404/src/dotfiles/config/codex/control/git-flow/git_flow.manifest.json",
+      "role": "git_flow_manifest",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/control/git-flow/git_flow.manifest.json",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "56f600e777a969eee0dcdbf0784d1af109242d8c1af728e62a21556e628a5a13",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/control/git-flow/git_flow.manifest.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/codex/control/git-flow/git_flow.dag.json",
+      "source": "/home/_404/src/dotfiles/config/codex/control/git-flow/git_flow.dag.json",
+      "role": "git_flow_dag",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/control/git-flow/git_flow.dag.json",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "00f1a9be9b4b19742177de102ad36a2a30e04db9b9b7bf6a1cf8d0c415bc8296",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/control/git-flow/git_flow.dag.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/codex/prompt-registry/manifest.json",
+      "source": "/home/_404/src/dotfiles/config/codex/prompt-registry/manifest.json",
+      "role": "prompt_registry_manifest",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/prompt-registry/manifest.json",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "fea86dd314af507f1c67fe89099f7b48244fb7ecaf8d71813d330f2676ba0031",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/prompt-registry/manifest.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/codex/prompt-registry/README.overlay.md",
+      "source": "/home/_404/src/dotfiles/config/codex/prompt-registry/README.overlay.md",
+      "role": "prompt_registry_overlay_note",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/prompt-registry/README.overlay.md",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "eeec81845fe5eb9178c5daf66b76a332fad7d3826109318e4c05d20566ffd78a",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/prompt-registry/README.overlay.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/codex/prompt-registry/retrieval/index.json",
+      "source": "/home/_404/src/dotfiles/config/codex/prompt-registry/retrieval/index.json",
+      "role": "prompt_registry_index",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/prompt-registry/retrieval/index.json",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "9af0dcdd6a5d5383054d407311430fe075968a45ea84a920cac5269dd8ba3801",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/prompt-registry/retrieval/index.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/codex/prompt-registry/retrieval/aliases.json",
+      "source": "/home/_404/src/dotfiles/config/codex/prompt-registry/retrieval/aliases.json",
+      "role": "prompt_registry_aliases",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/prompt-registry/retrieval/aliases.json",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "faa2c4f7b76d7ef9dd821024b7573f045378609346ce075d1570606ddce02aec",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/prompt-registry/retrieval/aliases.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/codex/prompt-registry/retrieval/tags.json",
+      "source": "/home/_404/src/dotfiles/config/codex/prompt-registry/retrieval/tags.json",
+      "role": "prompt_registry_tags",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/prompt-registry/retrieval/tags.json",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "3d5e9eb2ebb6711700dbeaa1699ecec6e9b728c13ca92d9b43c692591987b287",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/prompt-registry/retrieval/tags.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/codex/prompt-registry/profiles/default.json",
+      "source": "/home/_404/src/dotfiles/config/codex/prompt-registry/profiles/default.json",
+      "role": "prompt_registry_default_profile",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/prompt-registry/profiles/default.json",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "171598209148869cf92f52fb8b38670573b1d539a4201100394fbf29fbbbd50d",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/prompt-registry/profiles/default.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/codex/prompt-registry/profiles/review.json",
+      "source": "/home/_404/src/dotfiles/config/codex/prompt-registry/profiles/review.json",
+      "role": "prompt_registry_review_profile",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/prompt-registry/profiles/review.json",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "c50d37865e0065a3cee9253fde3ed6d00751be99d737529fc7a5365b47d40059",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/prompt-registry/profiles/review.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/codex/prompt-registry/profiles/patch.json",
+      "source": "/home/_404/src/dotfiles/config/codex/prompt-registry/profiles/patch.json",
+      "role": "prompt_registry_patch_profile",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/prompt-registry/profiles/patch.json",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "db9a260ff54698f2a68c63cfbbcb7e55142da544b49ea594a9d49ee17ee4df45",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/prompt-registry/profiles/patch.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/codex/prompt-registry/workflows/contract-first.json",
+      "source": "/home/_404/src/dotfiles/config/codex/prompt-registry/workflows/contract-first.json",
+      "role": "prompt_registry_contract_first_workflow",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/prompt-registry/workflows/contract-first.json",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "0527ee4f76b4f659bcde1c32b9bcfb35b962840edc8d23cbab6cfa442e0a4afb",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/prompt-registry/workflows/contract-first.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/codex/prompt-registry/workflows/git-flow.integration-worktree.json",
+      "source": "/home/_404/src/dotfiles/config/codex/prompt-registry/workflows/git-flow.integration-worktree.json",
+      "role": "prompt_registry_git_flow_workflow",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/prompt-registry/workflows/git-flow.integration-worktree.json",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "92ccf3781263842a3afb9c80bb7783e39583499e9a595a6081218de9c9053c57",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/prompt-registry/workflows/git-flow.integration-worktree.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/codex/prompt-registry/snippets/planning.md",
+      "source": "/home/_404/src/dotfiles/config/codex/prompt-registry/snippets/planning.md",
+      "role": "prompt_registry_planning_snippet",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/prompt-registry/snippets/planning.md",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "3c0ceedfd26f77d8c756dbd362db5b6a4113e65d785ee9cbb07c50f63335a527",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/prompt-registry/snippets/planning.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/codex/prompt-registry/snippets/validation.md",
+      "source": "/home/_404/src/dotfiles/config/codex/prompt-registry/snippets/validation.md",
+      "role": "prompt_registry_validation_snippet",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/prompt-registry/snippets/validation.md",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "e1bf9e5483966c0970adb0828f523e7cde531b8efef61781fe3352121c08f9ff",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/prompt-registry/snippets/validation.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/codex/prompt-registry/snippets/evidence.md",
+      "source": "/home/_404/src/dotfiles/config/codex/prompt-registry/snippets/evidence.md",
+      "role": "prompt_registry_evidence_snippet",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/prompt-registry/snippets/evidence.md",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "fd78605955757234695f0f33e2ca7813ff50ed8ad81f4ed533bc9aab09748cfb",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/prompt-registry/snippets/evidence.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/codex/prompt-registry/snippets/promotion.md",
+      "source": "/home/_404/src/dotfiles/config/codex/prompt-registry/snippets/promotion.md",
+      "role": "prompt_registry_promotion_snippet",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/prompt-registry/snippets/promotion.md",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "e4e3175c3c5aabf1406fa8f19aafb2b93839ae1694490836ecd02a7e232a72f3",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/prompt-registry/snippets/promotion.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/codex/prompt.txt",
+      "source": "/home/_404/src/dotfiles/config/codex/prompt.txt",
+      "role": "prompt_text",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/prompt.txt",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "eb02e09468c8f8568bceb0cc67f762bd43f4409372c6f9dfbf7d1ce5bcafbf11",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/prompt.txt"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/loop_ledger/schemas/review_bundle_manifest.v1.schema.json",
+      "source": "/home/_404/src/loop_ledger/schemas/review_bundle_manifest.v1.schema.json",
+      "role": "review_bundle_schema",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "schemas/review_bundle_manifest.v1.schema.json",
+      "head": "04923e7bcecdaa41a56c42b9945fc52211073a11",
+      "sha256": "2b4a1c9fa275d101493308d3879dbf07812a76862e1de6ce326c7e8d7b3d79e0",
+      "absolute_path": "/home/_404/src/loop_ledger/schemas/review_bundle_manifest.v1.schema.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/loop_ledger/scripts/materialize_review_bundle.py",
+      "source": "/home/_404/src/loop_ledger/scripts/materialize_review_bundle.py",
+      "role": "bundle_materializer",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "scripts/materialize_review_bundle.py",
+      "head": "04923e7bcecdaa41a56c42b9945fc52211073a11",
+      "sha256": "5d5e588e4e32a3f7abd4b7d9d605e70a3c44e54ec57bccf3d7a79eb839b51874",
+      "absolute_path": "/home/_404/src/loop_ledger/scripts/materialize_review_bundle.py"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/PLAN/README.md",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/PLAN/README.md",
+      "role": "plan_packet_output",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/README.md",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "8a343341e57c8ea5ed82acd2cb8222bf8f456ba0cd70584a8a838ae85bde2714",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/PLAN/README.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/LOOP/loop.state.json",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/LOOP/loop.state.json",
+      "role": "loop_state_output",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "LOOP/loop.state.json",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "1e31f830a827330e07cd6116bba7ce0e59a91034ea5d19037ff6147392f1f916",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/LOOP/loop.state.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/gitflow/promotion.capsule.json",
+      "source": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-plan-review-001.promotion.capsule.json",
+      "role": "promotion_capsule_output",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/loop_pipeline/workbench-prompt-registry-001-plan-review-001.promotion.capsule.json",
+      "head": "04923e7bcecdaa41a56c42b9945fc52211073a11",
+      "sha256": "a907328266318a85cde6f62f1fc3999cb1e1910a5269dae29daa99bf5a57595b",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-plan-review-001.promotion.capsule.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/evidence/plan-packet-validate.check.json",
+      "source": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-plan-review-001.plan-packet-validate.check.json",
+      "role": "plan_packet_validate_check",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/loop_pipeline/workbench-prompt-registry-001-plan-review-001.plan-packet-validate.check.json",
+      "head": "04923e7bcecdaa41a56c42b9945fc52211073a11",
+      "sha256": "e31d1f48ae917130542c2bab5298f7802c801df960530039cbce757fbebbc6d5",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-plan-review-001.plan-packet-validate.check.json",
+      "name": "plan packet validate"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/evidence/review-manifest-validate.check.json",
+      "source": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-plan-review-001.review-manifest-validate.check.json",
+      "role": "review_manifest_validate_check",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/loop_pipeline/workbench-prompt-registry-001-plan-review-001.review-manifest-validate.check.json",
+      "head": "04923e7bcecdaa41a56c42b9945fc52211073a11",
+      "sha256": "2ff5f72d441946404a867ef845e46e711bea04db41bac9447db0725d2d9f77b5",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-plan-review-001.review-manifest-validate.check.json",
+      "name": "review manifest schema validate"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/evidence/review-bundle-status.check.json",
+      "source": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-plan-review-001.review-bundle-status.check.json",
+      "role": "review_bundle_status_check",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/loop_pipeline/workbench-prompt-registry-001-plan-review-001.review-bundle-status.check.json",
+      "head": "04923e7bcecdaa41a56c42b9945fc52211073a11",
+      "sha256": "9ddd1a49a503a3e7816a665fa2eda869fe3db0120c56f821da92fd11ec6788f0",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-plan-review-001.review-bundle-status.check.json",
+      "name": "review bundle input status"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/evidence/loop-state-schema-validate.check.json",
+      "source": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-plan-review-001.loop-state-schema-validate.check.json",
+      "role": "loop_state_schema_validate_check",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/loop_pipeline/workbench-prompt-registry-001-plan-review-001.loop-state-schema-validate.check.json",
+      "head": "04923e7bcecdaa41a56c42b9945fc52211073a11",
+      "sha256": "5352abaeb1bb7813efb3a23b8e85e20ebcb31864e9a45e5ac412835fbad09b4b",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-plan-review-001.loop-state-schema-validate.check.json",
+      "name": "loop state schema validate"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/evidence/promotion-capsule-schema-validate.check.json",
+      "source": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-plan-review-001.promotion-capsule-schema-validate.check.json",
+      "role": "promotion_capsule_schema_validate_check",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/loop_pipeline/workbench-prompt-registry-001-plan-review-001.promotion-capsule-schema-validate.check.json",
+      "head": "04923e7bcecdaa41a56c42b9945fc52211073a11",
+      "sha256": "8db18cb6458a93b51db0afe4a7bd44e0195d2fc27a73113bbd828b91e3f0de37",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-plan-review-001.promotion-capsule-schema-validate.check.json",
+      "name": "promotion capsule schema validate"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-plan-review-001/iteration-0001/ref_header.json",
+      "source": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-plan-review-001.iteration-0001.json",
+      "role": "ref_header",
+      "sha256": "437c32b122d13e9426def7549491d018100bef7e9f829e17acf5c9c236c3f972"
+    }
+  ]
+}

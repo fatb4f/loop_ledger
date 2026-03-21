@@ -1,0 +1,18 @@
+{
+  "kind": "contract_bindings.v1",
+  "contract_root": "/home/_404/src/dotfiles/config/codex",
+  "context_ref": "context/plan-review-loop.context.jsonld",
+  "anchor_registry_ref": "anchors/anchor_registry.bootstrap.json",
+  "request_schema_ref": "schemas/request.schema.json",
+  "response_schema_ref": "schemas/response.schema.json",
+  "review_response_schema_ref": "schemas/review_response.schema.json",
+  "archive_envelope_schema_ref": "schemas/archive_envelope.schema.json",
+  "response_to_next_request_schema_ref": "schemas/response_to_next_request.schema.json",
+  "handoff_contract_ref": "skills/loop/assets/handoff.contract.json",
+  "git_flow_manifest_ref": "control/git-flow/git_flow.manifest.json",
+  "batch_manifest_schema_ref": "schemas/batch_manifest.schema.json",
+  "integration_gate_plan_schema_ref": "schemas/integration_gate_plan.schema.json",
+  "promotion_plan_schema_ref": "schemas/promotion_plan.schema.json",
+  "prompt_registry_ref": "prompt-registry/manifest.json",
+  "notes": "git-flow-aware plan bindings"
+}

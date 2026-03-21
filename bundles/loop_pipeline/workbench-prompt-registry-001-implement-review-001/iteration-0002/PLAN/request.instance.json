@@ -1,0 +1,109 @@
+{
+  "@context": "context/plan-review-loop.context.jsonld",
+  "@id": "repo:plan/req-workbench-prompt-registry-001-iteration-0002",
+  "@type": "RequestManifest",
+  "kind": "request_manifest.v1",
+  "request_id": "req-workbench-prompt-registry-001-iteration-0002",
+  "scope_root": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002",
+  "input_mode": "head_plus_working_tree",
+  "reviewed_head": {
+    "commit": "25d159c89ca099bca1623988b0f60f6127c60295",
+    "short": "25d159c89ca0",
+    "date": "2026-03-21T06:39:45.511209+00:00",
+    "subject": "Operationalize prompt-registry as a derived retrieval and assembly overlay over canonical control authority"
+  },
+  "anchors": {
+    "commit_ref": "25d159c89ca099bca1623988b0f60f6127c60295",
+    "request_manifest_ref": "PLAN/request.instance.json",
+    "response_manifest_ref": "IMPLEMENT/response.manifest.json",
+    "git_log_ref": "PLAN/request.git_log.json",
+    "diff_ref": "PLAN/request.diff"
+  },
+  "submitted_artifacts": [
+    "PLAN/README.md",
+    "PLAN/packet.meta.json",
+    "PLAN/contract.bindings.json",
+    "PLAN/batch.manifest.json",
+    "PLAN/integration_gate.plan.json",
+    "PLAN/promotion.plan.json",
+    "PLAN/overlay_slice.contract.json",
+    "PLAN/overlay_derivation.rules.json"
+  ],
+  "deliverable_sets": {
+    "contract_deliverables": [
+      "PLAN/README.md",
+      "PLAN/packet.meta.json",
+      "PLAN/request.instance.json",
+      "PLAN/request.validation.json",
+      "PLAN/contract.bindings.json",
+      "PLAN/batch.manifest.json",
+      "PLAN/integration_gate.plan.json",
+      "PLAN/promotion.plan.json",
+      "PLAN/overlay_slice.contract.json",
+      "PLAN/overlay_derivation.rules.json"
+    ],
+    "bounded_batch_deliverables": [
+      "IMPLEMENT/resolved.overlay.json",
+      "IMPLEMENT/assembled.prompt.plan.json",
+      "IMPLEMENT/authority.verification.json",
+      "IMPLEMENT/registry.parity.check.json",
+      "IMPLEMENT/IMPLEMENT.md",
+      "IMPLEMENT/packet.meta.json",
+      "IMPLEMENT/response.instance.json",
+      "IMPLEMENT/response.manifest.json",
+      "IMPLEMENT/response.validation.json"
+    ]
+  },
+  "bundle": {
+    "kind": "bundle_envelope.v1",
+    "bundle_role": "request",
+    "archive_format": "tar_gz",
+    "archive_name": "request.bundle.tar.gz",
+    "contents": [
+      {
+        "path": "PLAN/README.md",
+        "role": "plan_packet"
+      },
+      {
+        "path": "PLAN/packet.meta.json",
+        "role": "plan_meta"
+      },
+      {
+        "path": "PLAN/contract.bindings.json",
+        "role": "contract_bindings"
+      },
+      {
+        "path": "PLAN/batch.manifest.json",
+        "role": "bounded_batch_manifest"
+      },
+      {
+        "path": "PLAN/integration_gate.plan.json",
+        "role": "integration_gate_plan"
+      },
+      {
+        "path": "PLAN/promotion.plan.json",
+        "role": "promotion_plan"
+      },
+      {
+        "path": "PLAN/overlay_slice.contract.json",
+        "role": "overlay_slice_contract"
+      },
+      {
+        "path": "PLAN/overlay_derivation.rules.json",
+        "role": "overlay_derivation_rules"
+      }
+    ]
+  },
+  "expected_response": {
+    "one_output_per_input": true,
+    "canonical_response": "IMPLEMENT/response.instance.json",
+    "derived_views": [
+      "IMPLEMENT/IMPLEMENT.md"
+    ],
+    "bounded_batch_deliverables_ref": "IMPLEMENT/*"
+  },
+  "working_tree": {
+    "status": "implement_runtime_artifacts_emitted_pending_review",
+    "status_ref": "PLAN/request.status.txt"
+  }
+}

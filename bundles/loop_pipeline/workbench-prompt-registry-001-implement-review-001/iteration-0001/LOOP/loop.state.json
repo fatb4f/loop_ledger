@@ -1,0 +1,12 @@
+{
+  "kind": "loop_state.v1",
+  "loop_instance_id": "workbench-prompt-registry-001",
+  "iteration_id": "iteration-0001",
+  "phase": "IMPLEMENT",
+  "previous_phase": "DECISION",
+  "decision": "APPROVED",
+  "transition_gate": "PENDING",
+  "verification_result": "PENDING",
+  "rollback_status": "implement_review_pending_runtime_evidence",
+  "archive_ref": "/home/_404/src/loop_ledger/dist/workbench-prompt-registry-001-implement-review-001.iteration-0001.review.zip"
+}

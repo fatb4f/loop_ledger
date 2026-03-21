@@ -1,0 +1,30 @@
+{
+  "kind": "prompt_registry_parity_check.v1",
+  "slice_id": "prompt-registry-readonly-overlay-pipeline-001",
+  "manifest_workflows": [
+    "workflow.contract_first",
+    "workflow.git_flow.integration_worktree"
+  ],
+  "retrieval_workflows": [
+    "workflow.contract_first",
+    "workflow.git_flow.integration_worktree"
+  ],
+  "alias_targets": [
+    "workflow.contract_first",
+    "workflow.git_flow.integration_worktree"
+  ],
+  "tag_workflows": [
+    "workflow.contract_first",
+    "workflow.git_flow.integration_worktree"
+  ],
+  "profile_workflows": [
+    "workflow.contract_first",
+    "workflow.git_flow.integration_worktree"
+  ],
+  "missing_from_manifest": [],
+  "missing_profiles": [],
+  "missing_snippets": [],
+  "missing_workflow_files": [],
+  "status": "PASS",
+  "errors": []
+}

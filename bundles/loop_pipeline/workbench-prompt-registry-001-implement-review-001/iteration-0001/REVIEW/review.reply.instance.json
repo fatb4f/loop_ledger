@@ -1,0 +1,50 @@
+{
+  "kind": "review_response.v1",
+  "review_request_id": "req-workbench-prompt-registry-001-implement-review-001",
+  "reviewed_head": {
+    "commit": "25d159c89ca099bca1623988b0f60f6127c60295",
+    "short": "25d159c89ca0",
+    "subject": "Implement the read-only local prompt-registry overlay pipeline: loader, resolver, assembler, and authority verifier for the approved in-scope workflows and profiles"
+  },
+  "review_scope": {
+    "basis": "implement-open review bundle judgment",
+    "inputs": [
+      "REVIEW/review.request.json",
+      "IMPLEMENT/IMPLEMENT.md",
+      "IMPLEMENT/response.instance.json",
+      "IMPLEMENT/response.manifest.json",
+      "PLAN/overlay_slice.contract.json",
+      "PLAN/overlay_derivation.rules.json"
+    ],
+    "limitation": "the implement-open packet is structurally valid, but runtime evidence for D1-D4 is still missing"
+  },
+  "verdict": {
+    "status": "PENDING",
+    "summary": "Keep the loop in IMPLEMENT. The packet is valid, but the four bounded runtime artifacts are not emitted yet, so the slice is not ready for VERIFY."
+  },
+  "findings": [
+    {
+      "id": "I1",
+      "severity": "info",
+      "summary": "The scope lock is clear and the control boundary remains correct: control is canonical, prompt-registry is derived, and MCP is deferred."
+    },
+    {
+      "id": "I2",
+      "severity": "medium",
+      "summary": "IMPLEMENT/resolved.overlay.json, IMPLEMENT/assembled.prompt.plan.json, IMPLEMENT/authority.verification.json, and IMPLEMENT/registry.parity.check.json are still missing."
+    },
+    {
+      "id": "I3",
+      "severity": "info",
+      "summary": "The green checks validate the packet and review envelope only; they do not prove runtime artifact completion."
+    }
+  ],
+  "next_patch_set": [
+    "Emit IMPLEMENT/resolved.overlay.json",
+    "Emit IMPLEMENT/assembled.prompt.plan.json",
+    "Emit IMPLEMENT/authority.verification.json",
+    "Emit IMPLEMENT/registry.parity.check.json",
+    "Update IMPLEMENT/response.manifest.json so bundle contents match the emitted artifacts",
+    "Submit the implement-complete review bundle before moving to VERIFY"
+  ]
+}

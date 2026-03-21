@@ -1,0 +1,10 @@
+{
+  "kind": "request_git_log.v1",
+  "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+  "short": "25d159c89ca0",
+  "subject": "Record verify completion for tri-lane loop",
+  "log_format": "%H %h %s",
+  "entries": [
+    "25d159c89ca099bca1623988b0f60f6127c60295 25d159c89ca0 Record verify completion for tri-lane loop"
+  ]
+}

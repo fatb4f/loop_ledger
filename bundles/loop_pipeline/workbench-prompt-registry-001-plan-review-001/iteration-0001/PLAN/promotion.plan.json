@@ -1,0 +1,18 @@
+{
+  "kind": "promotion_plan.v1",
+  "bounded_batch_id": "workbench-prompt-registry-operationalization-001",
+  "promotion_mode": "patch_promotion",
+  "target_branch": "main",
+  "required_evidence_refs": [
+    "PLAN/request.validation.json",
+    "PLAN/batch.manifest.json",
+    "PLAN/integration_gate.plan.json",
+    "PLAN/promotion.plan.json"
+  ],
+  "post_promotion_gates": [
+    "main_authority_gate",
+    "main_contract_package_gate",
+    "main_artifact_conformance_gate"
+  ],
+  "rollback_mode": "retain_integration_worktree_and_reject_promotion"
+}

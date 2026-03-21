@@ -1,0 +1,15 @@
+{
+  "kind": "controller_check.v1",
+  "name": "implement packet validate",
+  "argv": [
+    "python3",
+    "/home/_404/src/dotfiles/config/codex/skills/implement/scripts/validate_implement_packet.py",
+    "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/IMPLEMENT/IMPLEMENT.md",
+    "--wt",
+    "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002",
+    "--contract-root",
+    "/home/_404/src/dotfiles/config/codex"
+  ],
+  "cwd": "/home/_404/src",
+  "exit_code": 0
+}

@@ -1,0 +1,82 @@
+{
+  "kind": "prompt_assembly_plan.v1",
+  "slice_id": "prompt-registry-readonly-overlay-pipeline-001",
+  "profiles": [
+    {
+      "name": "default",
+      "resolved_workflows": [
+        "workflow.contract_first"
+      ],
+      "ordered_snippets": [
+        "planning",
+        "validation",
+        "evidence"
+      ],
+      "snippet_sections": [
+        {
+          "snippet": "planning",
+          "path": "prompt-registry/snippets/planning.md",
+          "content": "Use the revised plan pipeline: bind inputs, generate packet, emit request artifacts, validate, then output structured plan sections."
+        },
+        {
+          "snippet": "validation",
+          "path": "prompt-registry/snippets/validation.md",
+          "content": "Emphasize schema validation: request.instance.json -> request.schema.json, contract.bindings.json -> contract_bindings.schema.json; surface status and required artifacts."
+        },
+        {
+          "snippet": "evidence",
+          "path": "prompt-registry/snippets/evidence.md",
+          "content": "List evidence per artifact row in the matrix: include files, references, status, user commands that produced them, and inference tags."
+        }
+      ],
+      "authority_refs": [
+        "control/git-flow/git_flow.dag.json",
+        "control/git-flow/git_flow.manifest.json",
+        "control/git-flow/plan/README.md"
+      ]
+    },
+    {
+      "name": "review",
+      "resolved_workflows": [
+        "workflow.contract_first",
+        "workflow.git_flow.integration_worktree"
+      ],
+      "ordered_snippets": [
+        "validation",
+        "planning",
+        "promotion",
+        "evidence"
+      ],
+      "snippet_sections": [
+        {
+          "snippet": "validation",
+          "path": "prompt-registry/snippets/validation.md",
+          "content": "Emphasize schema validation: request.instance.json -> request.schema.json, contract.bindings.json -> contract_bindings.schema.json; surface status and required artifacts."
+        },
+        {
+          "snippet": "planning",
+          "path": "prompt-registry/snippets/planning.md",
+          "content": "Use the revised plan pipeline: bind inputs, generate packet, emit request artifacts, validate, then output structured plan sections."
+        },
+        {
+          "snippet": "promotion",
+          "path": "prompt-registry/snippets/promotion.md",
+          "content": "Describe the promotion rule (patch promotion to main, no direct history rewriting) and cite required validation refs for gating."
+        },
+        {
+          "snippet": "evidence",
+          "path": "prompt-registry/snippets/evidence.md",
+          "content": "List evidence per artifact row in the matrix: include files, references, status, user commands that produced them, and inference tags."
+        }
+      ],
+      "authority_refs": [
+        "control/git-flow/git_flow.dag.json",
+        "control/git-flow/git_flow.manifest.json",
+        "control/git-flow/implement/README.md",
+        "control/git-flow/loop/README.md",
+        "control/git-flow/plan/README.md"
+      ]
+    }
+  ],
+  "status": "PASS"
+}

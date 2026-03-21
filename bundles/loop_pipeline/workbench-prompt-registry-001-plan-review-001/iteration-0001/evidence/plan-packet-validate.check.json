@@ -1,0 +1,15 @@
+{
+  "kind": "controller_check.v1",
+  "name": "plan packet validate",
+  "argv": [
+    "python3",
+    "/home/_404/src/dotfiles/config/codex/skills/plan/scripts/validate_plan_packet.py",
+    "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/PLAN/README.md",
+    "--wt",
+    "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001",
+    "--contract-root",
+    "/home/_404/src/dotfiles/config/codex"
+  ],
+  "cwd": "/home/_404/src",
+  "exit_code": 0
+}

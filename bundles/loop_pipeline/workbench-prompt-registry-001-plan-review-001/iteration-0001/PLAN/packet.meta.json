@@ -1,0 +1,12 @@
+{
+  "kind": "plan.packet.meta.v2",
+  "objective": "Operationalize prompt-registry as a derived retrieval and assembly overlay over canonical control authority",
+  "failure": "prompt-registry is declarative only: no loader, resolver, assembler, authority verifier, or runtime injection path",
+  "wt": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001",
+  "contract_root": "/home/_404/src/dotfiles/config/codex",
+  "bounded_batch_id": "workbench-prompt-registry-operationalization-001",
+  "target_layer": "contract",
+  "target_branch": "main",
+  "integration_worktree_id": "workbench-prompt-registry-001.iteration-0001",
+  "packet_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001/PLAN/README.md"
+}

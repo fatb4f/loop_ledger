@@ -1,0 +1,538 @@
+{
+  "kind": "review_bundle_artifacts_manifest.v1",
+  "project": "loop_pipeline",
+  "bundle_id": "workbench-prompt-registry-001-implement-review-001",
+  "iteration_id": "iteration-0002",
+  "manifest_path": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-implement-review-001.iteration-0002.json",
+  "output_root": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002",
+  "lineage": {
+    "relationship": "derived_from",
+    "parent_bundle_id": "workbench-prompt-registry-001-implement-review-001",
+    "parent_manifest": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-implement-review-001.iteration-0001.json"
+  },
+  "source_roots": {
+    "asset_control_model": {
+      "root": "/home/_404/src/runtime/asset-control-model",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295"
+    },
+    "asset_control_model_wt": {
+      "root": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295"
+    },
+    "dotfiles": {
+      "root": "/home/_404/src/dotfiles",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51"
+    },
+    "loop_ledger": {
+      "root": "/home/_404/src/loop_ledger",
+      "head": "04923e7bcecdaa41a56c42b9945fc52211073a11"
+    }
+  },
+  "controller_surfaces": {
+    "codex_contract_root": {
+      "root": "/home/_404/src/dotfiles/config/codex",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51"
+    },
+    "prompt_registry_overlay": {
+      "root": "/home/_404/src/dotfiles/config/codex/prompt-registry",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51"
+    },
+    "loop_ledger_controller": {
+      "root": "/home/_404/src/loop_ledger",
+      "head": "04923e7bcecdaa41a56c42b9945fc52211073a11"
+    }
+  },
+  "integrity_mode": "all_files",
+  "evidence_bundle": {
+    "required_output_roles": [
+      "implement_packet_output",
+      "implement_response_output",
+      "resolved_overlay_output",
+      "assembled_prompt_plan_output",
+      "authority_verification_output",
+      "registry_parity_output",
+      "loop_state_output",
+      "promotion_capsule_output"
+    ],
+    "required_check_roles": [
+      "implement_packet_validate_check",
+      "review_manifest_validate_check",
+      "review_bundle_status_check",
+      "loop_state_schema_validate_check",
+      "promotion_capsule_schema_validate_check"
+    ]
+  },
+  "files": [
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/SCOPE.md",
+      "source": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-implement-review-001.scope.md",
+      "role": "review_scope",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/loop_pipeline/workbench-prompt-registry-001-implement-review-001.scope.md",
+      "head": "04923e7bcecdaa41a56c42b9945fc52211073a11",
+      "sha256": "c2ba5fa6b8b4c149b3f42e3a9ea95b380ffa2bfcef4aeb34be2a550928d2802b",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-implement-review-001.scope.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/PLAN/README.md",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/PLAN/README.md",
+      "role": "plan_packet",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/README.md",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "041f2b13abdd2fc531d99956e781f3fb6c6896194f8f7e9660187b49e8a93b05",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/PLAN/README.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/PLAN/request.instance.json",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/PLAN/request.instance.json",
+      "role": "plan_request",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/request.instance.json",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "ca8ed13151240746daf56b997ada5314528c84b90076fb20d6fd6585df66da24",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/PLAN/request.instance.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/PLAN/contract.bindings.json",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/PLAN/contract.bindings.json",
+      "role": "contract_bindings",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/contract.bindings.json",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "c54a646f73e37663f2aa5f1efa72e727f9afc9e8c6d30331c8b10c60cbfa47b0",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/PLAN/contract.bindings.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/PLAN/overlay_slice.contract.json",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/PLAN/overlay_slice.contract.json",
+      "role": "overlay_slice_contract",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/overlay_slice.contract.json",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "f5e1ed47736c897045ce8585933efe7c61dacf95f500e4c510caf6c7ed08d134",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/PLAN/overlay_slice.contract.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/PLAN/overlay_derivation.rules.json",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/PLAN/overlay_derivation.rules.json",
+      "role": "overlay_derivation_rules",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/overlay_derivation.rules.json",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "691c34340f155601af7b6557073683c0cc6c953aa3046d7758bfed5d41418ec0",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/PLAN/overlay_derivation.rules.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/LOOP/LOOP.md",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/LOOP/LOOP.md",
+      "role": "loop_packet",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "LOOP/LOOP.md",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "53efd22326d00466fe8c62a5dec0295d8ca2215ea23c70fae056eacad985f530",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/LOOP/LOOP.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/IMPLEMENT/packet.meta.json",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/IMPLEMENT/packet.meta.json",
+      "role": "implement_meta",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "IMPLEMENT/packet.meta.json",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "5ae90afc4bcddf23b26803f7d3e21d5d1a6a7e702ad3106bb9a6ba5e405a33b1",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/IMPLEMENT/packet.meta.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/IMPLEMENT/response.manifest.json",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/IMPLEMENT/response.manifest.json",
+      "role": "response_manifest",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "IMPLEMENT/response.manifest.json",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "d2cad911bb08c43f055896348413d294b83b93264f3cdf1bdf981363a52bfd05",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/IMPLEMENT/response.manifest.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/IMPLEMENT/response.validation.json",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/IMPLEMENT/response.validation.json",
+      "role": "response_validation",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "IMPLEMENT/response.validation.json",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "4b67dbb45312a6839ce4f039192aa679018248a3b74f059f372dd05f58062c01",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/IMPLEMENT/response.validation.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/policy_framework/scripts/emit_prompt_overlay_artifacts.py",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/policy_framework/scripts/emit_prompt_overlay_artifacts.py",
+      "role": "overlay_artifact_emitter",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "policy_framework/scripts/emit_prompt_overlay_artifacts.py",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "4bf739e84c5bfb27da57641c2fc872c9b4aaaffe2e5f0449ccab95bc3766db73",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/policy_framework/scripts/emit_prompt_overlay_artifacts.py"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/REVIEW/review.request.json",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/REVIEW/review.request.json",
+      "role": "implement_review_request_ref",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "REVIEW/review.request.json",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "f1a287603683446e467764fd52315d7bfbf645b407ae47772a34c0c34552f884",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/REVIEW/review.request.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/REVIEW/review.reply.instance.json",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/REVIEW/review.reply.instance.json",
+      "role": "implement_review_reply",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "REVIEW/review.reply.instance.json",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "c2f994759aad849e221614888fec452c742ea747843ec6492609892a414c261c",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/REVIEW/review.reply.instance.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/codex/control/git-flow/README.md",
+      "source": "/home/_404/src/dotfiles/config/codex/control/git-flow/README.md",
+      "role": "git_flow_root",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/control/git-flow/README.md",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "22f98a68f6d66e20cf499f36cfc15748292c0f5b022c25f6e47e308f1cedcdce",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/control/git-flow/README.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/codex/control/git-flow/git_flow.manifest.json",
+      "source": "/home/_404/src/dotfiles/config/codex/control/git-flow/git_flow.manifest.json",
+      "role": "git_flow_manifest",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/control/git-flow/git_flow.manifest.json",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "56f600e777a969eee0dcdbf0784d1af109242d8c1af728e62a21556e628a5a13",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/control/git-flow/git_flow.manifest.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/codex/control/git-flow/git_flow.dag.json",
+      "source": "/home/_404/src/dotfiles/config/codex/control/git-flow/git_flow.dag.json",
+      "role": "git_flow_dag",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/control/git-flow/git_flow.dag.json",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "00f1a9be9b4b19742177de102ad36a2a30e04db9b9b7bf6a1cf8d0c415bc8296",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/control/git-flow/git_flow.dag.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/codex/prompt-registry/manifest.json",
+      "source": "/home/_404/src/dotfiles/config/codex/prompt-registry/manifest.json",
+      "role": "prompt_registry_manifest",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/prompt-registry/manifest.json",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "fea86dd314af507f1c67fe89099f7b48244fb7ecaf8d71813d330f2676ba0031",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/prompt-registry/manifest.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/codex/prompt-registry/README.overlay.md",
+      "source": "/home/_404/src/dotfiles/config/codex/prompt-registry/README.overlay.md",
+      "role": "prompt_registry_overlay_note",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/prompt-registry/README.overlay.md",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "eeec81845fe5eb9178c5daf66b76a332fad7d3826109318e4c05d20566ffd78a",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/prompt-registry/README.overlay.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/codex/prompt-registry/retrieval/index.json",
+      "source": "/home/_404/src/dotfiles/config/codex/prompt-registry/retrieval/index.json",
+      "role": "prompt_registry_index",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/prompt-registry/retrieval/index.json",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "9af0dcdd6a5d5383054d407311430fe075968a45ea84a920cac5269dd8ba3801",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/prompt-registry/retrieval/index.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/codex/prompt-registry/retrieval/aliases.json",
+      "source": "/home/_404/src/dotfiles/config/codex/prompt-registry/retrieval/aliases.json",
+      "role": "prompt_registry_aliases",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/prompt-registry/retrieval/aliases.json",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "faa2c4f7b76d7ef9dd821024b7573f045378609346ce075d1570606ddce02aec",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/prompt-registry/retrieval/aliases.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/codex/prompt-registry/retrieval/tags.json",
+      "source": "/home/_404/src/dotfiles/config/codex/prompt-registry/retrieval/tags.json",
+      "role": "prompt_registry_tags",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/prompt-registry/retrieval/tags.json",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "3d5e9eb2ebb6711700dbeaa1699ecec6e9b728c13ca92d9b43c692591987b287",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/prompt-registry/retrieval/tags.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/codex/prompt-registry/profiles/default.json",
+      "source": "/home/_404/src/dotfiles/config/codex/prompt-registry/profiles/default.json",
+      "role": "prompt_registry_default_profile",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/prompt-registry/profiles/default.json",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "171598209148869cf92f52fb8b38670573b1d539a4201100394fbf29fbbbd50d",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/prompt-registry/profiles/default.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/codex/prompt-registry/profiles/review.json",
+      "source": "/home/_404/src/dotfiles/config/codex/prompt-registry/profiles/review.json",
+      "role": "prompt_registry_review_profile",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/prompt-registry/profiles/review.json",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "c50d37865e0065a3cee9253fde3ed6d00751be99d737529fc7a5365b47d40059",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/prompt-registry/profiles/review.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/codex/prompt-registry/profiles/patch.json",
+      "source": "/home/_404/src/dotfiles/config/codex/prompt-registry/profiles/patch.json",
+      "role": "prompt_registry_patch_profile",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/prompt-registry/profiles/patch.json",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "db9a260ff54698f2a68c63cfbbcb7e55142da544b49ea594a9d49ee17ee4df45",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/prompt-registry/profiles/patch.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/codex/prompt-registry/workflows/contract-first.json",
+      "source": "/home/_404/src/dotfiles/config/codex/prompt-registry/workflows/contract-first.json",
+      "role": "prompt_registry_contract_first_workflow",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/prompt-registry/workflows/contract-first.json",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "0527ee4f76b4f659bcde1c32b9bcfb35b962840edc8d23cbab6cfa442e0a4afb",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/prompt-registry/workflows/contract-first.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/codex/prompt-registry/workflows/git-flow.integration-worktree.json",
+      "source": "/home/_404/src/dotfiles/config/codex/prompt-registry/workflows/git-flow.integration-worktree.json",
+      "role": "prompt_registry_git_flow_workflow",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/prompt-registry/workflows/git-flow.integration-worktree.json",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "92ccf3781263842a3afb9c80bb7783e39583499e9a595a6081218de9c9053c57",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/prompt-registry/workflows/git-flow.integration-worktree.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/codex/prompt-registry/snippets/planning.md",
+      "source": "/home/_404/src/dotfiles/config/codex/prompt-registry/snippets/planning.md",
+      "role": "prompt_registry_planning_snippet",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/prompt-registry/snippets/planning.md",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "3c0ceedfd26f77d8c756dbd362db5b6a4113e65d785ee9cbb07c50f63335a527",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/prompt-registry/snippets/planning.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/codex/prompt-registry/snippets/validation.md",
+      "source": "/home/_404/src/dotfiles/config/codex/prompt-registry/snippets/validation.md",
+      "role": "prompt_registry_validation_snippet",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/prompt-registry/snippets/validation.md",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "e1bf9e5483966c0970adb0828f523e7cde531b8efef61781fe3352121c08f9ff",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/prompt-registry/snippets/validation.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/codex/prompt-registry/snippets/evidence.md",
+      "source": "/home/_404/src/dotfiles/config/codex/prompt-registry/snippets/evidence.md",
+      "role": "prompt_registry_evidence_snippet",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/prompt-registry/snippets/evidence.md",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "fd78605955757234695f0f33e2ca7813ff50ed8ad81f4ed533bc9aab09748cfb",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/prompt-registry/snippets/evidence.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/codex/prompt-registry/snippets/promotion.md",
+      "source": "/home/_404/src/dotfiles/config/codex/prompt-registry/snippets/promotion.md",
+      "role": "prompt_registry_promotion_snippet",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/prompt-registry/snippets/promotion.md",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "e4e3175c3c5aabf1406fa8f19aafb2b93839ae1694490836ecd02a7e232a72f3",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/prompt-registry/snippets/promotion.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/prompt.txt",
+      "source": "/home/_404/src/dotfiles/config/codex/prompt.txt",
+      "role": "prompt_text",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/prompt.txt",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51",
+      "sha256": "eb02e09468c8f8568bceb0cc67f762bd43f4409372c6f9dfbf7d1ce5bcafbf11",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/prompt.txt"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/loop_ledger/schemas/review_bundle_manifest.v1.schema.json",
+      "source": "/home/_404/src/loop_ledger/schemas/review_bundle_manifest.v1.schema.json",
+      "role": "review_bundle_schema",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "schemas/review_bundle_manifest.v1.schema.json",
+      "head": "04923e7bcecdaa41a56c42b9945fc52211073a11",
+      "sha256": "2b4a1c9fa275d101493308d3879dbf07812a76862e1de6ce326c7e8d7b3d79e0",
+      "absolute_path": "/home/_404/src/loop_ledger/schemas/review_bundle_manifest.v1.schema.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/loop_ledger/scripts/materialize_review_bundle.py",
+      "source": "/home/_404/src/loop_ledger/scripts/materialize_review_bundle.py",
+      "role": "bundle_materializer",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "scripts/materialize_review_bundle.py",
+      "head": "04923e7bcecdaa41a56c42b9945fc52211073a11",
+      "sha256": "5d5e588e4e32a3f7abd4b7d9d605e70a3c44e54ec57bccf3d7a79eb839b51874",
+      "absolute_path": "/home/_404/src/loop_ledger/scripts/materialize_review_bundle.py"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/IMPLEMENT/IMPLEMENT.md",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/IMPLEMENT/IMPLEMENT.md",
+      "role": "implement_packet_output",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "IMPLEMENT/IMPLEMENT.md",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "b59c323382e2f18dec9480506a5e07b92fe089a17a83420221d9aa6455eca391",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/IMPLEMENT/IMPLEMENT.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/IMPLEMENT/response.instance.json",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/IMPLEMENT/response.instance.json",
+      "role": "implement_response_output",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "IMPLEMENT/response.instance.json",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "44eec0866ccfb609996532de1143e7ea9bf644dd5aa5fcf230bf9ddc77387c4c",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/IMPLEMENT/response.instance.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/IMPLEMENT/resolved.overlay.json",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/IMPLEMENT/resolved.overlay.json",
+      "role": "resolved_overlay_output",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "IMPLEMENT/resolved.overlay.json",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "1172db1ea3fc8320da3fb7b7b5a29f2b7bfee850defe17959a7b15aadf125997",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/IMPLEMENT/resolved.overlay.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/IMPLEMENT/assembled.prompt.plan.json",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/IMPLEMENT/assembled.prompt.plan.json",
+      "role": "assembled_prompt_plan_output",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "IMPLEMENT/assembled.prompt.plan.json",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "f0b384a993737b02743d706ec3da171d1897683400eb1c09f73828ade11f4024",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/IMPLEMENT/assembled.prompt.plan.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/IMPLEMENT/authority.verification.json",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/IMPLEMENT/authority.verification.json",
+      "role": "authority_verification_output",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "IMPLEMENT/authority.verification.json",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "547016d3dc590cce40199304f59a78dd7aafd7e4210b398fd907c21871ff04e9",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/IMPLEMENT/authority.verification.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/IMPLEMENT/registry.parity.check.json",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/IMPLEMENT/registry.parity.check.json",
+      "role": "registry_parity_output",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "IMPLEMENT/registry.parity.check.json",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "031c5e7d9c4c9275d9740c48ce48ea7623f02d1206c0859bb9651d35dd6fb4f1",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/IMPLEMENT/registry.parity.check.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/LOOP/loop.state.json",
+      "source": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/LOOP/loop.state.json",
+      "role": "loop_state_output",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "LOOP/loop.state.json",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295",
+      "sha256": "e0eef8a36b9455df563ab4886cdc07ca11b79f114b2b28423a8b5e9218aaac74",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/LOOP/loop.state.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/gitflow/promotion.capsule.json",
+      "source": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-implement-review-001.promotion.capsule.json",
+      "role": "promotion_capsule_output",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/loop_pipeline/workbench-prompt-registry-001-implement-review-001.promotion.capsule.json",
+      "head": "04923e7bcecdaa41a56c42b9945fc52211073a11",
+      "sha256": "85f69d42bf582b346cedef3c7ef05359d5367062f2eeb974ce9776971f82a809",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-implement-review-001.promotion.capsule.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/evidence/implement-packet-validate.check.json",
+      "source": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-implement-review-001.implement-packet-validate.check.json",
+      "role": "implement_packet_validate_check",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/loop_pipeline/workbench-prompt-registry-001-implement-review-001.implement-packet-validate.check.json",
+      "head": "04923e7bcecdaa41a56c42b9945fc52211073a11",
+      "sha256": "55e5c98775193c781e47aabf4a8abfbf82ae4f0b42b2e8e749c632b116b8cd7f",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-implement-review-001.implement-packet-validate.check.json",
+      "name": "implement packet validate"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/evidence/review-manifest-validate.check.json",
+      "source": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-implement-review-001.review-manifest-validate.check.json",
+      "role": "review_manifest_validate_check",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/loop_pipeline/workbench-prompt-registry-001-implement-review-001.review-manifest-validate.check.json",
+      "head": "04923e7bcecdaa41a56c42b9945fc52211073a11",
+      "sha256": "82a688dc81c303035eb5245c4deed161fdc6caee1dbf808e5e994daaa861750b",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-implement-review-001.review-manifest-validate.check.json",
+      "name": "review manifest schema validate"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/evidence/review-bundle-status.check.json",
+      "source": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-implement-review-001.review-bundle-status.check.json",
+      "role": "review_bundle_status_check",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/loop_pipeline/workbench-prompt-registry-001-implement-review-001.review-bundle-status.check.json",
+      "head": "04923e7bcecdaa41a56c42b9945fc52211073a11",
+      "sha256": "365e69602cbfd394028f657d826d976c10ac2c6717ae56324a1409e5e3833025",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-implement-review-001.review-bundle-status.check.json",
+      "name": "review bundle input status"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/evidence/loop-state-schema-validate.check.json",
+      "source": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-implement-review-001.loop-state-schema-validate.check.json",
+      "role": "loop_state_schema_validate_check",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/loop_pipeline/workbench-prompt-registry-001-implement-review-001.loop-state-schema-validate.check.json",
+      "head": "04923e7bcecdaa41a56c42b9945fc52211073a11",
+      "sha256": "ac647a0d2f9e58be70d231cd4d285a50e96d714bd7de30cbc1ce1f7e1f889384",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-implement-review-001.loop-state-schema-validate.check.json",
+      "name": "loop state schema validate"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/evidence/promotion-capsule-schema-validate.check.json",
+      "source": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-implement-review-001.promotion-capsule-schema-validate.check.json",
+      "role": "promotion_capsule_schema_validate_check",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/loop_pipeline/workbench-prompt-registry-001-implement-review-001.promotion-capsule-schema-validate.check.json",
+      "head": "04923e7bcecdaa41a56c42b9945fc52211073a11",
+      "sha256": "9ace149c8bcfaf5dcbf3e240070994eb95537658484abccf8f7c9698728c15c1",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-implement-review-001.promotion-capsule-schema-validate.check.json",
+      "name": "promotion capsule schema validate"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-prompt-registry-001-implement-review-001/iteration-0002/ref_header.json",
+      "source": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-implement-review-001.iteration-0002.json",
+      "role": "ref_header",
+      "sha256": "2fe13245ea35decebb0fa35523757d10d5d86c17b50ddf2872d6cbcc9a4d0475"
+    }
+  ]
+}

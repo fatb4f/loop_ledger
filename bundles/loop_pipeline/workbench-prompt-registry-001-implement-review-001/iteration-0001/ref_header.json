@@ -1,0 +1,74 @@
+{
+  "kind": "review_bundle_ref_header.v1",
+  "project": "loop_pipeline",
+  "bundle_id": "workbench-prompt-registry-001-implement-review-001",
+  "iteration_id": "iteration-0001",
+  "scope_root": "/home/_404/src",
+  "authority_model": {
+    "source_roots": "authoritative",
+    "controller_surfaces": "authoritative",
+    "reviewed_head": "legacy_informational",
+    "refs": "legacy_informational"
+  },
+  "reviewed_head": "25d159c89ca099bca1623988b0f60f6127c60295",
+  "lineage": {
+    "relationship": "derived_from",
+    "parent_bundle_id": "workbench-prompt-registry-001-plan-review-001",
+    "parent_manifest": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-plan-review-001.iteration-0001.json"
+  },
+  "refs": {
+    "wt": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001",
+    "ledger_wt": "/home/_404/src/loop_ledger.worktrees/workbench-prompt-registry-001.iteration-0001",
+    "workbench_context": "/home/_404/src/workbench",
+    "problem_set": "prompt-registry operationalization as a prompt-overlay registry derived from control authority",
+    "plan_review_bundle": "/home/_404/src/loop_ledger/dist/workbench-prompt-registry-001-plan-review-001.iteration-0001.review.zip"
+  },
+  "source_roots": {
+    "asset_control_model": {
+      "root": "/home/_404/src/runtime/asset-control-model",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295"
+    },
+    "asset_control_model_wt": {
+      "root": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0001",
+      "head": "25d159c89ca099bca1623988b0f60f6127c60295"
+    },
+    "dotfiles": {
+      "root": "/home/_404/src/dotfiles",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51"
+    },
+    "loop_ledger": {
+      "root": "/home/_404/src/loop_ledger",
+      "head": "04923e7bcecdaa41a56c42b9945fc52211073a11"
+    }
+  },
+  "controller_surfaces": {
+    "codex_contract_root": {
+      "root": "/home/_404/src/dotfiles/config/codex",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51"
+    },
+    "prompt_registry_overlay": {
+      "root": "/home/_404/src/dotfiles/config/codex/prompt-registry",
+      "head": "5ebb0404051985e9a1e25cd0c87ac2783cc92b51"
+    },
+    "loop_ledger_controller": {
+      "root": "/home/_404/src/loop_ledger",
+      "head": "04923e7bcecdaa41a56c42b9945fc52211073a11"
+    }
+  },
+  "evidence_bundle": {
+    "integrity_mode": "all_files",
+    "required_output_roles": [
+      "implement_packet_output",
+      "implement_response_output",
+      "loop_state_output",
+      "promotion_capsule_output"
+    ],
+    "required_check_roles": [
+      "implement_packet_validate_check",
+      "review_manifest_validate_check",
+      "review_bundle_status_check",
+      "loop_state_schema_validate_check",
+      "promotion_capsule_schema_validate_check"
+    ]
+  }
+}

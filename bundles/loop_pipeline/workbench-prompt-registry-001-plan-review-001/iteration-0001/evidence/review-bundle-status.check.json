@@ -1,0 +1,11 @@
+{
+  "kind": "controller_check.v1",
+  "name": "review bundle input status",
+  "argv": [
+    "python3",
+    "/home/_404/src/loop_ledger/scripts/check_review_bundle_inputs.py",
+    "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-prompt-registry-001-plan-review-001.iteration-0001.json"
+  ],
+  "cwd": "/home/_404/src",
+  "exit_code": 0
+}

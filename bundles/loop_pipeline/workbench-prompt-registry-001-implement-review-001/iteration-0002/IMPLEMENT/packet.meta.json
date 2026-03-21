@@ -1,0 +1,8 @@
+{
+  "kind": "implement.packet.meta.v2",
+  "objective": "Implement the read-only local prompt-registry overlay pipeline: loader, resolver, assembler, and authority verifier for the approved in-scope workflows and profiles",
+  "parent_issue": "",
+  "wt": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002",
+  "contract_root": "/home/_404/src/dotfiles/config/codex",
+  "packet_path": "/home/_404/src/_worktrees/workbench-prompt-registry-001.iteration-0002/IMPLEMENT/IMPLEMENT.md"
+}

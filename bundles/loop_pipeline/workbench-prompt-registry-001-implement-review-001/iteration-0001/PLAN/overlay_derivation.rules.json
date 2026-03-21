@@ -1,0 +1,31 @@
+{
+  "kind": "prompt_overlay_derivation_rules.v1",
+  "source_of_truth_root": "control/",
+  "overlay_root": "prompt-registry/",
+  "rules": [
+    {
+      "id": "workflow_units_require_authority_refs",
+      "description": "Every workflow overlay unit must declare source_of_truth_root and at least one source_of_truth_ref under control/."
+    },
+    {
+      "id": "overlay_refs_must_resolve",
+      "description": "Unresolved workflow, profile, snippet, or authority refs are fatal."
+    },
+    {
+      "id": "overlay_may_select_not_redefine",
+      "description": "Overlay artifacts may select, annotate, and order prompt assets, but may not redefine legality, gating, or promotion semantics."
+    },
+    {
+      "id": "manifest_membership_must_match_retrieval",
+      "description": "All workflow ids referenced by retrieval indexes or profiles must be listed in prompt-registry/manifest.json units."
+    },
+    {
+      "id": "authority_drift_fails_closed",
+      "description": "Moved, renamed, or deleted control authority refs fail validation until the overlay is updated."
+    }
+  ],
+  "verification_outputs": [
+    "IMPLEMENT/authority.verification.json",
+    "IMPLEMENT/registry.parity.check.json"
+  ]
+}

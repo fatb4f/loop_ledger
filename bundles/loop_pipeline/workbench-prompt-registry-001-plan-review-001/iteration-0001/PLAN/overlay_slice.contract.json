@@ -1,0 +1,72 @@
+{
+  "kind": "prompt_overlay_slice_contract.v1",
+  "slice_id": "prompt-registry-readonly-overlay-pipeline-001",
+  "status": "approved_for_implementation",
+  "scope": {
+    "in_scope_workflows": [
+      "workflow.contract_first",
+      "workflow.git_flow.integration_worktree"
+    ],
+    "in_scope_profiles": [
+      "default",
+      "review"
+    ],
+    "in_scope_snippets": [
+      "planning",
+      "validation",
+      "evidence",
+      "promotion"
+    ],
+    "deferred": [
+      "patch profile runtime behavior",
+      "RAG adapters",
+      "read-only MCP facade for registry and RAG",
+      "live Codex session injection",
+      "prompt optimization experiments",
+      "control authority renames"
+    ]
+  },
+  "inputs": [
+    "prompt-registry/manifest.json",
+    "prompt-registry/retrieval/index.json",
+    "prompt-registry/retrieval/aliases.json",
+    "prompt-registry/retrieval/tags.json",
+    "prompt-registry/profiles/default.json",
+    "prompt-registry/profiles/review.json",
+    "prompt-registry/workflows/contract-first.json",
+    "prompt-registry/workflows/git-flow.integration-worktree.json",
+    "prompt-registry/snippets/planning.md",
+    "prompt-registry/snippets/validation.md",
+    "prompt-registry/snippets/evidence.md",
+    "prompt-registry/snippets/promotion.md",
+    "control/git-flow/git_flow.manifest.json",
+    "control/git-flow/git_flow.dag.json",
+    "control/git-flow/plan/README.md",
+    "control/git-flow/loop/README.md",
+    "control/git-flow/implement/README.md"
+  ],
+  "outputs": [
+    "IMPLEMENT/resolved.overlay.json",
+    "IMPLEMENT/assembled.prompt.plan.json",
+    "IMPLEMENT/authority.verification.json",
+    "IMPLEMENT/registry.parity.check.json"
+  ],
+  "components": [
+    {
+      "id": "loader",
+      "responsibility": "load registry manifest, retrieval indexes, profiles, workflows, and snippets"
+    },
+    {
+      "id": "resolver",
+      "responsibility": "resolve workflow/profile selection and enforce manifest membership parity"
+    },
+    {
+      "id": "assembler",
+      "responsibility": "emit deterministic overlay assembly plan with workflow, profile, snippet order, and authority refs"
+    },
+    {
+      "id": "authority_verifier",
+      "responsibility": "prove resolved overlay units map back to control authority and reject overlay attempts to redefine controller truth"
+    }
+  ]
+}
