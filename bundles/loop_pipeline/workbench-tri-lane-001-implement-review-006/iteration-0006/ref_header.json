@@ -1,0 +1,89 @@
+{
+  "kind": "review_bundle_ref_header.v1",
+  "project": "loop_pipeline",
+  "bundle_id": "workbench-tri-lane-001-implement-review-006",
+  "iteration_id": "iteration-0006",
+  "scope_root": "/home/_404/src",
+  "authority_model": {
+    "source_roots": "authoritative",
+    "controller_surfaces": "authoritative",
+    "reviewed_head": "legacy_informational",
+    "refs": "legacy_informational"
+  },
+  "reviewed_head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+  "lineage": {
+    "relationship": "derived_from",
+    "parent_bundle_id": "workbench-tri-lane-001-implement-review-005",
+    "parent_manifest": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-tri-lane-001-implement-review-005.iteration-0005.json"
+  },
+  "refs": {
+    "wt": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0006",
+    "ledger_wt": "/home/_404/src/loop_ledger.worktrees/workbench-tri-lane-001.iteration-0006",
+    "workbench_context": "/home/_404/src/workbench",
+    "pause_reason": "iteration-0006 opened after implement review reply found final replay-closure gaps around schemas and packet meta artifacts",
+    "problem_set": "multi-surface integration across loop-pipeline, asset-control-model, conversations_api, and loop_ledger",
+    "conversations_runtime_authority": [
+      "https://developers.openai.com/api/docs/guides/conversation-state",
+      "https://developers.openai.com/api/docs/guides/background",
+      "https://developers.openai.com/api/docs/guides/webhooks",
+      "https://developers.openai.com/api/docs/guides/migrate-to-responses",
+      "https://developers.openai.com/api/docs/guides/realtime"
+    ]
+  },
+  "source_roots": {
+    "asset_control_model": {
+      "root": "/home/_404/src/runtime/asset-control-model",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da"
+    },
+    "asset_control_model_wt": {
+      "root": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0006",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da"
+    },
+    "dotfiles": {
+      "root": "/home/_404/src/dotfiles",
+      "head": "b5b343869fdd66969a46ed944526b33ec55c4268"
+    },
+    "loop_ledger": {
+      "root": "/home/_404/src/loop_ledger",
+      "head": "50e6f595c09bc80c2c1b6ed11d0d742007013f57"
+    },
+    "conversations_runtime": {
+      "root": "https://developers.openai.com/api/docs/guides/conversation-state",
+      "head": "official_openai_runtime_authority_2026-03-20"
+    }
+  },
+  "controller_surfaces": {
+    "codex_contract_root": {
+      "root": "/home/_404/src/dotfiles/config/codex",
+      "head": "b5b343869fdd66969a46ed944526b33ec55c4268"
+    },
+    "acm_policy_framework": {
+      "root": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0006/policy_framework",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da"
+    },
+    "loop_ledger_controller": {
+      "root": "/home/_404/src/loop_ledger",
+      "head": "50e6f595c09bc80c2c1b6ed11d0d742007013f57"
+    }
+  },
+  "evidence_bundle": {
+    "integrity_mode": "all_files",
+    "required_output_roles": [
+      "implement_packet_output",
+      "implement_response_output",
+      "loop_state_output",
+      "promotion_capsule_output",
+      "openai_contract_manifest_output"
+    ],
+    "required_check_roles": [
+      "conversations_inventory_schema_validate_check",
+      "conversations_bundle_boundary_schema_validate_check",
+      "implement_packet_validate_check",
+      "openai_contract_validate_check",
+      "review_manifest_validate_check",
+      "review_bundle_status_check",
+      "loop_state_schema_validate_check",
+      "promotion_capsule_schema_validate_check"
+    ]
+  }
+}

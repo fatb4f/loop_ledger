@@ -1,0 +1,412 @@
+{
+  "kind": "review_bundle_manifest.v1",
+  "project": "loop_pipeline",
+  "bundle_id": "workbench-tri-lane-001-plan-review-001",
+  "iteration_id": "iteration-0001",
+  "scope_root": "/home/_404/src",
+  "reviewed_head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+  "output_root": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-001/iteration-0001",
+  "source_roots": {
+    "asset_control_model": {
+      "root": "/home/_404/src/runtime/asset-control-model",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da"
+    },
+    "asset_control_model_wt": {
+      "root": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da"
+    },
+    "dotfiles": {
+      "root": "/home/_404/src/dotfiles",
+      "head": "b5b343869fdd66969a46ed944526b33ec55c4268"
+    },
+    "loop_ledger": {
+      "root": "/home/_404/src/loop_ledger",
+      "head": "50e6f595c09bc80c2c1b6ed11d0d742007013f57"
+    }
+  },
+  "controller_surfaces": {
+    "codex_contract_root": {
+      "root": "/home/_404/src/dotfiles/config/codex",
+      "head": "b5b343869fdd66969a46ed944526b33ec55c4268"
+    },
+    "acm_policy_framework": {
+      "root": "/home/_404/src/runtime/asset-control-model/policy_framework",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da"
+    },
+    "loop_ledger_controller": {
+      "root": "/home/_404/src/loop_ledger",
+      "head": "50e6f595c09bc80c2c1b6ed11d0d742007013f57"
+    }
+  },
+  "refs": {
+    "wt": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001",
+    "ledger_wt": "/home/_404/src/loop_ledger.worktrees/workbench-tri-lane-001.iteration-0001",
+    "workbench_context": "/home/_404/src/workbench",
+    "problem_set": "multi-surface integration across loop-pipeline, asset-control-model, conversations_api, and loop_ledger"
+  },
+  "evidence_bundle": {
+    "required_outputs": [
+      {
+        "source": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/README.md",
+        "repo_key": "asset_control_model_wt",
+        "repo_relative_path": "PLAN/README.md",
+        "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+        "absolute_path": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/README.md",
+        "dest": "PLAN/README.md",
+        "role": "plan_packet_output"
+      },
+      {
+        "source": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/LOOP/loop.state.json",
+        "repo_key": "asset_control_model_wt",
+        "repo_relative_path": "LOOP/loop.state.json",
+        "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+        "absolute_path": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/LOOP/loop.state.json",
+        "dest": "LOOP/loop.state.json",
+        "role": "loop_state_output"
+      },
+      {
+        "source": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-tri-lane-001-plan-review-001.promotion.capsule.json",
+        "repo_key": "loop_ledger",
+        "repo_relative_path": "manifests/loop_pipeline/workbench-tri-lane-001-plan-review-001.promotion.capsule.json",
+        "head": "50e6f595c09bc80c2c1b6ed11d0d742007013f57",
+        "absolute_path": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-tri-lane-001-plan-review-001.promotion.capsule.json",
+        "dest": "gitflow/promotion.capsule.json",
+        "role": "promotion_capsule_output"
+      }
+    ],
+    "required_checks": [
+      {
+        "name": "plan packet validate",
+        "source": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-tri-lane-001-plan-review-001.plan-packet-validate.check.json",
+        "repo_key": "loop_ledger",
+        "repo_relative_path": "manifests/loop_pipeline/workbench-tri-lane-001-plan-review-001.plan-packet-validate.check.json",
+        "head": "50e6f595c09bc80c2c1b6ed11d0d742007013f57",
+        "absolute_path": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-tri-lane-001-plan-review-001.plan-packet-validate.check.json",
+        "dest": "evidence/plan-packet-validate.check.json",
+        "role": "plan_packet_validate_check"
+      },
+      {
+        "name": "review manifest schema validate",
+        "source": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-tri-lane-001-plan-review-001.review-manifest-validate.check.json",
+        "repo_key": "loop_ledger",
+        "repo_relative_path": "manifests/loop_pipeline/workbench-tri-lane-001-plan-review-001.review-manifest-validate.check.json",
+        "head": "50e6f595c09bc80c2c1b6ed11d0d742007013f57",
+        "absolute_path": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-tri-lane-001-plan-review-001.review-manifest-validate.check.json",
+        "dest": "evidence/review-manifest-validate.check.json",
+        "role": "review_manifest_validate_check"
+      },
+      {
+        "name": "review bundle input status",
+        "source": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-tri-lane-001-plan-review-001.review-bundle-status.check.json",
+        "repo_key": "loop_ledger",
+        "repo_relative_path": "manifests/loop_pipeline/workbench-tri-lane-001-plan-review-001.review-bundle-status.check.json",
+        "head": "50e6f595c09bc80c2c1b6ed11d0d742007013f57",
+        "absolute_path": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-tri-lane-001-plan-review-001.review-bundle-status.check.json",
+        "dest": "evidence/review-bundle-status.check.json",
+        "role": "review_bundle_status_check"
+      },
+      {
+        "name": "loop state schema validate",
+        "source": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-tri-lane-001-plan-review-001.loop-state-schema-validate.check.json",
+        "repo_key": "loop_ledger",
+        "repo_relative_path": "manifests/loop_pipeline/workbench-tri-lane-001-plan-review-001.loop-state-schema-validate.check.json",
+        "head": "50e6f595c09bc80c2c1b6ed11d0d742007013f57",
+        "absolute_path": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-tri-lane-001-plan-review-001.loop-state-schema-validate.check.json",
+        "dest": "evidence/loop-state-schema-validate.check.json",
+        "role": "loop_state_schema_validate_check"
+      },
+      {
+        "name": "promotion capsule schema validate",
+        "source": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-tri-lane-001-plan-review-001.promotion-capsule-schema-validate.check.json",
+        "repo_key": "loop_ledger",
+        "repo_relative_path": "manifests/loop_pipeline/workbench-tri-lane-001-plan-review-001.promotion-capsule-schema-validate.check.json",
+        "head": "50e6f595c09bc80c2c1b6ed11d0d742007013f57",
+        "absolute_path": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-tri-lane-001-plan-review-001.promotion-capsule-schema-validate.check.json",
+        "dest": "evidence/promotion-capsule-schema-validate.check.json",
+        "role": "promotion_capsule_schema_validate_check"
+      }
+    ],
+    "integrity_mode": "all_files"
+  },
+  "include": [
+    {
+      "source": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-tri-lane-001-plan-review-001.scope.md",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/loop_pipeline/workbench-tri-lane-001-plan-review-001.scope.md",
+      "head": "50e6f595c09bc80c2c1b6ed11d0d742007013f57",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-tri-lane-001-plan-review-001.scope.md",
+      "dest": "SCOPE.md",
+      "role": "review_scope"
+    },
+    {
+      "source": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/request.instance.json",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/request.instance.json",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/request.instance.json",
+      "dest": "PLAN/request.instance.json",
+      "role": "plan_request"
+    },
+    {
+      "source": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/request.validation.json",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/request.validation.json",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/request.validation.json",
+      "dest": "PLAN/request.validation.json",
+      "role": "plan_request_validation"
+    },
+    {
+      "source": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/conversations_api.inventory.json",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/conversations_api.inventory.json",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/conversations_api.inventory.json",
+      "dest": "PLAN/conversations_api.inventory.json",
+      "role": "conversations_api_inventory"
+    },
+    {
+      "source": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/request.git_log.json",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/request.git_log.json",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/request.git_log.json",
+      "dest": "PLAN/request.git_log.json",
+      "role": "plan_request_git_log"
+    },
+    {
+      "source": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/request.diff",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/request.diff",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/request.diff",
+      "dest": "PLAN/request.diff",
+      "role": "plan_request_diff"
+    },
+    {
+      "source": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/packet.meta.json",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/packet.meta.json",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/packet.meta.json",
+      "dest": "PLAN/packet.meta.json",
+      "role": "plan_meta"
+    },
+    {
+      "source": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/contract.bindings.json",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/contract.bindings.json",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/contract.bindings.json",
+      "dest": "PLAN/contract.bindings.json",
+      "role": "contract_bindings"
+    },
+    {
+      "source": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/batch.manifest.json",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/batch.manifest.json",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/batch.manifest.json",
+      "dest": "PLAN/batch.manifest.json",
+      "role": "bounded_batch_manifest"
+    },
+    {
+      "source": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/integration_gate.plan.json",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/integration_gate.plan.json",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/integration_gate.plan.json",
+      "dest": "PLAN/integration_gate.plan.json",
+      "role": "integration_gate_plan"
+    },
+    {
+      "source": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/promotion.plan.json",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/promotion.plan.json",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/promotion.plan.json",
+      "dest": "PLAN/promotion.plan.json",
+      "role": "promotion_plan"
+    },
+    {
+      "source": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/request.status.txt",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/request.status.txt",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/request.status.txt",
+      "dest": "PLAN/request.status.txt",
+      "role": "working_tree_status"
+    },
+    {
+      "source": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/LOOP/LOOP.md",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "LOOP/LOOP.md",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/LOOP/LOOP.md",
+      "dest": "LOOP/LOOP.md",
+      "role": "loop_packet"
+    },
+    {
+      "source": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/IMPLEMENT/response.manifest.json",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "IMPLEMENT/response.manifest.json",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/IMPLEMENT/response.manifest.json",
+      "dest": "IMPLEMENT/response.manifest.json",
+      "role": "implement_response_manifest_placeholder"
+    },
+    {
+      "source": "/home/_404/src/runtime/asset-control-model/policy_framework/policy/loop_pipeline_working_model.md",
+      "repo_key": "asset_control_model",
+      "repo_relative_path": "policy_framework/policy/loop_pipeline_working_model.md",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "absolute_path": "/home/_404/src/runtime/asset-control-model/policy_framework/policy/loop_pipeline_working_model.md",
+      "dest": "asset-control-model/policy_framework/policy/loop_pipeline_working_model.md",
+      "role": "acm_asset"
+    },
+    {
+      "source": "/home/_404/src/runtime/asset-control-model/policy_framework/policy/control_plane.cue",
+      "repo_key": "asset_control_model",
+      "repo_relative_path": "policy_framework/policy/control_plane.cue",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "absolute_path": "/home/_404/src/runtime/asset-control-model/policy_framework/policy/control_plane.cue",
+      "dest": "asset-control-model/policy_framework/policy/control_plane.cue",
+      "role": "acm_asset"
+    },
+    {
+      "source": "/home/_404/src/runtime/asset-control-model/policy_framework/schemas/loop_state.schema.json",
+      "repo_key": "asset_control_model",
+      "repo_relative_path": "policy_framework/schemas/loop_state.schema.json",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "absolute_path": "/home/_404/src/runtime/asset-control-model/policy_framework/schemas/loop_state.schema.json",
+      "dest": "asset-control-model/policy_framework/schemas/loop_state.schema.json",
+      "role": "acm_asset"
+    },
+    {
+      "source": "/home/_404/src/runtime/asset-control-model/policy_framework/schemas/promotion_capsule.schema.json",
+      "repo_key": "asset_control_model",
+      "repo_relative_path": "policy_framework/schemas/promotion_capsule.schema.json",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "absolute_path": "/home/_404/src/runtime/asset-control-model/policy_framework/schemas/promotion_capsule.schema.json",
+      "dest": "asset-control-model/policy_framework/schemas/promotion_capsule.schema.json",
+      "role": "acm_asset"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/config/codex/control/git-flow/README.md",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/control/git-flow/README.md",
+      "head": "b5b343869fdd66969a46ed944526b33ec55c4268",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/control/git-flow/README.md",
+      "dest": "codex/control/git-flow/README.md",
+      "role": "codex_asset"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/config/codex/control/git-flow/git_flow.manifest.json",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/control/git-flow/git_flow.manifest.json",
+      "head": "b5b343869fdd66969a46ed944526b33ec55c4268",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/control/git-flow/git_flow.manifest.json",
+      "dest": "codex/control/git-flow/git_flow.manifest.json",
+      "role": "codex_asset"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/config/codex/control/git-flow/git_flow.dag.json",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/control/git-flow/git_flow.dag.json",
+      "head": "b5b343869fdd66969a46ed944526b33ec55c4268",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/control/git-flow/git_flow.dag.json",
+      "dest": "codex/control/git-flow/git_flow.dag.json",
+      "role": "codex_asset"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/config/codex/prompt-registry/manifest.json",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/prompt-registry/manifest.json",
+      "head": "b5b343869fdd66969a46ed944526b33ec55c4268",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/prompt-registry/manifest.json",
+      "dest": "codex/prompt-registry/manifest.json",
+      "role": "codex_asset"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/config/codex/skills/loop/SKILL.md",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/skills/loop/SKILL.md",
+      "head": "b5b343869fdd66969a46ed944526b33ec55c4268",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/skills/loop/SKILL.md",
+      "dest": "codex/skills/loop/SKILL.md",
+      "role": "codex_asset"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/config/codex/skills/loop/assets/workflow.json",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/skills/loop/assets/workflow.json",
+      "head": "b5b343869fdd66969a46ed944526b33ec55c4268",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/skills/loop/assets/workflow.json",
+      "dest": "codex/skills/loop/assets/workflow.json",
+      "role": "codex_asset"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/config/codex/skills/plan/SKILL.md",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/skills/plan/SKILL.md",
+      "head": "b5b343869fdd66969a46ed944526b33ec55c4268",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/skills/plan/SKILL.md",
+      "dest": "codex/skills/plan/SKILL.md",
+      "role": "codex_asset"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/config/codex/skills/plan/scripts/generate_plan_packet.py",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/skills/plan/scripts/generate_plan_packet.py",
+      "head": "b5b343869fdd66969a46ed944526b33ec55c4268",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/skills/plan/scripts/generate_plan_packet.py",
+      "dest": "codex/skills/plan/scripts/generate_plan_packet.py",
+      "role": "codex_asset"
+    },
+    {
+      "source": "/home/_404/src/dotfiles/config/codex/skills/plan/scripts/validate_plan_packet.py",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/skills/plan/scripts/validate_plan_packet.py",
+      "head": "b5b343869fdd66969a46ed944526b33ec55c4268",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/skills/plan/scripts/validate_plan_packet.py",
+      "dest": "codex/skills/plan/scripts/validate_plan_packet.py",
+      "role": "codex_asset"
+    },
+    {
+      "source": "/home/_404/src/loop_ledger/schemas/review_bundle_manifest.v1.schema.json",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "schemas/review_bundle_manifest.v1.schema.json",
+      "head": "50e6f595c09bc80c2c1b6ed11d0d742007013f57",
+      "absolute_path": "/home/_404/src/loop_ledger/schemas/review_bundle_manifest.v1.schema.json",
+      "dest": "loop_ledger/schemas/review_bundle_manifest.v1.schema.json",
+      "role": "loop_ledger_asset"
+    },
+    {
+      "source": "/home/_404/src/loop_ledger/scripts/check_review_bundle_inputs.py",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "scripts/check_review_bundle_inputs.py",
+      "head": "50e6f595c09bc80c2c1b6ed11d0d742007013f57",
+      "absolute_path": "/home/_404/src/loop_ledger/scripts/check_review_bundle_inputs.py",
+      "dest": "loop_ledger/scripts/check_review_bundle_inputs.py",
+      "role": "loop_ledger_asset"
+    },
+    {
+      "source": "/home/_404/src/loop_ledger/scripts/materialize_review_bundle.py",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "scripts/materialize_review_bundle.py",
+      "head": "50e6f595c09bc80c2c1b6ed11d0d742007013f57",
+      "absolute_path": "/home/_404/src/loop_ledger/scripts/materialize_review_bundle.py",
+      "dest": "loop_ledger/scripts/materialize_review_bundle.py",
+      "role": "loop_ledger_asset"
+    },
+    {
+      "source": "/home/_404/src/loop_ledger/scripts/pack_review_bundle.py",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "scripts/pack_review_bundle.py",
+      "head": "50e6f595c09bc80c2c1b6ed11d0d742007013f57",
+      "absolute_path": "/home/_404/src/loop_ledger/scripts/pack_review_bundle.py",
+      "dest": "loop_ledger/scripts/pack_review_bundle.py",
+      "role": "loop_ledger_asset"
+    }
+  ]
+}

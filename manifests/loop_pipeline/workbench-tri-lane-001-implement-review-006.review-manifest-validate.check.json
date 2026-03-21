@@ -1,0 +1,12 @@
+{
+  "kind": "controller_check.v1",
+  "name": "review manifest schema validate",
+  "argv": [
+    "python3",
+    "/home/_404/src/loop_ledger/scripts/validate_json.py",
+    "/home/_404/src/loop_ledger/schemas/review_bundle_manifest.v1.schema.json",
+    "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-tri-lane-001-implement-review-006.iteration-0006.json"
+  ],
+  "cwd": "/home/_404/src/loop_ledger",
+  "exit_code": 0
+}

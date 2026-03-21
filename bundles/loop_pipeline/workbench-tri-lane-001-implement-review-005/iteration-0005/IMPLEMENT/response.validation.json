@@ -1,0 +1,11 @@
+{
+  "kind": "response_validation.v1",
+  "canonical_response_ref": "IMPLEMENT/response.instance.json",
+  "response_manifest_ref": "IMPLEMENT/response.manifest.json",
+  "canonical_response_valid": true,
+  "response_manifest_valid": true,
+  "errors": {
+    "canonical_response": [],
+    "response_manifest": []
+  }
+}

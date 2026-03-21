@@ -1,0 +1,209 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "conversations_api_inventory.schema.json",
+  "type": "object",
+  "required": [
+    "kind",
+    "lane",
+    "status",
+    "source_basis",
+    "owned_artifact_classes",
+    "provenance_roots",
+    "ownership",
+    "first_slice_boundary"
+  ],
+  "properties": {
+    "kind": {
+      "const": "conversations_api_inventory.v1"
+    },
+    "lane": {
+      "const": "conversations_api"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "frozen_for_plan",
+        "bounded_slice_assigned"
+      ]
+    },
+    "official_surface_rebase_required": {
+      "type": "boolean"
+    },
+    "source_basis": {
+      "type": "object",
+      "required": [
+        "mode",
+        "root",
+        "note"
+      ],
+      "properties": {
+        "mode": {
+          "type": "string"
+        },
+        "root": {
+          "type": "string",
+          "minLength": 1
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "owned_artifact_classes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "provenance_roots": {
+      "type": "object",
+      "required": [
+        "source_runtime_root",
+        "policy_root",
+        "ledger_root",
+        "contract_root"
+      ],
+      "properties": {
+        "source_runtime_root": {
+          "type": "string",
+          "minLength": 1
+        },
+        "policy_root": {
+          "type": "string",
+          "minLength": 1
+        },
+        "ledger_root": {
+          "type": "string",
+          "minLength": 1
+        },
+        "contract_root": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "ownership": {
+      "type": "object",
+      "required": [
+        "boundary_schema_owner",
+        "boundary_schema_owner_mode",
+        "admissibility_owner",
+        "bundle_materializer_owner",
+        "packet_contract_owner"
+      ],
+      "properties": {
+        "boundary_schema_owner": {
+          "type": "string",
+          "minLength": 1
+        },
+        "boundary_schema_owner_mode": {
+          "type": "string",
+          "minLength": 1
+        },
+        "admissibility_owner": {
+          "type": "string",
+          "minLength": 1
+        },
+        "bundle_materializer_owner": {
+          "type": "string",
+          "minLength": 1
+        },
+        "packet_contract_owner": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "acm_contract_refs": {
+      "type": "object",
+      "required": [
+        "manifest",
+        "policy",
+        "schemas"
+      ],
+      "properties": {
+        "manifest": {
+          "type": "string",
+          "minLength": 1
+        },
+        "policy": {
+          "type": "string",
+          "minLength": 1
+        },
+        "schemas": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "observed_runtime_signals": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "first_slice_boundary": {
+      "type": "object",
+      "required": [
+        "allowed",
+        "denied"
+      ],
+      "properties": {
+        "allowed": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "denied": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "review_prerequisites": {
+      "type": "object",
+      "required": [
+        "official_openai_surfaces",
+        "review_artifacts"
+      ],
+      "properties": {
+        "official_openai_surfaces": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "review_artifacts": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

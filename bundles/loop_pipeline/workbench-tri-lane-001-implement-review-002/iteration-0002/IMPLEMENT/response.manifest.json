@@ -1,0 +1,39 @@
+{
+  "@context": "context/plan-review-loop.context.jsonld",
+  "@id": "repo:implement/resp-workbench-tri-lane-001-iteration-0002",
+  "@type": "ResponseManifest",
+  "kind": "response_manifest.v1",
+  "response_id": "resp-workbench-tri-lane-001-iteration-0002",
+  "request_ref": "PLAN/request.instance.json",
+  "scope_root": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0002",
+  "canonical_artifact": "IMPLEMENT/response.instance.json",
+  "derived_views": [
+    "IMPLEMENT/IMPLEMENT.md"
+  ],
+  "bundle": {
+    "kind": "bundle_envelope.v1",
+    "bundle_role": "response",
+    "archive_format": "tar_gz",
+    "archive_name": "response.bundle.tar.gz",
+    "contents": [
+      {
+        "path": "IMPLEMENT/response.instance.json",
+        "role": "canonical_response"
+      },
+      {
+        "path": "IMPLEMENT/IMPLEMENT.md",
+        "role": "derived_view"
+      },
+      {
+        "path": "IMPLEMENT/response.validation.json",
+        "role": "validation_report"
+      },
+      {
+        "path": "IMPLEMENT/openai_contract_manifest-validate.check.json",
+        "role": "controller_check"
+      }
+    ]
+  },
+  "verdict_ref": "IMPLEMENT/response.instance.json#/verdict",
+  "findings_ref": "IMPLEMENT/response.instance.json#/findings"
+}

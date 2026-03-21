@@ -1,0 +1,14 @@
+{
+  "kind": "request_git_log.v1",
+  "repo": "/home/_404/src/runtime/asset-control-model",
+  "worktree": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0006",
+  "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+  "branch": "loop/workbench-tri-lane-001-iteration-0006",
+  "entries": [
+    {
+      "commit": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "subject": "Align promotion capsule schema and checks"
+    }
+  ],
+  "note": "Iteration-0006 opened from the iteration-0005 implement review reply; final detached replay-closure now continues on top of the current asset-control-model main head."
+}

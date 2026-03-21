@@ -1,0 +1,93 @@
+{
+  "@context": "context/plan-review-loop.context.jsonld",
+  "@id": "repo:plan/req-workbench-tri-lane-001",
+  "@type": "RequestManifest",
+  "kind": "request_manifest.v1",
+  "request_id": "req-workbench-tri-lane-001",
+  "scope_root": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001",
+  "input_mode": "head_plus_working_tree",
+  "reviewed_head": {
+    "commit": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+    "short": "777bd68c2ef2",
+    "date": "2026-03-20T19:35:40-04:00",
+    "subject": "Align promotion capsule schema and checks"
+  },
+  "anchors": {
+    "commit_ref": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+    "request_manifest_ref": "PLAN/request.instance.json",
+    "response_manifest_ref": "IMPLEMENT/response.manifest.json",
+    "git_log_ref": "PLAN/request.git_log.json",
+    "diff_ref": "PLAN/request.diff"
+  },
+  "submitted_artifacts": [
+    "PLAN/README.md",
+    "PLAN/packet.meta.json",
+    "PLAN/request.validation.json",
+    "PLAN/conversations_api.inventory.json",
+    "PLAN/request.git_log.json",
+    "PLAN/request.diff",
+    "PLAN/contract.bindings.json",
+    "PLAN/batch.manifest.json",
+    "PLAN/integration_gate.plan.json",
+    "PLAN/promotion.plan.json"
+  ],
+  "bundle": {
+    "kind": "bundle_envelope.v1",
+    "bundle_role": "request",
+    "archive_format": "tar_gz",
+    "archive_name": "request.bundle.tar.gz",
+    "contents": [
+      {
+        "path": "PLAN/README.md",
+        "role": "plan_packet"
+      },
+      {
+        "path": "PLAN/packet.meta.json",
+        "role": "plan_meta"
+      },
+      {
+        "path": "PLAN/request.validation.json",
+        "role": "request_validation"
+      },
+      {
+        "path": "PLAN/conversations_api.inventory.json",
+        "role": "conversations_api_inventory"
+      },
+      {
+        "path": "PLAN/request.git_log.json",
+        "role": "request_git_log"
+      },
+      {
+        "path": "PLAN/request.diff",
+        "role": "request_diff"
+      },
+      {
+        "path": "PLAN/contract.bindings.json",
+        "role": "contract_bindings"
+      },
+      {
+        "path": "PLAN/batch.manifest.json",
+        "role": "bounded_batch_manifest"
+      },
+      {
+        "path": "PLAN/integration_gate.plan.json",
+        "role": "integration_gate_plan"
+      },
+      {
+        "path": "PLAN/promotion.plan.json",
+        "role": "promotion_plan"
+      }
+    ]
+  },
+  "expected_response": {
+    "one_output_per_input": true,
+    "canonical_response": "IMPLEMENT/response.instance.json",
+    "derived_views": [
+      "IMPLEMENT/IMPLEMENT.md"
+    ]
+  },
+  "working_tree": {
+    "status": "untracked_scaffold",
+    "status_ref": "PLAN/request.status.txt"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "kind": "review_request_ref.v1",
+  "loop_instance_id": "workbench-tri-lane-001",
+  "iteration_id": "iteration-0002",
+  "phase": "IMPLEMENT",
+  "review_bundle_id": "workbench-tri-lane-001-implement-review-002",
+  "review_manifest": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-tri-lane-001-implement-review-002.iteration-0002.json",
+  "review_bundle_zip": "/home/_404/src/loop_ledger/dist/workbench-tri-lane-001-implement-review-002.iteration-0002.review.zip",
+  "status": "submitted"
+}

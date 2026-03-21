@@ -1,0 +1,79 @@
+{
+  "kind": "openai_review_request_model.v1",
+  "status": "frozen_for_loop_resume",
+  "authority": {
+    "primary_runtime_surface": "responses_api",
+    "durable_state_surface": "conversations_api",
+    "async_lifecycle_surfaces": [
+      "background_mode",
+      "webhooks"
+    ],
+    "realtime_extension_surface": "realtime_api"
+  },
+  "review_request": {
+    "conversation_context": {
+      "mode": "conversation_or_previous_response_chain",
+      "required_fields": [
+        "conversation_id",
+        "previous_response_id"
+      ]
+    },
+    "request": {
+      "required_fields": [
+        "request_id",
+        "model",
+        "input"
+      ],
+      "optional_fields": [
+        "instructions",
+        "tools",
+        "background",
+        "stream",
+        "store"
+      ]
+    },
+    "response": {
+      "required_fields": [
+        "response_id",
+        "status"
+      ],
+      "optional_fields": [
+        "output_items",
+        "output_text"
+      ]
+    },
+    "events": {
+      "streaming_events_required_when_streaming": true,
+      "webhook_events_required_when_background": true
+    },
+    "provenance": {
+      "required_roots": [
+        "source_runtime_root",
+        "contract_root",
+        "policy_root",
+        "ledger_root"
+      ],
+      "required_authority_refs": [
+        "conversation_state_doc",
+        "background_mode_doc",
+        "webhooks_doc",
+        "responses_migration_doc",
+        "realtime_doc"
+      ]
+    }
+  },
+  "resume_gate": {
+    "deny_until_rebased": false,
+    "required_actions": [
+      "run implement review on the rebased lane artifacts",
+      "keep promotion pending until implement review clears verify"
+    ]
+  },
+  "sources": {
+    "conversation_state_doc": "https://developers.openai.com/api/docs/guides/conversation-state",
+    "background_mode_doc": "https://developers.openai.com/api/docs/guides/background",
+    "webhooks_doc": "https://developers.openai.com/api/docs/guides/webhooks",
+    "responses_migration_doc": "https://developers.openai.com/api/docs/guides/migrate-to-responses",
+    "realtime_doc": "https://developers.openai.com/api/docs/guides/realtime"
+  }
+}

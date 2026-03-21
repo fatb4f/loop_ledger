@@ -1,0 +1,459 @@
+{
+  "kind": "review_bundle_artifacts_manifest.v1",
+  "project": "loop_pipeline",
+  "bundle_id": "workbench-tri-lane-001-plan-review-002",
+  "iteration_id": "iteration-0001",
+  "manifest_path": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-tri-lane-001-plan-review-002.iteration-0001.json",
+  "output_root": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001",
+  "lineage": {},
+  "source_roots": {
+    "asset_control_model": {
+      "root": "/home/_404/src/runtime/asset-control-model",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da"
+    },
+    "asset_control_model_wt": {
+      "root": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da"
+    },
+    "dotfiles": {
+      "root": "/home/_404/src/dotfiles",
+      "head": "b5b343869fdd66969a46ed944526b33ec55c4268"
+    },
+    "loop_ledger": {
+      "root": "/home/_404/src/loop_ledger",
+      "head": "50e6f595c09bc80c2c1b6ed11d0d742007013f57"
+    }
+  },
+  "controller_surfaces": {
+    "codex_contract_root": {
+      "root": "/home/_404/src/dotfiles/config/codex",
+      "head": "b5b343869fdd66969a46ed944526b33ec55c4268"
+    },
+    "acm_policy_framework": {
+      "root": "/home/_404/src/runtime/asset-control-model/policy_framework",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da"
+    },
+    "loop_ledger_controller": {
+      "root": "/home/_404/src/loop_ledger",
+      "head": "50e6f595c09bc80c2c1b6ed11d0d742007013f57"
+    }
+  },
+  "integrity_mode": "all_files",
+  "evidence_bundle": {
+    "required_output_roles": [
+      "plan_packet_output",
+      "loop_state_output",
+      "promotion_capsule_output"
+    ],
+    "required_check_roles": [
+      "plan_packet_validate_check",
+      "review_manifest_validate_check",
+      "review_bundle_status_check",
+      "loop_state_schema_validate_check",
+      "promotion_capsule_schema_validate_check"
+    ]
+  },
+  "files": [
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/SCOPE.md",
+      "source": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-tri-lane-001-plan-review-002.scope.md",
+      "role": "review_scope",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/loop_pipeline/workbench-tri-lane-001-plan-review-002.scope.md",
+      "head": "50e6f595c09bc80c2c1b6ed11d0d742007013f57",
+      "sha256": "2a8dba09747f08a536d9ae1a8cbff18e9c969821bd5223f8d8e5bd20b1e710a8",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-tri-lane-001-plan-review-002.scope.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/PLAN/request.instance.json",
+      "source": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/request.instance.json",
+      "role": "plan_request",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/request.instance.json",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "sha256": "5f8bf18e52c29080fd76ae618f1ba2b3b5119b1c0e65a7bed22e50bc3c983d34",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/request.instance.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/PLAN/request.validation.json",
+      "source": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/request.validation.json",
+      "role": "plan_request_validation",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/request.validation.json",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "sha256": "ab1c1fbf7b2fc0a07afc87ba8b732c9088a917627ac05c1289423ada08c52eeb",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/request.validation.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/PLAN/conversations_api.inventory.json",
+      "source": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/conversations_api.inventory.json",
+      "role": "conversations_api_inventory",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/conversations_api.inventory.json",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "sha256": "fbd2a10b81b9522f429b354620fadf01fb365ee64b51d306ad092054e6614559",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/conversations_api.inventory.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/PLAN/request.git_log.json",
+      "source": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/request.git_log.json",
+      "role": "plan_request_git_log",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/request.git_log.json",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "sha256": "f4549564553060d57c0be46faec043e098ea0b0d76e3fc2cd8c57559298670c0",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/request.git_log.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/PLAN/request.diff",
+      "source": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/request.diff",
+      "role": "plan_request_diff",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/request.diff",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "sha256": "8556967a3f648169fa2162d499ba2bacd6f3d66380886b3187b2a41236c6383a",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/request.diff"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/PLAN/packet.meta.json",
+      "source": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/packet.meta.json",
+      "role": "plan_meta",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/packet.meta.json",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "sha256": "67acad8635b1b15738326065d25e57e639f8753bcedbd66db1294466761089cc",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/packet.meta.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/PLAN/contract.bindings.json",
+      "source": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/contract.bindings.json",
+      "role": "contract_bindings",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/contract.bindings.json",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "sha256": "c54a646f73e37663f2aa5f1efa72e727f9afc9e8c6d30331c8b10c60cbfa47b0",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/contract.bindings.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/PLAN/batch.manifest.json",
+      "source": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/batch.manifest.json",
+      "role": "bounded_batch_manifest",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/batch.manifest.json",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "sha256": "45e6211d2e59184f9e8bb9c20e62a8fd4719497ee0388d4e704e136c86117c7e",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/batch.manifest.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/PLAN/integration_gate.plan.json",
+      "source": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/integration_gate.plan.json",
+      "role": "integration_gate_plan",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/integration_gate.plan.json",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "sha256": "4f4d90d4257c077bcc697e3ecbc04d211dac51cce5672aeb2e08809fc70f7de1",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/integration_gate.plan.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/PLAN/promotion.plan.json",
+      "source": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/promotion.plan.json",
+      "role": "promotion_plan",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/promotion.plan.json",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "sha256": "1a58513da1558c8326fc5a57363b1d4480f738308ac1c0a706421f2e8995212a",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/promotion.plan.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/PLAN/request.status.txt",
+      "source": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/request.status.txt",
+      "role": "working_tree_status",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/request.status.txt",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "sha256": "25ee2d2b7d31e6dd5d13a0ebba9055fbfc441948bc1aebb7a93f9db4f78eda0b",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/request.status.txt"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/LOOP/LOOP.md",
+      "source": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/LOOP/LOOP.md",
+      "role": "loop_packet",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "LOOP/LOOP.md",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "sha256": "fdfaa61c2f6feacd9a21045f1cf9f3faa8bd7a4e977a750254fa74fc7900825c",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/LOOP/LOOP.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/IMPLEMENT/response.manifest.json",
+      "source": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/IMPLEMENT/response.manifest.json",
+      "role": "implement_response_manifest_placeholder",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "IMPLEMENT/response.manifest.json",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "sha256": "7509a1eee77f2c68d1b90e8329db5275a2d22abde00dbfccfb090dd78b63289d",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/IMPLEMENT/response.manifest.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/asset-control-model/policy_framework/policy/loop_pipeline_working_model.md",
+      "source": "/home/_404/src/runtime/asset-control-model/policy_framework/policy/loop_pipeline_working_model.md",
+      "role": "acm_asset",
+      "repo_key": "asset_control_model",
+      "repo_relative_path": "policy_framework/policy/loop_pipeline_working_model.md",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "sha256": "b0762be5698ecd2131bfe9e41063d10b7691b4158f02b91008ae0091b6f081d6",
+      "absolute_path": "/home/_404/src/runtime/asset-control-model/policy_framework/policy/loop_pipeline_working_model.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/asset-control-model/policy_framework/policy/control_plane.cue",
+      "source": "/home/_404/src/runtime/asset-control-model/policy_framework/policy/control_plane.cue",
+      "role": "acm_asset",
+      "repo_key": "asset_control_model",
+      "repo_relative_path": "policy_framework/policy/control_plane.cue",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "sha256": "349304fec7d017a4bde10004ebd15b80b07a1760b1f7b67e315dc811130a2033",
+      "absolute_path": "/home/_404/src/runtime/asset-control-model/policy_framework/policy/control_plane.cue"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/asset-control-model/policy_framework/schemas/loop_state.schema.json",
+      "source": "/home/_404/src/runtime/asset-control-model/policy_framework/schemas/loop_state.schema.json",
+      "role": "acm_asset",
+      "repo_key": "asset_control_model",
+      "repo_relative_path": "policy_framework/schemas/loop_state.schema.json",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "sha256": "0db8f4988a2f835421530b8b20f8d5d310cd1cc670f888022eb59f5156d46f19",
+      "absolute_path": "/home/_404/src/runtime/asset-control-model/policy_framework/schemas/loop_state.schema.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/asset-control-model/policy_framework/schemas/promotion_capsule.schema.json",
+      "source": "/home/_404/src/runtime/asset-control-model/policy_framework/schemas/promotion_capsule.schema.json",
+      "role": "acm_asset",
+      "repo_key": "asset_control_model",
+      "repo_relative_path": "policy_framework/schemas/promotion_capsule.schema.json",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "sha256": "65c8a1a2e828e38621650d75afce471bc4163fb79c107094724358251d7ebcdc",
+      "absolute_path": "/home/_404/src/runtime/asset-control-model/policy_framework/schemas/promotion_capsule.schema.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/codex/control/git-flow/README.md",
+      "source": "/home/_404/src/dotfiles/config/codex/control/git-flow/README.md",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/control/git-flow/README.md",
+      "head": "b5b343869fdd66969a46ed944526b33ec55c4268",
+      "sha256": "b26ff60bc0810db186f16e8e8bb861ffff26aa5ad85a8039e4bc088c9fb6ca9b",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/control/git-flow/README.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/codex/control/git-flow/git_flow.manifest.json",
+      "source": "/home/_404/src/dotfiles/config/codex/control/git-flow/git_flow.manifest.json",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/control/git-flow/git_flow.manifest.json",
+      "head": "b5b343869fdd66969a46ed944526b33ec55c4268",
+      "sha256": "56f600e777a969eee0dcdbf0784d1af109242d8c1af728e62a21556e628a5a13",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/control/git-flow/git_flow.manifest.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/codex/control/git-flow/git_flow.dag.json",
+      "source": "/home/_404/src/dotfiles/config/codex/control/git-flow/git_flow.dag.json",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/control/git-flow/git_flow.dag.json",
+      "head": "b5b343869fdd66969a46ed944526b33ec55c4268",
+      "sha256": "00f1a9be9b4b19742177de102ad36a2a30e04db9b9b7bf6a1cf8d0c415bc8296",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/control/git-flow/git_flow.dag.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/codex/prompt-registry/manifest.json",
+      "source": "/home/_404/src/dotfiles/config/codex/prompt-registry/manifest.json",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/prompt-registry/manifest.json",
+      "head": "b5b343869fdd66969a46ed944526b33ec55c4268",
+      "sha256": "ed6b7090adcd3e56e66a9c01eae8a4adf010dde87a3c7f8d1845020ebecf2c85",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/prompt-registry/manifest.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/codex/skills/loop/SKILL.md",
+      "source": "/home/_404/src/dotfiles/config/codex/skills/loop/SKILL.md",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/skills/loop/SKILL.md",
+      "head": "b5b343869fdd66969a46ed944526b33ec55c4268",
+      "sha256": "fc1348cb2c8ff0f7f0a4a237d146982e1c2b8bdd201f173bef49dfca3f2c2804",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/skills/loop/SKILL.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/codex/skills/loop/assets/workflow.json",
+      "source": "/home/_404/src/dotfiles/config/codex/skills/loop/assets/workflow.json",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/skills/loop/assets/workflow.json",
+      "head": "b5b343869fdd66969a46ed944526b33ec55c4268",
+      "sha256": "1455df0f4186d63a9a9347c1ef1eaf7daf5f90e5a42ddd2d50a2199102427588",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/skills/loop/assets/workflow.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/codex/skills/plan/SKILL.md",
+      "source": "/home/_404/src/dotfiles/config/codex/skills/plan/SKILL.md",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/skills/plan/SKILL.md",
+      "head": "b5b343869fdd66969a46ed944526b33ec55c4268",
+      "sha256": "3ff4a1c06a3d2d730e6af4c8e0e2361102025893641d13cf7c65dcbc2489ae0d",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/skills/plan/SKILL.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/codex/skills/plan/scripts/generate_plan_packet.py",
+      "source": "/home/_404/src/dotfiles/config/codex/skills/plan/scripts/generate_plan_packet.py",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/skills/plan/scripts/generate_plan_packet.py",
+      "head": "b5b343869fdd66969a46ed944526b33ec55c4268",
+      "sha256": "af5123649299cdff2e46a4f4943acc3e605a7c78c0b09e657346688b830f26df",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/skills/plan/scripts/generate_plan_packet.py"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/codex/skills/plan/scripts/validate_plan_packet.py",
+      "source": "/home/_404/src/dotfiles/config/codex/skills/plan/scripts/validate_plan_packet.py",
+      "role": "codex_asset",
+      "repo_key": "dotfiles",
+      "repo_relative_path": "config/codex/skills/plan/scripts/validate_plan_packet.py",
+      "head": "b5b343869fdd66969a46ed944526b33ec55c4268",
+      "sha256": "003863b1db0000e50057b6fe738b67e15876375171a04a90fcc221f7a47eb407",
+      "absolute_path": "/home/_404/src/dotfiles/config/codex/skills/plan/scripts/validate_plan_packet.py"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/loop_ledger/schemas/review_bundle_manifest.v1.schema.json",
+      "source": "/home/_404/src/loop_ledger/schemas/review_bundle_manifest.v1.schema.json",
+      "role": "loop_ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "schemas/review_bundle_manifest.v1.schema.json",
+      "head": "50e6f595c09bc80c2c1b6ed11d0d742007013f57",
+      "sha256": "2b4a1c9fa275d101493308d3879dbf07812a76862e1de6ce326c7e8d7b3d79e0",
+      "absolute_path": "/home/_404/src/loop_ledger/schemas/review_bundle_manifest.v1.schema.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/loop_ledger/scripts/check_review_bundle_inputs.py",
+      "source": "/home/_404/src/loop_ledger/scripts/check_review_bundle_inputs.py",
+      "role": "loop_ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "scripts/check_review_bundle_inputs.py",
+      "head": "50e6f595c09bc80c2c1b6ed11d0d742007013f57",
+      "sha256": "9e2974371c2b7aec998a727c31928dc5433e0a6e196d1b31d72f40b31004ba00",
+      "absolute_path": "/home/_404/src/loop_ledger/scripts/check_review_bundle_inputs.py"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/loop_ledger/scripts/materialize_review_bundle.py",
+      "source": "/home/_404/src/loop_ledger/scripts/materialize_review_bundle.py",
+      "role": "loop_ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "scripts/materialize_review_bundle.py",
+      "head": "50e6f595c09bc80c2c1b6ed11d0d742007013f57",
+      "sha256": "5d5e588e4e32a3f7abd4b7d9d605e70a3c44e54ec57bccf3d7a79eb839b51874",
+      "absolute_path": "/home/_404/src/loop_ledger/scripts/materialize_review_bundle.py"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/loop_ledger/scripts/pack_review_bundle.py",
+      "source": "/home/_404/src/loop_ledger/scripts/pack_review_bundle.py",
+      "role": "loop_ledger_asset",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "scripts/pack_review_bundle.py",
+      "head": "50e6f595c09bc80c2c1b6ed11d0d742007013f57",
+      "sha256": "c45e31a45241ca28364095542979ae9a52e3cc4e5885a042190253cb62a4033f",
+      "absolute_path": "/home/_404/src/loop_ledger/scripts/pack_review_bundle.py"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/PLAN/README.md",
+      "source": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/README.md",
+      "role": "plan_packet_output",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "PLAN/README.md",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "sha256": "7cf8f69cf9918282c2b4e8628c4677b867af36bfade2c27cedb8f179806a771d",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/PLAN/README.md"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/LOOP/loop.state.json",
+      "source": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/LOOP/loop.state.json",
+      "role": "loop_state_output",
+      "repo_key": "asset_control_model_wt",
+      "repo_relative_path": "LOOP/loop.state.json",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+      "sha256": "29feffcc75838d0c83608b8f3e8ff6c3cc3817d381331048f3587ae7a4869bc2",
+      "absolute_path": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001/LOOP/loop.state.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/gitflow/promotion.capsule.json",
+      "source": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-tri-lane-001-plan-review-002.promotion.capsule.json",
+      "role": "promotion_capsule_output",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/loop_pipeline/workbench-tri-lane-001-plan-review-002.promotion.capsule.json",
+      "head": "50e6f595c09bc80c2c1b6ed11d0d742007013f57",
+      "sha256": "cbb72aeca5f489590592141b405a59a7255cd2b06f6e0aef014dcf2e97f9bdec",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-tri-lane-001-plan-review-002.promotion.capsule.json"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/evidence/plan-packet-validate.check.json",
+      "source": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-tri-lane-001-plan-review-002.plan-packet-validate.check.json",
+      "role": "plan_packet_validate_check",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/loop_pipeline/workbench-tri-lane-001-plan-review-002.plan-packet-validate.check.json",
+      "head": "50e6f595c09bc80c2c1b6ed11d0d742007013f57",
+      "sha256": "b9968d01f23c6410c7d18bc8a9f9bf9f4265a64b4b7949c5c91d852f135e79cf",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-tri-lane-001-plan-review-002.plan-packet-validate.check.json",
+      "name": "plan packet validate"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/evidence/review-manifest-validate.check.json",
+      "source": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-tri-lane-001-plan-review-002.review-manifest-validate.check.json",
+      "role": "review_manifest_validate_check",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/loop_pipeline/workbench-tri-lane-001-plan-review-002.review-manifest-validate.check.json",
+      "head": "50e6f595c09bc80c2c1b6ed11d0d742007013f57",
+      "sha256": "4a3eabfdd556742fdee5991ac5a93c468f322192681825ef1bbdf7a9b245d16c",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-tri-lane-001-plan-review-002.review-manifest-validate.check.json",
+      "name": "review manifest schema validate"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/evidence/review-bundle-status.check.json",
+      "source": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-tri-lane-001-plan-review-002.review-bundle-status.check.json",
+      "role": "review_bundle_status_check",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/loop_pipeline/workbench-tri-lane-001-plan-review-002.review-bundle-status.check.json",
+      "head": "50e6f595c09bc80c2c1b6ed11d0d742007013f57",
+      "sha256": "6a7e8007c928c19ef106269f3c2970221266278265d602c1fb3bb564cdb4959b",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-tri-lane-001-plan-review-002.review-bundle-status.check.json",
+      "name": "review bundle input status"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/evidence/loop-state-schema-validate.check.json",
+      "source": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-tri-lane-001-plan-review-002.loop-state-schema-validate.check.json",
+      "role": "loop_state_schema_validate_check",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/loop_pipeline/workbench-tri-lane-001-plan-review-002.loop-state-schema-validate.check.json",
+      "head": "50e6f595c09bc80c2c1b6ed11d0d742007013f57",
+      "sha256": "719c234c4c11c1a6fa00c6398f8c8f17a4b73f752fb49b5df463086ff34ed4a9",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-tri-lane-001-plan-review-002.loop-state-schema-validate.check.json",
+      "name": "loop state schema validate"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/evidence/promotion-capsule-schema-validate.check.json",
+      "source": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-tri-lane-001-plan-review-002.promotion-capsule-schema-validate.check.json",
+      "role": "promotion_capsule_schema_validate_check",
+      "repo_key": "loop_ledger",
+      "repo_relative_path": "manifests/loop_pipeline/workbench-tri-lane-001-plan-review-002.promotion-capsule-schema-validate.check.json",
+      "head": "50e6f595c09bc80c2c1b6ed11d0d742007013f57",
+      "sha256": "8d6e2de7d989277fdf595c03c5e9bb3a256d5973e1e922d8fd8208f674ce8247",
+      "absolute_path": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-tri-lane-001-plan-review-002.promotion-capsule-schema-validate.check.json",
+      "name": "promotion capsule schema validate"
+    },
+    {
+      "path": "/home/_404/src/loop_ledger/bundles/loop_pipeline/workbench-tri-lane-001-plan-review-002/iteration-0001/ref_header.json",
+      "source": "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-tri-lane-001-plan-review-002.iteration-0001.json",
+      "role": "ref_header",
+      "sha256": "6a33c35f2a66639609a64428e973a15d189dae445c4c8a0b7a26b28590be4495"
+    }
+  ]
+}

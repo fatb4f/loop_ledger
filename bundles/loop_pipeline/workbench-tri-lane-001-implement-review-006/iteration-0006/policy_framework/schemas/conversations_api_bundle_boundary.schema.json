@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "conversations_api_bundle_boundary.schema.json",
+  "type": "object",
+  "required": [
+    "kind",
+    "slice_id",
+    "materializer_owner",
+    "packet_contract_owner",
+    "admissibility_owner",
+    "bundle_id_pattern",
+    "source_roots_required",
+    "include_roles",
+    "required_checks",
+    "deny_rules"
+  ],
+  "properties": {
+    "kind": {
+      "const": "conversations_api_bundle_boundary.v1"
+    },
+    "slice_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "materializer_owner": {
+      "type": "string",
+      "minLength": 1
+    },
+    "packet_contract_owner": {
+      "type": "string",
+      "minLength": 1
+    },
+    "admissibility_owner": {
+      "type": "string",
+      "minLength": 1
+    },
+    "bundle_id_pattern": {
+      "type": "string",
+      "minLength": 1
+    },
+    "contract_manifest_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_roots_required": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "include_roles": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "required_checks": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "deny_rules": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "additionalProperties": false
+}

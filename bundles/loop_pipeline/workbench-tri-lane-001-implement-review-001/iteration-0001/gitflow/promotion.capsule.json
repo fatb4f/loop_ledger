@@ -1,0 +1,20 @@
+{
+  "kind": "promotion_capsule.v1",
+  "integration_id": "iwt-workbench-tri-lane-001",
+  "base_main_commit": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+  "contract_commit": "b5b343869fdd66969a46ed944526b33ec55c4268",
+  "bounded_batch_id": "tri-lane-conversations-api-inventory-001",
+  "patch_hash": "a19332294652266e2593fa1777dc508321b6793d55ed4fb09562a4d07982e164",
+  "validation_ref_mode": "bundle_relative",
+  "validation_refs": [
+    "evidence/conversations-api.inventory-schema-validate.check.json",
+    "evidence/conversations-api.bundle-boundary-schema-validate.check.json",
+    "evidence/implement-packet-validate.check.json",
+    "evidence/openai-contract-validate.check.json",
+    "evidence/review-manifest-validate.check.json",
+    "evidence/review-bundle-status.check.json",
+    "evidence/loop-state-schema-validate.check.json",
+    "evidence/promotion-capsule-schema-validate.check.json"
+  ],
+  "status": "PENDING"
+}

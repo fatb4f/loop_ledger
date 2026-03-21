@@ -1,0 +1,23 @@
+{
+  "kind": "bounded_batch_manifest.v1",
+  "bounded_batch_id": "workbench-tri-lane-plan-001",
+  "target_layer": "contract",
+  "target_branch": "main",
+  "integration_worktree_id": "iwt-workbench-tri-lane-001",
+  "deliverables": [
+    "PLAN/README.md",
+    "PLAN/request.instance.json",
+    "PLAN/request.validation.json",
+    "PLAN/conversations_api.inventory.json",
+    "PLAN/request.git_log.json",
+    "PLAN/request.diff",
+    "PLAN/contract.bindings.json",
+    "PLAN/batch.manifest.json",
+    "PLAN/integration_gate.plan.json",
+    "PLAN/promotion.plan.json",
+    "LOOP/LOOP.md",
+    "LOOP/loop.state.json",
+    "IMPLEMENT/response.manifest.json"
+  ],
+  "integration_surface": "one integration worktree per bounded batch"
+}

@@ -1,0 +1,53 @@
+{
+  "kind": "conversations_api_inventory.v1",
+  "lane": "conversations_api",
+  "status": "frozen_for_plan",
+  "owned_artifact_classes": {
+    "request_objects": [
+      "conversation_request.json"
+    ],
+    "response_objects": [
+      "conversation_response.json"
+    ],
+    "session_event_artifacts": [
+      "session.opened.json",
+      "message.appended.json",
+      "response.completed.json",
+      "session.closed.json"
+    ],
+    "provenance_artifacts": [
+      "conversation.session.capsule.json",
+      "conversation.provenance.json"
+    ],
+    "ledger_bundle_artifacts": [
+      "review manifests",
+      "evidence checks",
+      "copied request/response/session artifacts"
+    ]
+  },
+  "provenance_roots": {
+    "source_runtime_root": "to_be_assigned_by_approved_slice",
+    "policy_root": "/home/_404/src/runtime/asset-control-model",
+    "ledger_root": "/home/_404/src/loop_ledger",
+    "contract_root": "/home/_404/src/dotfiles/config/codex"
+  },
+  "ownership": {
+    "boundary_schema_owner": "owning repo for conversations_api lane",
+    "admissibility_owner": "asset-control-model",
+    "bundle_materializer_owner": "loop_ledger",
+    "packet_contract_owner": "dotfiles config/codex"
+  },
+  "first_slice_boundary": {
+    "allowed": [
+      "contract additions",
+      "policy additions",
+      "schema additions",
+      "review-bundle pattern definition"
+    ],
+    "denied": [
+      "runtime API behavior changes",
+      "transport implementation",
+      "client/server integration"
+    ]
+  }
+}

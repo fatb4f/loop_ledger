@@ -1,0 +1,43 @@
+{
+  "kind": "conversations_api_bundle_boundary.v1",
+  "slice_id": "tri-lane-conversations-api-inventory-001",
+  "materializer_owner": "/home/_404/src/loop_ledger",
+  "packet_contract_owner": "/home/_404/src/dotfiles/config/codex",
+  "admissibility_owner": "/home/_404/src/runtime/asset-control-model",
+  "bundle_id_pattern": "conversations-api-inventory-001.iteration-<nnnn>",
+  "contract_manifest_ref": "policy_framework/manifests/openai_responses_conversations_contract.v1.json",
+  "source_roots_required": [
+    "conversations_runtime",
+    "asset_control_model",
+    "dotfiles",
+    "loop_ledger"
+  ],
+  "include_roles": [
+    "response_request_object",
+    "response_snapshot_object",
+    "conversation_context_artifact",
+    "streaming_or_webhook_event_artifact",
+    "conversation_provenance_artifact",
+    "policy_contract_ref"
+  ],
+  "required_checks": [
+    "conversation_inventory_schema_validate",
+    "bundle_boundary_schema_validate",
+    "review_bundle_input_status",
+    "openai_contract_manifest_validate"
+  ],
+  "deny_rules": [
+    "missing_response_or_conversation_context_surface",
+    "missing_streaming_or_webhook_event_artifacts_when_required",
+    "missing_per-root_provenance",
+    "bundle_materializer_owner_mismatch",
+    "acm_contract_manifest_mismatch",
+    "official_openai_authority_ref_mismatch"
+  ],
+  "notes": [
+    "This slice completes the review-bundle boundary rebase onto the ACM OpenAI Responses + Conversations contract.",
+    "Bundle semantics are constrained by the ACM contract manifest and the official OpenAI Responses, Conversation state, Background mode, and Webhooks surfaces.",
+    "The conversations_runtime source root is instantiated in detached-bundle provenance metadata as an external OpenAI runtime authority surface, not as copied runtime artifacts.",
+    "Runtime transport or collector implementation remains out of scope until a dedicated conversations_api source repo is promoted."
+  ]
+}

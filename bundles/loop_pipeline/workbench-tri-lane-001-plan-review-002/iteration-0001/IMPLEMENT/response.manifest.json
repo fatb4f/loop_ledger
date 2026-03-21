@@ -1,0 +1,10 @@
+{
+  "kind": "response_manifest.placeholder.v1",
+  "status": "deferred_until_implement",
+  "reason": "No implementation slice has been approved yet. This placeholder preserves the request anchor until PLAN review completes.",
+  "expected_after_plan": [
+    "IMPLEMENT/response.instance.json",
+    "IMPLEMENT/response.validation.json",
+    "IMPLEMENT/IMPLEMENT.md"
+  ]
+}

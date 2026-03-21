@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "openai_response_snapshot.schema.json",
+  "type": "object",
+  "required": [
+    "kind",
+    "response_id",
+    "status"
+  ],
+  "properties": {
+    "kind": {
+      "const": "openai_response_snapshot.v1"
+    },
+    "response_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "conversation_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "previous_response_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "output_text": {
+      "type": "string"
+    },
+    "output_items": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "background": {
+      "type": "boolean"
+    },
+    "stream": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false
+}

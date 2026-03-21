@@ -1,0 +1,12 @@
+{
+  "kind": "controller_check.v1",
+  "name": "promotion capsule schema validate",
+  "argv": [
+    "python3",
+    "/home/_404/src/loop_ledger/scripts/validate_json.py",
+    "/home/_404/src/runtime/asset-control-model/policy_framework/schemas/promotion_capsule.schema.json",
+    "/home/_404/src/loop_ledger/manifests/loop_pipeline/workbench-tri-lane-001-implement-review-003.promotion.capsule.json"
+  ],
+  "cwd": "/home/_404/src/loop_ledger",
+  "exit_code": 0
+}

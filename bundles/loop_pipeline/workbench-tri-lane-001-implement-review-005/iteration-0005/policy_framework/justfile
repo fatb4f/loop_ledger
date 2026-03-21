@@ -1,0 +1,41 @@
+set shell := ["bash", "-eu", "-o", "pipefail", "-c"]
+set export := true
+
+workspace := "asset-control-model"
+CARGO_HOME := env_var_or_default("CARGO_HOME", "/home/_404/.local/share/cargo")
+RUSTUP_HOME := env_var_or_default("RUSTUP_HOME", "/home/_404/.local/share/rustup")
+
+default:
+  @just --list
+
+[group("policy")]
+validate workspace_name=workspace:
+  cargo run -p policy-validate -- "{{workspace_name}}" "workspaces/{{workspace_name}}.toml"
+
+[group("policy")]
+reconcile workspace_name=workspace:
+  cargo run -p policy-reconcile -- "{{workspace_name}}" "workspaces/{{workspace_name}}.toml"
+
+[group("policy")]
+audit workspace_name=workspace:
+  cargo metadata --format-version 1 --manifest-path "$(python3 -c 'import sys, tomllib, pathlib; print(tomllib.loads(pathlib.Path(sys.argv[1]).read_text())["manifest"])' "workspaces/{{workspace_name}}.toml")"
+
+[group("policy")]
+doctor:
+  cargo check --workspace
+
+[group("policy")]
+validate-openai-contract:
+  python3 scripts/validate_openai_contract.py
+
+[group("policy")]
+ci:
+  bash scripts/policy_ci.sh
+
+[group("policy")]
+metadata workspace_name=workspace:
+  cargo metadata --format-version 1 --manifest-path "$(python3 -c 'import sys, tomllib, pathlib; print(tomllib.loads(pathlib.Path(sys.argv[1]).read_text())["manifest"])' "workspaces/{{workspace_name}}.toml")"
+
+[group("policy")]
+promote-plan:
+  @echo "Promotion remains policy-gated in a later batch."

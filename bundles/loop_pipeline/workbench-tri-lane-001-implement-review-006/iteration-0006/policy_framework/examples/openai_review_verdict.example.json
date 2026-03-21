@@ -1,0 +1,22 @@
+{
+  "kind": "openai_review_verdict.v1",
+  "verdict": "revise",
+  "summary": "The artifact is structurally valid but still requires official Conversations and Responses grounding.",
+  "scores": {
+    "correctness": 3,
+    "scope_control": 4,
+    "testability": 4,
+    "risk": 3
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "severity": "high",
+      "issue": "The lane model relies on provisional object names.",
+      "evidence": "PLAN/conversations_api.inventory.json still frames the lane as an observed snapshot.",
+      "fix": "Rebase the lane on ACM-owned schemas derived from the official OpenAI docs."
+    }
+  ],
+  "next_action": "Rework the bundle-boundary and inventory artifacts against the frozen ACM contract.",
+  "promotion_ready": false
+}

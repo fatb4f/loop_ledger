@@ -1,0 +1,48 @@
+{
+  "kind": "review_response.v1",
+  "review_request_id": "req-workbench-tri-lane-001-implement-review-005",
+  "reviewed_head": {
+    "commit": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+    "short": "777bd68c2ef2",
+    "subject": "Close iteration-0005 detached review-bundle handoff, authority, and provenance gaps"
+  },
+  "review_scope": {
+    "basis": "implement review bundle judgment",
+    "inputs": [
+      "REVIEW/review.request.json",
+      "IMPLEMENT/IMPLEMENT.md",
+      "IMPLEMENT/response.instance.json",
+      "PLAN/request.instance.json",
+      "PLAN/contract.bindings.json",
+      "IMPLEMENT/conversations_api.bundle_boundary.json"
+    ],
+    "limitation": "detached review closure is nearly complete, but schema replay and packet metadata closure are still incomplete"
+  },
+  "verdict": {
+    "status": "NEEDS_INFO",
+    "summary": "The detached review bundle is near-accept, but still needs the two conversations_api schemas and the referenced packet meta/status artifacts to be fully self-consistent."
+  },
+  "findings": [
+    {
+      "id": "R1",
+      "severity": "high",
+      "summary": "The two conversations_api schemas required by the validation checks are still missing from the detached archive."
+    },
+    {
+      "id": "R2",
+      "severity": "medium",
+      "summary": "The detached request-basis object still declares PLAN packet metadata and request status refs that are not bundled."
+    },
+    {
+      "id": "R3",
+      "severity": "medium",
+      "summary": "The implement packet still declares IMPLEMENT/packet.meta.json without bundling it."
+    }
+  ],
+  "next_patch_set": [
+    "Open iteration-0006 for final detached-closure fixes",
+    "Bundle the two conversations_api schemas used by the validation checks",
+    "Bundle PLAN/packet.meta.json, PLAN/request.status.txt, and IMPLEMENT/packet.meta.json",
+    "Recreate the implement review bundle with iteration-0006 identifiers"
+  ]
+}

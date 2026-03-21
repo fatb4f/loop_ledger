@@ -1,0 +1,8 @@
+{
+  "kind": "implement.packet.meta.v2",
+  "objective": "Re-implement bounded slice tri-lane-conversations-api-inventory-001 after iteration-0005 review by closing the final detached replay-closure gaps for the official-surface rebase.",
+  "parent_issue": "workbench-tri-lane-plan-001",
+  "wt": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0006",
+  "contract_root": "/home/_404/src/dotfiles/config/codex",
+  "packet_path": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0006/IMPLEMENT/IMPLEMENT.md"
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "integration_gate_plan.v1",
+  "bounded_batch_id": "workbench-tri-lane-plan-001",
+  "runs_on": "integration_worktree",
+  "required_checks": [
+    "authority_gate",
+    "contract_package_gate",
+    "artifact_conformance_gate"
+  ],
+  "required_artifacts": [
+    "PLAN/request.instance.json",
+    "PLAN/request.validation.json",
+    "PLAN/conversations_api.inventory.json",
+    "PLAN/request.git_log.json",
+    "PLAN/request.diff",
+    "PLAN/contract.bindings.json",
+    "PLAN/batch.manifest.json",
+    "PLAN/integration_gate.plan.json",
+    "PLAN/promotion.plan.json",
+    "LOOP/loop.state.json",
+    "IMPLEMENT/response.manifest.json"
+  ],
+  "pass_effect": "promotion_decision_can_pass",
+  "fail_effect": "bounded_batch_rejected_or_reworked"
+}

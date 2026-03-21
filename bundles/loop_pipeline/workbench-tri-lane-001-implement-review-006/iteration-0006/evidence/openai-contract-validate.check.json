@@ -1,0 +1,10 @@
+{
+  "kind": "controller_check.v1",
+  "name": "openai contract validate",
+  "argv": [
+    "just",
+    "validate-openai-contract"
+  ],
+  "cwd": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0006/policy_framework",
+  "exit_code": 0
+}

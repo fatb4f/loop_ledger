@@ -1,0 +1,12 @@
+{
+  "kind": "plan.packet.meta.v2",
+  "objective": "Plan the tri-lane workbench integration across loop-pipeline, asset-control-model, and conversations_api",
+  "failure": "multi-surface integration scope is not yet normalized across controller, policy, and API conversation surfaces",
+  "wt": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0006",
+  "contract_root": "/home/_404/src/dotfiles/config/codex",
+  "bounded_batch_id": "workbench-tri-lane-plan-001",
+  "target_layer": "contract",
+  "target_branch": "main",
+  "integration_worktree_id": "iwt-workbench-tri-lane-001",
+  "packet_path": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0006/PLAN/README.md"
+}

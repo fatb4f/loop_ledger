@@ -1,0 +1,7 @@
+{
+  "kind": "request_validation.v1",
+  "instance_ref": "PLAN/request.instance.json",
+  "schema_ref": "schemas/request.schema.json",
+  "valid": true,
+  "errors": []
+}

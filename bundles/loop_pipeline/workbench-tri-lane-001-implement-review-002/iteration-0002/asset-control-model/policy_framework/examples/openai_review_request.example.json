@@ -1,0 +1,61 @@
+{
+  "kind": "openai_review_request.v1",
+  "contract": {
+    "contract_id": "responses-conversations-contract-freeze-001",
+    "stage": "IMPLEMENT",
+    "authority_refs": [
+      "https://developers.openai.com/api/docs/guides/conversation-state",
+      "https://developers.openai.com/api/docs/guides/migrate-to-responses",
+      "https://developers.openai.com/api/docs/guides/webhooks"
+    ]
+  },
+  "conversation_context": {
+    "kind": "openai_conversation_context.v1",
+    "mode": "conversation",
+    "conversation_id": "conv_example_123"
+  },
+  "request": {
+    "kind": "openai_response_request.v1",
+    "request_id": "req_example_123",
+    "model": "gpt-5.4",
+    "input": "Review this plan artifact for boundedness and evidence closure.",
+    "instructions": "Return a strict JSON review verdict only.",
+    "background": true,
+    "stream": false,
+    "store": true,
+    "conversation_context": {
+      "kind": "openai_conversation_context.v1",
+      "mode": "conversation",
+      "conversation_id": "conv_example_123"
+    }
+  },
+  "response": {
+    "kind": "openai_response_snapshot.v1",
+    "response_id": "resp_example_123",
+    "status": "completed",
+    "conversation_id": "conv_example_123",
+    "output_text": "{\"verdict\":\"revise\"}",
+    "background": true,
+    "stream": false
+  },
+  "events": {
+    "webhook_events": [
+      "response.completed"
+    ]
+  },
+  "evidence": {
+    "checks": [
+      "schema_validate",
+      "structured_output_validate"
+    ],
+    "artifacts": [
+      "PLAN/README.md",
+      "PLAN/review_request.model.json"
+    ]
+  },
+  "promotion_threshold": {
+    "allow_promotion": false,
+    "deny_if_missing_evidence": true,
+    "required_score_floor": 4
+  }
+}

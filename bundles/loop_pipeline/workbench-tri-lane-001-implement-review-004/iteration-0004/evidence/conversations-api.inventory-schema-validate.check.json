@@ -1,0 +1,12 @@
+{
+  "kind": "controller_check.v1",
+  "name": "conversations_api inventory schema validate",
+  "argv": [
+    "python3",
+    "/home/_404/src/loop_ledger/scripts/validate_json.py",
+    "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0004/policy_framework/schemas/conversations_api_inventory.schema.json",
+    "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0004/PLAN/conversations_api.inventory.json"
+  ],
+  "cwd": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0004",
+  "exit_code": 0
+}

@@ -1,0 +1,68 @@
+{
+  "kind": "review_bundle_ref_header.v1",
+  "project": "loop_pipeline",
+  "bundle_id": "workbench-tri-lane-001-plan-review-002",
+  "iteration_id": "iteration-0001",
+  "scope_root": "/home/_404/src",
+  "authority_model": {
+    "source_roots": "authoritative",
+    "controller_surfaces": "authoritative",
+    "reviewed_head": "legacy_informational",
+    "refs": "legacy_informational"
+  },
+  "reviewed_head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da",
+  "lineage": {},
+  "refs": {
+    "wt": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001",
+    "ledger_wt": "/home/_404/src/loop_ledger.worktrees/workbench-tri-lane-001.iteration-0001",
+    "workbench_context": "/home/_404/src/workbench",
+    "problem_set": "multi-surface integration across loop-pipeline, asset-control-model, conversations_api, and loop_ledger"
+  },
+  "source_roots": {
+    "asset_control_model": {
+      "root": "/home/_404/src/runtime/asset-control-model",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da"
+    },
+    "asset_control_model_wt": {
+      "root": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0001",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da"
+    },
+    "dotfiles": {
+      "root": "/home/_404/src/dotfiles",
+      "head": "b5b343869fdd66969a46ed944526b33ec55c4268"
+    },
+    "loop_ledger": {
+      "root": "/home/_404/src/loop_ledger",
+      "head": "50e6f595c09bc80c2c1b6ed11d0d742007013f57"
+    }
+  },
+  "controller_surfaces": {
+    "codex_contract_root": {
+      "root": "/home/_404/src/dotfiles/config/codex",
+      "head": "b5b343869fdd66969a46ed944526b33ec55c4268"
+    },
+    "acm_policy_framework": {
+      "root": "/home/_404/src/runtime/asset-control-model/policy_framework",
+      "head": "777bd68c2ef209294c7416d79cc1ee94ac2d41da"
+    },
+    "loop_ledger_controller": {
+      "root": "/home/_404/src/loop_ledger",
+      "head": "50e6f595c09bc80c2c1b6ed11d0d742007013f57"
+    }
+  },
+  "evidence_bundle": {
+    "integrity_mode": "all_files",
+    "required_output_roles": [
+      "plan_packet_output",
+      "loop_state_output",
+      "promotion_capsule_output"
+    ],
+    "required_check_roles": [
+      "plan_packet_validate_check",
+      "review_manifest_validate_check",
+      "review_bundle_status_check",
+      "loop_state_schema_validate_check",
+      "promotion_capsule_schema_validate_check"
+    ]
+  }
+}

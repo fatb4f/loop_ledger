@@ -1,0 +1,33 @@
+{
+  "version": "0.1.0",
+  "kind": "prompt_registry.v1",
+  "root": "prompt-registry/",
+  "units": [
+    {
+      "id": "workflow.git_flow.integration_worktree",
+      "kind": "workflow_unit",
+      "tags": ["git-flow", "integration", "bounded-batch"],
+      "applies_when": [
+        "task requires contract-gated promotion",
+        "work is executed in integration worktree"
+      ],
+      "requires": [
+        "snippet.validation",
+        "snippet.evidence",
+        "snippet.promotion"
+      ],
+      "path": "workflows/git-flow.integration-worktree.json"
+    }
+  ],
+  "snippets": [
+    "planning",
+    "validation",
+    "evidence",
+    "promotion"
+  ],
+  "profiles": [
+    "default",
+    "review",
+    "patch"
+  ]
+}

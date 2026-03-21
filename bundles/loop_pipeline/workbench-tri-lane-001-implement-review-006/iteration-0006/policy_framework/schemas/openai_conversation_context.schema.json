@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "openai_conversation_context.schema.json",
+  "type": "object",
+  "required": [
+    "kind",
+    "mode"
+  ],
+  "properties": {
+    "kind": {
+      "const": "openai_conversation_context.v1"
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "conversation",
+        "previous_response_chain"
+      ]
+    },
+    "conversation_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "previous_response_id": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "mode": {
+            "const": "conversation"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "conversation_id"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mode": {
+            "const": "previous_response_chain"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "previous_response_id"
+        ]
+      }
+    }
+  ],
+  "additionalProperties": false
+}

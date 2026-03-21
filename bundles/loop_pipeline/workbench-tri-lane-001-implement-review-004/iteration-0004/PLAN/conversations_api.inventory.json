@@ -1,0 +1,89 @@
+{
+  "kind": "conversations_api_inventory.v1",
+  "lane": "conversations_api",
+  "status": "bounded_slice_assigned",
+  "official_surface_rebase_required": false,
+  "source_basis": {
+    "mode": "official_openai_runtime_authority",
+    "root": "https://developers.openai.com/api/docs/guides/conversation-state",
+    "note": "This bounded slice now treats the official OpenAI Responses API and Conversation state documentation as the runtime authority. The earlier observed Codex runtime extract is retained only as secondary evidence for prior signal mapping."
+  },
+  "owned_artifact_classes": {
+    "request_objects": [
+      "response_request.json"
+    ],
+    "response_objects": [
+      "response_snapshot.json"
+    ],
+    "session_event_artifacts": [
+      "conversation_context.json",
+      "streaming.event.json",
+      "webhook.event.json"
+    ],
+    "provenance_artifacts": [
+      "conversation.session.capsule.json",
+      "conversation.provenance.json"
+    ],
+    "ledger_bundle_artifacts": [
+      "review manifests",
+      "evidence checks",
+      "copied request/response/session artifacts"
+    ]
+  },
+  "provenance_roots": {
+    "source_runtime_root": "https://developers.openai.com/api/docs/guides/conversation-state",
+    "policy_root": "/home/_404/src/runtime/asset-control-model",
+    "ledger_root": "/home/_404/src/loop_ledger",
+    "contract_root": "/home/_404/src/dotfiles/config/codex"
+  },
+  "ownership": {
+    "boundary_schema_owner": "/home/_404/src/runtime/asset-control-model/policy_framework",
+    "boundary_schema_owner_mode": "acm_contract_freeze",
+    "admissibility_owner": "asset-control-model",
+    "bundle_materializer_owner": "loop_ledger",
+    "packet_contract_owner": "dotfiles config/codex"
+  },
+  "acm_contract_refs": {
+    "manifest": "policy_framework/manifests/openai_responses_conversations_contract.v1.json",
+    "policy": "policy_framework/policy/openai_responses_conversations_contract.md",
+    "schemas": [
+      "policy_framework/schemas/openai_conversation_context.schema.json",
+      "policy_framework/schemas/openai_response_request.schema.json",
+      "policy_framework/schemas/openai_response_snapshot.schema.json",
+      "policy_framework/schemas/openai_review_request.schema.json",
+      "policy_framework/schemas/openai_review_verdict.schema.json"
+    ]
+  },
+  "observed_runtime_signals": [
+    "core/tests/suite/client.rs:response.completed",
+    "otel/src/events/session_telemetry.rs:response.completed",
+    "otel/src/events/session_telemetry.rs:stream closed before response.completed"
+  ],
+  "first_slice_boundary": {
+    "allowed": [
+      "contract additions",
+      "policy additions",
+      "schema additions",
+      "review-bundle pattern definition"
+    ],
+    "denied": [
+      "runtime API behavior changes",
+      "transport implementation",
+      "client/server integration"
+    ]
+  },
+  "review_prerequisites": {
+    "official_openai_surfaces": [
+      "responses_api",
+      "conversations_api",
+      "background_mode",
+      "webhooks",
+      "realtime_api"
+    ],
+    "review_artifacts": [
+      "PLAN/openai_surface_review.md",
+      "PLAN/review_request.model.json",
+      "policy_framework/manifests/openai_responses_conversations_contract.v1.json"
+    ]
+  }
+}

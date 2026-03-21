@@ -1,0 +1,12 @@
+{
+  "kind": "controller_check.v1",
+  "name": "conversations_api bundle boundary schema validate",
+  "argv": [
+    "python3",
+    "/home/_404/src/loop_ledger/scripts/validate_json.py",
+    "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0004/policy_framework/schemas/conversations_api_bundle_boundary.schema.json",
+    "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0004/IMPLEMENT/conversations_api.bundle_boundary.json"
+  ],
+  "cwd": "/home/_404/src/_worktrees/workbench-tri-lane-001.iteration-0004",
+  "exit_code": 0
+}
